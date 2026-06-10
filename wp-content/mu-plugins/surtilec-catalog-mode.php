@@ -141,6 +141,14 @@ add_filter(
 			'Send the request'                                               => 'Enviar la solicitud',
 			'Send Your Request'                                              => 'Envía tu solicitud',
 			'Your request has been sent successfully'                        => 'Tu solicitud se envió correctamente',
+			// Email a la empresa (notificación de solicitud de cotización).
+			'[Quote request]'                                                => '[Solicitud de cotización]',
+			'You have received a quote request from %s. The request is the following:' => 'Has recibido una solicitud de cotización de %s. La solicitud es la siguiente:',
+			'You received a quote request from %s. The request is the following:'      => 'Has recibido una solicitud de cotización de %s. La solicitud es la siguiente:',
+			'Customer details'                                               => 'Datos del cliente',
+			'Customer message'                                               => 'Mensaje del cliente',
+			'Name:'                                                          => 'Nombre:',
+			'Email:'                                                         => 'Correo:',
 		);
 
 		return isset( $map[ $text ] ) ? $map[ $text ] : $translated;

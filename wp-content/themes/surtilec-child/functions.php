@@ -72,6 +72,23 @@ add_filter(
 );
 
 /**
+ * Load the CF7 form helper script only on pages that render a CF7 form.
+ * Fires when Contact Form 7 enqueues its own assets.
+ */
+add_action(
+	'wpcf7_enqueue_scripts',
+	function () {
+		wp_enqueue_script(
+			'surtilec-forms',
+			get_stylesheet_directory_uri() . '/assets/js/surtilec-forms.js',
+			array(),
+			wp_get_theme()->get( 'Version' ),
+			true
+		);
+	}
+);
+
+/**
  * Joinchat: on single products, prefill the WhatsApp message with the product
  * name via the built-in {PRODUCT} variable (resolved by Joinchat's WooCommerce
  * integration).
