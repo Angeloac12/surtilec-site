@@ -17,6 +17,10 @@ Architecture decision log for the Surtilec project. Newest first.
 - **Decision:** Implemented in `mu-plugins/surtilec-catalog-mode.php`, gated by the `SURTILEC_CATALOG_MODE` constant. Remove the loop/single add-to-cart template actions and filter `woocommerce_get_price_html`. Deliberately did **not** set `woocommerce_is_purchasable = false`, because that can hide the YITH quote button.
 - **Consequences:** Flipping `SURTILEC_CATALOG_MODE` to `false` re-enables commerce. Cart/checkout redirect to `/cotizar/` (falls back to home until that page exists). `wc-cart-fragments` dequeued for performance. Note: WooCommerce's built-in "Coming Soon" mode (`woocommerce_coming_soon=yes`) currently hides the front-end for logged-out visitors — verify catalog behavior while logged in as admin.
 
+## Deferred decisions
+
+- **SSO / social login (Nextend Social Login + Google OAuth) — deferred to Phase 3.** Trigger: when client portal / quote history is built or repeat customers request account features. Quote flow stays accountless until then.
+
 ## Template
 
 ### YYYY-MM-DD — Title
