@@ -2,6 +2,11 @@
 
 Architecture decision log for the Surtilec project. Newest first.
 
+### 2026-06-10 — Lead capture: CF7 forms via WP-CLI, enqueued helper JS
+- **Context:** Needed two quote forms (global + BOM upload), notification + Spanish auto-reply emails, and page/menu wiring (project §7). SMTP + Turnstile already configured.
+- **Decision:** CF7 forms created via `wp post create` + serialized meta (`_form`/`_mail`/`_mail_2`/`_messages`/`_locale`), normalized with `WPCF7_ContactForm::get_instance()->save()`. Turnstile is left to the plugin's global CF7 auto-inject (`cfturnstile_cf7_all=on`) — no `[cf7-simple-turnstile]` tag in markup (would double-render). UTM/page_url capture + Ciudad↔datalist link via an **enqueued** child-theme asset (`assets/js/surtilec-forms.js`, loaded on `wpcf7_enqueue_scripts`), not inline — repo rule: custom code is version-controlled and survives form recreation. CF7 can't read query params server-side, so UTMs are filled client-side; `[_url]` is also in the mail as a server-side source backup.
+- **Consequences:** Forms/pages/menu are server state (documented in changelog), not in repo; only the JS, enqueue, and gettext additions are version-controlled. Turnstile blocks automated submits (verified: `invalid_fields: ['cf-turnstile']`), so end-to-end email delivery must be tested by a human in the browser.
+
 ### 2026-06-10 — Catalog taxonomy, attributes, CSV source-of-truth, YITH Spanish
 - **Context:** Catalog had only leftover test categories and no attributes; YITH quote flow leaked English strings to visitors.
 - **Decision:** Built the real `product_cat` tree (5 parents, 2 levels max) and 11 global `pa_*` attributes via WP-CLI (server state, not in repo). `data/products-master.csv` is the single source for product imports; specs come **only from supplier datasheets, never invented** (see `docs/csv-guia.md`). English YITH strings translated via a `gettext` filter scoped to the `yith-woocommerce-request-a-quote` domain in the catalog-mode mu-plugin (no plugin edits). Root cause of the leak: plugin ships `es_ES` but site locale is `es_CO`, so its `.mo` never loads.

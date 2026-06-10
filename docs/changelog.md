@@ -3,6 +3,11 @@
 Notable changes to the Surtilec project. Newest first.
 
 ## Unreleased
+- Lead capture (CF7 forms + emails + wiring):
+  - Two CF7 forms (server state): "Solicitud de cotización" (id 43) and "Subir listado" (id 44). Spanish labels + Spanish validation messages (`_messages`), `_locale=es_CO`. Fields per spec incl. file upload (pdf/xlsx/xls/jpg/png, 10MB), Ciudad datalist, hidden `page_url`/`utm_*`/`lead_source`. Turnstile auto-injects (plugin `cfturnstile_cf7_all=on`) — confirmed enforced.
+  - Emails: notification to kabelgrupogerson@gmail.com (subject `[Cotización web] [nombre] — [ciudad]`, all fields + source URL + UTMs, Reply-To visitor, file attached); Spanish auto-reply (From "Surtilec", subject "Recibimos tu solicitud — Surtilec", points to WhatsApp wa.me/573204499026). YITH notification recipient verified = admin_email (kabelgrupogerson); YITH business-email English strings added to the gettext map.
+  - Pages: `/cotizar/solicitud/` (45) + form embedded on `/contacto/` (38, with NAP); `/cotizar/subir-listado/` (46); `/cotizar/` gains a link to the BOM upload page. Menu "Principal": "Subir listado" submenu under Cotizar.
+  - Child theme: `assets/js/surtilec-forms.js` (datalist link + UTM/page_url capture) enqueued only where a CF7 form renders (`wpcf7_enqueue_scripts`).
 - Catalog taxonomy + attributes + CSV + YITH Spanish:
   - `product_cat` tree (server-side): 5 parents — Cables de control, Cable THHN / THWN-2, Cables para variadores VFD, Cables especiales (4 hijos), Automatización industrial (5 hijos). Removed leftover test categories ("Pruebas" + bogus "18"); test product 35 moved to Cables de control.
   - 11 global attributes (`pa_*`): calibre-awg, numero-conductores, voltaje, apantallado (terms Sí/No), chaqueta, norma, marca, aplicacion, potencia-hp, voltaje-entrada, serie.
