@@ -49,3 +49,24 @@ add_action(
 	},
 	20
 );
+
+/**
+ * Force no sidebar on the catalog and all WooCommerce pages.
+ *
+ * Filters become later (faceted catalog); for now product/shop/taxonomy and
+ * cart/checkout use the full content width.
+ */
+add_filter(
+	'generate_sidebar_layout',
+	function ( $layout ) {
+		if ( ! function_exists( 'is_woocommerce' ) ) {
+			return $layout;
+		}
+
+		if ( is_woocommerce() || is_shop() || is_product_taxonomy() || is_cart() || is_checkout() ) {
+			return 'no-sidebar';
+		}
+
+		return $layout;
+	}
+);

@@ -83,4 +83,32 @@ if ( SURTILEC_CATALOG_MODE ) {
 		},
 		11
 	);
+
+	/**
+	 * Quita la pestaña de valoraciones del producto individual.
+	 * (Refuerza el ajuste woocommerce_enable_reviews = no.)
+	 */
+	add_filter(
+		'woocommerce_product_tabs',
+		function ( $tabs ) {
+			unset( $tabs['reviews'] );
+			return $tabs;
+		},
+		98
+	);
+
+	/**
+	 * Cierra los comentarios/valoraciones en los productos.
+	 */
+	add_filter(
+		'comments_open',
+		function ( $open, $post_id ) {
+			if ( 'product' === get_post_type( $post_id ) ) {
+				return false;
+			}
+			return $open;
+		},
+		10,
+		2
+	);
 }
