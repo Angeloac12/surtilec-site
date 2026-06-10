@@ -3,6 +3,10 @@
 Notable changes to the Surtilec project. Newest first.
 
 ## Unreleased
+- WhatsApp + header + visual identity pass:
+  - Joinchat (free, `creame-whatsapp-me`) installed/activated. Floating button bottom-right, all pages, phone `573204499026`. Chat CTA "¿Necesitas una cotización? Escríbenos"; prefill "Hola Surtilec, quiero una cotización. Vengo de: {URL}". On single products the prefill becomes "Hola Surtilec, quiero cotizar: {PRODUCT} — {URL}" via a `joinchat_settings` filter in the child theme (uses Joinchat's built-in WooCommerce `{PRODUCT}` variable). Change the number later: `scripts/wp.sh option patch update joinchat telephone <NUMERO>` or WP Admin → Joinchat → Telephone.
+  - Header: persistent product-scoped search (`post_type=product`) injected via `generate_inside_navigation`, placeholder "Buscar producto, ej: cable THHN 12 AWG". Sticky header via child-theme CSS (`position: sticky`), with WP admin-bar offset (32px / 46px mobile) — GP free has no native sticky.
+  - Visual identity (child `style.css`): orange (`--color-accent`) primary CTAs (Añadir a cotización, single add-to-cart, CF7 submit, `.button.alt`), dark-blue secondary buttons; typographic scale + spacing, ~1200px content width; "Precio: solicitar cotización" styled as a subtle badge; mobile-first search/menu.
 - Cleanup + Spanish identity pass:
   - YITH quote list no longer leaks prices (`ywraq_hide_price=yes` hides the Total column header + subtotals). Add-to-quote button relabeled "Añadir a cotización" (`ywraq_show_btn_link_text`).
   - Quote page → title "Solicitar cotización", slug `/cotizar/` (id 12). Shop page → "Catálogo", slug `/productos/` (id 6); product singles stay at `/catalogo/…/`.
