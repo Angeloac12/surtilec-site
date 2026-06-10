@@ -1,0 +1,30 @@
+/*
+Theme Name:   Surtilec
+Theme URI:    https://surtilec.com
+Description:  Child theme de GeneratePress para Surtilec — catálogo B2B de cables especiales y automatización industrial.
+Author:       Surtilec
+Template:     generatepress
+Version:      0.1.0
+Text Domain:  surtilec
+*/
+
+:root {
+  /* Paleta industrial */
+  --color-dark:   #0F2A43; /* azul oscuro */
+  --color-accent: #F2780C; /* naranja */
+
+  /* Grises neutros */
+  --gray-900: #1A1F26;
+  --gray-700: #3D4753;
+  --gray-500: #6B7682;
+  --gray-300: #C2C9D1;
+  --gray-100: #F2F4F6;
+
+  /* Stack de fuentes del sistema (sin Google Fonts) */
+  --font-system: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+  font-family: var(--font-system);
+}
