@@ -4,7 +4,7 @@ Theme URI:    https://surtilec.com
 Description:  Child theme de GeneratePress para Surtilec — catálogo B2B de cables especiales y automatización industrial.
 Author:       Surtilec
 Template:     generatepress
-Version:      0.1.0
+Version:      0.2.0
 Text Domain:  surtilec
 */
 
@@ -20,11 +20,178 @@ Text Domain:  surtilec
   --gray-300: #C2C9D1;
   --gray-100: #F2F4F6;
 
+  /* Variantes de interacción */
+  --color-dark-hover:   #163A5C;
+  --color-accent-hover: #D8690A;
+
   /* Stack de fuentes del sistema (sin Google Fonts) */
   --font-system: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+
+  /* Escala tipográfica y espaciado */
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --space-5: 3rem;
+  --radius:  6px;
+  --content-max: 1200px;
 }
 
 body {
   font-family: var(--font-system);
+  color: var(--gray-900);
+  line-height: 1.6;
+}
+
+/* ============================================================
+   Tipografía — industrial, limpia, con aire
+   ============================================================ */
+h1, h2, h3, h4 {
+  color: var(--color-dark);
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  font-weight: 700;
+}
+h1 { font-size: clamp(1.9rem, 4vw, 2.6rem); margin-bottom: var(--space-3); }
+h2 { font-size: clamp(1.5rem, 3vw, 2rem);   margin-bottom: var(--space-2); }
+h3 { font-size: clamp(1.2rem, 2vw, 1.4rem); }
+p  { margin-bottom: var(--space-2); }
+
+/* Ancho de contenido ~1200px */
+.grid-container { max-width: var(--content-max); }
+
+/* ============================================================
+   Botones — CTA primario naranja, secundario azul
+   ============================================================ */
+.button,
+button,
+input[type="submit"],
+.wp-block-button__link,
+.wpcf7-submit,
+.woocommerce a.button,
+.woocommerce button.button {
+  display: inline-block;
+  background-color: var(--color-dark);
+  color: #fff;
+  border: 0;
+  border-radius: var(--radius);
+  padding: 0.7em 1.5em;
+  font-weight: 600;
+  line-height: 1.2;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+.wpcf7-submit:hover,
+.woocommerce a.button:hover,
+.woocommerce button.button:hover {
+  background-color: var(--color-dark-hover);
+  color: #fff;
+}
+
+/* CTA primarios: cotizar, añadir a cotización, enviar formulario, .alt */
+.add-request-quote-button,
+.add-request-quote-button-addons,
+.single_add_to_cart_button,
+.wpcf7-submit,
+.woocommerce a.button.alt,
+.woocommerce button.button.alt {
+  background-color: var(--color-accent);
+  color: #fff;
+}
+.add-request-quote-button:hover,
+.add-request-quote-button-addons:hover,
+.single_add_to_cart_button:hover,
+.wpcf7-submit:hover,
+.woocommerce a.button.alt:hover,
+.woocommerce button.button.alt:hover {
+  background-color: var(--color-accent-hover);
+  color: #fff;
+}
+
+/* ============================================================
+   Badge "Precio: solicitar cotización"
+   ============================================================ */
+.surtilec-precio-cotizar {
+  display: inline-block;
+  background: var(--gray-100);
+  color: var(--color-accent);
+  font-size: 0.85em;
+  font-weight: 600;
+  padding: 0.3em 0.7em;
+  border-radius: var(--radius);
+  border: 1px solid var(--gray-300);
+  letter-spacing: 0.01em;
+}
+
+/* ============================================================
+   Buscador de productos en el encabezado
+   ============================================================ */
+.surtilec-nav-search {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  padding: var(--space-1) var(--space-2);
+}
+.surtilec-product-search {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  max-width: 360px;
+}
+.surtilec-product-search input[type="search"] {
+  flex: 1 1 auto;
+  min-width: 0;
+  border: 1px solid var(--gray-300);
+  border-right: 0;
+  border-radius: var(--radius) 0 0 var(--radius);
+  padding: 0.5em 0.8em;
+  font-size: 0.95rem;
+}
+.surtilec-product-search input[type="search"]:focus {
+  outline: 2px solid var(--color-accent);
+  outline-offset: -2px;
+}
+.surtilec-product-search button {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-accent);
+  color: #fff;
+  border: 0;
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 0 0.9em;
+}
+.surtilec-product-search button:hover { background: var(--color-accent-hover); }
+
+/* ============================================================
+   Encabezado fijo (sticky) — GP free no lo trae nativo
+   ============================================================ */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+/* Compensar la barra de administración de WordPress al estar logueado */
+.admin-bar .site-header { top: 32px; }
+@media (max-width: 782px) {
+  .admin-bar .site-header { top: 46px; }
+}
+
+/* ============================================================
+   Mobile-first: buscador y menú usables en teléfono
+   ============================================================ */
+@media (max-width: 768px) {
+  .surtilec-nav-search {
+    order: 1;
+    width: 100%;
+    margin-left: 0;
+    padding: var(--space-1);
+  }
+  .surtilec-product-search { max-width: none; }
 }
