@@ -1,0 +1,4 @@
+sku,nombre,categoria,subcategoria,marca,calibre_awg,num_conductores,voltaje,apantallado,chaqueta,norma,aplicacion,potencia_hp,voltaje_entrada,serie,descripcion_corta,imagen
+EJEMPLO-CTRL-001,Cable de control 18 AWG 4 conductores,Cables de control,,Marca Ejemplo,18,4,600 V,Sí,PVC,UL 1277,Control de motores y tableros,,,,"FILA DE EJEMPLO — NO PUBLICAR. Cable de control flexible apantallado, 4 conductores.",ejemplo-ctrl-001.jpg
+EJEMPLO-THHN-001,Cable THHN/THWN-2 12 AWG,Cable THHN / THWN-2,,Marca Ejemplo,12,1,600 V,No,Nylon/PVC,NTC 2050 / UL 83,Cableado general en edificaciones,,,,"FILA DE EJEMPLO — NO PUBLICAR. Conductor de cobre THHN/THWN-2, 12 AWG.",ejemplo-thhn-001.jpg
+EJEMPLO-VFD-001,Variador de frecuencia 5 HP,Automatización industrial,Variadores de frecuencia,Marca Ejemplo,,,,,,IEC 61800,Control de velocidad de motores trifásicos,5,220 V,Serie X,"FILA DE EJEMPLO — NO PUBLICAR. Variador de frecuencia 5 HP, entrada 220 V trifásica.",ejemplo-vfd-001.jpg

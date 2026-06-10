@@ -112,3 +112,39 @@ if ( SURTILEC_CATALOG_MODE ) {
 		2
 	);
 }
+
+/**
+ * Traducción al español de las cadenas visibles de YITH Request a Quote.
+ *
+ * El plugin trae traducción es_ES, pero el sitio usa es_CO, por lo que no se
+ * carga y quedan textos en inglés. Filtramos solo el dominio del plugin (sin
+ * editar archivos del plugin). Fuera del bloque SURTILEC_CATALOG_MODE para que
+ * la traducción persista aunque se reactive el comercio.
+ */
+add_filter(
+	'gettext',
+	function ( $translated, $text, $domain ) {
+		if ( 'yith-woocommerce-request-a-quote' !== $domain ) {
+			return $translated;
+		}
+
+		static $map = array(
+			'Add to Quote'                                                   => 'Añadir a cotización',
+			'Product added to the list!'                                     => '¡Producto agregado a la lista!',
+			'Product already in the list.'                                   => 'El producto ya está en la lista.',
+			'No products in list'                                            => 'No hay productos en la lista',
+			'Your list is empty'                                             => 'Tu lista está vacía',
+			'Your list is empty, add products to the list to send a request' => 'Tu lista está vacía, agrega productos para enviar una solicitud',
+			'Browse the list'                                                => 'Ver la lista',
+			'Notes on your request...'                                       => 'Notas sobre tu solicitud…',
+			'Quote request'                                                  => 'Solicitud de cotización',
+			'Send the request'                                               => 'Enviar la solicitud',
+			'Send Your Request'                                              => 'Envía tu solicitud',
+			'Your request has been sent successfully'                        => 'Tu solicitud se envió correctamente',
+		);
+
+		return isset( $map[ $text ] ) ? $map[ $text ] : $translated;
+	},
+	10,
+	3
+);
