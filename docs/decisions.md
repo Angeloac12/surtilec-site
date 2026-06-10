@@ -2,6 +2,11 @@
 
 Architecture decision log for the Surtilec project. Newest first.
 
+### 2026-06-10 — Quote price hiding, slugs, and no-sidebar layout
+- **Context:** YITH quote list leaked product totals; shop/quote slugs and site identity were placeholders; default sidebar showed stock widgets.
+- **Decision:** Hide quote prices with the native `ywraq_hide_price=yes` option (gates both the "Total" column header and subtotals in `request-quote-view.php`) rather than a custom filter/CSS. Slugs: quote page → `/cotizar/`, shop → `/productos/` (product singles stay on `product_base=/catalogo`). Force `no-sidebar` on WooCommerce pages via the `generate_sidebar_layout` filter in the child theme. Reviews off via option + `woocommerce_product_tabs`/`comments_open` belt-and-suspenders in the mu-plugin.
+- **Consequences:** All YITH/identity/structure changes are WP-CLI config (server state, not in repo) except the two code hooks. Renaming slugs required `wp rewrite flush`. WC Cart/Checkout/My account pages kept (needed for `is_cart()`/`is_checkout()` redirect detection) but excluded from the menu. Coming Soon stays ON until launch.
+
 ### 2026-06-09 — Catalog mode via template-action removal, not `is_purchasable`
 - **Context:** Site is a quote catalog, not a store. Prices and add-to-cart must disappear, but YITH "Solicitar cotización" must keep working.
 - **Decision:** Implemented in `mu-plugins/surtilec-catalog-mode.php`, gated by the `SURTILEC_CATALOG_MODE` constant. Remove the loop/single add-to-cart template actions and filter `woocommerce_get_price_html`. Deliberately did **not** set `woocommerce_is_purchasable = false`, because that can hide the YITH quote button.
