@@ -2,6 +2,12 @@
 
 Architecture decision log for the Surtilec project. Newest first.
 
+### 2026-06-10 — Catalog taxonomy, attributes, CSV source-of-truth, YITH Spanish
+- **Context:** Catalog had only leftover test categories and no attributes; YITH quote flow leaked English strings to visitors.
+- **Decision:** Built the real `product_cat` tree (5 parents, 2 levels max) and 11 global `pa_*` attributes via WP-CLI (server state, not in repo). `data/products-master.csv` is the single source for product imports; specs come **only from supplier datasheets, never invented** (see `docs/csv-guia.md`). English YITH strings translated via a `gettext` filter scoped to the `yith-woocommerce-request-a-quote` domain in the catalog-mode mu-plugin (no plugin edits). Root cause of the leak: plugin ships `es_ES` but site locale is `es_CO`, so its `.mo` never loads.
+- **Consequences:** Categories/attributes live in the DB (documented here + changelog), not version-controlled. The gettext map must be extended if YITH adds visitor-facing strings.
+- **Future / fallback:** If **more** English strings leak from other plugins for the same `es_CO` vs `es_ES` reason, evaluate loading the plugin's `es_ES` translation files as a **locale fallback** (e.g. via `load_textdomain`/`locale`/`plugin_locale` filters or copying `es_ES` → `es_CO` `.mo`) instead of growing per-string gettext maps indefinitely.
+
 ### 2026-06-10 — WhatsApp via Joinchat, product search, CSS sticky header
 - **Context:** Needed a floating WhatsApp quote CTA (per-product message), a persistent product search in the header, and a base visual identity.
 - **Decision:** Use Joinchat free. Store config in the `joinchat` option (partial keys; plugin merges `defaults()` at runtime — `class-joinchat-common.php:167`). Per-product prefill via the `joinchat_settings` filter + Joinchat's built-in `{PRODUCT}` WooCommerce variable (no template edits). Header search = a small WooCommerce-scoped form on the `generate_inside_navigation` hook (full control of Spanish placeholder vs GP's generic nav search). Sticky header via child-theme CSS `position: sticky` (GP free lacks native sticky — Premium Menu Plus only), with `.admin-bar` top offset.

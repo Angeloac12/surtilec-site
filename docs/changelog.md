@@ -3,6 +3,11 @@
 Notable changes to the Surtilec project. Newest first.
 
 ## Unreleased
+- Catalog taxonomy + attributes + CSV + YITH Spanish:
+  - `product_cat` tree (server-side): 5 parents — Cables de control, Cable THHN / THWN-2, Cables para variadores VFD, Cables especiales (4 hijos), Automatización industrial (5 hijos). Removed leftover test categories ("Pruebas" + bogus "18"); test product 35 moved to Cables de control.
+  - 11 global attributes (`pa_*`): calibre-awg, numero-conductores, voltaje, apantallado (terms Sí/No), chaqueta, norma, marca, aplicacion, potencia-hp, voltaje-entrada, serie.
+  - `data/products-master.csv` template (header + 3 `EJEMPLO-` rows) and `docs/csv-guia.md` authoring guide. Rule: specs only from supplier datasheets, never invented.
+  - YITH front-end strings translated to Spanish via a `gettext` filter scoped to the `yith-woocommerce-request-a-quote` domain in the catalog-mode mu-plugin (es_CO vs shipped es_ES). 12 strings: Add to Quote, Product added/already, No products in list, Your list is empty (+ long variant), Browse the list, Notes on your request…, Quote request, Send the request, Send Your Request, request sent successfully.
 - WhatsApp + header + visual identity pass:
   - Joinchat (free, `creame-whatsapp-me`) installed/activated. Floating button bottom-right, all pages, phone `573204499026`. Chat CTA "¿Necesitas una cotización? Escríbenos"; prefill "Hola Surtilec, quiero una cotización. Vengo de: {URL}". On single products the prefill becomes "Hola Surtilec, quiero cotizar: {PRODUCT} — {URL}" via a `joinchat_settings` filter in the child theme (uses Joinchat's built-in WooCommerce `{PRODUCT}` variable). Change the number later: `scripts/wp.sh option patch update joinchat telephone <NUMERO>` or WP Admin → Joinchat → Telephone.
   - Header: persistent product-scoped search (`post_type=product`) injected via `generate_inside_navigation`, placeholder "Buscar producto, ej: cable THHN 12 AWG". Sticky header via child-theme CSS (`position: sticky`), with WP admin-bar offset (32px / 46px mobile) — GP free has no native sticky.
