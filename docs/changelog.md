@@ -3,6 +3,12 @@
 Notable changes to the Surtilec project. Newest first.
 
 ## Unreleased
+- Catalog templates (child theme, via WooCommerce hooks — `inc/catalog-templates.php`):
+  - Single product: auto spec table from global attributes (Spanish labels, filled rows only), "Disponible en toda Colombia — despachos desde Bogotá", inline WhatsApp CTA with product prefill (Joinchat floating button untouched).
+  - Category: native description intro, subcategory tiles when children exist, FAQ accordion (ACF free term textarea → Q/A) + FAQPage JSON-LD, CTA block → `/cotizar/solicitud/` + WhatsApp.
+  - Catalog archive `/productos/`: 5 pillar category tiles (name + count) above the grid.
+  - Test data (server, EJEMPLO): product 35 example attributes; term 21 description + FAQ.
+  - Documented AIOSEO free JSON-LD baseline (product: BreadcrumbList/ItemPage/Organization/WebSite, no Product; category: BreadcrumbList/CollectionPage/Organization/WebSite) for the planned §6 schema session.
 - Lead capture (CF7 forms + emails + wiring):
   - Two CF7 forms (server state): "Solicitud de cotización" (id 43) and "Subir listado" (id 44). Spanish labels + Spanish validation messages (`_messages`), `_locale=es_CO`. Fields per spec incl. file upload (pdf/xlsx/xls/jpg/png, 10MB), Ciudad datalist, hidden `page_url`/`utm_*`/`lead_source`. Turnstile auto-injects (plugin `cfturnstile_cf7_all=on`) — confirmed enforced.
   - Emails: notification to kabelgrupogerson@gmail.com (subject `[Cotización web] [nombre] — [ciudad]`, all fields + source URL + UTMs, Reply-To visitor, file attached); Spanish auto-reply (From "Surtilec", subject "Recibimos tu solicitud — Surtilec", points to WhatsApp wa.me/573204499026). YITH notification recipient verified = admin_email (kabelgrupogerson); YITH business-email English strings added to the gettext map.

@@ -2,6 +2,15 @@
 
 Architecture decision log for the Surtilec project. Newest first.
 
+### 2026-06-10 — Catalog templates via hooks; AIOSEO schema baseline documented
+- **Context:** No catalog templates existed. Needed the single-product spec table (SEO asset), category template (intro/FAQ/CTA/subcategory tiles), and shop pillar tiles, ready for real products.
+- **Decision:** All output via WooCommerce hooks in `wp-content/themes/surtilec-child/inc/catalog-templates.php` (no template-file overrides → survives WC updates). Spec table = global `pa_*` attributes only, rows with values. Category intro = **native term description** (no ACF needed). FAQ = a single **ACF free term textarea** parsed into Q/A pairs + **FAQPage JSON-LD** (ACF free has no repeater; a FAQ CPT + relations is overkill for low volume). FAQ accordion uses native `<details>` (no JS).
+- **Consequences:** Example data (product 35 attributes; term 21 description + FAQ) is server state, clearly EJEMPLO-marked. The ACF field group is registered in PHP (version-controlled).
+- **AIOSEO free JSON-LD baseline** (captured via `wp eval` → `aioseo()->schema->get()`):
+  - Product page `@graph`: `BreadcrumbList`, `ItemPage`, `Organization`, `WebSite` — **no `Product` schema**.
+  - Category page `@graph`: `BreadcrumbList`, `CollectionPage`, `Organization`, `WebSite`.
+- **Planned schema session (§6):** a custom mu-plugin to add `Organization`, `LocalBusiness`, `Product` (without price), `BreadcrumbList` — **deduplicated against AIOSEO**, which already emits `Organization`, `WebSite`, `BreadcrumbList` (so the mu-plugin must replace or skip those, and primarily add the missing `Product`/`LocalBusiness`). Our FAQPage JSON-LD stays as built. See [[surtilec-es-co-locale-fallback]] for the no-plugin-edits pattern.
+
 ### 2026-06-10 — Lead capture: CF7 forms via WP-CLI, enqueued helper JS
 - **Context:** Needed two quote forms (global + BOM upload), notification + Spanish auto-reply emails, and page/menu wiring (project §7). SMTP + Turnstile already configured.
 - **Decision:** CF7 forms created via `wp post create` + serialized meta (`_form`/`_mail`/`_mail_2`/`_messages`/`_locale`), normalized with `WPCF7_ContactForm::get_instance()->save()`. Turnstile is left to the plugin's global CF7 auto-inject (`cfturnstile_cf7_all=on`) — no `[cf7-simple-turnstile]` tag in markup (would double-render). UTM/page_url capture + Ciudad↔datalist link via an **enqueued** child-theme asset (`assets/js/surtilec-forms.js`, loaded on `wpcf7_enqueue_scripts`), not inline — repo rule: custom code is version-controlled and survives form recreation. CF7 can't read query params server-side, so UTMs are filled client-side; `[_url]` is also in the mail as a server-side source backup.
