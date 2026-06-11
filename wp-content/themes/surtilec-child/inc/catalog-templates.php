@@ -145,9 +145,28 @@ function surtilec_parse_faq( $raw ) {
 }
 
 /**
- * Subcategory tiles above the grid when the category has children.
+ * Category intro (native term description), rendered on an always-fire hook so
+ * it shows even when the category has zero products. We remove WooCommerce's
+ * default description output to avoid double rendering.
  */
-add_action( 'woocommerce_before_shop_loop', 'surtilec_subcategory_tiles', 5 );
+remove_action( 'woocommerce_archive_description', 'woocommerce_taxonomy_archive_description', 10 );
+add_action( 'woocommerce_before_main_content', 'surtilec_category_intro', 22 );
+function surtilec_category_intro() {
+	if ( ! is_product_category() ) {
+		return;
+	}
+	$term = get_queried_object();
+	if ( ! $term instanceof WP_Term || '' === trim( (string) $term->description ) ) {
+		return;
+	}
+	echo '<div class="surtilec-cat-intro term-description">' . wc_format_content( $term->description ) . '</div>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+}
+
+/**
+ * Subcategory tiles above the grid when the category has children.
+ * On woocommerce_before_main_content so empty categories still show them.
+ */
+add_action( 'woocommerce_before_main_content', 'surtilec_subcategory_tiles', 25 );
 function surtilec_subcategory_tiles() {
 	if ( ! is_product_category() ) {
 		return;
@@ -172,8 +191,9 @@ function surtilec_subcategory_tiles() {
 
 /**
  * FAQ accordion + FAQPage JSON-LD below the grid.
+ * On woocommerce_after_main_content so it shows on empty categories too.
  */
-add_action( 'woocommerce_after_shop_loop', 'surtilec_category_faq', 20 );
+add_action( 'woocommerce_after_main_content', 'surtilec_category_faq', 10 );
 function surtilec_category_faq() {
 	if ( ! is_product_category() || ! function_exists( 'get_field' ) ) {
 		return;
@@ -212,13 +232,47 @@ function surtilec_category_faq() {
 
 /**
  * CTA block below the grid on category pages.
+ * On woocommerce_after_main_content so it shows on empty categories too.
  */
-add_action( 'woocommerce_after_shop_loop', 'surtilec_category_cta', 30 );
+add_action( 'woocommerce_after_main_content', 'surtilec_category_cta', 12 );
 function surtilec_category_cta() {
 	if ( ! is_product_category() ) {
 		return;
 	}
 	surtilec_render_cta_block();
+}
+
+/**
+ * Replace WooCommerce's bare "no products found" message on category archives:
+ * - category WITH children -> nothing (the subcategory tiles are the content).
+ * - leaf category -> a friendly WhatsApp prompt.
+ */
+remove_action( 'woocommerce_no_products_found', 'wc_no_products_found' );
+add_action( 'woocommerce_no_products_found', 'surtilec_no_products_found' );
+function surtilec_no_products_found() {
+	if ( ! is_product_category() ) {
+		wc_print_notice( esc_html__( 'No se encontraron productos.', 'surtilec' ), 'notice' );
+		return;
+	}
+	$term     = get_queried_object();
+	$children = ( $term instanceof WP_Term ) ? get_terms(
+		array(
+			'taxonomy'   => 'product_cat',
+			'parent'     => $term->term_id,
+			'hide_empty' => false,
+			'fields'     => 'ids',
+		)
+	) : array();
+
+	if ( ! empty( $children ) && ! is_wp_error( $children ) ) {
+		return; // tiles already shown above; no message needed.
+	}
+
+	echo '<div class="surtilec-empty-leaf">';
+	echo '<p>' . esc_html__( 'Aún no hay productos publicados en esta categoría. Escríbenos por WhatsApp y te cotizamos lo que necesites.', 'surtilec' ) . '</p>';
+	echo '<a class="surtilec-wa-btn" href="' . esc_url( surtilec_wa_link( 'Hola Surtilec, busco productos de esta categoría para cotizar.' ) ) . '" target="_blank" rel="noopener">'
+		. esc_html__( 'Cotizar por WhatsApp', 'surtilec' ) . '</a>';
+	echo '</div>';
 }
 
 /* =============================================================
@@ -227,8 +281,9 @@ function surtilec_category_cta() {
 
 /**
  * Pillar category tiles above the product grid on the shop page.
+ * On woocommerce_before_main_content so it is independent of the loop.
  */
-add_action( 'woocommerce_before_shop_loop', 'surtilec_pillar_tiles', 5 );
+add_action( 'woocommerce_before_main_content', 'surtilec_pillar_tiles', 25 );
 function surtilec_pillar_tiles() {
 	if ( ! is_shop() ) {
 		return;
