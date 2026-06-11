@@ -44,3 +44,23 @@ Deben coincidir **exactamente** (nombre) con la taxonomía del sitio:
 - **Automatización industrial** → subcategoría: Variadores de frecuencia · PLC · HMI · Sensores industriales · Arrancadores suaves
 
 `apantallado` solo acepta `Sí` o `No` (coincide con los términos del atributo `pa_apantallado`).
+
+## Imágenes (`data/images/`)
+
+- Pon cada imagen en `data/images/` con el nombre exacto de la columna `imagen`.
+- **Formato:** WebP o JPG.
+- **Tamaño:** máximo 1200 px de lado, objetivo **< 150 KB** por archivo.
+- Las imágenes se versionan en git (`data/images/`). Revisamos pasar a git LFS o `.gitignore` solo si el repo se acerca a ~500 MB.
+- Si falta la imagen referenciada, la importación avisa y omite la imagen (no falla la fila).
+
+## Cómo importar
+
+> **Backup obligatorio.** `scripts/import-products.sh` hace backup solo en importación real (no en dry-run); `--skip-backup` lo salta.
+
+1. **Respalda** (automático en importación real): `scripts/backup.sh`.
+2. **Valida** sin tocar la base: `scripts/import-products.sh --dry-run`.
+3. **Corrige errores** que reporte (SKU duplicado, categoría desconocida, campos obligatorios, columnas mal). Las advertencias de imagen no bloquean.
+4. **Importa**: `scripts/import-products.sh` (respalda y sube productos).
+5. **Verifica** en el navegador: ficha de producto con tabla de especificaciones, categoría correcta, sin precio.
+
+Reglas: upsert por `sku` (no duplica), idempotente (re-importar el mismo CSV = 0 cambios), nunca pone precio.

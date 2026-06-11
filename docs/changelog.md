@@ -3,6 +3,12 @@
 Notable changes to the Surtilec project. Newest first.
 
 ## Unreleased
+- Product import pipeline (CSV → WooCommerce):
+  - `scripts/import-products.sh` + `scripts/import-products.php` (run via `wp eval-file -`). Validator (dry-run): duplicate SKUs, unknown categoria/subcategoria, missing required-by-type (cables → calibre+conductores; variadores → potencia+voltaje_entrada), missing images (warning), malformed rows; Spanish report, nonzero exit on errors.
+  - Importer: upsert by SKU (no duplicates), sets name/short desc/category+subcategory/global attribute terms (creating `pa_*` as needed)/status publish/catalog visible; featured image from `data/images/{imagen}` via sideload (skip+warn if missing); **never sets price**; idempotent (re-run = 0 changes). Mandatory backup baked in (live only, `--skip-backup` to skip).
+  - `data/images/` tracked in git (WebP/JPG, ≤1200px, <150KB — revisit LFS/gitignore near ~500MB).
+  - Tested with the 3 EJEMPLO rows: dry-run clean (image warnings) → import (3 created) → re-run (0 changes, idempotent) → render verified → products + 13 test-created terms deleted (catalog back to 1 product). CSV rows kept as docs.
+  - `docs/csv-guia.md`: added image rules + "Cómo importar"; `docs/backlog.md`: polish items (category H1 order, CTA block width).
 - Empty-category fix + Spanish permalinks + schema mu-plugin:
   - **Bug fix:** category intro, subcategory tiles, FAQ and CTA moved from the loop-guarded `woocommerce_before/after_shop_loop` hooks to always-fire `woocommerce_before/after_main_content`, so zero-product categories render correctly. Custom `woocommerce_no_products_found`: nothing for categories with children (tiles are the content), a WhatsApp prompt on empty leaf categories.
   - **Permalinks:** product base `catalogo`→`producto` (`/producto/{slug}/`), category base `product-category`→**`categoria`** (`/categoria/{cat}/`), attribute base→`filtro`. (Category base `productos` was tried first but collided with the shop page slug `productos` → child category URLs 404'd; fixed by using `categoria`. Shop page stays `/productos/`.)
