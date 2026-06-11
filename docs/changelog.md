@@ -3,6 +3,10 @@
 Notable changes to the Surtilec project. Newest first.
 
 ## Unreleased
+- Empty-category fix + Spanish permalinks + schema mu-plugin:
+  - **Bug fix:** category intro, subcategory tiles, FAQ and CTA moved from the loop-guarded `woocommerce_before/after_shop_loop` hooks to always-fire `woocommerce_before/after_main_content`, so zero-product categories render correctly. Custom `woocommerce_no_products_found`: nothing for categories with children (tiles are the content), a WhatsApp prompt on empty leaf categories.
+  - **Permalinks:** product base `catalogo`→`producto` (`/producto/{slug}/`), category base `product-category`→`productos` (`/productos/{cat}/`), attribute base→`filtro`. Verified no conflict with the `/productos/` shop slug (incl. `/productos/page/2/` → shop pagination, not a category).
+  - **Schema mu-plugin** (`surtilec-schema.php`): Organization + LocalBusiness (site-wide, Bogotá/Colombia, no street), Product (single, **without offers** — a priceless schema.org Offer is invalid for Google), BreadcrumbList (product + category). Deduplicated against AIOSEO via `aioseo_schema_output` (strips its Organization + BreadcrumbList; AIOSEO keeps WebSite + ItemPage/CollectionPage). FAQPage (child theme) still emitted once.
 - Catalog templates (child theme, via WooCommerce hooks — `inc/catalog-templates.php`):
   - Single product: auto spec table from global attributes (Spanish labels, filled rows only), "Disponible en toda Colombia — despachos desde Bogotá", inline WhatsApp CTA with product prefill (Joinchat floating button untouched).
   - Category: native description intro, subcategory tiles when children exist, FAQ accordion (ACF free term textarea → Q/A) + FAQPage JSON-LD, CTA block → `/cotizar/solicitud/` + WhatsApp.

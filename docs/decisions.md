@@ -2,6 +2,13 @@
 
 Architecture decision log for the Surtilec project. Newest first.
 
+### 2026-06-10 — Spanish permalinks + custom schema mu-plugin (deduped vs AIOSEO)
+- **Context:** Empty categories rendered nothing useful; URLs were English; §6 schema needed (Product without price, LocalBusiness, deduped against AIOSEO).
+- **Decision — empty-category fix:** all category furniture (intro, subcategory/pillar tiles, FAQ, CTA) hooks into `woocommerce_before/after_main_content` (always fire), not the loop-guarded `*_shop_loop` hooks. Default `woocommerce_taxonomy_archive_description` removed; we render the intro ourselves for consistency on empty/non-empty. Custom `woocommerce_no_products_found`: silent for parents-with-children, WhatsApp prompt on leaves.
+- **Decision — permalinks:** `producto` / `productos` / `filtro`. Confirmed via rewrite-rule resolution that category base `productos` does **not** conflict with the `/productos/` shop page — WooCommerce registers a specific `productos/page/N` rule so shop pagination wins over the generic category rule. (Fallback `categoria` was prepared but not needed.) Site is pre-indexing, so no redirects added; internal links are dynamic.
+- **Decision — schema (`mu-plugins/surtilec-schema.php`):** emit Organization, LocalBusiness (city-level, no invented street), Product **without `offers`** (a priceless `Offer` is invalid for Google rich results → omit offers, keep a valid Product), and BreadcrumbList. Dedup via the `aioseo_schema_output` filter (remove AIOSEO's `Organization` + `BreadcrumbList` nodes; keep its `WebSite` + page types). FAQPage stays in the child theme (emitted once).
+- **Consequences:** Post-dedup AIOSEO emits only `ItemPage`+`WebSite` (product) / `CollectionPage`+`WebSite` (category); ours adds the rest. Permalinks/test-data are server state; code is in repo. Validate live with Google Rich Results Test once Coming Soon is lifted (or via an authenticated fetch).
+
 ### 2026-06-10 — Catalog templates via hooks; AIOSEO schema baseline documented
 - **Context:** No catalog templates existed. Needed the single-product spec table (SEO asset), category template (intro/FAQ/CTA/subcategory tiles), and shop pillar tiles, ready for real products.
 - **Decision:** All output via WooCommerce hooks in `wp-content/themes/surtilec-child/inc/catalog-templates.php` (no template-file overrides → survives WC updates). Spec table = global `pa_*` attributes only, rows with values. Category intro = **native term description** (no ACF needed). FAQ = a single **ACF free term textarea** parsed into Q/A pairs + **FAQPage JSON-LD** (ACF free has no repeater; a FAQ CPT + relations is overkill for low volume). FAQ accordion uses native `<details>` (no JS).
