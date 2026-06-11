@@ -3,6 +3,10 @@
 Notable changes to the Surtilec project. Newest first.
 
 ## Unreleased
+- Bug fixes (manual testing round):
+  - Single product: "Especificaciones" spec table now renders full-width below the summary (added `clear:both` — it was floating beside the gallery).
+  - YITH admin quote email no longer shows prices: child-theme override of `woocommerce/emails/request-quote.php` (+ plain) removes the Subtotal column (product + quantity + customer data only). No plugin edit; column headers translated (Producto/Cantidad).
+  - Customer now gets a Spanish confirmation email after submitting a quote (no YITH free customer email): hooked `ywraq_process` in the mu-plugin → wp_mail "Recibimos tu solicitud — Surtilec" (<1 h hábil + WhatsApp), From "Surtilec".
 - Product import pipeline (CSV → WooCommerce):
   - `scripts/import-products.sh` + `scripts/import-products.php` (run via `wp eval-file -`). Validator (dry-run): duplicate SKUs, unknown categoria/subcategoria, missing required-by-type (cables → calibre+conductores; variadores → potencia+voltaje_entrada), missing images (warning), malformed rows; Spanish report, nonzero exit on errors.
   - Importer: upsert by SKU (no duplicates), sets name/short desc/category+subcategory/global attribute terms (creating `pa_*` as needed)/status publish/catalog visible; featured image from `data/images/{imagen}` via sideload (skip+warn if missing); **never sets price**; idempotent (re-run = 0 changes). Mandatory backup baked in (live only, `--skip-backup` to skip).

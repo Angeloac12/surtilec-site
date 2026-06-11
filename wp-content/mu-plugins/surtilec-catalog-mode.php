@@ -149,10 +149,47 @@ add_filter(
 			'Customer message'                                               => 'Mensaje del cliente',
 			'Name:'                                                          => 'Nombre:',
 			'Email:'                                                         => 'Correo:',
+			'Product'                                                        => 'Producto',
+			'Quantity'                                                       => 'Cantidad',
 		);
 
 		return isset( $map[ $text ] ) ? $map[ $text ] : $translated;
 	},
 	10,
 	3
+);
+
+/**
+ * Send a Spanish confirmation email to the customer after they submit a YITH
+ * quote request. YITH free has no branded customer email, so we send our own
+ * on the `ywraq_process` action (fires with user_name/user_email on submit).
+ * From "Surtilec"; points to WhatsApp for a faster reply.
+ *
+ * @param array $args Quote request data (user_name, user_email, ...).
+ */
+add_action(
+	'ywraq_process',
+	function ( $args ) {
+		$email = isset( $args['user_email'] ) ? sanitize_email( $args['user_email'] ) : '';
+		if ( ! is_email( $email ) ) {
+			return;
+		}
+		$name = isset( $args['user_name'] ) ? $args['user_name'] : '';
+
+		$subject = 'Recibimos tu solicitud — Surtilec';
+		$body  = '<p>Hola ' . esc_html( $name ) . ',</p>';
+		$body .= '<p>Recibimos tu solicitud de cotización y te responderemos en menos de 1 hora hábil.</p>';
+		$body .= '<p>Para mayor rapidez, escríbenos por WhatsApp: '
+			. '<a href="https://wa.me/573204499026">https://wa.me/573204499026</a></p>';
+		$body .= '<p>Surtilec</p>';
+
+		$headers = array(
+			'Content-Type: text/html; charset=UTF-8',
+			'From: Surtilec <' . sanitize_email( get_option( 'admin_email' ) ) . '>',
+		);
+
+		wp_mail( $email, $subject, $body, $headers );
+	},
+	10,
+	1
 );

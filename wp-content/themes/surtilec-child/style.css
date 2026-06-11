@@ -4,7 +4,7 @@ Theme URI:    https://surtilec.com
 Description:  Child theme de GeneratePress para Surtilec — catálogo B2B de cables especiales y automatización industrial.
 Author:       Surtilec
 Template:     generatepress
-Version:      0.3.0
+Version:      0.3.1
 Text Domain:  surtilec
 */
 
@@ -199,7 +199,7 @@ input[type="submit"]:hover,
 /* ============================================================
    Catálogo — ficha de producto: tabla de especificaciones
    ============================================================ */
-.surtilec-specs { margin: var(--space-4) 0; }
+.surtilec-specs { margin: var(--space-4) 0; clear: both; width: 100%; }
 .surtilec-specs h2 { font-size: 1.4rem; margin-bottom: var(--space-2); }
 .surtilec-spec-table {
   width: 100%;
