@@ -9,6 +9,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+// Catalog templates: single product spec table, category FAQ/tiles, shop tiles.
+require_once get_stylesheet_directory() . '/inc/catalog-templates.php';
+
 /**
  * Load the Spanish text domain for the child theme.
  */
