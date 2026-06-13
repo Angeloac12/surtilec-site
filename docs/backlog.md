@@ -4,5 +4,8 @@ Pendientes que no están en el alcance de la sesión actual. Más reciente prime
 
 ## Polish (cosméticos)
 
-- **Category pages — orden del H1:** el título H1 de la categoría se renderiza **debajo** de los mosaicos de subcategorías; debería ir **primero** (título, luego mosaicos). Probablemente reordenar el hook del intro/título vs. `surtilec_subcategory_tiles` en `inc/catalog-templates.php`.
-- **Bloque CTA oscuro — ancho:** el bloque CTA se renderiza **a la derecha como una barra lateral** en la parte superior del contenido, en vez de **ancho completo debajo** del contenido. Revisar el hook/markup/CSS de `surtilec_render_cta_block` (probable: contenedor/float de WooCommerce o el hook `woocommerce_after_main_content` cayendo dentro del wrapper de contenido).
+- (ninguno pendiente)
+
+### Resueltos
+- ~~Category pages — orden del H1~~ (2026-06-13): intro + mosaicos movidos a `woocommerce_archive_description` (debajo del H1, no loop-guarded → categorías vacías siguen mostrando mosaicos).
+- ~~Bloque CTA — ancho~~ (2026-06-13): FAQ y CTA bajados a prioridad 5/6 en `woocommerce_after_main_content` (antes 10/12 → caían tras el cierre del wrapper, en el slot de sidebar). Ahora ancho completo dentro del contenido.

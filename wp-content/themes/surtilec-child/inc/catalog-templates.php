@@ -188,12 +188,13 @@ function surtilec_parse_faq( $raw ) {
 }
 
 /**
- * Category intro (native term description), rendered on an always-fire hook so
- * it shows even when the category has zero products. We remove WooCommerce's
- * default description output to avoid double rendering.
+ * Category intro (native term description). Rendered on woocommerce_archive_description
+ * so it lands BELOW the category H1 (inside the products-header, after the title) yet
+ * still shows on zero-product categories (the header is not loop-guarded). We remove
+ * WooCommerce's default description output to avoid double rendering.
  */
 remove_action( 'woocommerce_archive_description', 'woocommerce_taxonomy_archive_description', 10 );
-add_action( 'woocommerce_before_main_content', 'surtilec_category_intro', 22 );
+add_action( 'woocommerce_archive_description', 'surtilec_category_intro', 8 );
 function surtilec_category_intro() {
 	if ( ! is_product_category() ) {
 		return;
@@ -206,10 +207,11 @@ function surtilec_category_intro() {
 }
 
 /**
- * Subcategory tiles above the grid when the category has children.
- * On woocommerce_before_main_content so empty categories still show them.
+ * Subcategory tiles when the category has children. On woocommerce_archive_description
+ * (below the H1, after the intro) so the title comes first and empty categories still
+ * show them.
  */
-add_action( 'woocommerce_before_main_content', 'surtilec_subcategory_tiles', 25 );
+add_action( 'woocommerce_archive_description', 'surtilec_subcategory_tiles', 12 );
 function surtilec_subcategory_tiles() {
 	if ( ! is_product_category() ) {
 		return;
@@ -235,9 +237,10 @@ function surtilec_subcategory_tiles() {
 
 /**
  * FAQ accordion + FAQPage JSON-LD below the grid.
- * On woocommerce_after_main_content so it shows on empty categories too.
+ * Priority 5 (before the wrapper-end at 10) so it renders INSIDE the content
+ * wrapper at full width, not in the sidebar slot. Shows on empty categories too.
  */
-add_action( 'woocommerce_after_main_content', 'surtilec_category_faq', 10 );
+add_action( 'woocommerce_after_main_content', 'surtilec_category_faq', 5 );
 function surtilec_category_faq() {
 	if ( ! is_product_category() || ! function_exists( 'get_field' ) ) {
 		return;
@@ -276,9 +279,10 @@ function surtilec_category_faq() {
 
 /**
  * CTA block below the grid on category pages.
- * On woocommerce_after_main_content so it shows on empty categories too.
+ * Priority 6 (before the wrapper-end at 10, after the FAQ at 5) so it renders
+ * full-width inside the content wrapper, not in the sidebar slot.
  */
-add_action( 'woocommerce_after_main_content', 'surtilec_category_cta', 12 );
+add_action( 'woocommerce_after_main_content', 'surtilec_category_cta', 6 );
 function surtilec_category_cta() {
 	if ( ! is_product_category() ) {
 		return;
@@ -324,10 +328,10 @@ function surtilec_no_products_found() {
    ============================================================= */
 
 /**
- * Pillar category tiles above the product grid on the shop page.
- * On woocommerce_before_main_content so it is independent of the loop.
+ * Pillar category tiles on the shop page. On woocommerce_archive_description
+ * (below the H1) so the page title comes first, independent of the loop.
  */
-add_action( 'woocommerce_before_main_content', 'surtilec_pillar_tiles', 25 );
+add_action( 'woocommerce_archive_description', 'surtilec_pillar_tiles', 12 );
 function surtilec_pillar_tiles() {
 	if ( ! is_shop() ) {
 		return;

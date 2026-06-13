@@ -3,6 +3,11 @@
 Notable changes to the Surtilec project. Newest first.
 
 ## Unreleased
+- Homepage "Inicio" (page 30) + polish fixes (`feat/homepage`):
+  - Homepage construida con **bloques nativos de Gutenberg** (core blocks: group/heading/paragraph/buttons + core/html para SVG inline), no page builder, editable por el cliente sin código. Fuente de verdad en `docs/homepage-inicio.html`; aplicado a la BD vía `wp post update 30 -` (stdin). 7 secciones mobile-first: hero (gradiente industrial, doble CTA Cotizar/Catálogo), 5 tarjetas pillar estáticas → `/categoria/{slug}/`, value props (4, SVG inline), "Cómo cotizar" (3 pasos), industrias (chips), bloque de confianza con la **frase de entidad verbatim** (coincide palabra por palabra con la descripción Organization del schema, `surtilec-schema.php:64`, para AEO) + WhatsApp/Contáctanos, banda CTA final.
+  - CSS de homepage en `style.css` (mobile-first, usa las vars del design system; base 1 columna → `min-width:768px/1000px` expanden la grilla). Theme version 0.3.1 → 0.4.0.
+  - Polish (backlog resuelto): **H1 sobre mosaicos** — intro + mosaicos de subcategoría/pillar movidos de `woocommerce_before_main_content` a `woocommerce_archive_description` (debajo del H1, sigue mostrándose en categorías vacías). **CTA ancho completo** — FAQ/CTA de categoría bajados a prioridad 5/6 en `woocommerce_after_main_content` (antes 10/12 caían tras el cierre del wrapper → slot de sidebar).
+  - Verificado logueado (cookie admin): home con las 7 secciones, ambos CTAs, 5 links pillar, viewport y frase de entidad verbatim presentes; categoría con H1 antes de mosaicos y CTA dentro del contenido (antes del footer). Render móvil real pendiente de comprobar en navegador.
 - Performance pass (`feat/performance`):
   - LiteSpeed (server state) activado vs baseline: browser cache, minify CSS, minify JS, defer JS, lazyload de imágenes. Combine CSS/JS, minify HTML, quitar query strings y object cache se dejan OFF a propósito. Valores en vivo verificados con `wp litespeed-option get`.
   - Child theme `inc/catalog-templates.php`: tiles de categoría/subcategoría/pillars cachean `get_terms()` en transients 12 h con clave versionada (`surtilec_tiles_ver`), invalidada en alta/baja/edición de productos y categorías. Elimina la query repetida de términos por carga.
