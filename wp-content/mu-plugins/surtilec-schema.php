@@ -15,6 +15,19 @@ if ( ! defined( 'ABSPATH' ) ) {
 const SURTILEC_SCHEMA_WA = '+573204499026';
 
 /**
+ * Canonical Surtilec entity sentence — single source of truth.
+ *
+ * Used verbatim by BOTH the Organization JSON-LD (below) and the homepage trust
+ * band, so the two can never drift apart (required for AEO/entity consistency).
+ * Defined in a mu-plugin so it is available to the theme as well.
+ */
+if ( ! function_exists( 'surtilec_entity_sentence' ) ) {
+	function surtilec_entity_sentence() {
+		return 'Surtilec — distribuidor colombiano de cables de control, THHN, cables para variadores (VFD), cables especiales y productos de automatización industrial (variadores de frecuencia, PLC, HMI). Despachos a toda Colombia desde Bogotá.';
+	}
+}
+
+/**
  * Output the combined JSON-LD graph in the head.
  */
 add_action( 'wp_head', 'surtilec_schema_output', 20 );
@@ -61,7 +74,7 @@ function surtilec_schema_organization() {
 		'@id'         => home_url( '/#organization' ),
 		'name'        => 'Surtilec',
 		'url'         => home_url( '/' ),
-		'description' => 'Surtilec — distribuidor colombiano de cables de control, THHN, cables para variadores (VFD), cables especiales y productos de automatización industrial (variadores de frecuencia, PLC, HMI). Despachos a toda Colombia desde Bogotá.',
+		'description' => surtilec_entity_sentence(),
 		'sameAs'      => array(),
 	);
 }
