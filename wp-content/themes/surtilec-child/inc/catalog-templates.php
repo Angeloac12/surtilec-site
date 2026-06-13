@@ -23,6 +23,49 @@ function surtilec_wa_link( $message ) {
 	return 'https://wa.me/' . SURTILEC_WA_NUMBER . '?text=' . rawurlencode( $message );
 }
 
+/**
+ * Tile-cache version. Bumped on product/category changes so the version-keyed
+ * tile transients invalidate at once (counts stay correct).
+ */
+function surtilec_tiles_ver() {
+	return (int) get_option( 'surtilec_tiles_ver', 1 );
+}
+function surtilec_bump_tiles_ver() {
+	update_option( 'surtilec_tiles_ver', surtilec_tiles_ver() + 1 );
+}
+add_action( 'save_post_product', 'surtilec_bump_tiles_ver' );
+add_action(
+	'deleted_post',
+	function ( $post_id ) {
+		if ( 'product' === get_post_type( $post_id ) ) {
+			surtilec_bump_tiles_ver();
+		}
+	}
+);
+foreach ( array( 'created_product_cat', 'edited_product_cat', 'delete_product_cat' ) as $surtilec_cat_hook ) {
+	add_action( $surtilec_cat_hook, 'surtilec_bump_tiles_ver' );
+}
+
+/**
+ * get_terms wrapped in a version-keyed transient (12h).
+ *
+ * @param string $key_suffix Cache key suffix.
+ * @param array  $args       get_terms args.
+ * @return array
+ */
+function surtilec_cached_terms( $key_suffix, $args ) {
+	$key   = 'surtilec_tiles_' . $key_suffix . '_' . surtilec_tiles_ver();
+	$terms = get_transient( $key );
+	if ( false === $terms ) {
+		$terms = get_terms( $args );
+		if ( is_wp_error( $terms ) ) {
+			return array();
+		}
+		set_transient( $key, $terms, 12 * HOUR_IN_SECONDS );
+	}
+	return $terms;
+}
+
 /* =============================================================
    PART A — Single product
    ============================================================= */
@@ -172,14 +215,15 @@ function surtilec_subcategory_tiles() {
 		return;
 	}
 	$term     = get_queried_object();
-	$children = get_terms(
+	$children = surtilec_cached_terms(
+		'subcat_' . $term->term_id,
 		array(
 			'taxonomy'   => 'product_cat',
 			'parent'     => $term->term_id,
 			'hide_empty' => false,
 		)
 	);
-	if ( empty( $children ) || is_wp_error( $children ) ) {
+	if ( empty( $children ) ) {
 		return;
 	}
 	echo '<ul class="surtilec-tiles surtilec-subcat-tiles">';
@@ -288,7 +332,8 @@ function surtilec_pillar_tiles() {
 	if ( ! is_shop() ) {
 		return;
 	}
-	$parents = get_terms(
+	$parents = surtilec_cached_terms(
+		'pillars',
 		array(
 			'taxonomy'   => 'product_cat',
 			'parent'     => 0,
@@ -296,7 +341,7 @@ function surtilec_pillar_tiles() {
 			'exclude'    => array( (int) get_option( 'default_product_cat' ) ), // Uncategorized.
 		)
 	);
-	if ( empty( $parents ) || is_wp_error( $parents ) ) {
+	if ( empty( $parents ) ) {
 		return;
 	}
 	echo '<ul class="surtilec-tiles surtilec-pillar-tiles">';

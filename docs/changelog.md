@@ -3,6 +3,10 @@
 Notable changes to the Surtilec project. Newest first.
 
 ## Unreleased
+- Performance pass (`feat/performance`):
+  - LiteSpeed (server state) activado vs baseline: browser cache, minify CSS, minify JS, defer JS, lazyload de imágenes. Combine CSS/JS, minify HTML, quitar query strings y object cache se dejan OFF a propósito. Valores en vivo verificados con `wp litespeed-option get`.
+  - Child theme `inc/catalog-templates.php`: tiles de categoría/subcategoría/pillars cachean `get_terms()` en transients 12 h con clave versionada (`surtilec_tiles_ver`), invalidada en alta/baja/edición de productos y categorías. Elimina la query repetida de términos por carga.
+  - `docs/perf-baseline.md` (antes) + `docs/perf-results.md` (después). Nota: TTFB "after" no se capturó limpiamente (re-medición SSH autenticada inestable, se colgaba pese a `--max-time`); cambios confirmados vía `litespeed-option get`. Re-medir manual con PageSpeed tras lanzar el dominio.
 - Bug fixes (manual testing round):
   - Single product: "Especificaciones" spec table now renders full-width below the summary (added `clear:both` — it was floating beside the gallery).
   - YITH admin quote email no longer shows prices: child-theme override of `woocommerce/emails/request-quote.php` (+ plain) removes the Subtotal column (product + quantity + customer data only). No plugin edit; column headers translated (Producto/Cantidad).
