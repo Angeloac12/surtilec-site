@@ -4,9 +4,42 @@ Theme URI:    https://surtilec.com
 Description:  Child theme de GeneratePress para Surtilec — catálogo B2B de cables especiales y automatización industrial.
 Author:       Surtilec
 Template:     generatepress
-Version:      0.4.0
+Version:      0.5.0
 Text Domain:  surtilec
 */
+
+/* ============================================================
+   Self-hosted fonts (SIL OFL) — no Google CDN at runtime.
+   Archivo + IBM Plex Sans are variable (one woff2 each).
+   ============================================================ */
+@font-face {
+  font-family: "Archivo";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("assets/fonts/archivo-var.woff2") format("woff2");
+}
+@font-face {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 100 700;
+  font-display: swap;
+  src: url("assets/fonts/plexsans-var.woff2") format("woff2");
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/fonts/plexmono-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/fonts/plexmono-500.woff2") format("woff2");
+}
 
 :root {
   /* Paleta industrial */
@@ -24,9 +57,20 @@ Text Domain:  surtilec
   --color-dark-hover:   #163A5C;
   --color-accent-hover: #D8690A;
 
-  /* Stack de fuentes del sistema (sin Google Fonts) */
+  /* Stack de fuentes del sistema (fallback) */
   --font-system: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+  /* Tipografía autoalojada — dirección "Acero" */
+  --font-display: "Archivo", var(--font-system);
+  --font-body:    "IBM Plex Sans", var(--font-system);
+  --font-mono:    "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+
+  /* Tonos industriales (dark) para portada y chrome */
+  --ink-900:  #0C1722; /* casi negro acero */
+  --ink-800:  #0F2030;
+  --ink-navy: #0F2A43; /* azul de marca */
+  --paper:    #F4F5F2; /* corte claro para logos */
+  --hairline: rgba(255, 255, 255, 0.10);
 
   /* Escala tipográfica y espaciado */
   --space-1: 0.5rem;
@@ -39,19 +83,21 @@ Text Domain:  surtilec
 }
 
 body {
-  font-family: var(--font-system);
+  font-family: var(--font-body);
   color: var(--gray-900);
   line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* ============================================================
    Tipografía — industrial, limpia, con aire
    ============================================================ */
 h1, h2, h3, h4 {
+  font-family: var(--font-display);
   color: var(--color-dark);
-  line-height: 1.2;
-  letter-spacing: -0.01em;
-  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  font-weight: 800;
 }
 h1 { font-size: clamp(1.9rem, 4vw, 2.6rem); margin-bottom: var(--space-3); }
 h2 { font-size: clamp(1.5rem, 3vw, 2rem);   margin-bottom: var(--space-2); }
@@ -331,167 +377,297 @@ input[type="submit"]:hover,
 }
 
 /* ============================================================
-   Homepage (page "Inicio") — mobile-first
-   Sections are full-bleed bands (align:full); inner content is
-   centered and capped at --content-max for readability.
+   REDISEÑO "Acero" — barra utilitaria, mega menú, portada
+   (dirección dark industrial; mobile-first)
    ============================================================ */
 
-/* Shared button variants used on the homepage */
-.surtilec-btn-primary .wp-block-button__link {
-  background: var(--color-accent);
-  color: #fff;
-}
-.surtilec-btn-primary .wp-block-button__link:hover { background: var(--color-accent-hover); }
-.surtilec-btn-secondary.is-style-outline .wp-block-button__link,
-.surtilec-btn-secondary .wp-block-button__link {
-  background: transparent;
-  color: #fff;
-  box-shadow: inset 0 0 0 2px currentColor;
-}
-.surtilec-btn-secondary .wp-block-button__link:hover { background: rgba(255, 255, 255, 0.12); }
-.surtilec-btn-whatsapp .wp-block-button__link { background: #25d366; color: #06351c; }
-.surtilec-btn-whatsapp .wp-block-button__link:hover { background: #1faa51; color: #fff; }
-
-.surtilec-section { padding: var(--space-5) var(--space-2); }
-.surtilec-section > *,
-.surtilec-hero > * { max-width: var(--content-max); margin-left: auto; margin-right: auto; }
-
-/* --- 1. Hero --- */
-.surtilec-hero {
-  padding: var(--space-5) var(--space-2);
-  text-align: center;
-  color: #fff;
-  background:
-    radial-gradient(circle at 20% 20%, rgba(242, 120, 12, 0.18), transparent 45%),
-    linear-gradient(135deg, var(--color-dark) 0%, #0b2036 100%);
-}
-.surtilec-hero-title { color: #fff; max-width: 18ch; }
-.surtilec-hero-sub {
+/* ---- Barra utilitaria superior ---- */
+.surtilec-utilitybar {
+  background: var(--ink-900);
   color: var(--gray-300);
-  font-size: 1.15rem;
-  max-width: 46ch;
+  font-size: 0.8rem;
+  border-bottom: 1px solid var(--hairline);
 }
-.surtilec-hero-cta { justify-content: center; }
+.surtilec-utilitybar-inner {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  padding: 0.5rem clamp(1rem, 4vw, 2.5rem);
+  flex-wrap: wrap;
+}
+.su-util-item { display: inline-flex; align-items: center; gap: 0.45em; }
+.su-util-phone, .su-util-wa { color: #fff; text-decoration: none; font-weight: 500; }
+.su-util-phone:hover, .su-util-wa:hover { color: var(--color-accent); }
+.su-util-wa svg { color: #25d366; }
+.su-util-sep { flex: 1 1 auto; }
+.su-util-claim { color: var(--gray-300); font-family: var(--font-mono); font-size: 0.74rem; letter-spacing: 0.02em; }
+.su-util-strong { color: #fff; }
+.su-util-strong::before { content: "● "; color: var(--color-accent); }
+@media (max-width: 720px) {
+  .su-util-sep, .su-util-claim { display: none; }
+  .su-util-strong { display: inline-flex; }
+  .su-util-strong::before { content: ""; }
+}
 
-/* --- 2. Pillar cards --- */
-.surtilec-pillar-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--space-2);
-  margin-top: var(--space-3);
-}
-.surtilec-pillar-card {
-  border: 1px solid var(--gray-300);
-  border-radius: var(--radius);
-  padding: var(--space-3);
-  background: #fff;
-  transition: box-shadow 0.15s ease, transform 0.15s ease;
-}
-.surtilec-pillar-card:hover {
-  box-shadow: 0 6px 20px rgba(15, 42, 67, 0.12);
-  transform: translateY(-2px);
-}
-.surtilec-pillar-icon { color: var(--color-accent); display: inline-flex; }
-.surtilec-pillar-name { margin: var(--space-1) 0 0.3em; font-size: 1.15rem; }
-.surtilec-pillar-name a { text-decoration: none; color: var(--color-dark); }
-.surtilec-pillar-name a:hover { color: var(--color-accent); }
-.surtilec-pillar-desc { color: var(--gray-700); margin: 0; font-size: 0.95rem; }
+/* ---- Menú principal: tipografía + mega panel ---- */
+.main-navigation .main-nav ul li a { font-weight: 600; }
+.main-navigation { position: relative; }
 
-/* --- 3. Value props --- */
-.surtilec-valueprops-band { background: var(--gray-100); }
-.surtilec-valueprops {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--space-3);
-  text-align: center;
+.surtilec-mega { list-style: none; }
+.surtilec-mega-inner { padding: 0; }
+/* Mobile-first: el mega se muestra apilado dentro del menú móvil */
+.surtilec-mega .surtilec-mega-grid { display: grid; grid-template-columns: 1fr; }
+.surtilec-mega-col { padding: 0.6rem 1rem; }
+.surtilec-mega-head {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 800;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.3rem 0;
 }
-.surtilec-vp-icon {
+.surtilec-mega-head:hover { color: var(--color-accent); }
+.surtilec-mega-list { list-style: none; margin: 0.2rem 0 0; padding: 0; }
+.surtilec-mega-list li a {
+  display: block;
+  color: var(--gray-300);
+  text-decoration: none;
+  font-size: 0.92rem;
+  padding: 0.28rem 0;
+}
+.surtilec-mega-list li a:hover { color: #fff; }
+.surtilec-mega-all,
+.surtilec-mega-cta {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
   color: var(--color-accent);
-  display: inline-flex;
-  padding: 0.6em;
-  border-radius: 50%;
-  background: rgba(242, 120, 12, 0.1);
+  text-decoration: none;
+  letter-spacing: 0.04em;
 }
-.surtilec-vp-title { font-size: 1.1rem; margin: var(--space-1) 0 0.3em; }
-.surtilec-vp-text { color: var(--gray-700); margin: 0; font-size: 0.95rem; }
+.surtilec-mega-cta { display: inline-block; margin: 0.4rem 1rem 0.2rem; }
 
-/* --- 4. Steps --- */
-.surtilec-steps {
-  list-style: none;
-  margin: var(--space-3) 0 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--space-3);
-  counter-reset: none;
+/* Desktop: panel desplegable oscuro a todo el ancho del nav */
+@media (min-width: 769px) {
+  .surtilec-has-mega { position: static !important; }
+  .surtilec-mega {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    display: block;
+    background: var(--ink-900);
+    border-top: 2px solid var(--color-accent);
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.35);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(6px);
+    transition: opacity 0.16s ease, transform 0.16s ease, visibility 0.16s;
+    z-index: 200;
+  }
+  .surtilec-has-mega:hover > .surtilec-mega,
+  .surtilec-has-mega:focus-within > .surtilec-mega {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
+  .surtilec-mega-inner {
+    max-width: var(--content-max);
+    margin: 0 auto;
+    padding: 1.8rem clamp(1rem, 4vw, 2.5rem) 1.4rem;
+  }
+  .surtilec-mega .surtilec-mega-grid {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.6rem;
+  }
+  .surtilec-mega-col {
+    padding: 0;
+    border-left: 1px solid var(--hairline);
+    padding-left: 1.2rem;
+  }
+  .surtilec-mega-col:first-child { border-left: 0; padding-left: 0; }
+  .surtilec-mega-head { border-bottom: 1px solid var(--hairline); padding-bottom: 0.5rem; margin-bottom: 0.5rem; }
 }
-.surtilec-step { text-align: center; }
-.surtilec-step-num {
+
+/* ============================================================
+   Botones del rediseño — el primario SIEMPRE naranja sólido
+   ============================================================ */
+.su-btn {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: 50%;
-  background: var(--color-dark);
-  color: #fff;
-  font-weight: 700;
-  font-size: 1.2rem;
-}
-.surtilec-step-title { font-size: 1.05rem; margin: var(--space-1) 0 0.3em; }
-.surtilec-step-text { color: var(--gray-700); margin: 0; font-size: 0.95rem; }
-
-/* --- 5. Industries --- */
-.surtilec-industries {
-  list-style: none;
-  margin: var(--space-3) 0 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-1);
-  justify-content: center;
-}
-.surtilec-industry {
-  border: 1px solid var(--gray-300);
-  border-radius: 999px;
-  padding: 0.5em 1.1em;
+  gap: 0.5em;
+  font-family: var(--font-body);
   font-weight: 600;
-  color: var(--color-dark);
-  background: #fff;
+  font-size: 1rem;
+  line-height: 1;
+  padding: 0.95em 1.7em;
+  border-radius: var(--radius);
+  border: 2px solid transparent;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease, transform 0.15s ease, color 0.15s ease;
 }
+.su-btn-primary { background: var(--color-accent); color: #fff; }
+.su-btn-primary:hover { background: var(--color-accent-hover); color: #fff; transform: translateY(-1px); }
+.su-btn-ghost { background: transparent; color: #fff; border-color: rgba(255, 255, 255, 0.35); }
+.su-btn-ghost:hover { border-color: #fff; background: rgba(255, 255, 255, 0.08); color: #fff; }
+.su-btn-whatsapp { background: #25d366; color: #06351c; }
+.su-btn-whatsapp:hover { background: #1faa51; color: #fff; }
+.su-btn-dark { background: var(--ink-900); color: #fff; }
+.su-btn-dark:hover { background: #000; color: #fff; transform: translateY(-1px); }
+.su-btn-ghost-dark { background: transparent; color: var(--ink-900); border-color: rgba(12, 23, 34, 0.4); }
+.su-btn-ghost-dark:hover { border-color: var(--ink-900); background: rgba(12, 23, 34, 0.06); color: var(--ink-900); }
 
-/* --- 6. Trust / entity --- */
-.surtilec-trust {
-  background: var(--color-dark);
+/* ============================================================
+   Estructura de secciones — full-bleed + contenedor interno
+   ============================================================ */
+body.home { overflow-x: hidden; } /* contiene el sangrado a viewport */
+.surtilec-home-acero .su-section {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  padding-block: clamp(3.5rem, 7vw, 6rem);
+}
+.surtilec-home-acero .su-inner {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding-inline: clamp(1rem, 4vw, 2.5rem);
+}
+.su-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  font-weight: 500;
+  margin: 0 0 1rem;
+}
+.su-eyebrow-center { text-align: center; }
+.su-eyebrow-dark { color: var(--ink-navy); }
+.su-h2 { color: #fff; font-size: clamp(1.7rem, 3.4vw, 2.6rem); margin: 0; }
+.su-h2-center { text-align: center; }
+
+/* Bandas tonales */
+.su-band-steel  { background: var(--ink-800); color: #fff; }
+.su-band-navy   { background: var(--ink-navy); color: #fff; }
+.su-band-paper  { background: var(--paper); color: var(--ink-navy); }
+.su-band-accent { background: var(--color-accent); color: #fff; text-align: center; }
+
+/* ---- 1. HERO ---- */
+.su-hero { background: var(--ink-900); color: #fff; position: relative; overflow: hidden; padding-block: 0; }
+.su-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(900px 420px at 12% 0%, rgba(242, 120, 12, 0.20), transparent 60%),
+    repeating-linear-gradient(115deg, rgba(255, 255, 255, 0.035) 0 1px, transparent 1px 26px),
+    linear-gradient(160deg, #0C1722 0%, #0F2433 55%, #0A1320 100%);
+  z-index: 0;
+}
+.su-hero.has-photo::before {
+  background:
+    linear-gradient(90deg, rgba(8, 16, 24, 0.92) 0%, rgba(8, 16, 24, 0.72) 45%, rgba(8, 16, 24, 0.45) 100%),
+    var(--su-hero-bg);
+  background-size: cover;
+  background-position: center;
+}
+.su-hero-inner { position: relative; z-index: 1; padding-block: clamp(4rem, 12vh, 8.5rem); }
+.su-hero-title { color: #fff; font-size: clamp(2.4rem, 6vw, 4.6rem); line-height: 1.04; max-width: 16ch; margin: 0 0 1.2rem; }
+.su-hero-sub { color: var(--gray-300); font-size: clamp(1.05rem, 2vw, 1.35rem); max-width: 46ch; margin: 0 0 2rem; }
+.su-hero-cta { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+/* ---- 2. VALUE PROPS ---- */
+.su-vp-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; }
+.su-vp-icon { color: var(--color-accent); display: inline-flex; padding: 0.7em; border: 1px solid var(--hairline); border-radius: 10px; }
+.su-vp-title { color: #fff; font-size: 1.1rem; margin: 0.9rem 0 0.3rem; }
+.su-vp-text { color: var(--gray-300); margin: 0; font-size: 0.95rem; }
+
+/* ---- 3. PILLARS (rejilla con hairlines tipo plano técnico) ---- */
+.su-pillars { background: var(--ink-900); color: #fff; }
+.su-pillar-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1px;
+  background: var(--hairline);
+  border: 1px solid var(--hairline);
+  margin-top: 2.5rem;
+}
+.su-pillar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.8rem;
+  background: var(--ink-900);
+  text-decoration: none;
   color: #fff;
-  text-align: center;
+  transition: background-color 0.18s ease;
 }
-.surtilec-entity {
-  max-width: 60ch;
-  font-size: 1.15rem;
-  line-height: 1.6;
-  color: #fff;
-}
-.surtilec-trust-cta { justify-content: center; margin-top: var(--space-2); }
+.su-pillar:hover { background: var(--ink-800); }
+.su-pillar-icon { color: var(--color-accent); }
+.su-pillar-name { font-family: var(--font-display); font-weight: 800; font-size: 1.2rem; color: #fff; }
+.su-pillar-desc { color: var(--gray-300); font-size: 0.95rem; flex: 1; margin: 0; }
+.su-pillar-go { font-family: var(--font-mono); font-size: 0.76rem; letter-spacing: 0.04em; color: var(--color-accent); opacity: 0; transform: translateX(-4px); transition: opacity 0.18s ease, transform 0.18s ease; }
+.su-pillar:hover .su-pillar-go { opacity: 1; transform: none; }
 
-/* --- 7. Final CTA band --- */
-.surtilec-cta-band {
-  background: var(--color-accent);
-  text-align: center;
-  padding: var(--space-5) var(--space-2);
+/* ---- 4. STEPS ---- */
+.su-step-grid { list-style: none; margin: 2.5rem 0 0; padding: 0; display: grid; grid-template-columns: 1fr; gap: 2rem; counter-reset: su; }
+.su-step { text-align: left; }
+.su-step-num {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 2.6rem; height: 2.6rem; border-radius: 50%;
+  background: var(--color-accent); color: #fff;
+  font-family: var(--font-display); font-weight: 800; font-size: 1.2rem;
+  margin-bottom: 0.8rem;
 }
-.surtilec-cta-band-title { color: #fff; }
-.surtilec-cta-band-text { color: #fff; max-width: 46ch; margin-left: auto; margin-right: auto; }
-.surtilec-cta-band .surtilec-btn-primary .wp-block-button__link { background: var(--color-dark); }
-.surtilec-cta-band .surtilec-btn-primary .wp-block-button__link:hover { background: var(--color-dark-hover); }
+.su-step-title { color: #fff; font-size: 1.1rem; margin: 0 0 0.3rem; }
+.su-step-text { color: var(--gray-300); margin: 0; font-size: 0.95rem; }
 
-/* --- Tablet / desktop --- */
+/* ---- 5. MARCAS ---- */
+.su-brand-row { list-style: none; margin: 1.6rem 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; align-items: center; }
+.su-brand-ph {
+  display: flex; align-items: center; justify-content: center;
+  height: 56px; min-width: 144px; padding: 0 1.4rem;
+  border: 1px solid var(--gray-300); border-radius: 8px; background: #fff;
+  color: var(--gray-500); font-family: var(--font-mono); letter-spacing: 0.05em; font-size: 0.95rem;
+  filter: grayscale(1); transition: filter 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+.su-brand-ph:hover { filter: none; color: var(--ink-navy); border-color: var(--gray-500); }
+
+/* ---- 6. INDUSTRIAS ---- */
+.su-industries { background: var(--ink-900); color: #fff; }
+.su-industry-row { list-style: none; margin: 2rem 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.7rem; justify-content: center; }
+.su-industry {
+  border: 1px solid var(--hairline); border-radius: 999px; padding: 0.55em 1.2em;
+  font-family: var(--font-mono); font-size: 0.85rem; letter-spacing: 0.02em; color: #fff;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+/* ---- 7. TRUST / ENTITY ---- */
+.su-trust-inner { text-align: center; max-width: 64ch; margin: 0 auto; }
+.su-trust-keyline { display: block; width: 48px; height: 3px; background: var(--color-accent); margin: 0 auto 1.6rem; }
+.su-entity { font-family: var(--font-display); font-weight: 600; color: #fff; font-size: clamp(1.2rem, 2.4vw, 1.7rem); line-height: 1.45; letter-spacing: -0.01em; margin: 0 0 1.8rem; }
+.su-trust-cta { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+/* ---- 8. FINAL CTA ---- */
+.su-finalcta-title { color: #fff; font-size: clamp(2rem, 4vw, 3rem); margin: 0 0 0.6rem; }
+.su-finalcta-text { color: rgba(255, 255, 255, 0.92); max-width: 46ch; margin: 0 auto 2rem; }
+.su-finalcta-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+/* ---- Reveal escalonado en carga (CSS puro) ---- */
+.su-reveal { opacity: 0; transform: translateY(14px); animation: suReveal 0.6s cubic-bezier(0.2, 0.7, 0.2, 1) forwards; animation-delay: calc(var(--d, 0) * 90ms); }
+@keyframes suReveal { to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .su-reveal { animation: none; opacity: 1; transform: none; } }
+
+/* ---- Responsive ---- */
+@media (min-width: 640px) {
+  .su-vp-grid { grid-template-columns: repeat(2, 1fr); }
+}
 @media (min-width: 768px) {
-  .surtilec-hero { padding: 5rem var(--space-2); }
-  .surtilec-pillar-grid { grid-template-columns: repeat(2, 1fr); }
-  .surtilec-valueprops { grid-template-columns: repeat(4, 1fr); }
-  .surtilec-steps { grid-template-columns: repeat(3, 1fr); }
+  .su-step-grid { grid-template-columns: repeat(3, 1fr); }
+  .su-pillar-grid { grid-template-columns: repeat(2, 1fr); }
 }
 @media (min-width: 1000px) {
-  .surtilec-pillar-grid { grid-template-columns: repeat(3, 1fr); }
+  .su-vp-grid { grid-template-columns: repeat(4, 1fr); }
+  .su-pillar-grid { grid-template-columns: repeat(5, 1fr); }
 }
