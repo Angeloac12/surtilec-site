@@ -175,6 +175,34 @@ function surtilec_mega_panel_html() {
 }
 
 /* =============================================================
+   Header primary CTA — always-visible solid-orange "Cotizar" button.
+   Injected into the navigation; placed at the far right via CSS.
+   ============================================================= */
+add_action( 'generate_inside_navigation', 'surtilec_header_cta', 20 );
+function surtilec_header_cta() {
+	echo '<a class="su-header-cta" href="' . esc_url( home_url( '/cotizar/solicitud/' ) ) . '">'
+		. '<span>Cotizar</span>'
+		. '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>'
+		. '</a>';
+}
+
+/* =============================================================
+   Condense-on-scroll — tiny vanilla JS (no jQuery), in footer.
+   ============================================================= */
+add_action(
+	'wp_enqueue_scripts',
+	function () {
+		wp_enqueue_script(
+			'surtilec-header',
+			get_stylesheet_directory_uri() . '/assets/js/surtilec-header.js',
+			array(),
+			wp_get_theme()->get( 'Version' ),
+			true
+		);
+	}
+);
+
+/* =============================================================
    Front page: suppress the page title (the hero is the opener).
    ============================================================= */
 add_filter(

@@ -15,6 +15,9 @@ require_once get_stylesheet_directory() . '/inc/catalog-templates.php';
 // Header chrome: utility bar, mega menu, font preload, front-page title hide.
 require_once get_stylesheet_directory() . '/inc/header.php';
 
+// Custom industrial footer (replaces the GeneratePress site-info bar).
+require_once get_stylesheet_directory() . '/inc/footer.php';
+
 // Homepage editable fields (ACF) + helper.
 require_once get_stylesheet_directory() . '/inc/homepage-fields.php';
 
