@@ -60,14 +60,20 @@ add_action(
 );
 
 /**
- * Force no sidebar on the catalog and all WooCommerce pages.
+ * Force no sidebar on the front page and all WooCommerce pages.
  *
- * Filters become later (faceted catalog); for now product/shop/taxonomy and
+ * The homepage is a full-bleed template (front-page.php); a sidebar column
+ * would shrink the content column and leave an empty gutter. Filters become
+ * later (faceted catalog); for now front page + product/shop/taxonomy and
  * cart/checkout use the full content width.
  */
 add_filter(
 	'generate_sidebar_layout',
 	function ( $layout ) {
+		if ( is_front_page() ) {
+			return 'no-sidebar';
+		}
+
 		if ( ! function_exists( 'is_woocommerce' ) ) {
 			return $layout;
 		}
