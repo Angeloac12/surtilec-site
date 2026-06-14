@@ -4,7 +4,7 @@ Theme URI:    https://surtilec.com
 Description:  Child theme de GeneratePress para Surtilec — catálogo B2B de cables especiales y automatización industrial.
 Author:       Surtilec
 Template:     generatepress
-Version:      0.5.2
+Version:      0.6.0
 Text Domain:  surtilec
 */
 
@@ -679,4 +679,114 @@ body.home #primary { max-width: 100%; width: 100%; margin: 0; }
 @media (min-width: 1000px) {
   .su-vp-grid { grid-template-columns: repeat(4, 1fr); }
   .su-pillar-grid { grid-template-columns: repeat(5, 1fr); }
+}
+
+/* ============================================================
+   HEADER upgrade — wordmark, CTA botón, condensar al hacer scroll
+   ============================================================ */
+.main-title { font-family: var(--font-display); font-weight: 800; letter-spacing: -0.02em; }
+.main-title a { color: var(--color-dark); }
+.main-title a::after { content: "."; color: var(--color-accent); } /* acento de marca */
+.site-logo img { transition: max-height 0.2s ease; }
+
+/* Botón CTA del header — siempre naranja sólido */
+.su-header-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  background: var(--color-accent);
+  color: #fff;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.95rem;
+  line-height: 1;
+  padding: 0.7em 1.15em;
+  margin-left: 0.9rem;
+  border-radius: var(--radius);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 0.15s ease, transform 0.15s ease;
+}
+.su-header-cta:hover { background: var(--color-accent-hover); color: #fff; transform: translateY(-1px); }
+.su-header-cta svg { transition: transform 0.15s ease; }
+.su-header-cta:hover svg { transform: translateX(2px); }
+
+/* Condensar al hacer scroll (clase en body vía JS) */
+.site-header { transition: box-shadow 0.2s ease; }
+.inside-header { transition: padding-top 0.2s ease, padding-bottom 0.2s ease; }
+.su-scrolled .site-header { box-shadow: 0 6px 22px rgba(15, 42, 67, 0.12); }
+.su-scrolled .inside-header { padding-top: 10px !important; padding-bottom: 10px !important; }
+.su-scrolled .main-title { font-size: 1.3rem; }
+.su-scrolled .site-logo img { max-height: 38px; }
+
+@media (max-width: 768px) {
+  .su-header-cta { margin-left: 0; width: 100%; justify-content: center; order: 2; margin-top: var(--space-1); }
+}
+
+/* ============================================================
+   FOOTER industrial (reemplaza el site-info de GP)
+   ============================================================ */
+.site-info { display: none !important; } /* oculta el bar de copyright por defecto de GP */
+
+.surtilec-footer { background: var(--ink-900); color: var(--gray-300); }
+
+.su-foot-cta { background: var(--ink-800); border-top: 2px solid var(--color-accent); }
+.su-foot-cta-inner {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: 1.6rem clamp(1rem, 4vw, 2.5rem);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.su-foot-cta-title { font-family: var(--font-display); font-weight: 800; color: #fff; font-size: 1.4rem; margin: 0; }
+.su-foot-cta-sub { margin: 0.2rem 0 0; color: var(--gray-300); }
+
+.su-foot-main { padding: clamp(2.5rem, 5vw, 4rem) 0; }
+.su-foot-grid {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding-inline: clamp(1rem, 4vw, 2.5rem);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.2rem;
+}
+.su-foot-logo { font-family: var(--font-display); font-weight: 800; color: #fff; font-size: 1.5rem; letter-spacing: -0.02em; }
+.su-foot-logo::after { content: "."; color: var(--color-accent); }
+.su-foot-tagline { margin: 0.9rem 0 0.5rem; color: var(--gray-300); max-width: 34ch; font-size: 0.95rem; }
+.su-foot-nap { color: var(--gray-500); font-size: 0.9rem; margin: 0; }
+.su-foot-social { margin-top: 1.1rem; display: flex; gap: 0.6rem; }
+.su-foot-soc {
+  display: inline-flex; width: 40px; height: 40px;
+  align-items: center; justify-content: center;
+  border: 1px solid var(--hairline); border-radius: 8px; color: #fff;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+.su-foot-soc:hover { background: var(--color-accent); border-color: var(--color-accent); color: #fff; }
+
+.su-foot-head { font-family: var(--font-mono); font-size: 0.76rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--color-accent); margin: 0 0 1rem; }
+.su-foot-col ul { list-style: none; margin: 0; padding: 0; }
+.su-foot-col li { margin-bottom: 0.55rem; }
+.su-foot-col a, .su-foot-contact li { color: var(--gray-300); text-decoration: none; font-size: 0.95rem; }
+.su-foot-col a:hover { color: #fff; }
+.su-foot-wa { margin-top: 1.1rem; }
+
+.su-foot-legal { border-top: 1px solid var(--hairline); }
+.su-foot-legal-inner {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: 1.1rem clamp(1rem, 4vw, 2.5rem);
+  display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap;
+  font-size: 0.85rem; color: var(--gray-500);
+}
+.su-foot-legal-links a { color: var(--gray-500); text-decoration: none; }
+.su-foot-legal-links a:hover { color: #fff; }
+
+@media (min-width: 600px) {
+  .su-foot-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (min-width: 920px) {
+  .su-foot-grid { grid-template-columns: 1.7fr 1fr 1fr 1.2fr; }
 }

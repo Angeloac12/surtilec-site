@@ -4,7 +4,9 @@ Pendientes que no están en el alcance de la sesión actual. Más reciente prime
 
 ## Polish (cosméticos)
 
-- (ninguno pendiente)
+- **Logo:** subir el logo real en Apariencia → Personalizar → Identidad del sitio → Logotipo (soporte `custom-logo` ya activo). Mientras tanto se muestra el wordmark "Surtilec." con punto naranja.
+- **Footer — legal:** crear páginas "Política de privacidad" (`/politica-de-privacidad/`) y "Términos" (`/terminos/`); el footer enlaza esos slugs automáticamente cuando existan.
+- **Footer — social/correo:** añadir URL de LinkedIn y un correo de contacto público (p. ej. `ventas@surtilec.com`) cuando existan, para sumarlos al footer.
 
 ### Resueltos
 - ~~Category pages — orden del H1~~ (2026-06-13): intro + mosaicos movidos a `woocommerce_archive_description` (debajo del H1, no loop-guarded → categorías vacías siguen mostrando mosaicos).

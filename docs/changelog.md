@@ -3,6 +3,11 @@
 Notable changes to the Surtilec project. Newest first.
 
 ## Unreleased
+- Header + footer profesionales (`feat/header-footer`):
+  - **Footer industrial** (`inc/footer.php`) que reemplaza el `site-info` de GeneratePress: se vacía su copyright vía filtro `generate_copyright` (adiós "Creado con GeneratePress") y se oculta `.site-info`; se renderiza un footer oscuro en `generate_before_footer` con franja CTA (oculta en la portada para no duplicar), 4 columnas (marca + tagline + NAP Bogotá + WhatsApp · **Líneas** desde la taxonomía en vivo · **Empresa** · **Contacto**) y barra legal (© + enlaces Privacidad/Términos solo si las páginas existen). Mobile → 1 columna.
+  - **Header:** botón CTA **"Cotizar" naranja sólido** siempre visible (`generate_inside_navigation`); wordmark con acento naranja (y soporte `custom-logo` para subir el logo real luego); **condensar al hacer scroll** vía JS vanilla sin jQuery (`assets/js/surtilec-header.js`, ~20 líneas, en footer) que alterna `body.su-scrolled` → header más delgado + sombra + logo más pequeño.
+  - Verificado logueado en portada **y** página interna (`/contacto/`): sin error PHP, CTA de header presente, footer (grid/heads/legal/copyright) presente, **sin "Creado con GeneratePress"**, `header.js` sirve 200. Theme 0.5.x → 0.6.0.
+  - Backlog: subir logo real, crear páginas Privacidad/Términos, añadir LinkedIn + correo público al footer.
 - Homepage redesign "Acero" + header chrome (`feat/homepage-redesign`):
   - **Tradeoff:** homepage now rendered by a child-theme `front-page.php` template (not Gutenberg blocks) for design control — full-bleed hero, section rhythm, crafted cards. Editability kept via **ACF fields** on the front page (hero antetítulo/título/subtítulo, imagen de fondo, textos+enlaces de CTA) with safe defaults; client edits in WP admin. Old block file `docs/homepage-inicio.html` retired (page 30 block content is now overridden by the template).
   - **Dirección visual "Acero"** (dark industrial): tonos acero/casi-negro con un único acento naranja decidido. Tipografía **autoalojada** (SIL OFL, sin CDN): Archivo (display, variable) + IBM Plex Sans (cuerpo, variable) + IBM Plex Mono (antetítulos/etiquetas) en `assets/fonts/*.woff2`, con `@font-face` `font-display:swap` y `<link rel=preload>` de los 3 woff2 críticos.
