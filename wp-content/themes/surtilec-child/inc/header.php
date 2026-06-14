@@ -168,23 +168,86 @@ function surtilec_mega_panel_html() {
 	}
 
 	echo '</div>'; // grid
+	echo '<div class="surtilec-mega-foot">';
 	echo '<a class="surtilec-mega-cta" href="' . esc_url( home_url( '/productos/' ) ) . '">Ver todo el catálogo →</a>';
+	echo '<a class="surtilec-mega-cta" href="' . esc_url( home_url( '/cotizar/subir-listado/' ) ) . '">Subir listado →</a>';
+	echo '</div>';
 	echo '</li>';
 	echo '</ul>';
 	return ob_get_clean();
 }
 
 /* =============================================================
-   Header primary CTA — always-visible solid-orange "Cotizar" button.
-   Injected into the navigation; placed at the far right via CSS.
+   Row 1 header tools (Graybar/Nassau two-row pattern): prominent
+   product search + WhatsApp + solid-orange "Cotizar" button, placed
+   beside the logo via generate_after_logo. The category menu lives in
+   Row 2 (GP nav set to "below header").
    ============================================================= */
-add_action( 'generate_inside_navigation', 'surtilec_header_cta', 20 );
-function surtilec_header_cta() {
-	echo '<a class="su-header-cta" href="' . esc_url( home_url( '/cotizar/solicitud/' ) ) . '">'
-		. '<span>Cotizar</span>'
-		. '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>'
-		. '</a>';
+// generate_after_logo only fires when a logo IMAGE exists; use the header-content
+// hook so the tools render whether the brand is a logo or the text site title.
+add_action( 'generate_after_header_content', 'surtilec_header_tools' );
+function surtilec_header_tools() {
+	$wa = function_exists( 'surtilec_wa_link' )
+		? surtilec_wa_link( 'Hola Surtilec, quiero una cotización.' )
+		: 'https://wa.me/573204499026';
+	?>
+	<div class="su-header-tools">
+		<div class="surtilec-nav-search">
+			<form role="search" method="get" class="surtilec-product-search" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+				<label class="screen-reader-text" for="surtilec-search-field"><?php esc_html_e( 'Buscar producto', 'surtilec' ); ?></label>
+				<input type="search" id="surtilec-search-field" name="s"
+					placeholder="<?php esc_attr_e( 'Buscar producto, ej: cable THHN 12 AWG', 'surtilec' ); ?>"
+					value="<?php echo esc_attr( get_search_query() ); ?>" />
+				<input type="hidden" name="post_type" value="product" />
+				<button type="submit" aria-label="<?php esc_attr_e( 'Buscar', 'surtilec' ); ?>">
+					<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+						<circle cx="11" cy="11" r="7" /><line x1="21" y1="21" x2="16.65" y2="16.65" />
+					</svg>
+				</button>
+			</form>
+		</div>
+		<a class="su-header-wa" href="<?php echo esc_url( $wa ); ?>" target="_blank" rel="noopener" aria-label="WhatsApp">
+			<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.32 4.95L2 22l5.3-1.38a9.9 9.9 0 0 0 4.74 1.2c5.46 0 9.9-4.44 9.9-9.9S17.5 2 12.04 2zm0 18.04c-1.5 0-2.97-.4-4.25-1.16l-.3-.18-3.15.82.84-3.07-.2-.32a8.2 8.2 0 0 1-1.26-4.36c0-4.54 3.7-8.23 8.24-8.23 4.54 0 8.23 3.69 8.23 8.23 0 4.54-3.69 8.27-8.2 8.27z"/></svg>
+		</a>
+		<a class="su-header-cta" href="<?php echo esc_url( home_url( '/cotizar/solicitud/' ) ); ?>">
+			<span>Cotizar</span>
+			<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+		</a>
+	</div>
+	<?php
 }
+
+/**
+ * De-duplicate "Cotizar": drop the top-level "Cotizar" menu item (and its
+ * children) from the primary menu — the orange Row 1 button is the single
+ * quote entry point. "Subir listado" is surfaced in the Catálogo mega instead.
+ */
+add_filter(
+	'wp_nav_menu_objects',
+	function ( $items, $args ) {
+		if ( empty( $args->theme_location ) || 'primary' !== $args->theme_location ) {
+			return $items;
+		}
+		$drop = array();
+		foreach ( $items as $item ) {
+			if ( 0 === (int) $item->menu_item_parent && 'cotizar' === sanitize_title( $item->title ) ) {
+				$drop[] = (int) $item->ID;
+			}
+		}
+		if ( empty( $drop ) ) {
+			return $items;
+		}
+		return array_filter(
+			$items,
+			function ( $item ) use ( $drop ) {
+				return ! in_array( (int) $item->ID, $drop, true )
+					&& ! in_array( (int) $item->menu_item_parent, $drop, true );
+			}
+		);
+	},
+	10,
+	2
+);
 
 /* =============================================================
    Condense-on-scroll — tiny vanilla JS (no jQuery), in footer.

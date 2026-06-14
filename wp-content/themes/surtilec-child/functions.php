@@ -121,31 +121,6 @@ add_filter(
 	}
 );
 
-/**
- * Persistent product search in the header navigation.
- *
- * A WooCommerce-scoped search (post_type=product) with a Spanish placeholder,
- * injected inside the primary navigation so it stays visible on every page.
- */
-add_action(
-	'generate_inside_navigation',
-	function () {
-		?>
-		<div class="surtilec-nav-search">
-			<form role="search" method="get" class="surtilec-product-search"
-				action="<?php echo esc_url( home_url( '/' ) ); ?>">
-				<label class="screen-reader-text" for="surtilec-search-field"><?php esc_html_e( 'Buscar producto', 'surtilec' ); ?></label>
-				<input type="search" id="surtilec-search-field" name="s"
-					placeholder="<?php esc_attr_e( 'Buscar producto, ej: cable THHN 12 AWG', 'surtilec' ); ?>"
-					value="<?php echo esc_attr( get_search_query() ); ?>" />
-				<input type="hidden" name="post_type" value="product" />
-				<button type="submit" aria-label="<?php esc_attr_e( 'Buscar', 'surtilec' ); ?>">
-					<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-						<circle cx="11" cy="11" r="7" /><line x1="21" y1="21" x2="16.65" y2="16.65" />
-					</svg>
-				</button>
-			</form>
-		</div>
-		<?php
-	}
-);
+// The product search now lives in Row 1 of the header (see surtilec_header_tools
+// in inc/header.php, hooked to generate_after_logo), alongside the WhatsApp and
+// Cotizar buttons. The primary menu sits in Row 2 (GP nav "below header").

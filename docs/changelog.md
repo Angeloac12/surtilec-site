@@ -3,6 +3,12 @@
 Notable changes to the Surtilec project. Newest first.
 
 ## Unreleased
+- Header de dos filas estilo distribuidor (`feat/header-two-row`):
+  - Referencias estudiadas (Graybar, Pro Wire, Nassau Electrical, Cables Colombia): patrón de **buscador prominente** + nav de categorías en una **segunda fila** + un único CTA de cotización.
+  - **Fila 1** (`.inside-header`): logo + **buscador de producto prominente** (crece al centro, `post_type=product`) + botón WhatsApp + botón **Cotizar** naranja. Renderizado en `generate_after_header_content` (no `generate_after_logo`, que solo dispara con logo-imagen). El buscador se movió aquí desde la navegación.
+  - **Fila 2** (`.main-navigation`, GP "nav below header"): banda de categorías a ancho completo — Inicio · **Catálogo ▾** (mega oscuro: 5 líneas + subcategorías + "Ver todo" y "Subir listado") · Contacto. Estado de servidor: `generate_settings.nav_position_setting = nav-below-header` (Customizer).
+  - **De-duplicado "Cotizar":** se elimina el ítem "Cotizar" del menú primario vía `wp_nav_menu_objects` (el botón naranja de la Fila 1 es el único punto de cotización); "Subir listado" se reubica en el mega.
+  - Verificado logueado: sin error PHP, `nav-below-header`, herramientas de Fila 1 presentes, menú Fila 2 = Inicio/Catálogo/Contacto (sin Cotizar duplicado), mega con Subir listado. Theme 0.6.0 → 0.7.0.
 - Header + footer profesionales (`feat/header-footer`):
   - **Footer industrial** (`inc/footer.php`) que reemplaza el `site-info` de GeneratePress: se vacía su copyright vía filtro `generate_copyright` (adiós "Creado con GeneratePress") y se oculta `.site-info`; se renderiza un footer oscuro en `generate_before_footer` con franja CTA (oculta en la portada para no duplicar), 4 columnas (marca + tagline + NAP Bogotá + WhatsApp · **Líneas** desde la taxonomía en vivo · **Empresa** · **Contacto**) y barra legal (© + enlaces Privacidad/Términos solo si las páginas existen). Mobile → 1 columna.
   - **Header:** botón CTA **"Cotizar" naranja sólido** siempre visible (`generate_inside_navigation`); wordmark con acento naranja (y soporte `custom-logo` para subir el logo real luego); **condensar al hacer scroll** vía JS vanilla sin jQuery (`assets/js/surtilec-header.js`, ~20 líneas, en footer) que alterna `body.su-scrolled` → header más delgado + sombra + logo más pequeño.

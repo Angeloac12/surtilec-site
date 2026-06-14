@@ -4,7 +4,7 @@ Theme URI:    https://surtilec.com
 Description:  Child theme de GeneratePress para Surtilec — catálogo B2B de cables especiales y automatización industrial.
 Author:       Surtilec
 Template:     generatepress
-Version:      0.6.0
+Version:      0.7.0
 Text Domain:  surtilec
 */
 
@@ -789,4 +789,56 @@ body.home #primary { max-width: 100%; width: 100%; margin: 0; }
 }
 @media (min-width: 920px) {
   .su-foot-grid { grid-template-columns: 1.7fr 1fr 1fr 1.2fr; }
+}
+
+/* ============================================================
+   HEADER de dos filas (patrón Graybar/Nassau)
+   Fila 1 (.inside-header): logo + buscador prominente + WhatsApp + Cotizar
+   Fila 2 (.main-navigation, "below header"): banda de categorías + mega
+   ============================================================ */
+.inside-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.inside-header .site-branding { flex: 0 0 auto; }
+
+.su-header-tools {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  min-width: 0;
+}
+.su-header-tools .surtilec-nav-search { flex: 1 1 auto; margin: 0; padding: 0; min-width: 0; }
+.su-header-tools .surtilec-product-search { max-width: 640px; width: 100%; margin: 0 auto; }
+.su-header-tools .surtilec-product-search input[type="search"] { padding: 0.72em 1em; font-size: 1rem; }
+.su-header-tools .surtilec-product-search button { padding: 0 1.1em; }
+
+.su-header-wa {
+  flex: 0 0 auto;
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 44px; height: 44px;
+  border-radius: var(--radius);
+  background: #25d366; color: #06351c; text-decoration: none;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+.su-header-wa:hover { background: #1faa51; color: #fff; }
+.su-header-tools .su-header-cta { margin-left: 0; flex: 0 0 auto; padding: 0.78em 1.2em; }
+
+/* Fila 2 — banda de navegación de categorías */
+.main-navigation { background: #fff; border-top: 1px solid var(--gray-100); border-bottom: 1px solid var(--gray-100); }
+.main-navigation .main-nav > ul > li > a { font-weight: 600; }
+
+/* Pie del mega con dos CTAs */
+.surtilec-mega-foot { display: flex; gap: 1.6rem; flex-wrap: wrap; }
+
+/* Móvil: las herramientas pasan a su propia línea, buscador a todo el ancho */
+@media (max-width: 880px) {
+  .inside-header { gap: 0.8rem; }
+  .su-header-tools { width: 100%; flex-wrap: wrap; gap: 0.6rem; }
+  .su-header-tools .surtilec-nav-search { order: 3; flex: 1 1 100%; }
+  .su-header-tools .surtilec-product-search { max-width: none; }
+  .su-header-wa, .su-header-tools .su-header-cta { flex: 1 1 auto; justify-content: center; }
 }
