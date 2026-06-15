@@ -162,3 +162,55 @@ function surtilec_cta_band( $args = array() ) {
 	</section>
 	<?php
 }
+
+/**
+ * Iconos SVG en línea reutilizables (24x24, stroke=currentColor).
+ * Disponible en todas las plantillas (a diferencia de surtilec_home_icon,
+ * que sólo se carga en la portada).
+ *
+ * @param string $name Clave del icono.
+ * @return string
+ */
+function surtilec_icon( $name ) {
+	$p = array(
+		'construccion' => '<path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-3"/><path d="M9 9v0M9 12v0M9 15v0"/>',
+		'manufactura'  => '<path d="M2 20h20"/><path d="M4 20V9l5 4V9l5 4V6l6 4v10"/>',
+		'oil-gas'      => '<path d="M12 2s6 6 6 11a6 6 0 0 1-12 0c0-5 6-11 6-11z"/>',
+		'mineria'      => '<path d="M14 3l7 7"/><path d="M3 21l9-9"/><path d="M9 7l8 8"/><path d="M5 11l2-4 4-2"/>',
+		'agroindustria'=> '<path d="M12 22V8"/><path d="M12 8c0-3 2-5 5-5 0 3-2 5-5 5z"/><path d="M12 12c0-3-2-5-5-5 0 3 2 5 5 5z"/>',
+		'oem'          => '<rect x="7" y="7" width="10" height="10" rx="1"/><path d="M10 2v3M14 2v3M10 19v3M14 19v3M2 10h3M2 14h3M19 10h3M19 14h3"/>',
+	);
+	$d = isset( $p[ $name ] ) ? $p[ $name ] : '';
+	return '<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' . $d . '</svg>';
+}
+
+/**
+ * Emite un ItemList JSON-LD a partir de pares {name,url}.
+ *
+ * @param array $items Lista de array{name:string,url:string}.
+ * @return void
+ */
+function surtilec_itemlist_schema( $items ) {
+	if ( empty( $items ) ) {
+		return;
+	}
+	$els = array();
+	$i   = 1;
+	foreach ( $items as $it ) {
+		if ( empty( $it['name'] ) ) {
+			continue;
+		}
+		$els[] = array(
+			'@type'    => 'ListItem',
+			'position' => $i++,
+			'name'     => $it['name'],
+			'url'      => isset( $it['url'] ) ? esc_url_raw( $it['url'] ) : '',
+		);
+	}
+	$schema = array(
+		'@context'        => 'https://schema.org',
+		'@type'           => 'ItemList',
+		'itemListElement' => $els,
+	);
+	echo '<script type="application/ld+json">' . wp_json_encode( $schema, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES ) . '</script>';
+}
