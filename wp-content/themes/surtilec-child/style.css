@@ -4,7 +4,7 @@ Theme URI:    https://surtilec.com
 Description:  Child theme de GeneratePress para Surtilec — catálogo B2B de cables especiales y automatización industrial.
 Author:       Surtilec
 Template:     generatepress
-Version:      0.10.0
+Version:      0.11.0
 Text Domain:  surtilec
 */
 
@@ -1031,3 +1031,84 @@ body.su-fullbleed #primary { max-width: 100%; width: 100%; margin: 0; }
   font-size: 1.05rem;
   line-height: 1.5;
 }
+
+/* ============================================================
+   RECURSOS / BLOG — índice (home.php) + artículo (single.php)
+   ============================================================ */
+
+/* Pestañas de categoría */
+.su-blog-tabs { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 2rem; }
+.su-blog-tab {
+  font-family: var(--font-mono); font-size: 0.8rem; letter-spacing: 0.03em;
+  padding: 0.5em 1em; border: 1px solid var(--hairline-dark); border-radius: 999px;
+  color: var(--gray-700); text-decoration: none; transition: border-color 0.15s ease, color 0.15s ease, background-color 0.15s ease;
+}
+.su-blog-tab:hover { border-color: var(--color-accent); color: var(--color-accent); }
+.su-blog-tab.is-active { background: var(--color-dark); color: #fff; border-color: var(--color-dark); }
+
+/* Rejilla + tarjetas de entrada */
+.su-post-grid { display: grid; grid-template-columns: 1fr; gap: clamp(1rem, 2.5vw, 1.6rem); }
+@media (min-width: 600px)  { .su-post-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1000px) { .su-post-grid { grid-template-columns: repeat(3, 1fr); } }
+.su-post-card {
+  background: var(--surface); border: 1px solid var(--hairline-dark); border-radius: var(--radius);
+  overflow: hidden; transition: border-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+}
+.su-post-card:hover { border-color: var(--color-accent); box-shadow: var(--card-shadow); transform: translateY(-2px); }
+.su-post-card-link { display: flex; flex-direction: column; height: 100%; text-decoration: none; color: var(--color-dark); }
+.su-post-card-img img { width: 100%; height: 170px; object-fit: cover; display: block; }
+.su-post-card-body { display: flex; flex-direction: column; gap: 0.5rem; padding: 1.2rem; flex: 1; }
+.su-post-card-tag {
+  align-self: flex-start; font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.06em;
+  text-transform: uppercase; color: var(--color-accent); background: rgba(242, 120, 12, 0.10);
+  padding: 0.25em 0.7em; border-radius: 4px; text-decoration: none;
+}
+.su-post-card-title { font-family: var(--font-display); font-weight: 800; font-size: 1.1rem; line-height: 1.2; color: var(--color-dark); }
+.su-post-card-excerpt { color: var(--gray-700); font-size: 0.92rem; flex: 1; }
+.su-post-card-meta { font-family: var(--font-mono); font-size: 0.72rem; color: var(--gray-500); display: flex; gap: 0.4rem; flex-wrap: wrap; }
+
+.su-blog-empty { text-align: center; padding: clamp(2rem, 5vw, 4rem) 0; color: var(--gray-700); }
+.su-blog-empty p { margin-bottom: 1.2rem; }
+
+/* Paginación */
+.su-pagination { margin-top: 2.5rem; }
+.su-pagination .nav-links { display: flex; gap: 0.4rem; flex-wrap: wrap; justify-content: center; }
+.su-pagination .page-numbers {
+  display: inline-flex; min-width: 2.4em; height: 2.4em; align-items: center; justify-content: center;
+  padding: 0 0.6em; border: 1px solid var(--hairline-dark); border-radius: var(--radius);
+  color: var(--gray-700); text-decoration: none; font-family: var(--font-mono); font-size: 0.85rem;
+}
+.su-pagination .page-numbers.current { background: var(--color-dark); color: #fff; border-color: var(--color-dark); }
+.su-pagination a.page-numbers:hover { border-color: var(--color-accent); color: var(--color-accent); }
+
+/* Artículo */
+.su-article-head { max-width: 62ch; }
+.su-article-head .su-post-card-tag { margin-bottom: 0.6rem; }
+.su-article-title { margin: 0.4rem 0 0.8rem; }
+.su-article-meta { font-family: var(--font-mono); font-size: 0.78rem; color: var(--gray-500); display: flex; gap: 0.5rem; flex-wrap: wrap; align-items: center; }
+.su-article-layout { display: grid; grid-template-columns: 1fr; gap: clamp(1.5rem, 4vw, 3rem); margin-top: 2rem; }
+@media (min-width: 900px) { .su-article-layout { grid-template-columns: minmax(0, 1fr) 280px; } }
+
+.su-article-body { font-size: 1.05rem; color: var(--gray-900); }
+.su-article-body > * { max-width: 70ch; }
+.su-article-body h2 { margin-top: 2rem; }
+.su-article-body h3 { margin-top: 1.4rem; }
+.su-article-body p, .su-article-body li { color: var(--gray-900); }
+.su-article-body ul, .su-article-body ol { padding-left: 1.3rem; }
+.su-article-body li { margin-bottom: 0.4rem; }
+.su-article-body img { max-width: 100%; height: auto; border-radius: var(--radius); }
+.su-article-hero { max-width: none; margin: 0 0 1.6rem; }
+.su-article-hero img { width: 100%; border-radius: var(--radius); }
+
+/* Sidebar sticky: TOC + mini CTA */
+.su-article-aside { align-self: start; }
+@media (min-width: 900px) { .su-article-aside { position: sticky; top: 96px; } }
+.su-toc { border-left: 2px solid var(--hairline-dark); padding-left: 1rem; }
+.su-toc-head { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gray-500); margin: 0 0 0.6rem; }
+.su-toc-list { list-style: none; margin: 0; padding: 0; }
+.su-toc-item a { display: block; color: var(--gray-700); text-decoration: none; font-size: 0.88rem; padding: 0.25rem 0 0.25rem 1rem; margin-left: -1rem; border-left: 2px solid transparent; }
+.su-toc-item.lvl-h3 a { padding-left: 1.8rem; font-size: 0.84rem; }
+.su-toc-item a:hover { color: var(--color-accent); }
+.su-toc-item a.is-active { color: var(--color-dark); border-left-color: var(--color-accent); font-weight: 600; }
+.su-toc-cta { margin-top: 1.5rem; padding: 1.2rem; background: var(--surface-alt); border-radius: var(--radius); }
+.su-toc-cta-text { font-weight: 700; color: var(--color-dark); margin: 0 0 0.7rem; }

@@ -99,6 +99,40 @@ add_filter(
 );
 
 /**
+ * Force no sidebar on the Recursos blog (index, single posts, post archives):
+ * single.php builds its own sticky TOC aside, so GP's stock sidebar column
+ * would compete with it.
+ */
+add_filter(
+	'generate_sidebar_layout',
+	function ( $layout ) {
+		if ( is_home() || is_singular( 'post' ) || is_category() || is_tag() || is_author() || is_date() ) {
+			return 'no-sidebar';
+		}
+		return $layout;
+	},
+	20
+);
+
+/**
+ * Load the article table-of-contents script only on single posts.
+ */
+add_action(
+	'wp_enqueue_scripts',
+	function () {
+		if ( is_singular( 'post' ) ) {
+			wp_enqueue_script(
+				'surtilec-toc',
+				get_stylesheet_directory_uri() . '/assets/js/surtilec-toc.js',
+				array(),
+				wp_get_theme()->get( 'Version' ),
+				true
+			);
+		}
+	}
+);
+
+/**
  * Load the CF7 form helper script only on pages that render a CF7 form.
  * Fires when Contact Form 7 enqueues its own assets.
  */

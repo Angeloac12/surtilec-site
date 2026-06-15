@@ -27,7 +27,7 @@ add_filter(
 			'template-industria.php',
 			'page-servicios.php',
 		);
-		if ( is_page_template( $fullbleed_templates ) ) {
+		if ( is_page_template( $fullbleed_templates ) || is_home() || is_singular( 'post' ) ) {
 			$classes[] = 'su-fullbleed';
 		}
 		return $classes;
@@ -182,6 +182,18 @@ function surtilec_icon( $name ) {
 	);
 	$d = isset( $p[ $name ] ) ? $p[ $name ] : '';
 	return '<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' . $d . '</svg>';
+}
+
+/**
+ * Tiempo estimado de lectura en minutos (~200 palabras/min).
+ *
+ * @param int|WP_Post|null $post Post o ID (default: actual).
+ * @return int Minutos (mínimo 1).
+ */
+function surtilec_read_time( $post = null ) {
+	$post  = get_post( $post );
+	$words = $post ? str_word_count( wp_strip_all_tags( $post->post_content ) ) : 0;
+	return max( 1, (int) ceil( $words / 200 ) );
 }
 
 /**
