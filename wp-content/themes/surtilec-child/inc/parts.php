@@ -14,6 +14,27 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
+ * Marca las plantillas de página full-bleed de Surtilec con la clase
+ * body `su-fullbleed`, para liberar el contenedor 1200 de GeneratePress
+ * (igual que body.home en la portada) y permitir bandas a todo el ancho.
+ */
+add_filter(
+	'body_class',
+	function ( $classes ) {
+		$fullbleed_templates = array(
+			'page-nosotros.php',
+			'page-industrias.php',
+			'template-industria.php',
+			'page-servicios.php',
+		);
+		if ( is_page_template( $fullbleed_templates ) ) {
+			$classes[] = 'su-fullbleed';
+		}
+		return $classes;
+	}
+);
+
+/**
  * Migas de pan accesibles + BreadcrumbList JSON-LD.
  *
  * "Inicio" se antepone siempre. El último elemento es la página actual

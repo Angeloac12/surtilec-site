@@ -24,6 +24,9 @@ require_once get_stylesheet_directory() . '/inc/footer.php';
 // Homepage editable fields (ACF) + helper.
 require_once get_stylesheet_directory() . '/inc/homepage-fields.php';
 
+// "Nosotros" page editable fields (ACF) + helper.
+require_once get_stylesheet_directory() . '/inc/about-fields.php';
+
 /**
  * Load the Spanish text domain for the child theme.
  */

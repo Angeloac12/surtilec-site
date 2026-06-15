@@ -3,6 +3,12 @@
 Notable changes to the Surtilec project. Newest first.
 
 ## Unreleased
+- Página Nosotros (`feat/about-page`) — Fase 2:
+  - **Plantilla** `page-nosotros.php` (Page Template "Surtilec — Nosotros", full-bleed): hero oscuro (`su-page-hero`) con migas + StatBar, sección de presentación clara (`su-prose` + frase de entidad compartida con el schema), bloque de cobertura (`su-split` + `su-checklist`) y banda CTA (`surtilec_cta_band`). Copy editable por ACF (`inc/about-fields.php`) con **defaults explícitos en la plantilla** (ACF `default_value` no aplica en frontend para campos sin guardar — mismo patrón que `surtilec_home_field`); cifras = claims reales (Bogotá/Nacional/< 1 h/B2B), no inventadas.
+  - **Full-bleed reutilizable:** filtro `body_class` en `inc/parts.php` añade `su-fullbleed` a las plantillas de página de Surtilec (Nosotros/Industrias/Servicios) → libera el contenedor 1200 de GP igual que `body.home`. CSS `.surtilec-page` + overrides `body.su-fullbleed`.
+  - **Schema:** `surtilec-schema.php` 0.1.0 → 0.2.0 añade nodo `AboutPage` en `/nosotros/` (mainEntity → Organization). El BreadcrumbList lo emite la plantilla vía `surtilec_breadcrumbs()`; AIOSEO sigue deduplicado.
+  - **Estado de servidor:** página `/nosotros/` (id 58) con `_wp_page_template=page-nosotros.php`; ítem de menú "Nosotros" en "Principal" (pos 4 → Inicio·Catálogo·Nosotros·Contacto), Contacto/Subir reordenados.
+  - Verificado logueado (toggle Coming Soon + cache-bust): 1 h1, body `su-fullbleed`, StatBar/checklist/prose/entity-line presentes, `AboutPage` + `BreadcrumbList` en JSON-LD, enlace en menú. Theme 0.8.0 → 0.9.0.
 - Páginas legales (Fase 1, estado de servidor — sin código):
   - Creadas vía WP-CLI: **Política de privacidad** (id 56, slug `politica-de-privacidad`) y **Términos y condiciones** (id 57, slug `terminos`), con contenido stub en español (bloques Gutenberg) marcado "Borrador — pendiente de revisión legal". Privacidad referencia Ley 1581/2012 + Decreto 1377/2013 (habeas data Colombia).
   - El footer (`inc/footer.php`) ya las enlaza condicionalmente por slug exacto (`politica-de-privacidad`/`terminos`) → ahora aparecen automáticamente en la barra legal. Creación idempotente (chequea `get_page_by_path` antes de crear).
