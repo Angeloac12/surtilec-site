@@ -4,7 +4,7 @@ Theme URI:    https://surtilec.com
 Description:  Child theme de GeneratePress para Surtilec — catálogo B2B de cables especiales y automatización industrial.
 Author:       Surtilec
 Template:     generatepress
-Version:      0.8.0
+Version:      0.9.0
 Text Domain:  surtilec
 */
 
@@ -1007,3 +1007,27 @@ a.su-card:hover { border-color: var(--color-accent); box-shadow: var(--card-shad
 .su-checklist { list-style: none; margin: 1.2rem 0 1.8rem; padding: 0; }
 .su-checklist li { position: relative; padding-left: 1.8rem; margin-bottom: 0.7rem; color: var(--gray-700); }
 .su-checklist li::before { content: "✓"; position: absolute; left: 0; top: 0; color: var(--color-accent); font-weight: 800; }
+
+/* ---- Plantillas de página full-bleed (Nosotros / Industrias / Servicios) ----
+   Libera el contenedor 1200 de GP igual que body.home, vía la clase su-fullbleed. */
+body.su-fullbleed #page.grid-container.container { max-width: 100% !important; width: 100%; padding: 0 !important; margin: 0 !important; }
+body.su-fullbleed #content.site-content { padding: 0 !important; max-width: 100%; }
+body.su-fullbleed #primary { max-width: 100%; width: 100%; margin: 0; }
+.surtilec-page { overflow-x: clip; }
+.surtilec-page .su-section { width: 100%; padding-block: clamp(3rem, 6vw, 5rem); }
+.su-inner { max-width: var(--content-max); margin: 0 auto; padding-inline: clamp(1rem, 4vw, 2.5rem); }
+.surtilec-page .su-page-hero { padding-block: clamp(3rem, 7vw, 5.5rem); }
+
+/* Texto de presentación */
+.su-prose { max-width: 68ch; }
+.su-prose p { color: var(--gray-700); font-size: 1.05rem; }
+.su-entity-line {
+  margin-top: 1.6rem;
+  padding-left: 1rem;
+  border-left: 3px solid var(--color-accent);
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--color-dark);
+  font-size: 1.05rem;
+  line-height: 1.5;
+}

@@ -1,8 +1,8 @@
 <?php
 /**
  * Plugin Name: Surtilec — Schema (JSON-LD)
- * Description: Emits Organization + LocalBusiness (site-wide), Product (single, without price) and BreadcrumbList (product/category) JSON-LD, deduplicated against AIOSEO. FAQPage is emitted by the child theme on category pages.
- * Version:     0.1.0
+ * Description: Emits Organization + LocalBusiness (site-wide), Product (single, without price), BreadcrumbList (product/category) and AboutPage (Nosotros) JSON-LD, deduplicated against AIOSEO. FAQPage is emitted by the child theme on category pages.
+ * Version:     0.2.0
  * Author:      Surtilec
  *
  * @package Surtilec
@@ -51,6 +51,8 @@ function surtilec_schema_output() {
 		if ( $crumbs ) {
 			$graph[] = $crumbs;
 		}
+	} elseif ( is_page( 'nosotros' ) ) {
+		$graph[] = surtilec_schema_aboutpage();
 	}
 
 	$data = array(
@@ -149,6 +151,23 @@ function surtilec_schema_product() {
 	}
 
 	return $schema;
+}
+
+/**
+ * AboutPage (Nosotros) — enlaza a la Organization site-wide como mainEntity.
+ *
+ * @return array
+ */
+function surtilec_schema_aboutpage() {
+	return array(
+		'@type'       => 'AboutPage',
+		'@id'         => get_permalink() . '#aboutpage',
+		'url'         => get_permalink(),
+		'name'        => wp_get_document_title(),
+		'description' => surtilec_entity_sentence(),
+		'mainEntity'  => array( '@id' => home_url( '/#organization' ) ),
+		'isPartOf'    => array( '@id' => home_url( '/#organization' ) ),
+	);
 }
 
 /**
