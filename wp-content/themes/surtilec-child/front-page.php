@@ -82,11 +82,23 @@ $pillars = function_exists( 'surtilec_cached_terms' )
 				<a class="su-btn su-btn-primary" href="<?php echo esc_url( $cta1_u ); ?>"><?php echo esc_html( $cta1_l ); ?></a>
 				<a class="su-btn su-btn-ghost" href="<?php echo esc_url( $cta2_u ); ?>"><?php echo esc_html( $cta2_l ); ?></a>
 			</div>
+			<div class="su-reveal" style="--d:4">
+				<?php
+				// Claims ya establecidos (no cifras inventadas) — editables a futuro.
+				surtilec_stat_bar(
+					array(
+						array( 'num' => '< 1 h', 'label' => 'Respuesta a tu cotización (horario hábil)' ),
+						array( 'num' => 'Toda Colombia', 'label' => 'Cobertura de despacho' ),
+						array( 'num' => 'Bogotá', 'label' => 'Centro de distribución' ),
+					)
+				);
+				?>
+			</div>
 		</div>
 	</section>
 
 	<!-- 2. VALUE PROPS -->
-	<section class="su-section su-band-steel su-valueprops">
+	<section class="su-section su-band-light su-valueprops">
 		<div class="su-inner su-vp-grid">
 			<?php
 			$vps = array(
@@ -129,7 +141,7 @@ $pillars = function_exists( 'surtilec_cached_terms' )
 	</section>
 
 	<!-- 4. CÓMO COTIZAR -->
-	<section class="su-section su-band-navy su-steps">
+	<section class="su-section su-band-gray su-steps">
 		<div class="su-inner">
 			<p class="su-eyebrow su-eyebrow-center">02 — Proceso</p>
 			<h2 class="su-h2 su-h2-center">Cómo cotizar</h2>

@@ -12,6 +12,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 // Catalog templates: single product spec table, category FAQ/tiles, shop tiles.
 require_once get_stylesheet_directory() . '/inc/catalog-templates.php';
 
+// Shared template parts: breadcrumbs (+JSON-LD), stat bar, CTA band.
+require_once get_stylesheet_directory() . '/inc/parts.php';
+
 // Header chrome: utility bar, mega menu, font preload, front-page title hide.
 require_once get_stylesheet_directory() . '/inc/header.php';
 

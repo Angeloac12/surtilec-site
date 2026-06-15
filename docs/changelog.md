@@ -3,6 +3,12 @@
 Notable changes to the Surtilec project. Newest first.
 
 ## Unreleased
+- Restyle híbrido + partes reutilizables (`feat/hybrid-restyle`) — Fase 0 del rebuild estilo distribuidor:
+  - **Dirección visual híbrida:** chrome oscuro (header/hero/footer) + secciones de **contenido claras** (blanco/gris) con tarjetas de hairline; banda CTA naranja. La portada pasa de "todo oscuro" a ritmo híbrido: hero(dark) → value props(`su-band-light`) → pillars(blanco) → cómo cotizar(`su-band-gray`) → marcas(paper) → industrias(claro) → trust(navy) → CTA(naranja). Solo cambios de clase/fondo + overrides de color por contexto de banda (bloque "RESTYLE HÍBRIDO" al final de `style.css`, gana por orden de cascada — sin reescribir reglas existentes).
+  - **Tokens nuevos** (`:root`): `--surface`, `--surface-alt`, `--hairline-dark`, `--card-shadow`. `--ink-*` se conserva para zonas oscuras.
+  - **StatBar** en el hero de la portada (`<dl>/<dt>/<dd>` semántico) con claims ya establecidos (respuesta < 1 h hábil, cobertura nacional, centro Bogotá) — **sin cifras inventadas**, editables a futuro.
+  - **Componentes reutilizables nuevos** (`inc/parts.php`): `surtilec_breadcrumbs()` (nav/ol accesible + BreadcrumbList JSON-LD, desactivable donde el schema ya lo emite), `surtilec_stat_bar()`, `surtilec_cta_band()` (banda CTA full-bleed para páginas internas; el bloque CTA dentro del catálogo `surtilec_render_cta_block()` se mantiene aparte para no regresionar el catálogo). CSS de apoyo: `.su-card`/`.su-card-grid`, `.su-breadcrumb`, `.su-page-hero`, `.su-split`/`.su-checklist`, `html{scroll-behavior:smooth}` + `scroll-margin-top` (anclas de Servicios).
+  - Verificado logueado (toggle `woocommerce_coming_soon` off→on con cache-bust): sin error PHP (`php -l` los 3 archivos + smoke `wp eval`), portada con **1 solo h1**, StatBar y bandas `su-band-light`/`su-band-gray` presentes; fuentes/JS sin cambios. Theme 0.7.0 → 0.8.0.
 - Header de dos filas estilo distribuidor (`feat/header-two-row`):
   - Referencias estudiadas (Graybar, Pro Wire, Nassau Electrical, Cables Colombia): patrón de **buscador prominente** + nav de categorías en una **segunda fila** + un único CTA de cotización.
   - **Fila 1** (`.inside-header`): logo + **buscador de producto prominente** (crece al centro, `post_type=product`) + botón WhatsApp + botón **Cotizar** naranja. Renderizado en `generate_after_header_content` (no `generate_after_logo`, que solo dispara con logo-imagen). El buscador se movió aquí desde la navegación.
