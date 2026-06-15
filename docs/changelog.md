@@ -3,6 +3,10 @@
 Notable changes to the Surtilec project. Newest first.
 
 ## Unreleased
+- Páginas legales (Fase 1, estado de servidor — sin código):
+  - Creadas vía WP-CLI: **Política de privacidad** (id 56, slug `politica-de-privacidad`) y **Términos y condiciones** (id 57, slug `terminos`), con contenido stub en español (bloques Gutenberg) marcado "Borrador — pendiente de revisión legal". Privacidad referencia Ley 1581/2012 + Decreto 1377/2013 (habeas data Colombia).
+  - El footer (`inc/footer.php`) ya las enlaza condicionalmente por slug exacto (`politica-de-privacidad`/`terminos`) → ahora aparecen automáticamente en la barra legal. Creación idempotente (chequea `get_page_by_path` antes de crear).
+  - Verificado logueado (toggle Coming Soon + cache-bust): ambas resuelven HTTP 200 con 1 h1, y `su-foot-legal-links` con los dos enlaces presentes en el footer.
 - Restyle híbrido + partes reutilizables (`feat/hybrid-restyle`) — Fase 0 del rebuild estilo distribuidor:
   - **Dirección visual híbrida:** chrome oscuro (header/hero/footer) + secciones de **contenido claras** (blanco/gris) con tarjetas de hairline; banda CTA naranja. La portada pasa de "todo oscuro" a ritmo híbrido: hero(dark) → value props(`su-band-light`) → pillars(blanco) → cómo cotizar(`su-band-gray`) → marcas(paper) → industrias(claro) → trust(navy) → CTA(naranja). Solo cambios de clase/fondo + overrides de color por contexto de banda (bloque "RESTYLE HÍBRIDO" al final de `style.css`, gana por orden de cascada — sin reescribir reglas existentes).
   - **Tokens nuevos** (`:root`): `--surface`, `--surface-alt`, `--hairline-dark`, `--card-shadow`. `--ink-*` se conserva para zonas oscuras.
