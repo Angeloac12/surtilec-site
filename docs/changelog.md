@@ -3,6 +3,13 @@
 Notable changes to the Surtilec project. Newest first.
 
 ## Unreleased
+- Recursos / Blog (`feat/recursos`) — Fase 5:
+  - **Índice** `home.php` (página de entradas `page_for_posts` = "Recursos", id 74, slug `recursos`): hero híbrido full-bleed + pestañas de categoría + rejilla de tarjetas (`partials/resource-card.php`: tag + título + extracto + fecha `<time>` + tiempo de lectura) + paginación numerada + estado vacío con CTA.
+  - **Artículo** `single.php`: migas (`Inicio › Recursos › título`), meta semántica (`<time datetime>` + autor + min de lectura), layout 70/30 con **sidebar sticky**: TOC autogenerada + mini-CTA; sección "También te puede interesar" (hasta 3 relacionadas por categoría) + banda CTA. **Article JSON-LD** (publisher → Organization del mu-plugin) + BreadcrumbList (vía `surtilec_breadcrumbs`).
+  - **JS** `assets/js/surtilec-toc.js` (vanilla, sin jQuery, sólo en `is_singular('post')`): genera la TOC desde h2/h3 (añade `id`), scroll-spy con `IntersectionObserver`. Helper `surtilec_read_time()` en `inc/parts.php`.
+  - **Sin sidebar** de GP en blog/single/archivos de post (`generate_sidebar_layout` prioridad 20) — la TOC propia ocupa la columna lateral. `su-fullbleed` extendido a `is_home()`/`is_singular('post')`.
+  - **Estado de servidor:** página Recursos + `page_for_posts`; 4 categorías de entrada (Guías técnicas/Producto/Normativa/Preguntas); ítem de menú "Recursos" (Inicio·Catálogo·Industrias·Nosotros·**Recursos**·Contacto); 1 entrada **EJEMPLO** (id 75, borrar antes de lanzar); **eliminada** la entrada por defecto "¡Hola mundo!".
+  - Verificado logueado (toggle Coming Soon): índice HTTP 200 con 1 h1 + pestañas + tarjeta; artículo HTTP 200 con 1 h1 + layout 70/30 + TOC + `surtilec-toc.js` encolado + `Article` y `BreadcrumbList` en JSON-LD. Theme 0.10.0 → 0.11.0.
 - Eje "Industrias" (`feat/industrias`) — Fase 3:
   - **Nuevo eje vertical** que enruta a las categorías de producto existentes (no reemplaza el catálogo). Páginas WP **jerárquicas**: índice `/industrias/` (id 60) + 6 landings hijas `/industrias/{slug}/` (Construcción 61, Manufactura 62, Oil & gas 63, Minería 64, Agroindustria 65, OEM 66) — profundidad 2 niveles.
   - **Plantillas:** `page-industrias.php` (índice full-bleed: hero + rejilla de 6 tarjetas `su-card` + CTA) y `template-industria.php` (landing: hero con migas `Inicio › Industrias › {sector}`, rejilla de categorías relevantes via `surtilec_render_term_tile`, bloque "Por qué Surtilec" `su-split`/`su-checklist`, CTA). Ambas asignadas por `_wp_page_template` (→ heredan `su-fullbleed`).
