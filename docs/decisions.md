@@ -2,6 +2,13 @@
 
 Architecture decision log for the Surtilec project. Newest first.
 
+### 2026-06-15 — Rebuild estilo distribuidor: dirección híbrida + eje "Industrias" + páginas faltantes
+- **Context:** El cliente aportó una guía página-por-página basada en distributorwire.com (stack Next.js/Contentful, no portable). Hay que **traducir la IA y el look & feel** al stack WordPress real y construir lo que falta. Mucho ya existe (header dos filas, footer, portada "Acero", catálogo, schema, formularios de cotización).
+- **Decisiones confirmadas con el cliente:** (1) **Visual híbrido** — chrome oscuro (header/hero/footer) + contenido claro (blanco/gris) + banda CTA naranja. (2) **IA = añadir eje "Industrias"** (Construcción/Manufactura/Minería/Oil&gas/Agroindustria/OEM) que enruta a las categorías de producto existentes; se mantiene el eje por tipo de producto. (3) Construir **Nosotros, Servicios, Recursos/Blog (+ artículo), Privacidad/Términos**.
+- **Plan por fases** (cada una rama + deploy + verify): 0 fundaciones (restyle híbrido + `inc/parts.php`), 1 legal, 2 Nosotros, 3 Industrias, 5 Recursos, 4 Servicios (al final por dependencia de contenido del cliente).
+- **Decisión técnica (Fase 0):** el restyle híbrido se hace con **overrides al final de `style.css`** (bloque "RESTYLE HÍBRIDO") que ganan por orden de cascada, sin reescribir las reglas "Acero" existentes → reversible y bajo riesgo. Componentes compartidos en `inc/parts.php` (breadcrumbs+JSON-LD, stat bar, CTA band). El **bloque CTA dentro del catálogo** (`surtilec_render_cta_block()` en `catalog-templates.php`) se mantiene como componente in-content separado de la nueva `surtilec_cta_band()` full-bleed, para no regresionar el catálogo ya probado.
+- **Consequences:** Páginas/menú/opciones nuevas serán estado de servidor (WP-CLI, documentado en changelog). Copy de Servicios e Industrias = placeholders EJEMPLO editables por ACF hasta recibir contenido real del cliente (regla: no inventar). Verificación siempre logueado o con toggle de Coming Soon (ver [[verify-urls-under-coming-soon]]).
+
 ### 2026-06-10 — Spanish permalinks + custom schema mu-plugin (deduped vs AIOSEO)
 - **Context:** Empty categories rendered nothing useful; URLs were English; §6 schema needed (Product without price, LocalBusiness, deduped against AIOSEO).
 - **Decision — empty-category fix:** all category furniture (intro, subcategory/pillar tiles, FAQ, CTA) hooks into `woocommerce_before/after_main_content` (always fire), not the loop-guarded `*_shop_loop` hooks. Default `woocommerce_taxonomy_archive_description` removed; we render the intro ourselves for consistency on empty/non-empty. Custom `woocommerce_no_products_found`: silent for parents-with-children, WhatsApp prompt on leaves.
