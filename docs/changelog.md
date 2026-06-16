@@ -3,6 +3,7 @@
 Notable changes to the Surtilec project. Newest first.
 
 ## Unreleased
+- **Fase 4 — Página Servicios: diferida a backlog (2026-06-15).** No se construye en esta tanda por falta de la lista real de servicios del cliente (regla: no inventar). Detalle en `docs/backlog.md` → "Páginas / contenido". El resto del rebuild estilo distribuidor (Fases 0,1,2,3,5,6) queda completo.
 - Header móvil compacto (`fix/mobile-header`):
   - **Problema:** en móvil el header apilaba ~5 bloques full-width (buscador quedaba último), con un **botón verde de WhatsApp solo-ícono** redundante (WhatsApp ya está en la barra utilitaria y en el botón flotante) → header muy alto y poco moderno.
   - **Fix (solo CSS, `@media max-width:880px`):** se oculta el botón verde de WhatsApp del header; el **buscador pasa a primer lugar** (acción principal del catálogo) y "Cotizar" debajo, ambos full-width → 2 filas limpias. Gaps reducidos. Theme 0.13.1 → 0.13.2.
