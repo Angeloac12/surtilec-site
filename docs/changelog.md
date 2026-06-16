@@ -3,6 +3,12 @@
 Notable changes to the Surtilec project. Newest first.
 
 ## Unreleased
+- Indicador de metales cobre/aluminio (`feat/metals-ticker`) — Fase 6:
+  - **mu-plugin** `surtilec-metals.php`: tira de **referencia** en la barra utilitaria con cobre y aluminio en **COP/kg = USD/lb × TRM ÷ 0,4536**. La **TRM es en vivo** (Banco de la República, dataset oficial datos.gov.co `32sa-8pi3`, sin API key). El **USD/lb** sale de una opción editable (`surtilec_metals_usd`, default 4,20 / 1,15 — **valores semilla, el admin pone los reales**) con filtro `surtilec_metals_usd` para conectar una API real a futuro.
+  - **WP-Cron diario** (`surtilec_metals_refresh`) recalcula y cachea en la opción `surtilec_metals_data`; **nunca se consulta en cada carga** (rendimiento + límites). Si falla la TRM, conserva el último valor bueno. Tras refrescar, purga la caché de LiteSpeed. Flecha de tendencia (▲ verde / ▼ rojo / ■ plano) comparando contra el valor previo.
+  - Render en `inc/header.php` (barra utilitaria) vía `surtilec_metals_ticker()` (si existe). **Es valor de referencia, NO cotización** (tooltip explícito). Oculto en ≤980px. CSS en `style.css` (`.su-metals*`).
+  - **Cómo poner precios reales:** `wp option update surtilec_metals_usd '{"copper":4.2,"aluminum":1.15}' --format=json` (USD/lb). Forzar refresco: `wp eval 'surtilec_metals_refresh();'`.
+  - Verificado: TRM 3.475,72; Cobre $32.183 COP/kg, Aluminio $8.812 COP/kg; cron programado; tira presente en la barra utilitaria. Theme 0.12.0 → 0.13.0.
 - Dropdowns estandarizados + arreglo del mega (`fix/mega-catalogo` → `fix/standardize-dropdowns`):
   - **Bug:** el mega de "Catálogo" se veía como una caja angosta clara de 200px (solo la última columna). Causa: GP inyecta `.main-navigation ul ul { width:200px }` + colores de dropdown por CSS dinámico (especificidad 0,1,2) que ganaban sobre `.surtilec-mega` (0,1,0).
   - **Decisión (pedido del cliente):** estandarizar — "Catálogo" pasa a usar el **dropdown nativo de GeneratePress** igual que "Industrias" (mismo color y organización), en vez de un mega custom. Se **retiró el walker del mega** (`Surtilec_Mega_Walker` + `surtilec_mega_panel_html` en `inc/header.php`); las 5 líneas pilar se cargan como **ítems hijos reales** del menú "Catálogo" (estado de servidor: `wp menu item add-term`, ids term 21-25 bajo el ítem 40). Estilo compartido para ambos dropdowns en `style.css` (`.main-navigation .sub-menu`): borde superior naranja, sombra, ancho 260px (cabe "Cables para variadores VFD"), hover naranja. Reglas `.surtilec-mega*` quedan inertes (sin DOM).
