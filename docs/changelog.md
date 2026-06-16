@@ -3,6 +3,9 @@
 Notable changes to the Surtilec project. Newest first.
 
 ## Unreleased
+- Header móvil compacto (`fix/mobile-header`):
+  - **Problema:** en móvil el header apilaba ~5 bloques full-width (buscador quedaba último), con un **botón verde de WhatsApp solo-ícono** redundante (WhatsApp ya está en la barra utilitaria y en el botón flotante) → header muy alto y poco moderno.
+  - **Fix (solo CSS, `@media max-width:880px`):** se oculta el botón verde de WhatsApp del header; el **buscador pasa a primer lugar** (acción principal del catálogo) y "Cotizar" debajo, ambos full-width → 2 filas limpias. Gaps reducidos. Theme 0.13.1 → 0.13.2.
 - Indicador de metales cobre/aluminio (`feat/metals-ticker`) — Fase 6:
   - **mu-plugin** `surtilec-metals.php`: tira de **referencia** en la barra utilitaria con cobre y aluminio en **COP/kg = USD/lb × TRM ÷ 0,4536**. La **TRM es en vivo** (Banco de la República, dataset oficial datos.gov.co `32sa-8pi3`, sin API key). El **USD/lb** sale de una opción editable (`surtilec_metals_usd`, default 4,20 / 1,15 — **valores semilla, el admin pone los reales**) con filtro `surtilec_metals_usd` para conectar una API real a futuro.
   - **WP-Cron diario** (`surtilec_metals_refresh`) recalcula y cachea en la opción `surtilec_metals_data`; **nunca se consulta en cada carga** (rendimiento + límites). Si falla la TRM, conserva el último valor bueno. Tras refrescar, purga la caché de LiteSpeed. Flecha de tendencia (▲ verde / ▼ rojo / ■ plano) comparando contra el valor previo.
