@@ -4,7 +4,7 @@ Theme URI:    https://surtilec.com
 Description:  Child theme de GeneratePress para Surtilec — catálogo B2B de cables especiales y automatización industrial.
 Author:       Surtilec
 Template:     generatepress
-Version:      0.11.0
+Version:      0.11.1
 Text Domain:  surtilec
 */
 
@@ -1112,3 +1112,66 @@ body.su-fullbleed #primary { max-width: 100%; width: 100%; margin: 0; }
 .su-toc-item a.is-active { color: var(--color-dark); border-left-color: var(--color-accent); font-weight: 600; }
 .su-toc-cta { margin-top: 1.5rem; padding: 1.2rem; background: var(--surface-alt); border-radius: var(--radius); }
 .su-toc-cta-text { font-weight: 700; color: var(--color-dark); margin: 0 0 0.7rem; }
+
+/* ============================================================
+   FIX mega "Catálogo": GP inyecta `.main-navigation ul ul {width:200px}`
+   y colores de dropdown vía CSS dinámico (especificidad 0,1,2) que ganan
+   sobre `.surtilec-mega`. Reescribimos con prefijo `.main-navigation`
+   (especificidad mayor) + !important en lo que GP fuerza (width/bg/color),
+   para que el mega sea panel oscuro full-width de 5 columnas.
+   ============================================================ */
+.main-navigation .surtilec-mega .surtilec-mega-head { color: #fff !important; font-family: var(--font-display); font-weight: 800; }
+.main-navigation .surtilec-mega .surtilec-mega-head:hover { color: var(--color-accent) !important; }
+.main-navigation .surtilec-mega .surtilec-mega-list { list-style: none; margin: 0.2rem 0 0; padding: 0; }
+.main-navigation .surtilec-mega .surtilec-mega-list li { margin: 0; padding: 0; }
+.main-navigation .surtilec-mega .surtilec-mega-list li a { color: var(--gray-300) !important; font-size: 0.92rem; padding: 0.28rem 0 !important; display: block; }
+.main-navigation .surtilec-mega .surtilec-mega-list li a:hover { color: #fff !important; }
+.main-navigation .surtilec-mega .surtilec-mega-all,
+.main-navigation .surtilec-mega .surtilec-mega-cta { color: var(--color-accent) !important; font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.04em; padding: 0.28rem 0 !important; }
+.main-navigation .surtilec-mega .surtilec-mega-foot { display: flex; gap: 1.6rem; flex-wrap: wrap; margin-top: 1.2rem; padding-top: 1rem; border-top: 1px solid var(--hairline); }
+
+@media (min-width: 769px) {
+  .main-navigation .surtilec-has-mega { position: static !important; }
+  .main-navigation .surtilec-mega {
+    position: absolute !important;
+    left: 0 !important;
+    right: 0 !important;
+    top: 100% !important;
+    width: auto !important;             /* vence el width:200px de GP */
+    max-width: none !important;
+    display: block !important;
+    background: var(--ink-900) !important;
+    border-top: 2px solid var(--color-accent);
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.35);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(6px);
+    transition: opacity 0.16s ease, transform 0.16s ease, visibility 0.16s;
+    z-index: 200;
+    padding: 0 !important;
+  }
+  .main-navigation .surtilec-has-mega:hover > .surtilec-mega,
+  .main-navigation .surtilec-has-mega:focus-within > .surtilec-mega {
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
+  .main-navigation .surtilec-mega .surtilec-mega-inner {
+    float: none;
+    width: auto;
+    max-width: var(--content-max);
+    margin: 0 auto;
+    padding: 1.8rem clamp(1rem, 4vw, 2.5rem) 1.4rem;
+  }
+  .main-navigation .surtilec-mega .surtilec-mega-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.6rem;
+  }
+  .main-navigation .surtilec-mega .surtilec-mega-col {
+    width: auto;
+    padding: 0 0 0 1.2rem;
+    border-left: 1px solid var(--hairline);
+  }
+  .main-navigation .surtilec-mega .surtilec-mega-col:first-child { border-left: 0; padding-left: 0; }
+}
