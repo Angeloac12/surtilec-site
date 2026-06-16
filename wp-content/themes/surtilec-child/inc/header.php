@@ -63,119 +63,12 @@ function surtilec_utility_bar() {
 }
 
 /* =============================================================
-   Mega menu under "Catálogo" (the menu item linking to /productos/).
+   Menú "Catálogo": dropdown NATIVO de GeneratePress (no mega custom),
+   para que sea idéntico en color y organización al dropdown de
+   "Industrias". Las 5 líneas pilar se cargan como ítems hijos reales
+   del menú (estado de servidor, vía WP-CLI). Estilo compartido para
+   ambos dropdowns en style.css (.main-navigation .sub-menu).
    ============================================================= */
-
-/**
- * Attach the custom walker to the primary menu only.
- */
-add_filter(
-	'wp_nav_menu_args',
-	function ( $args ) {
-		if ( isset( $args['theme_location'] ) && 'primary' === $args['theme_location'] ) {
-			$args['walker'] = new Surtilec_Mega_Walker();
-		}
-		return $args;
-	}
-);
-
-/**
- * Walker that injects a taxonomy-driven mega panel into the "Catálogo" item.
- */
-class Surtilec_Mega_Walker extends Walker_Nav_Menu {
-
-	/**
-	 * Is this the catalog top-level item? Matches the /productos/ shop link.
-	 */
-	protected function is_catalog( $item, $depth ) {
-		if ( 0 !== (int) $depth ) {
-			return false;
-		}
-		$path = trim( (string) wp_parse_url( (string) $item->url, PHP_URL_PATH ), '/' );
-		return 'productos' === $path || 'catalogo' === sanitize_title( (string) $item->title );
-	}
-
-	public function start_el( &$output, $item, $depth = 0, $args = null, $id = 0 ) {
-		$buf = '';
-		parent::start_el( $buf, $item, $depth, $args, $id );
-
-		if ( $this->is_catalog( $item, $depth ) ) {
-			// Mark the <li> as a dropdown parent and append the panel.
-			if ( false === strpos( $buf, 'menu-item-has-children' ) ) {
-				$buf = preg_replace( '/class="/', 'class="menu-item-has-children surtilec-has-mega ', $buf, 1 );
-			} else {
-				$buf = preg_replace( '/class="/', 'class="surtilec-has-mega ', $buf, 1 );
-			}
-			$buf .= surtilec_mega_panel_html();
-		}
-
-		$output .= $buf;
-	}
-}
-
-/**
- * Build the mega-panel markup from the cached pillar taxonomy.
- *
- * @return string
- */
-function surtilec_mega_panel_html() {
-	$pillars = function_exists( 'surtilec_cached_terms' )
-		? surtilec_cached_terms(
-			'pillars',
-			array(
-				'taxonomy'   => 'product_cat',
-				'parent'     => 0,
-				'hide_empty' => false,
-				'exclude'    => array( (int) get_option( 'default_product_cat' ) ),
-			)
-		)
-		: array();
-
-	if ( empty( $pillars ) ) {
-		return '';
-	}
-
-	ob_start();
-	echo '<ul class="sub-menu surtilec-mega" role="menu">';
-	echo '<li class="surtilec-mega-inner">';
-	echo '<div class="surtilec-mega-grid">';
-
-	foreach ( $pillars as $pillar ) {
-		$children = surtilec_cached_terms(
-			'subcat_' . $pillar->term_id,
-			array(
-				'taxonomy'   => 'product_cat',
-				'parent'     => $pillar->term_id,
-				'hide_empty' => false,
-			)
-		);
-
-		echo '<div class="surtilec-mega-col">';
-		echo '<a class="surtilec-mega-head" href="' . esc_url( get_term_link( $pillar ) ) . '">'
-			. esc_html( $pillar->name ) . '</a>';
-
-		if ( ! empty( $children ) ) {
-			echo '<ul class="surtilec-mega-list">';
-			foreach ( $children as $child ) {
-				echo '<li><a href="' . esc_url( get_term_link( $child ) ) . '">'
-					. esc_html( $child->name ) . '</a></li>';
-			}
-			echo '</ul>';
-		} else {
-			echo '<a class="surtilec-mega-all" href="' . esc_url( get_term_link( $pillar ) ) . '">Ver productos →</a>';
-		}
-		echo '</div>';
-	}
-
-	echo '</div>'; // grid
-	echo '<div class="surtilec-mega-foot">';
-	echo '<a class="surtilec-mega-cta" href="' . esc_url( home_url( '/productos/' ) ) . '">Ver todo el catálogo →</a>';
-	echo '<a class="surtilec-mega-cta" href="' . esc_url( home_url( '/cotizar/subir-listado/' ) ) . '">Subir listado →</a>';
-	echo '</div>';
-	echo '</li>';
-	echo '</ul>';
-	return ob_get_clean();
-}
 
 /* =============================================================
    Row 1 header tools (Graybar/Nassau two-row pattern): prominent
@@ -220,7 +113,8 @@ function surtilec_header_tools() {
 /**
  * De-duplicate "Cotizar": drop the top-level "Cotizar" menu item (and its
  * children) from the primary menu — the orange Row 1 button is the single
- * quote entry point. "Subir listado" is surfaced in the Catálogo mega instead.
+ * quote entry point. "Subir listado" stays accessible from the footer and
+ * the /cotizar/ page.
  */
 add_filter(
 	'wp_nav_menu_objects',

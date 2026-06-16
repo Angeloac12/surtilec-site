@@ -106,7 +106,16 @@ add_filter(
 add_filter(
 	'generate_sidebar_layout',
 	function ( $layout ) {
-		if ( is_home() || is_singular( 'post' ) || is_category() || is_tag() || is_author() || is_date() ) {
+		$fullbleed_templates = array(
+			'page-nosotros.php',
+			'page-industrias.php',
+			'template-industria.php',
+			'page-servicios.php',
+		);
+		if (
+			is_home() || is_singular( 'post' ) || is_category() || is_tag() || is_author() || is_date()
+			|| is_page_template( $fullbleed_templates )
+		) {
 			return 'no-sidebar';
 		}
 		return $layout;
