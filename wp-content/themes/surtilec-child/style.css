@@ -4,7 +4,7 @@ Theme URI:    https://surtilec.com
 Description:  Child theme de GeneratePress para Surtilec — catálogo B2B de cables especiales y automatización industrial.
 Author:       Surtilec
 Template:     generatepress
-Version:      0.13.1
+Version:      0.13.2
 Text Domain:  surtilec
 */
 
@@ -855,13 +855,16 @@ body.home #primary { max-width: 100%; width: 100%; margin: 0; }
 /* Pie del mega con dos CTAs */
 .surtilec-mega-foot { display: flex; gap: 1.6rem; flex-wrap: wrap; }
 
-/* Móvil: las herramientas pasan a su propia línea, buscador a todo el ancho */
+/* Móvil: header compacto — buscador PRIMERO (acción principal del catálogo),
+   Cotizar debajo. El botón verde de WhatsApp se oculta: ya está en la barra
+   utilitaria y en el botón flotante (evita 3 WhatsApp y un bloque de más). */
 @media (max-width: 880px) {
-  .inside-header { gap: 0.8rem; }
-  .su-header-tools { width: 100%; flex-wrap: wrap; gap: 0.6rem; }
-  .su-header-tools .surtilec-nav-search { order: 3; flex: 1 1 100%; }
+  .inside-header { gap: 0.6rem; }
+  .su-header-tools { width: 100%; flex-wrap: wrap; gap: 0.55rem; }
+  .su-header-tools .surtilec-nav-search { order: 1; flex: 1 1 100%; }
   .su-header-tools .surtilec-product-search { max-width: none; }
-  .su-header-wa, .su-header-tools .su-header-cta { flex: 1 1 auto; justify-content: center; }
+  .su-header-wa { display: none; }
+  .su-header-tools .su-header-cta { order: 2; flex: 1 1 100%; justify-content: center; }
 }
 
 /* ============================================================
