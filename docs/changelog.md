@@ -3,6 +3,7 @@
 Notable changes to the Surtilec project. Newest first.
 
 ## Unreleased
+- Fuga de inglés en mensajes YITH de la ficha — causa real = **opciones**, no gettext: "Product added to the list" y "This product is already in your quote request list." se guardan como **opciones del plugin** (`ywraq_show_product_added`, `ywraq_show_already_in_quote`) cuyo default `__()` quedó en inglés al guardarse bajo es_CO (sin .mo) → el filtro gettext no las alcanza (se leen de la opción). Solución: `wp option update` a español (estado de servidor). También traducidas `ywraq_privacy_label` y `ywraq_privacy_description`. (El mapa gettext sigue cubriendo strings no basados en opción.)
 - Ficha de producto — pulido minimalista + fuga de inglés (`feat/product-page`):
   - **Fuga YITH:** "Product added to the list" (sin "!") no estaba en el mapa gettext → se añadió (+ variantes removed) en `surtilec-catalog-mode.php`. Verificado server-side: ahora "Producto añadido a la lista".
   - **Botones más suaves:** WhatsApp pasa a **outline muy suave** (borde verde claro, texto verde) con `!important`; "Añadir a cotización" naranja con borde 1px, padding/tamaño reducidos, peso 600 — un solo CTA sólido, el resto outline. Menos saturación, más minimalista. Theme 0.14.0 → 0.14.1.
