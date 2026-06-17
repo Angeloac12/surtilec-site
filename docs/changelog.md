@@ -3,6 +3,9 @@
 Notable changes to the Surtilec project. Newest first.
 
 ## Unreleased
+- Ficha de producto — pulido minimalista + fuga de inglés (`feat/product-page`):
+  - **Fuga YITH:** "Product added to the list" (sin "!") no estaba en el mapa gettext → se añadió (+ variantes removed) en `surtilec-catalog-mode.php`. Verificado server-side: ahora "Producto añadido a la lista".
+  - **Botones más suaves:** WhatsApp pasa a **outline muy suave** (borde verde claro, texto verde) con `!important`; "Añadir a cotización" naranja con borde 1px, padding/tamaño reducidos, peso 600 — un solo CTA sólido, el resto outline. Menos saturación, más minimalista. Theme 0.14.0 → 0.14.1.
 - Rediseño de la ficha de producto (`feat/product-page`): más moderna, minimalista y con jerarquía de CTA.
   - **Chips de specs** bajo el título (`surtilec_product_chips`, prio 6): marca, calibre, conductores, voltaje, apantallado en pastillas mono — valor inmediato.
   - **CTA jerárquico:** "Añadir a cotización" (YITH) forzado a **naranja sólido** (vencía el azul por defecto, selectores `.single-product .yith-ywraq-add-to-quote a` + `!important`), ancho acotado (360px); WhatsApp pasa a **secundario outline** verde. **Espacio entre botones** (0.85rem).

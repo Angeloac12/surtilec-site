@@ -131,6 +131,9 @@ add_filter(
 		static $map = array(
 			'Add to Quote'                                                   => 'Añadir a cotización',
 			'Product added to the list!'                                     => '¡Producto agregado a la lista!',
+			'Product added to the list'                                      => 'Producto añadido a la lista',
+			'Product removed from the list.'                                 => 'Producto eliminado de la lista.',
+			'Product removed from the list'                                  => 'Producto eliminado de la lista',
 			'Product already in the list.'                                   => 'El producto ya está en la lista.',
 			'No products in list'                                            => 'No hay productos en la lista',
 			'Your list is empty'                                             => 'Tu lista está vacía',

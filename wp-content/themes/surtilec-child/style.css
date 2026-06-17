@@ -4,7 +4,7 @@ Theme URI:    https://surtilec.com
 Description:  Child theme de GeneratePress para Surtilec — catálogo B2B de cables especiales y automatización industrial.
 Author:       Surtilec
 Template:     generatepress
-Version:      0.14.0
+Version:      0.14.1
 Text Domain:  surtilec
 */
 
@@ -1184,13 +1184,13 @@ body.su-fullbleed #primary { max-width: 100%; width: 100%; margin: 0; }
 .single-product .add-request-quote-button,
 .single-product .add-request-quote-button-addons {
   display: block !important;
-  width: 100%; max-width: 360px;
+  width: 100%; max-width: 340px;
   background: var(--color-accent) !important;
   color: #fff !important;
-  border: 2px solid var(--color-accent) !important;
+  border: 1px solid var(--color-accent) !important;
   border-radius: var(--radius) !important;
-  padding: 0.95em 1.5em !important;
-  font-weight: 700; font-size: 1rem; line-height: 1.2;
+  padding: 0.8em 1.4em !important;
+  font-weight: 600; font-size: 0.98rem; line-height: 1.2;
   text-align: center; text-decoration: none; box-shadow: none !important;
   transition: background-color 0.15s ease, border-color 0.15s ease;
 }
@@ -1203,12 +1203,13 @@ body.su-fullbleed #primary { max-width: 100%; width: 100%; margin: 0; }
 
 /* CTA secundario: WhatsApp en outline (minimalista, no compite) */
 .single-product .surtilec-wa-btn {
-  display: block; width: 100%; max-width: 360px; margin: 0;
-  background: #fff; color: #0b7a3b;
-  border: 2px solid #25D366; border-radius: var(--radius);
-  padding: 0.95em 1.5em; font-weight: 700; text-align: center;
+  display: block !important; width: 100%; max-width: 340px; margin: 0 0 0.7rem !important;
+  background: #fff !important; color: #128c4b !important;
+  border: 1px solid #cfe9d8 !important; border-radius: var(--radius) !important;
+  padding: 0.8em 1.4em !important; font-weight: 600; font-size: 0.98rem; text-align: center;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
 }
-.single-product .surtilec-wa-btn:hover { background: #25D366; color: #fff; }
+.single-product .surtilec-wa-btn:hover { background: #f1faf4 !important; border-color: #25D366 !important; color: #0b7a3b !important; }
 
 /* Línea de confianza */
 .su-ptrust {
