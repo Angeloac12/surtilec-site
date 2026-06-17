@@ -30,8 +30,17 @@ $pillar_meta = array(
 	'cables-de-control'          => array( 'tag' => 'Multiconductor para control y mando industrial.', 'icon' => 'control' ),
 	'cable-thhn-thwn'            => array( 'tag' => 'Conductores para instalaciones y tableros.', 'icon' => 'bolt' ),
 	'cables-para-variadores-vfd' => array( 'tag' => 'Apantallados para variadores de frecuencia.', 'icon' => 'wave' ),
-	'cables-especiales'          => array( 'tag' => 'Encauchetados, instrumentación y apantallados.', 'icon' => 'shield' ),
+	'cables-especiales'          => array( 'tag' => 'Instrumentación, apantallados, tray y más.', 'icon' => 'shield' ),
 	'automatizacion-industrial'  => array( 'tag' => 'Variadores, PLC, HMI y sensores.', 'icon' => 'chip' ),
+	'cable-flexible'             => array( 'tag' => 'Encauchetados y flexibles para uso móvil.', 'icon' => 'wave' ),
+	'cables-de-red'              => array( 'tag' => 'Datos, Ethernet industrial y comunicaciones.', 'icon' => 'net' ),
+	'cables-de-baja-tension'     => array( 'tag' => 'Conductores para instalaciones de baja tensión.', 'icon' => 'bolt' ),
+	'conductores-desnudos'       => array( 'tag' => 'Cobre desnudo para tierras y distribución.', 'icon' => 'control' ),
+	'cables-de-fibra-optica'     => array( 'tag' => 'Fibra para datos y telecomunicaciones.', 'icon' => 'net' ),
+	'cables-de-distribucion'     => array( 'tag' => 'ACSR y triplex para redes de distribución.', 'icon' => 'bolt' ),
+	'cables-de-aluminio'         => array( 'tag' => 'Conductores de aluminio para potencia.', 'icon' => 'bolt' ),
+	'cables-de-acometida'        => array( 'tag' => 'Acometidas y antifraude para servicio eléctrico.', 'icon' => 'shield' ),
+	'cables-solares'             => array( 'tag' => 'Cable fotovoltaico para sistemas solares.', 'icon' => 'sun' ),
 );
 
 /**
@@ -51,6 +60,8 @@ function surtilec_home_icon( $name ) {
 		'truck'   => '<path d="M1 4h13v11H1z"/><path d="M14 8h4l3 3v4h-7z"/><circle cx="6" cy="18" r="2"/><circle cx="17" cy="18" r="2"/>',
 		'support' => '<path d="M4 12a8 8 0 0 1 16 0"/><rect x="2" y="12" width="4" height="7" rx="1"/><rect x="18" y="12" width="4" height="7" rx="1"/><path d="M20 19a4 4 0 0 1-4 4h-3"/>',
 		'badge'   => '<path d="M12 2 4 5v6c0 5 3.4 8.5 8 11 4.6-2.5 8-6 8-11V5z"/><path d="m9 12 2 2 4-4"/>',
+		'sun'     => '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5 19 19M19 5l-1.5 1.5M6.5 17.5 5 19"/>',
+		'net'     => '<circle cx="5" cy="6" r="2"/><circle cx="19" cy="6" r="2"/><circle cx="12" cy="18" r="2"/><path d="M5 8v1a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8M12 13v3"/>',
 	);
 	$d = isset( $p[ $name ] ) ? $p[ $name ] : '';
 	return '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' . $d . '</svg>';
