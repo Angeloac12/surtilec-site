@@ -125,6 +125,49 @@ function surtilec_product_wa_cta() {
 		. esc_html__( 'Cotizar por WhatsApp', 'surtilec' ) . '</a>';
 }
 
+/**
+ * Key-spec chips under the product title (instant value, modern).
+ * Prio 6 = right after the title (prio 5), before the price (prio 10).
+ */
+add_action( 'woocommerce_single_product_summary', 'surtilec_product_chips', 6 );
+function surtilec_product_chips() {
+	global $product;
+	if ( ! $product instanceof WC_Product ) {
+		return;
+	}
+	// Short, high-signal attributes only (norma is long → goes in the spec table).
+	$keys  = array( 'pa_marca', 'pa_calibre-awg', 'pa_numero-conductores', 'pa_voltaje', 'pa_apantallado' );
+	$chips = '';
+	foreach ( $keys as $tax ) {
+		$terms = wc_get_product_terms( $product->get_id(), $tax, array( 'fields' => 'names' ) );
+		if ( empty( $terms ) ) {
+			continue;
+		}
+		$chips .= '<span class="su-pchip"><span class="su-pchip-k">' . esc_html( wc_attribute_label( $tax ) ) . '</span> '
+			. esc_html( implode( ', ', $terms ) ) . '</span>';
+	}
+	if ( '' !== $chips ) {
+		echo '<div class="su-pchips">' . $chips . '</div>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+	}
+}
+
+/**
+ * Trust microcopy under the CTAs (value + reassurance). Prio 36 = after the
+ * inline WhatsApp CTA (prio 35).
+ */
+add_action( 'woocommerce_single_product_summary', 'surtilec_product_trust', 36 );
+function surtilec_product_trust() {
+	global $product;
+	if ( ! $product instanceof WC_Product ) {
+		return;
+	}
+	echo '<ul class="su-ptrust">'
+		. '<li>' . esc_html__( 'Despacho a toda Colombia desde Bogotá', 'surtilec' ) . '</li>'
+		. '<li>' . esc_html__( 'Cotización en menos de 1 hora hábil', 'surtilec' ) . '</li>'
+		. '<li>' . esc_html__( 'Asesoría técnica para elegir el producto correcto', 'surtilec' ) . '</li>'
+		. '</ul>';
+}
+
 /* =============================================================
    PART B — Category page
    ============================================================= */
