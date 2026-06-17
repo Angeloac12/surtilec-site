@@ -115,13 +115,13 @@ while ( ( $data = fgetcsv( $fh ) ) !== false ) {
 	// Required by type.
 	$is_cable    = in_array( mb_strtolower( $row['categoria'] ), $cable_families, true );
 	$is_variador = ( 'variadores de frecuencia' === mb_strtolower( $row['subcategoria'] ) );
-	if ( $is_cable && ( '' === $row['calibre_awg'] || '' === $row['num_conductores'] ) ) {
-		$errors[] = "Fila $line: cable requiere 'calibre_awg' y 'num_conductores'.";
-		continue;
+	// Specs incompletos = advertencia (no bloquean): los datos reales del proveedor
+	// varían (p. ej. THHN de 1 conductor no lleva num_conductores).
+	if ( $is_cable && '' === $row['calibre_awg'] ) {
+		$warns[] = "Fila $line: cable sin 'calibre_awg'.";
 	}
 	if ( $is_variador && ( '' === $row['potencia_hp'] || '' === $row['voltaje_entrada'] ) ) {
-		$errors[] = "Fila $line: variador requiere 'potencia_hp' y 'voltaje_entrada'.";
-		continue;
+		$warns[] = "Fila $line: variador sin 'potencia_hp'/'voltaje_entrada'.";
 	}
 
 	// Image (warning only).

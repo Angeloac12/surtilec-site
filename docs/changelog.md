@@ -3,6 +3,12 @@
 Notable changes to the Surtilec project. Newest first.
 
 ## Unreleased
+- Carga del catálogo real (`data/products-master_1.csv` → 1.356 productos):
+  - **Origen:** export del proveedor (Belden + Procables), 1.360 filas, **codificación Mac Roman** y delimitador `;`. Limpieza con script Python → `data/products-master.csv` (UTF-8, coma con comillas): se quitaron 3 filas EJEMPLO + 1 vacía, se **deduplicaron 10 SKUs** (sufijo `-2/-3`) y se reubicó "Cable encauchetado" a la nueva línea "Cable flexible". Resultado: **1.356 productos**.
+  - **Taxonomía ampliada (estado de servidor):** el catálogo creció de 5 a **14 líneas**. Nuevas categorías padre: Cable flexible, Cables de acometida, Cables de aluminio, Cables de baja tensión, Cables de distribución, Cables de fibra óptica, Cables de red, Cables solares, Conductores desnudos (+ sus subcats). Nuevas subcats en "Cables especiales": Cable coaxial, Cable de alta temperatura, Cable de soldadura, Cable DLO, Cable festón. "Cable encauchetado" reparentado a "Cable flexible".
+  - **Importador:** `scripts/import-products.php` — los specs incompletos (cable sin `calibre_awg`, variador sin potencia) pasan de **error a advertencia** (los datos reales del proveedor varían; THHN de 1 conductor no lleva `num_conductores`). Backup automático + dry-run (1.356 válidas, 10 avisos) + import (creados 1.356). Idempotente.
+  - Verificado: 1.357 productos publicados; categoría con grid de productos (HTTP 200), ficha con tabla de specs + "solicitar cotización" (modo catálogo OK), portada con 14 tiles pilar; contadores de término refrescados; caché purgada.
+  - **Follow-ups (backlog):** sumar las 9 líneas nuevas al dropdown "Catálogo"; iconos/tagline de portada para las nuevas líneas (hoy icono por defecto); varios nombres Belden vienen en inglés crudo (refinar en CSV); imágenes pendientes (columna vacía).
 - **Fase 4 — Página Servicios: diferida a backlog (2026-06-15).** No se construye en esta tanda por falta de la lista real de servicios del cliente (regla: no inventar). Detalle en `docs/backlog.md` → "Páginas / contenido". El resto del rebuild estilo distribuidor (Fases 0,1,2,3,5,6) queda completo.
 - Header móvil compacto (`fix/mobile-header`):
   - **Problema:** en móvil el header apilaba ~5 bloques full-width (buscador quedaba último), con un **botón verde de WhatsApp solo-ícono** redundante (WhatsApp ya está en la barra utilitaria y en el botón flotante) → header muy alto y poco moderno.
