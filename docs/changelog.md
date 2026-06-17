@@ -3,6 +3,11 @@
 Notable changes to the Surtilec project. Newest first.
 
 ## Unreleased
+- Rediseño de la ficha de producto (`feat/product-page`): más moderna, minimalista y con jerarquía de CTA.
+  - **Chips de specs** bajo el título (`surtilec_product_chips`, prio 6): marca, calibre, conductores, voltaje, apantallado en pastillas mono — valor inmediato.
+  - **CTA jerárquico:** "Añadir a cotización" (YITH) forzado a **naranja sólido** (vencía el azul por defecto, selectores `.single-product .yith-ywraq-add-to-quote a` + `!important`), ancho acotado (360px); WhatsApp pasa a **secundario outline** verde. **Espacio entre botones** (0.85rem).
+  - **Línea de confianza** (`surtilec_product_trust`, prio 36): despacho nacional · cotización < 1 h hábil · asesoría técnica.
+  - Badge de precio con más presencia (borde acento), marco de imagen sobrio, meta (SKU/categoría) discreta, más aire en el resumen. Theme 0.13.3 → 0.14.0.
 - Limpieza de anglicismos en nombres de producto: glosario EN→ES (frases + palabras) aplicado a la columna `nombre` de `data/products-master.csv` — **512 nombres** traducidos (características: Shielded→apantallado, Conductors→conductores, Bare Copper→cobre desnudo, Commercial Audio Systems→sistemas de audio comercial, colores, etc.), **conservando** nombres propios (Belden, DataBus, Profibus, series) y abreviaturas técnicas (AWG, PVC, BC, VNTC, CL3R/CMR…). Re-import idempotente (512 actualizados, 844 sin cambios).
 - Carga del catálogo real (`data/products-master_1.csv` → 1.356 productos):
   - **Origen:** export del proveedor (Belden + Procables), 1.360 filas, **codificación Mac Roman** y delimitador `;`. Limpieza con script Python → `data/products-master.csv` (UTF-8, coma con comillas): se quitaron 3 filas EJEMPLO + 1 vacía, se **deduplicaron 10 SKUs** (sufijo `-2/-3`) y se reubicó "Cable encauchetado" a la nueva línea "Cable flexible". Resultado: **1.356 productos**.

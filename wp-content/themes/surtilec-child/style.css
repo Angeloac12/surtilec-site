@@ -4,7 +4,7 @@ Theme URI:    https://surtilec.com
 Description:  Child theme de GeneratePress para Surtilec — catálogo B2B de cables especiales y automatización industrial.
 Author:       Surtilec
 Template:     generatepress
-Version:      0.13.3
+Version:      0.14.0
 Text Domain:  surtilec
 */
 
@@ -1146,3 +1146,83 @@ body.su-fullbleed #primary { max-width: 100%; width: 100%; margin: 0; }
 .main-navigation .main-nav ul ul li a { transition: color 0.15s ease, background-color 0.15s ease; }
 .main-navigation .main-nav ul ul li a:hover,
 .main-navigation .main-nav ul ul li.current-menu-item > a { color: var(--color-accent) !important; }
+
+/* ============================================================
+   FICHA DE PRODUCTO — moderna, minimalista, con jerarquía de CTA
+   ============================================================ */
+.single-product div.product .summary { padding-left: clamp(0px, 2vw, 1.5rem); }
+.single-product .product_title { margin-bottom: 0.6rem; }
+
+/* Marco de imagen sobrio */
+.single-product div.product .woocommerce-product-gallery {
+  border: 1px solid var(--hairline-dark);
+  border-radius: var(--radius);
+  background: #fff;
+  padding: clamp(0.8rem, 2vw, 1.4rem);
+}
+
+/* Chips de specs bajo el título */
+.su-pchips { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0.2rem 0 1.4rem; }
+.su-pchip {
+  font-family: var(--font-mono); font-size: 0.74rem; color: var(--gray-700);
+  background: var(--surface-alt); border: 1px solid var(--hairline-dark);
+  border-radius: 999px; padding: 0.4em 0.85em;
+}
+.su-pchip-k { color: var(--gray-500); text-transform: uppercase; letter-spacing: 0.04em; margin-right: 0.35em; }
+
+/* Precio = badge de cotización, más presencia */
+.single-product .price .surtilec-precio-cotizar,
+.single-product .surtilec-precio-cotizar {
+  font-size: 0.95rem; padding: 0.55em 1em; border-left: 3px solid var(--color-accent);
+  border-radius: 0 var(--radius) var(--radius) 0; background: var(--surface-alt);
+}
+.single-product .price { margin-bottom: 1.6rem; }
+
+/* CTA primario: "Añadir a cotización" naranja sólido (vence el azul de YITH) */
+.single-product .yith-ywraq-add-to-quote a,
+.single-product a.add-request-quote-button,
+.single-product .add-request-quote-button,
+.single-product .add-request-quote-button-addons {
+  display: block !important;
+  width: 100%; max-width: 360px;
+  background: var(--color-accent) !important;
+  color: #fff !important;
+  border: 2px solid var(--color-accent) !important;
+  border-radius: var(--radius) !important;
+  padding: 0.95em 1.5em !important;
+  font-weight: 700; font-size: 1rem; line-height: 1.2;
+  text-align: center; text-decoration: none; box-shadow: none !important;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+.single-product .yith-ywraq-add-to-quote a:hover,
+.single-product a.add-request-quote-button:hover,
+.single-product .add-request-quote-button:hover {
+  background: var(--color-accent-hover) !important; border-color: var(--color-accent-hover) !important; color: #fff !important;
+}
+.single-product .yith-ywraq-add-to-quote { margin: 0 0 0.85rem; } /* espacio entre botones */
+
+/* CTA secundario: WhatsApp en outline (minimalista, no compite) */
+.single-product .surtilec-wa-btn {
+  display: block; width: 100%; max-width: 360px; margin: 0;
+  background: #fff; color: #0b7a3b;
+  border: 2px solid #25D366; border-radius: var(--radius);
+  padding: 0.95em 1.5em; font-weight: 700; text-align: center;
+}
+.single-product .surtilec-wa-btn:hover { background: #25D366; color: #fff; }
+
+/* Línea de confianza */
+.su-ptrust {
+  list-style: none; margin: 1.6rem 0 0; padding: 1.3rem 0 0;
+  border-top: 1px solid var(--hairline-dark);
+  display: flex; flex-direction: column; gap: 0.55rem; max-width: 420px;
+}
+.su-ptrust li { position: relative; padding-left: 1.7rem; color: var(--gray-700); font-size: 0.92rem; }
+.su-ptrust li::before { content: "✓"; position: absolute; left: 0; top: 0; color: var(--color-accent); font-weight: 800; }
+
+/* Meta (SKU / categoría) discreto */
+.single-product .product_meta {
+  font-size: 0.85rem; color: var(--gray-500);
+  border-top: 1px solid var(--hairline-dark); margin-top: 1.4rem; padding-top: 1rem;
+}
+.single-product .product_meta a { color: var(--color-dark); text-decoration: none; }
+.single-product .product_meta a:hover { color: var(--color-accent); }
