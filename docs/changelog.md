@@ -3,6 +3,9 @@
 Notable changes to the Surtilec project. Newest first.
 
 ## Unreleased
+- Archivo de categoría de Recursos + balance de categorías (`feat/recursos-content`):
+  - **`category.php`** nuevo: las categorías de blog (Guías técnicas, Normativa, etc.) usaban la plantilla genérica de GP (sin breadcrumb ni estilo de marca). Ahora replican el índice: hero híbrido con **migas** (Inicio › Recursos › {categoría}), pestañas y rejilla de tarjetas. `su-fullbleed` extendido a `is_category()`/`is_tag()`.
+  - **Categorías pobladas:** "Producto" añadido como 2ª categoría a las comparativas (THHN vs THWN-2, control vs instrumentación); nuevo artículo en "Preguntas frecuentes": "Preguntas frecuentes: cotización, despacho y producto en Surtilec" (1453, 6 P/R → FAQPage). Balance: Guías 5 · Normativa 1 · Producto 2 · Preguntas frecuentes 1. Theme 0.15.0 → 0.15.1.
 - Pool de artículos AEO/SEO en Recursos (`feat/recursos-content`):
   - **FAQPage automático en artículos:** `surtilec_faq_pairs_from_html()` (parsea el H2 "Preguntas frecuentes" → H3/P) + `surtilec_faqpage_schema()` en `inc/parts.php`; `single.php` emite **FAQPage JSON-LD** además de Article. Sin ACF: el FAQ vive en el cuerpo del artículo (también entra en la TOC).
   - **6 artículos publicados** (estado de servidor, español, con FAQ + enlaces internos a categorías y a /cotizar/): control vs instrumentación (1447), THHN vs THWN-2 (1448), cable VFD apantallado (1449), cable de bandeja TC/TC-ER (1450), cómo elegir calibre AWG (1451), RETIE y NTC 2050 (1452). Categorías: Guías técnicas / Normativa. Eliminado el post EJEMPLO.

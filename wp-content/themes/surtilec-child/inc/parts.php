@@ -27,7 +27,7 @@ add_filter(
 			'template-industria.php',
 			'page-servicios.php',
 		);
-		if ( is_page_template( $fullbleed_templates ) || is_home() || is_singular( 'post' ) ) {
+		if ( is_page_template( $fullbleed_templates ) || is_home() || is_singular( 'post' ) || is_category() || is_tag() ) {
 			$classes[] = 'su-fullbleed';
 		}
 		return $classes;
