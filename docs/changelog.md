@@ -3,6 +3,10 @@
 Notable changes to the Surtilec project. Newest first.
 
 ## Unreleased
+- Pool de artículos AEO/SEO en Recursos (`feat/recursos-content`):
+  - **FAQPage automático en artículos:** `surtilec_faq_pairs_from_html()` (parsea el H2 "Preguntas frecuentes" → H3/P) + `surtilec_faqpage_schema()` en `inc/parts.php`; `single.php` emite **FAQPage JSON-LD** además de Article. Sin ACF: el FAQ vive en el cuerpo del artículo (también entra en la TOC).
+  - **6 artículos publicados** (estado de servidor, español, con FAQ + enlaces internos a categorías y a /cotizar/): control vs instrumentación (1447), THHN vs THWN-2 (1448), cable VFD apantallado (1449), cable de bandeja TC/TC-ER (1450), cómo elegir calibre AWG (1451), RETIE y NTC 2050 (1452). Categorías: Guías técnicas / Normativa. Eliminado el post EJEMPLO.
+  - Contenido educativo (conocimiento técnico general + normativa CO real), sin inventar specs de producto. Verificado: cada uno extrae 3 pares FAQ → FAQPage. Theme 0.14.1 → 0.15.0.
 - Fuga de inglés en mensajes YITH de la ficha — causa real = **opciones**, no gettext: "Product added to the list" y "This product is already in your quote request list." se guardan como **opciones del plugin** (`ywraq_show_product_added`, `ywraq_show_already_in_quote`) cuyo default `__()` quedó en inglés al guardarse bajo es_CO (sin .mo) → el filtro gettext no las alcanza (se leen de la opción). Solución: `wp option update` a español (estado de servidor). También traducidas `ywraq_privacy_label` y `ywraq_privacy_description`. (El mapa gettext sigue cubriendo strings no basados en opción.)
 - Ficha de producto — pulido minimalista + fuga de inglés (`feat/product-page`):
   - **Fuga YITH:** "Product added to the list" (sin "!") no estaba en el mapa gettext → se añadió (+ variantes removed) en `surtilec-catalog-mode.php`. Verificado server-side: ahora "Producto añadido a la lista".

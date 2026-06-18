@@ -8,6 +8,10 @@ Pendientes que no están en el alcance de la sesión actual. Más reciente prime
 - **Ticker metales — precios USD reales / API:** hoy el USD/lb de cobre/aluminio es semilla editable (`surtilec_metals_usd`). Conectar una API real (filtro `surtilec_metals_usd`) o cargar los reales por opción. La TRM ya es en vivo.
 - **Header móvil — paso compacto extra:** logo izquierda + hamburguesa derecha en la misma fila (reposicionar el toggle de GP) para borrar la fila "Menú" separada.
 
+## Recursos / contenido
+
+- **Más artículos AEO (pool ampliable):** apantallamiento (lámina vs malla), cobre vs aluminio, encauchetado/SO/SOOW usos, fibra óptica para industria, cable solar (TÜV/PV), cómo cotizar por volumen, variador: elegir potencia/voltaje, PLC vs relé. Misma estructura (H2 + FAQ → FAQPage).
+
 ## Catálogo (tras la carga de 1.356 productos)
 
 - **Nombres en inglés:** varios productos Belden quedaron con nombre crudo en inglés (filas tardías del CSV). Refinar en `data/products-master.csv` y re-importar (idempotente).

@@ -185,6 +185,78 @@ function surtilec_icon( $name ) {
 }
 
 /**
+ * Extrae pares P/R de un artículo: busca el H2 "Preguntas frecuentes" y toma
+ * cada H3 (pregunta) + el primer párrafo siguiente (respuesta), hasta el
+ * próximo H2. Pensado para nuestro contenido controlado.
+ *
+ * @param string $html Contenido renderizado (the_content).
+ * @return array<int,array{q:string,a:string}>
+ */
+function surtilec_faq_pairs_from_html( $html ) {
+	if ( '' === trim( (string) $html ) || ! class_exists( 'DOMDocument' ) ) {
+		return array();
+	}
+	$dom = new DOMDocument();
+	libxml_use_internal_errors( true );
+	$dom->loadHTML( '<?xml encoding="utf-8"?><div id="su-root">' . $html . '</div>' );
+	libxml_clear_errors();
+	$root = $dom->getElementById( 'su-root' );
+	if ( ! $root ) {
+		return array();
+	}
+	$pairs   = array();
+	$in_faq  = false;
+	$pending = null;
+	foreach ( $root->childNodes as $node ) {
+		if ( XML_ELEMENT_NODE !== $node->nodeType ) {
+			continue;
+		}
+		$tag = strtolower( $node->nodeName );
+		if ( 'h2' === $tag ) {
+			$in_faq  = ( false !== mb_stripos( $node->textContent, 'preguntas frecuentes' ) );
+			$pending = null;
+			continue;
+		}
+		if ( ! $in_faq ) {
+			continue;
+		}
+		if ( 'h3' === $tag ) {
+			$pending = trim( $node->textContent );
+		} elseif ( 'p' === $tag && null !== $pending && '' !== trim( $node->textContent ) ) {
+			$pairs[] = array( 'q' => $pending, 'a' => trim( $node->textContent ) );
+			$pending = null;
+		}
+	}
+	return $pairs;
+}
+
+/**
+ * Emite FAQPage JSON-LD a partir de pares P/R (si hay).
+ *
+ * @param array $pairs array{q,a}.
+ * @return void
+ */
+function surtilec_faqpage_schema( $pairs ) {
+	if ( empty( $pairs ) ) {
+		return;
+	}
+	$entities = array();
+	foreach ( $pairs as $p ) {
+		$entities[] = array(
+			'@type'          => 'Question',
+			'name'           => $p['q'],
+			'acceptedAnswer' => array( '@type' => 'Answer', 'text' => $p['a'] ),
+		);
+	}
+	$schema = array(
+		'@context'   => 'https://schema.org',
+		'@type'      => 'FAQPage',
+		'mainEntity' => $entities,
+	);
+	echo '<script type="application/ld+json">' . wp_json_encode( $schema, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES ) . '</script>';
+}
+
+/**
  * Tiempo estimado de lectura en minutos (~200 palabras/min).
  *
  * @param int|WP_Post|null $post Post o ID (default: actual).

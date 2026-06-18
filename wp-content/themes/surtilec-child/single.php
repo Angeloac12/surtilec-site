@@ -135,6 +135,9 @@ while ( have_posts() ) :
 			}
 		}
 		echo '<script type="application/ld+json">' . wp_json_encode( $article_schema, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES ) . '</script>';
+
+		// FAQPage (AEO) si el artículo tiene una sección "Preguntas frecuentes".
+		surtilec_faqpage_schema( surtilec_faq_pairs_from_html( apply_filters( 'the_content', get_the_content() ) ) );
 		?>
 
 	</main>
