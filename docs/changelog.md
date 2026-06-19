@@ -3,6 +3,12 @@
 Notable changes to the Surtilec project. Newest first.
 
 ## Unreleased
+- LCP de la ficha de producto — imagen principal sin lazy-load (`perf/lcp-product-hero`):
+  - **Diagnóstico (Lighthouse móvil):** la imagen principal del producto es el elemento LCP, pero LiteSpeed la cargaba con lazy-load → `resourceLoadDelay` de **2.392 ms** (no se solicitaba hasta 2,4 s) → LCP ~2,8–2,9 s. El resto de la página es liviana (298 KB, CLS 0, TBT 0 ms). TTFB en frío (~1,4 s) se debía a caché purgada; en caliente baja a ~0,5–0,7 s.
+  - **Fix (child theme, `inc/catalog-templates.php`):** filtro `woocommerce_single_product_image_thumbnail_html` → solo a la imagen destacada (`$attachment_id === get_post_thumbnail_id()`) le añade `fetchpriority="high"` + `loading="eager"`, quita `loading="lazy"` y la clase `lcp-eager`. LiteSpeed 7.x excluye del lazy-load las imágenes con `fetchpriority=high`, así que la heroica carga de inmediato sin tocar opciones del plugin.
+  - **Verificado** adjuntando una imagen de prueba al producto 1437 (luego eliminada, ficha vuelta a placeholder): `resourceLoadDelay` 2.392 ms → **29 ms**, Speed Index 5,2 s → **2,9 s**, perf 91 → **94**, LCP observado en traza ~1,5 s. El LCP simulado de Lighthouse sigue ~3,0 s, ahora limitado por TTFB de origen (~0,6 s) y ausencia de CDN de borde, no por lazy-load.
+  - Los productos sin imagen (1.357 de 1.357) no se ven afectados: WooCommerce imprime el placeholder fuera de este filtro. Theme 0.15.1 → 0.15.2.
+  - **Pendiente (mayor impacto real):** importar las imágenes de producto (185 oficiales descargadas) y evaluar CDN QUIC.cloud para bajar TTFB.
 - Archivo de categoría de Recursos + balance de categorías (`feat/recursos-content`):
   - **`category.php`** nuevo: las categorías de blog (Guías técnicas, Normativa, etc.) usaban la plantilla genérica de GP (sin breadcrumb ni estilo de marca). Ahora replican el índice: hero híbrido con **migas** (Inicio › Recursos › {categoría}), pestañas y rejilla de tarjetas. `su-fullbleed` extendido a `is_category()`/`is_tag()`.
   - **Categorías pobladas:** "Producto" añadido como 2ª categoría a las comparativas (THHN vs THWN-2, control vs instrumentación); nuevo artículo en "Preguntas frecuentes": "Preguntas frecuentes: cotización, despacho y producto en Surtilec" (1453, 6 P/R → FAQPage). Balance: Guías 5 · Normativa 1 · Producto 2 · Preguntas frecuentes 1. Theme 0.15.0 → 0.15.1.

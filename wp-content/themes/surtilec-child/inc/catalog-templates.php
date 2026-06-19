@@ -168,6 +168,44 @@ function surtilec_product_trust() {
 		. '</ul>';
 }
 
+/**
+ * Make the single-product main image eager + high priority.
+ *
+ * It is the largest-contentful-paint element, but LiteSpeed lazy-loads it by
+ * default, deferring the fetch (~2.4s resource-load-delay → slow LCP). We tag
+ * only the featured image: `fetchpriority="high"` + `loading="eager"` (drop any
+ * `loading="lazy"`). LiteSpeed 7.x skips lazy-load for fetchpriority=high images,
+ * so the hero now loads immediately (resource-load-delay ~30ms in testing). The
+ * `lcp-eager` class is a stable hook in case a future LiteSpeed needs an explicit
+ * lazy-load class-exclude entry.
+ *
+ * Fires only for products that have a real image; placeholder products are
+ * unaffected (WooCommerce prints the placeholder outside this filter).
+ *
+ * @param string $html          Gallery image markup.
+ * @param int    $attachment_id Attachment ID for this gallery slide.
+ * @return string
+ */
+add_filter( 'woocommerce_single_product_image_thumbnail_html', 'surtilec_lcp_hero_img', 20, 2 );
+function surtilec_lcp_hero_img( $html, $attachment_id ) {
+	if ( ! is_product() || (int) $attachment_id !== (int) get_post_thumbnail_id() ) {
+		return $html; // only the main image, never the rest of the gallery.
+	}
+
+	// Drop the lazy hint WordPress/WooCommerce add to the <img>.
+	$html = preg_replace( '/\sloading=(["\'])lazy\1/', '', $html, 1 );
+
+	// Inject priority hints + the LiteSpeed lazy-exclude class into the <img>.
+	if ( preg_match( '/<img\b[^>]*\sclass=(["\'])/', $html ) ) {
+		$html = preg_replace( '/(<img\b[^>]*\sclass=(["\']))/', '$1lcp-eager ', $html, 1 );
+	} else {
+		$html = preg_replace( '/<img\b/', '<img class="lcp-eager"', $html, 1 );
+	}
+	$html = preg_replace( '/<img\b/', '<img fetchpriority="high" loading="eager"', $html, 1 );
+
+	return $html;
+}
+
 /* =============================================================
    PART B — Category page
    ============================================================= */
