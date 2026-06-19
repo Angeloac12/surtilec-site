@@ -4,7 +4,7 @@ Theme URI:    https://surtilec.com
 Description:  Child theme de GeneratePress para Surtilec — catálogo B2B de cables especiales y automatización industrial.
 Author:       Surtilec
 Template:     generatepress
-Version:      0.15.2
+Version:      0.16.0
 Text Domain:  surtilec
 */
 
@@ -220,6 +220,79 @@ input[type="submit"]:hover,
   padding: 0 0.9em;
 }
 .surtilec-product-search button:hover { background: var(--color-accent-hover); }
+
+/* ============================================================
+   Autocompletado de búsqueda (dropdown)
+   ============================================================ */
+.surtilec-nav-search { position: relative; }
+.su-suggest {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  z-index: 60;
+  background: #fff;
+  border: 1px solid var(--gray-300);
+  border-radius: var(--radius);
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.14);
+  overflow: hidden;
+  max-height: min(70vh, 480px);
+  overflow-y: auto;
+}
+.su-suggest-item {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.6rem 0.85rem;
+  text-decoration: none;
+  color: var(--color-text, #1f2a37);
+  border-bottom: 1px solid var(--gray-100, #f1f3f5);
+}
+.su-suggest-item:last-child { border-bottom: 0; }
+.su-suggest-item:hover,
+.su-suggest-item[aria-selected="true"] { background: var(--gray-100, #f3f4f6); }
+.su-suggest-thumb {
+  flex: 0 0 auto;
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--gray-100, #f1f3f5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.su-suggest-thumb img { width: 100%; height: 100%; object-fit: contain; }
+.su-suggest-thumb--ph { box-shadow: inset 0 0 0 1px var(--gray-200, #e5e7eb); }
+.su-suggest-text { min-width: 0; display: flex; flex-direction: column; }
+.su-suggest-title {
+  font-size: 0.92rem;
+  line-height: 1.25;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.su-suggest-title strong { color: var(--color-accent); font-weight: 700; }
+.su-suggest-meta {
+  font-size: 0.74rem;
+  color: var(--gray-500, #6b7280);
+  margin-top: 0.1rem;
+}
+.su-suggest-cat { justify-content: space-between; font-size: 0.88rem; }
+.su-suggest-cat-label strong { color: var(--color-accent); }
+.su-suggest-all {
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  background: var(--gray-50, #fafafa);
+}
+.su-suggest-empty {
+  padding: 0.85rem;
+  font-size: 0.88rem;
+  color: var(--gray-500, #6b7280);
+  text-align: center;
+}
 
 /* ============================================================
    Encabezado fijo (sticky) — GP free no lo trae nativo

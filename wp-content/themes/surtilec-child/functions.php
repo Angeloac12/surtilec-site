@@ -159,6 +159,38 @@ add_action(
 );
 
 /**
+ * Header search autocomplete — loaded site-wide on the front end (the search
+ * box lives in the header). Talks to the surtilec/v1/suggest REST endpoint.
+ */
+add_action(
+	'wp_enqueue_scripts',
+	function () {
+		if ( is_admin() ) {
+			return;
+		}
+		wp_enqueue_script(
+			'surtilec-search',
+			get_stylesheet_directory_uri() . '/assets/js/surtilec-search.js',
+			array(),
+			wp_get_theme()->get( 'Version' ),
+			true
+		);
+		wp_localize_script(
+			'surtilec-search',
+			'surtilecSearch',
+			array(
+				'endpoint' => esc_url_raw( rest_url( 'surtilec/v1/suggest' ) ),
+				'i18n'     => array(
+					'all'  => __( 'Ver todos los resultados para', 'surtilec' ),
+					'cat'  => __( 'Ver categoría', 'surtilec' ),
+					'none' => __( 'Sin coincidencias para', 'surtilec' ),
+				),
+			)
+		);
+	}
+);
+
+/**
  * Joinchat: on single products, prefill the WhatsApp message with the product
  * name via the built-in {PRODUCT} variable (resolved by Joinchat's WooCommerce
  * integration).
