@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Surtilec — Search (suggest + relevance)
  * Description: Custom weighted product search. Exposes a REST suggest endpoint for the header autocomplete and upgrades the WP search results page (SKU + relevance ranking, trimmed query). No external search plugin.
- * Version:     0.1.0
+ * Version:     0.2.0
  * Author:      Surtilec
  *
  * @package Surtilec
@@ -21,7 +21,11 @@ const SURTILEC_SEARCH_MAX_LEN = 60; // Hard cap on query length.
    ============================================================= */
 
 /**
- * Normalise a raw query into lowercase whitespace-split tokens.
+ * Normalise a raw query into lowercase tokens.
+ *
+ * Punctuation is treated as a separator and dropped, so noise like "#" in
+ * "cable # 12" does not become a token that can never match. Single-character
+ * tokens are dropped unless numeric (gauge numbers like "2" stay).
  *
  * @param string $q Raw query.
  * @return string[] Tokens (may be empty).
@@ -32,8 +36,30 @@ function surtilec_search_tokens( $q ) {
 	if ( '' === $q ) {
 		return array();
 	}
-	$parts  = preg_split( '/\s+/u', mb_strtolower( $q ), -1, PREG_SPLIT_NO_EMPTY );
-	return is_array( $parts ) ? $parts : array();
+	// Non-alphanumeric (unicode-aware) becomes a separator.
+	$q     = preg_replace( '/[^\p{L}\p{N}]+/u', ' ', mb_strtolower( $q ) );
+	$parts = preg_split( '/\s+/u', (string) $q, -1, PREG_SPLIT_NO_EMPTY );
+
+	$tokens = array();
+	foreach ( (array) $parts as $p ) {
+		if ( ctype_digit( $p ) || mb_strlen( $p ) >= 2 ) {
+			$tokens[] = $p;
+		}
+	}
+	return $tokens;
+}
+
+/**
+ * The query as a single normalised phrase (punctuation collapsed to spaces),
+ * for full-phrase relevance bonuses.
+ *
+ * @param string $q Raw query.
+ * @return string
+ */
+function surtilec_search_phrase( $q ) {
+	$q = mb_strtolower( trim( wp_strip_all_tags( (string) $q ) ) );
+	$q = preg_replace( '/[^\p{L}\p{N}]+/u', ' ', $q );
+	return trim( preg_replace( '/\s+/u', ' ', (string) $q ) );
 }
 
 /* =============================================================
@@ -41,12 +67,14 @@ function surtilec_search_tokens( $q ) {
    ============================================================= */
 
 /**
- * Weighted product match against title + SKU.
+ * "Most similar" product match against title + SKU.
  *
- * Each token must appear in the title OR the SKU (AND across tokens) for
- * precision; rows are ranked by a relevance score (exact title > title prefix >
- * word prefix > title contains > SKU contains). Accent-insensitivity comes from
- * the DB collation (utf8mb4_*_ci), so "cable" matches "cáble".
+ * A row qualifies if it matches AT LEAST ONE token (OR), then rows are ranked by
+ * a relevance score: per-token credit + a bonus when ALL tokens match (so precise
+ * multi-word hits stay on top) + full-phrase / prefix / exact / SKU bonuses. This
+ * always surfaces the closest products instead of an all-or-nothing empty result.
+ * Accent-insensitivity comes from the DB collation (utf8mb4_*_ci): "optica"
+ * matches "óptica".
  *
  * @param string $q     Raw query.
  * @param int    $limit Max rows.
@@ -60,28 +88,52 @@ function surtilec_search_products( $q, $limit = 6 ) {
 		return array();
 	}
 
-	$full        = mb_strtolower( trim( wp_strip_all_tags( (string) $q ) ) );
-	$like_full   = '%' . $wpdb->esc_like( $full ) . '%';
-	$prefix_full = $wpdb->esc_like( $full ) . '%';
-	$word_prefix = '% ' . $wpdb->esc_like( $full ) . '%';
+	$phrase      = surtilec_search_phrase( $q );
+	$like_full   = '%' . $wpdb->esc_like( $phrase ) . '%';
+	$prefix_full = $wpdb->esc_like( $phrase ) . '%';
 
-	// SELECT relevance score (5 placeholders, in textual order).
-	$score        = '( CASE WHEN LOWER(p.post_title) = %s THEN 100 ELSE 0 END'
-		. ' + CASE WHEN LOWER(p.post_title) LIKE %s THEN 60 ELSE 0 END'
-		. ' + CASE WHEN LOWER(p.post_title) LIKE %s THEN 30 ELSE 0 END'
-		. ' + CASE WHEN LOWER(p.post_title) LIKE %s THEN 15 ELSE 0 END'
-		. ' + CASE WHEN su_sku.meta_value LIKE %s THEN 45 ELSE 0 END )';
-	$score_params = array( $full, $prefix_full, $word_prefix, $like_full, $like_full );
+	// Build the score (per-token credit), the OR filter, and the all-tokens
+	// bonus together so the prepare() placeholders stay in textual order.
+	$score_terms  = array();
+	$score_params = array();
+	$or           = array();
+	$or_params    = array();
+	$all          = array();
 
-	// WHERE: each token in title OR sku.
-	$where        = array();
-	$where_params = array();
+	foreach ( $tokens as $t ) {
+		$like = '%' . $wpdb->esc_like( $t ) . '%';
+
+		$score_terms[]  = 'CASE WHEN p.post_title LIKE %s THEN 12 ELSE 0 END';
+		$score_params[] = $like;
+		$score_terms[]  = 'CASE WHEN su_sku.meta_value LIKE %s THEN 14 ELSE 0 END';
+		$score_params[] = $like;
+
+		$or[]        = '( p.post_title LIKE %s OR su_sku.meta_value LIKE %s )';
+		$or_params[] = $like;
+		$or_params[] = $like;
+
+		$all[] = '( p.post_title LIKE %s OR su_sku.meta_value LIKE %s )';
+	}
+
+	// Full-phrase bonuses (after the per-token terms, before the all-tokens CASE).
+	$score_terms[]  = 'CASE WHEN LOWER(p.post_title) = %s THEN 100 ELSE 0 END';
+	$score_params[] = $phrase;
+	$score_terms[]  = 'CASE WHEN LOWER(p.post_title) LIKE %s THEN 50 ELSE 0 END';
+	$score_params[] = $prefix_full;
+	$score_terms[]  = 'CASE WHEN LOWER(p.post_title) LIKE %s THEN 25 ELSE 0 END';
+	$score_params[] = $like_full;
+	$score_terms[]  = 'CASE WHEN su_sku.meta_value LIKE %s THEN 45 ELSE 0 END';
+	$score_params[] = $like_full;
+
+	// All-tokens-present bonus (placeholders appended in textual order).
+	$score_terms[] = 'CASE WHEN ( ' . implode( ' AND ', $all ) . ' ) THEN 40 ELSE 0 END';
 	foreach ( $tokens as $t ) {
 		$like           = '%' . $wpdb->esc_like( $t ) . '%';
-		$where[]        = '( p.post_title LIKE %s OR su_sku.meta_value LIKE %s )';
-		$where_params[] = $like;
-		$where_params[] = $like;
+		$score_params[] = $like;
+		$score_params[] = $like;
 	}
+
+	$score = '( ' . implode( ' + ', $score_terms ) . ' )';
 
 	// Exclude products flagged exclude-from-search (WooCommerce visibility).
 	$exclude = "p.ID NOT IN (
@@ -95,12 +147,12 @@ function surtilec_search_products( $q, $limit = 6 ) {
 		FROM {$wpdb->posts} p
 		LEFT JOIN {$wpdb->postmeta} su_sku ON ( su_sku.post_id = p.ID AND su_sku.meta_key = '_sku' )
 		WHERE p.post_type = 'product' AND p.post_status = 'publish'
-		AND ( " . implode( ' AND ', $where ) . " )
+		AND ( " . implode( ' OR ', $or ) . " )
 		AND {$exclude}
 		ORDER BY score DESC, p.post_title ASC
 		LIMIT %d";
 
-	$params = array_merge( $score_params, $where_params, array( (int) $limit ) );
+	$params = array_merge( $score_params, $or_params, array( (int) $limit ) );
 
 	// phpcs:ignore WordPress.DB.PreparedSQL.NotPrepared -- placeholders built above, values via prepare().
 	return $wpdb->get_results( $wpdb->prepare( $sql, $params ) );
