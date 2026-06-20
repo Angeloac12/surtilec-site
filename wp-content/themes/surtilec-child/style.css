@@ -4,7 +4,7 @@ Theme URI:    https://surtilec.com
 Description:  Child theme de GeneratePress para Surtilec — catálogo B2B de cables especiales y automatización industrial.
 Author:       Surtilec
 Template:     generatepress
-Version:      0.16.0
+Version:      0.16.1
 Text Domain:  surtilec
 */
 
@@ -230,7 +230,7 @@ input[type="submit"]:hover,
   top: calc(100% + 6px);
   left: 0;
   right: 0;
-  z-index: 60;
+  z-index: 400;
   background: #fff;
   border: 1px solid var(--gray-300);
   border-radius: var(--radius);
@@ -300,7 +300,10 @@ input[type="submit"]:hover,
 .site-header {
   position: sticky;
   top: 0;
-  z-index: 100;
+  /* Above .main-navigation: GP "below header" nav can be sticky at the same
+     z-index and, coming later in the DOM, would otherwise paint over the
+     search autocomplete dropdown (which lives inside this header). */
+  z-index: 300;
 }
 /* Compensar la barra de administración de WordPress al estar logueado */
 .admin-bar .site-header { top: 32px; }
