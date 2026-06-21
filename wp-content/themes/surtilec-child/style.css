@@ -4,7 +4,7 @@ Theme URI:    https://surtilec.com
 Description:  Child theme de GeneratePress para Surtilec — catálogo B2B de cables especiales y automatización industrial.
 Author:       Surtilec
 Template:     generatepress
-Version:      0.16.1
+Version:      0.16.2
 Text Domain:  surtilec
 */
 
@@ -1235,6 +1235,36 @@ body.su-fullbleed #primary { max-width: 100%; width: 100%; margin: 0; }
   border-radius: var(--radius);
   background: #fff;
   padding: clamp(0.8rem, 2vw, 1.4rem);
+}
+/* Caja de dimensión fija: las imágenes del proveedor llegan en aspectos muy
+   dispares (tiras verticales 211x1608, apaisadas 1542x1375). object-fit:contain
+   sobre un cuadrado centra y muestra el producto completo sin estirar ni que una
+   tira vertical ocupe toda la columna. */
+.single-product div.product .woocommerce-product-gallery__image {
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.single-product div.product .woocommerce-product-gallery__image a,
+.single-product div.product .woocommerce-product-gallery__image img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain;
+}
+
+/* Rejilla de producto (archivo de categoría + "productos relacionados"):
+   misma caja cuadrada para toda imagen, sea cual sea su dimensión origen, con
+   fondo blanco. Woo usa woocommerce_thumbnail (uncropped, estado de servidor)
+   y aquí solo la encajamos sin recortar. */
+.woocommerce ul.products li.product a img,
+.woocommerce ul.products li.product img.attachment-woocommerce_thumbnail {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #fff;
+  margin-bottom: 0.8em;
 }
 
 /* Chips de specs bajo el título */
