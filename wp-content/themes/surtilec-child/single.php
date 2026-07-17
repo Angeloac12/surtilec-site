@@ -15,7 +15,10 @@ while ( have_posts() ) :
 	$cats        = get_the_category();
 	$tag         = ! empty( $cats ) ? $cats[0] : null;
 	$mins        = surtilec_read_time();
-	$author      = get_the_author();
+	$author      = trim( (string) get_the_author() );
+	if ( '' === $author ) {
+		$author = 'Surtilec';
+	}
 	$recursos_id = (int) get_option( 'page_for_posts' );
 	$recursos_url = $recursos_id ? get_permalink( $recursos_id ) : home_url( '/recursos/' );
 	?>

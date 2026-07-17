@@ -28,6 +28,34 @@ if ( ! function_exists( 'surtilec_entity_sentence' ) ) {
 }
 
 /**
+ * Resolve the current WooCommerce product early enough for wp_head.
+ *
+ * The global `$product` is not always populated when our JSON-LD runs, so using
+ * the queried object keeps Product/Breadcrumb schema reliable on single-product
+ * pages without depending on WooCommerce template timing.
+ *
+ * @return WC_Product|null
+ */
+function surtilec_schema_current_product() {
+	if ( ! function_exists( 'is_product' ) || ! is_product() || ! function_exists( 'wc_get_product' ) ) {
+		return null;
+	}
+
+	global $product;
+	if ( $product instanceof WC_Product ) {
+		return $product;
+	}
+
+	$product_id = get_queried_object_id();
+	if ( ! $product_id ) {
+		return null;
+	}
+
+	$resolved = wc_get_product( $product_id );
+	return ( $resolved instanceof WC_Product ) ? $resolved : null;
+}
+
+/**
  * Output the combined JSON-LD graph in the head.
  */
 add_action( 'wp_head', 'surtilec_schema_output', 20 );
@@ -115,7 +143,7 @@ function surtilec_schema_localbusiness() {
  * @return array|null
  */
 function surtilec_schema_product() {
-	global $product;
+	$product = surtilec_schema_current_product();
 	if ( ! $product instanceof WC_Product ) {
 		return null;
 	}
@@ -220,7 +248,7 @@ function surtilec_schema_term_trail( $term_id ) {
  * @return array|null
  */
 function surtilec_schema_breadcrumb_product() {
-	global $product;
+	$product = surtilec_schema_current_product();
 	if ( ! $product instanceof WC_Product ) {
 		return null;
 	}
