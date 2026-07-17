@@ -12,7 +12,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-const SURTILEC_SCHEMA_WA = '+573204499026';
+const SURTILEC_SCHEMA_WA      = '+573204499026';
+const SURTILEC_LEGAL_NAME     = 'Grupo Gerson S.A.S.';
+const SURTILEC_TAX_ID         = '901526407';
+const SURTILEC_STREET_ADDRESS = 'Carrera 12 # 17-99';
+const SURTILEC_CITY           = 'Bogotá';
+const SURTILEC_COUNTRY_CODE   = 'CO';
+const SURTILEC_COUNTRY_NAME   = 'Colombia';
 
 /**
  * Canonical Surtilec entity sentence — single source of truth.
@@ -103,14 +109,32 @@ function surtilec_schema_organization() {
 		'@type'       => 'Organization',
 		'@id'         => home_url( '/#organization' ),
 		'name'        => 'Surtilec',
+		'legalName'   => SURTILEC_LEGAL_NAME,
+		'taxID'       => SURTILEC_TAX_ID,
 		'url'         => home_url( '/' ),
+		'telephone'   => SURTILEC_SCHEMA_WA,
 		'description' => surtilec_entity_sentence(),
+		'address'     => surtilec_schema_postal_address(),
 		'sameAs'      => array(),
 	);
 }
 
 /**
- * LocalBusiness (site-wide), city-level only — no street address invented.
+ * Postal address from confirmed business data.
+ *
+ * @return array
+ */
+function surtilec_schema_postal_address() {
+	return array(
+		'@type'           => 'PostalAddress',
+		'streetAddress'   => SURTILEC_STREET_ADDRESS,
+		'addressLocality' => SURTILEC_CITY,
+		'addressCountry'  => SURTILEC_COUNTRY_CODE,
+	);
+}
+
+/**
+ * LocalBusiness (site-wide).
  *
  * @return array
  */
@@ -119,17 +143,15 @@ function surtilec_schema_localbusiness() {
 		'@type'      => 'LocalBusiness',
 		'@id'        => home_url( '/#localbusiness' ),
 		'name'       => 'Surtilec',
+		'legalName'  => SURTILEC_LEGAL_NAME,
+		'taxID'      => SURTILEC_TAX_ID,
 		'url'        => home_url( '/' ),
 		'telephone'  => SURTILEC_SCHEMA_WA,
 		'areaServed' => array(
 			'@type' => 'Country',
-			'name'  => 'Colombia',
+			'name'  => SURTILEC_COUNTRY_NAME,
 		),
-		'address'    => array(
-			'@type'           => 'PostalAddress',
-			'addressLocality' => 'Bogotá',
-			'addressCountry'  => 'CO',
-		),
+		'address'    => surtilec_schema_postal_address(),
 	);
 }
 
