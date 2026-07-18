@@ -24,7 +24,7 @@ Pendientes que no están en el alcance de la sesión actual. Más reciente prime
 ## Catálogo (tras la carga de 1.356 productos)
 
 - **Nombres en inglés:** varios productos Belden quedaron con nombre crudo en inglés (filas tardías del CSV). Refinar en `data/products-master.csv` y re-importar (idempotente).
-- **Imágenes reales:** 317 productos tienen imagen destacada y alt; 1.039 productos siguen con placeholder porque la columna `imagen` del CSV no trae archivo fuente. Cargar imágenes reales en `data/images/`, llenar la columna `imagen` y re-importar. El alt text de imágenes existentes ya está limpio.
+- **Imágenes reales:** 317 productos tienen imagen destacada y alt; 1.039 productos siguen con placeholder. Se pueden subir/asignar directamente en WordPress Admin; el mu-plugin completa alt vacío al asignar imagen destacada y los scripts `audit-image-alt.php`/`fix-image-alt.php` auditan cada lote. Pendiente real: conseguir imágenes autorizadas del proveedor/fabricante o fotos propias.
 - **SKUs duplicados:** 10 quedaron con sufijo `-2/-3`; revisar si eran productos distintos o duplicados reales.
 
 ## Polish (cosméticos)
@@ -35,6 +35,7 @@ Pendientes que no están en el alcance de la sesión actual. Más reciente prime
 
 ### Resueltos
 - ~~Alt text y descripciones cortas de producto~~ (2026-07-17): 0 imágenes/featured images sin alt; placeholder WooCommerce con alt; 1.356 productos publicados con descripción corta en WordPress y en `data/products-master.csv`.
+- ~~Flujo futuro de alt text~~ (2026-07-18): automatización para no dejar alt vacío al asignar imágenes destacadas de producto, auditoría/reparación WP-CLI y guía `docs/image-alt-workflow.md`.
 - ~~Datos legales visibles y schema~~ (2026-07-17): footer, Contacto, Privacidad, Términos y JSON-LD `Organization`/`LocalBusiness` incluyen Grupo Gerson S.A.S., NIT 901526407 y Carrera 12 # 17-99 donde corresponde.
 - ~~Contenido de prueba antes de lanzar~~ (2026-07-17): el producto `Producto de prueba` id 35 quedó en `draft`; la URL pública `/producto/producto-de-prueba/` responde 404 y el catálogo publicado queda en 1.356 productos reales.
 - ~~Categorías — limpiar contenido EJEMPLO~~ (2026-07-16): descripciones/FAQ de `product_cat` revisadas; `cables-de-control` dejó de usar FAQ de ejemplo y no quedan términos con `EJEMPLO`.
