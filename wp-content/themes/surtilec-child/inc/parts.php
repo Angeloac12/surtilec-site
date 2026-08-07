@@ -89,6 +89,15 @@ function surtilec_breadcrumbs( $trail = array(), $args = array() ) {
 		'@type'           => 'BreadcrumbList',
 		'itemListElement' => $list,
 	);
+
+	// AIOSEO's WebPage node points `breadcrumb` at <canonical>#breadcrumblist.
+	// Claiming that @id is what turns this from a loose node into the trail the
+	// page actually references.
+	$canonical = function_exists( 'surtilec_canonical_url' ) ? surtilec_canonical_url() : '';
+	if ( $canonical ) {
+		$schema = array( '@id' => $canonical . '#breadcrumblist' ) + $schema;
+	}
+
 	echo '<script type="application/ld+json">' . wp_json_encode( $schema, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES ) . '</script>';
 }
 
@@ -144,7 +153,7 @@ function surtilec_cta_band( $args = array() ) {
 
 	$wa = function_exists( 'surtilec_wa_link' )
 		? surtilec_wa_link( $a['wa_message'] )
-		: 'https://wa.me/573204499026';
+		: 'https://wa.me/573219932050';
 
 	$band_class = ( 'dark' === $a['variant'] ) ? 'su-band-navy' : 'su-band-accent';
 	$btn_class  = ( 'dark' === $a['variant'] ) ? 'su-btn-primary' : 'su-btn-dark';
@@ -254,6 +263,43 @@ function surtilec_faqpage_schema( $pairs ) {
 		'mainEntity' => $entities,
 	);
 	echo '<script type="application/ld+json">' . wp_json_encode( $schema, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES ) . '</script>';
+}
+
+/**
+ * Render resource-to-category links on a technical article.
+ *
+ * @param int $post_id Article ID.
+ * @return void
+ */
+function surtilec_resource_category_links( $post_id = 0 ) {
+	$post_id = $post_id ? (int) $post_id : get_the_ID();
+	$post    = get_post( $post_id );
+	$map     = array(
+		'cable-control-vs-instrumentacion' => array( 'cables-de-control', 'cables-de-instrumentacion' ),
+		'thhn-vs-thwn2'                    => array( 'cable-thhn-thwn' ),
+		'cable-vfd-apantallado'            => array( 'cables-para-variadores-vfd', 'cables-apantallados' ),
+		'cable-bandeja-tc-er'              => array( 'cable-bandeja', 'cables-especiales' ),
+		'como-elegir-calibre-awg'          => array( 'cable-thhn-thwn', 'cables-de-baja-tension' ),
+		'retie-ntc-2050-cableado'          => array( 'cables-de-baja-tension', 'cable-thhn-thwn' ),
+	);
+	if ( ! $post || empty( $map[ $post->post_name ] ) ) {
+		return;
+	}
+	$terms = get_terms(
+		array(
+			'taxonomy'   => 'product_cat',
+			'slug'       => $map[ $post->post_name ],
+			'hide_empty' => false,
+		)
+	);
+	if ( is_wp_error( $terms ) || empty( $terms ) ) {
+		return;
+	}
+	echo '<section class="su-resource-categories"><h2>' . esc_html__( 'Explora productos relacionados', 'surtilec' ) . '</h2><ul>';
+	foreach ( $terms as $term ) {
+		echo '<li><a href="' . esc_url( get_term_link( $term ) ) . '">' . esc_html( $term->name ) . '</a></li>';
+	}
+	echo '</ul></section>';
 }
 
 /**
