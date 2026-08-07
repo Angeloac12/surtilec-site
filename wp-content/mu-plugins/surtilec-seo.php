@@ -62,49 +62,16 @@ function surtilec_aioseo_sitemap_term_lastmod( $entry, $term_id, $taxonomy, $typ
 add_filter( 'aioseo_sitemap_term', 'surtilec_aioseo_sitemap_term_lastmod', 10, 4 );
 
 /**
- * Keep products that are still missing a real featured image out of AIOSEO XML
- * product sitemaps. They can remain public for quoting, but should not be fed
- * to search engines until the image batch is complete.
+ * Missing-image products are no longer hidden from search.
  *
- * @param array  $ids  Post IDs already excluded by AIOSEO.
- * @param string $type Sitemap type/post type.
- * @return array
+ * Two filters used to live here: one excluded image-less published products
+ * from the XML product sitemap, the other excluded them from AIOSEO's LLM
+ * files. Together with the AIOSEO noindex they hid 1,068 of 1,385 published
+ * products — 77% of the catalog. A product page with an SKU, brand, attribute
+ * spec table and the SEO/AEO Q&A copy is worth both crawling and answering
+ * from, so the photo is no longer a gate. See
+ * scripts/aioseo-release-image-gated-noindex.php for the matching data change.
  */
-function surtilec_aioseo_exclude_products_without_images_from_sitemap( $ids, $type = '' ) {
-	if ( ! is_array( $ids ) ) {
-		$ids = array();
-	}
-
-	if ( 0 !== strpos( (string) $type, 'product' ) ) {
-		return $ids;
-	}
-
-	$missing_image_ids = get_transient( 'surtilec_no_image_product_ids' );
-	if ( ! is_array( $missing_image_ids ) ) {
-		$missing_image_ids = surtilec_get_published_product_ids_without_featured_image();
-		set_transient( 'surtilec_no_image_product_ids', $missing_image_ids, 15 * MINUTE_IN_SECONDS );
-	}
-
-	return array_values( array_unique( array_merge( array_map( 'intval', $ids ), array_map( 'intval', $missing_image_ids ) ) ) );
-}
-add_filter( 'aioseo_sitemap_exclude_posts', 'surtilec_aioseo_exclude_products_without_images_from_sitemap', 10, 2 );
-
-/**
- * Exclude incomplete products from AIOSEO LLM files as well. AIOSEO excludes a
- * post from llms.txt/llms-full.txt when its title filter returns an empty value.
- *
- * @param string  $title Current LLM title.
- * @param WP_Post $post  Current post object.
- * @return string
- */
-function surtilec_aioseo_llms_exclude_products_without_images( $title, $post ) {
-	if ( $post instanceof WP_Post && 'product' === $post->post_type && ! surtilec_product_has_real_featured_image( $post->ID ) ) {
-		return '';
-	}
-
-	return $title;
-}
-add_filter( 'aioseo_llms_post_title', 'surtilec_aioseo_llms_exclude_products_without_images', 10, 2 );
 
 /**
  * Resolve a term sitemap lastmod from the newest published content assigned to
@@ -170,37 +137,9 @@ function surtilec_aioseo_term_lastmod_from_content( $term_id, $taxonomy ) {
 }
 
 /**
- * Get published products that lack a valid featured image attachment.
- *
- * @return int[]
- */
-function surtilec_get_published_product_ids_without_featured_image() {
-	global $wpdb;
-
-	$sql = "
-		SELECT p.ID
-		FROM {$wpdb->posts} p
-		LEFT JOIN {$wpdb->postmeta} thumb
-			ON thumb.post_id = p.ID
-			AND thumb.meta_key = '_thumbnail_id'
-		LEFT JOIN {$wpdb->posts} attachment
-			ON attachment.ID = CAST(thumb.meta_value AS UNSIGNED)
-			AND attachment.post_type = 'attachment'
-			AND attachment.post_status <> 'trash'
-		WHERE p.post_type = 'product'
-			AND p.post_status = 'publish'
-			AND (
-				thumb.meta_id IS NULL
-				OR CAST(thumb.meta_value AS UNSIGNED) = 0
-				OR attachment.ID IS NULL
-			)
-	";
-
-	return array_map( 'intval', $wpdb->get_col( $sql ) ); // phpcs:ignore WordPress.DB.PreparedSQL.NotPrepared
-}
-
-/**
  * Determine whether a product has a real featured image attachment.
+ *
+ * Still used by the image-readiness reporting script.
  *
  * @param int $product_id Product ID.
  * @return bool
