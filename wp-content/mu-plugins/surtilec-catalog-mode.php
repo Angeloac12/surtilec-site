@@ -187,7 +187,7 @@ add_action(
 		$body  = '<p>Hola ' . esc_html( $name ) . ',</p>';
 		$body .= '<p>Recibimos tu solicitud de cotización y te responderemos en menos de 1 hora hábil.</p>';
 		$body .= '<p>Para mayor rapidez, escríbenos por WhatsApp: '
-			. '<a href="https://wa.me/573204499026">https://wa.me/573204499026</a></p>';
+			. '<a href="https://wa.me/573219932050">https://wa.me/573219932050</a></p>';
 		$body .= '<p>Surtilec</p>';
 
 		$headers = array(

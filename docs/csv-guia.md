@@ -6,6 +6,10 @@ Este archivo es la **única fuente** para cargar productos al catálogo. Una fil
 
 Las 3 filas con SKU que empieza por `EJEMPLO-` son **plantillas de muestra**: sirven para ver el formato. **No se publican** y deben borrarse antes de la importación real.
 
+El formato de 17 columnas existente sigue siendo válido para mantener el catálogo
+actual. Los nuevos lotes deben usar `data/products-batch-template.csv` y el
+registro de fuentes `data/product-source-register.csv`.
+
 ## Columnas
 
 | Columna | Descripción | Obligatoria |
@@ -27,6 +31,44 @@ Las 3 filas con SKU que empieza por `EJEMPLO-` son **plantillas de muestra**: si
 | `serie` | Serie / línea del fabricante. | Automatización: opcional |
 | `descripcion_corta` | Descripción breve. Encerrar entre comillas si lleva comas. | Recomendada |
 | `imagen` | Nombre del archivo de imagen (p. ej. `cable-thhn-12.jpg`). | Opcional |
+
+## Columnas adicionales para lotes nuevos
+
+El formato de lote añade estas columnas después de `imagen`:
+
+| Columna | Descripción | Obligatoria |
+|---|---|---|
+| `descripcion_larga` | Descripción editorial propia basada en la ficha técnica. | Recomendada |
+| `unidad_venta` | Unidad o empaque confirmado (metro, rollo, carrete, unidad). | Si aplica |
+| `temperatura_maxima` | Temperatura nominal confirmada por la ficha. | Si aplica |
+
+Un lote nuevo sólo se acepta cuando cada SKU existe en el registro de fuentes y
+su `estado_fuente` es `verificada`. No se publican especificaciones inventadas.
+
+## Registro de fuentes (`data/product-source-register.csv`)
+
+Debe existir una fila por cada SKU de un lote nuevo:
+
+| Columna | Descripción |
+|---|---|
+| `sku` | Debe coincidir exactamente con el CSV de productos. |
+| `referencia_fabricante` | Referencia original del fabricante, si existe. |
+| `marca` | Marca confirmada. |
+| `proveedor` | Proveedor o fabricante que entregó la información. |
+| `fuente_datos_url` | URL pública del catálogo o fuente principal, si existe. |
+| `ficha_tecnica_url` | URL del datasheet o ficha técnica, si existe. |
+| `fuente_imagen_url` | Origen documentado de la imagen, cuando se carga una. |
+| `estado_fuente` | Debe ser `verificada` para importar un lote nuevo. |
+| `estado_imagen` | `autorizada`, `propia` o `sin_imagen`. |
+| `verificado_en` | Fecha de verificación, formato `AAAA-MM-DD`. |
+| `notas` | Permiso, alcance o aclaración interna. No se publica. |
+
+Las imágenes descubiertas en otros catálogos no se reutilizan automáticamente.
+Sólo se aceptan imágenes propias o assets de fabricante/proveedor con permiso documentado.
+La URL de origen se guarda como auditoría interna y no se usa para hotlinking.
+El importador rechaza imágenes o fichas que apunten al distribuidor de referencia.
+Cuando el proveedor entrega archivos locales sin URL pública, documenta el
+nombre del archivo y el permiso en `notas`, junto con `proveedor`.
 
 ## Requisitos por tipo de producto
 
@@ -57,10 +99,11 @@ Deben coincidir **exactamente** (nombre) con la taxonomía del sitio:
 
 > **Backup obligatorio.** `scripts/import-products.sh` hace backup solo en importación real (no en dry-run); `--skip-backup` lo salta.
 
-1. **Respalda** (automático en importación real): `scripts/backup.sh`.
-2. **Valida** sin tocar la base: `scripts/import-products.sh --dry-run`.
-3. **Corrige errores** que reporte (SKU duplicado, categoría desconocida, campos obligatorios, columnas mal). Las advertencias de imagen no bloquean.
-4. **Importa**: `scripts/import-products.sh` (respalda y sube productos).
-5. **Verifica** en el navegador: ficha de producto con tabla de especificaciones, categoría correcta, sin precio.
+1. **Prepara** el CSV del lote y su registro de fuentes por SKU.
+2. **Valida** sin tocar la base: `scripts/import-products.sh --csv data/products-batch-001.csv --source-register data/product-source-register-001.csv --dry-run`.
+3. **Corrige errores** que reporte (SKU duplicado, categoría desconocida, campos obligatorios, columnas mal). En el formato base, una imagen faltante es advertencia; en lotes nuevos, una imagen declarada pero no entregada bloquea el lote. Un producto sin imagen se declara explícitamente con `estado_imagen=sin_imagen`.
+4. **Respalda e importa**: `scripts/import-products.sh --csv data/products-batch-001.csv --source-register data/product-source-register-001.csv`.
+5. **Audita** alt text e imágenes después del lote y ejecuta el readiness de AIOSEO.
+6. **Verifica** en el navegador: ficha de producto con tabla de especificaciones, categoría correcta, sin precio y WhatsApp con origen Surtilec.
 
-Reglas: upsert por `sku` (no duplica), idempotente (re-importar el mismo CSV = 0 cambios), nunca pone precio.
+Reglas: upsert por `sku` (no duplica), idempotente (re-importar el mismo CSV = 0 cambios), nunca pone precio. Los metadatos de fuente quedan en WordPress como campos internos `_surtilec_*`; no se muestran automáticamente al visitante.

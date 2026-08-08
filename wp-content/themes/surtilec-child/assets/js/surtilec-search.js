@@ -30,6 +30,7 @@
 	box.className = 'su-suggest';
 	box.id = 'su-suggest-list';
 	box.setAttribute( 'role', 'listbox' );
+	box.setAttribute( 'aria-live', 'polite' );
 	box.hidden = true;
 	wrap.appendChild( box );
 
@@ -112,7 +113,15 @@
 		if ( ! products.length && ! cats.length ) {
 			var none = document.createElement( 'div' );
 			none.className = 'su-suggest-empty';
-			none.textContent = ( i18n.none || 'Sin coincidencias' ) + ' "' + q + '"';
+			var noneText = document.createElement( 'span' );
+			noneText.textContent = ( i18n.none || 'Sin coincidencias' ) + ' "' + q + '"';
+			none.appendChild( noneText );
+			var quote = document.createElement( 'a' );
+			quote.className = 'su-suggest-empty-cta';
+			quote.href = ( cfg.quoteUrl || '/cotizar/solicitud/' ) + '?referencia=' + encodeURIComponent( q );
+			quote.setAttribute( 'data-surtilec-event', 'quote_start' );
+			quote.textContent = i18n.quote || 'Solicitar cotización';
+			none.appendChild( quote );
 			box.appendChild( none );
 			open();
 			return;

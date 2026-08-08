@@ -29,10 +29,11 @@
 				}
 			};
 
-			setField( 'page_url', window.location.href );
-			setField( 'utm_source', params.get( 'utm_source' ) );
-			setField( 'utm_medium', params.get( 'utm_medium' ) );
-			setField( 'utm_campaign', params.get( 'utm_campaign' ) );
+				setField( 'page_url', window.location.href );
+				setField( 'utm_source', params.get( 'utm_source' ) );
+				setField( 'utm_medium', params.get( 'utm_medium' ) );
+				setField( 'utm_campaign', params.get( 'utm_campaign' ) );
+				setField( 'referencia', params.get( 'referencia' ) );
 		} );
 	} );
 } )();

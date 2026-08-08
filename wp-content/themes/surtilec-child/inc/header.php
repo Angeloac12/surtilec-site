@@ -14,8 +14,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-const SURTILEC_PHONE_DISPLAY = '+57 320 449 9026';
-const SURTILEC_PHONE_TEL     = '+573204499026';
+const SURTILEC_PHONE_DISPLAY = '+57 321 993 2050';
+const SURTILEC_PHONE_TEL     = '+573219932050';
 
 /* =============================================================
    Self-hosted fonts — preload the above-the-fold woff2.
@@ -42,7 +42,7 @@ add_action( 'generate_before_header', 'surtilec_utility_bar' );
 function surtilec_utility_bar() {
 	$wa = function_exists( 'surtilec_wa_link' )
 		? surtilec_wa_link( 'Hola Surtilec, quiero una cotización.' )
-		: 'https://wa.me/573204499026';
+		: 'https://wa.me/573219932050';
 	?>
 	<div class="surtilec-utilitybar">
 		<div class="surtilec-utilitybar-inner">
@@ -50,7 +50,7 @@ function surtilec_utility_bar() {
 				<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
 				<?php echo esc_html( SURTILEC_PHONE_DISPLAY ); ?>
 			</a>
-			<a class="su-util-item su-util-wa" href="<?php echo esc_url( $wa ); ?>" target="_blank" rel="noopener">
+			<a class="su-util-item su-util-wa" data-surtilec-event="whatsapp_click" href="<?php echo esc_url( $wa ); ?>" target="_blank" rel="noopener">
 				<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.32 4.95L2 22l5.3-1.38a9.9 9.9 0 0 0 4.74 1.2c5.46 0 9.9-4.44 9.9-9.9S17.5 2 12.04 2zm0 18.04c-1.5 0-2.97-.4-4.25-1.16l-.3-.18-3.15.82.84-3.07-.2-.32a8.2 8.2 0 0 1-1.26-4.36c0-4.54 3.7-8.23 8.24-8.23 4.54 0 8.23 3.69 8.23 8.23 0 4.54-3.69 8.27-8.2 8.27zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.13-.14.17-.25.25-.41.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.16 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.16 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28z"/></svg>
 				WhatsApp
 			</a>
@@ -87,7 +87,7 @@ add_action( 'generate_after_header_content', 'surtilec_header_tools' );
 function surtilec_header_tools() {
 	$wa = function_exists( 'surtilec_wa_link' )
 		? surtilec_wa_link( 'Hola Surtilec, quiero una cotización.' )
-		: 'https://wa.me/573204499026';
+		: 'https://wa.me/573219932050';
 	?>
 	<div class="su-header-tools">
 		<div class="surtilec-nav-search">
@@ -104,10 +104,10 @@ function surtilec_header_tools() {
 				</button>
 			</form>
 		</div>
-		<a class="su-header-wa" href="<?php echo esc_url( $wa ); ?>" target="_blank" rel="noopener" aria-label="WhatsApp">
+		<a class="su-header-wa" data-surtilec-event="whatsapp_click" href="<?php echo esc_url( $wa ); ?>" target="_blank" rel="noopener" aria-label="WhatsApp">
 			<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.32 4.95L2 22l5.3-1.38a9.9 9.9 0 0 0 4.74 1.2c5.46 0 9.9-4.44 9.9-9.9S17.5 2 12.04 2zm0 18.04c-1.5 0-2.97-.4-4.25-1.16l-.3-.18-3.15.82.84-3.07-.2-.32a8.2 8.2 0 0 1-1.26-4.36c0-4.54 3.7-8.23 8.24-8.23 4.54 0 8.23 3.69 8.23 8.23 0 4.54-3.69 8.27-8.2 8.27z"/></svg>
 		</a>
-		<a class="su-header-cta" href="<?php echo esc_url( home_url( '/cotizar/solicitud/' ) ); ?>">
+		<a class="su-header-cta" data-surtilec-event="quote_start" href="<?php echo esc_url( home_url( '/cotizar/solicitud/' ) ); ?>">
 			<span>Cotizar</span>
 			<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
 		</a>

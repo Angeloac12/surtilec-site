@@ -1,7 +1,10 @@
 Project: Surtilec — Spanish B2B quote-generation catalog website (WordPress, Colombia).
+Current handoff: read `docs/llm-project-context.md` before continuing work. It is
+the canonical current-state document; older changelog/backlog counts are
+historical unless that file updates them.
 Niche: cables especiales (control, THHN/THWN-2, VFD, instrumentación, encauchetado, apantallados) + automatización industrial (variadores de frecuencia, PLC, HMI, sensores).
 Stack: WordPress + GeneratePress (free) child theme + WooCommerce (catalog mode, checkout disabled) + YITH Request a Quote free + Contact Form 7 (+ CF7 to Webhook + Turnstile) + All in One SEO free + LiteSpeed Cache + ACF free + WP Mail SMTP. Hosting: Hostinger Premium. PHP 8.2.
-Temp domain = staging: ghostwhite-cormorant-218810.hostingersite.com (surtilec.com will be connected at launch; URLs migrate via wp search-replace).
+Production domain = surtilec.com. Former temporary staging domain: ghostwhite-cormorant-218810.hostingersite.com.
 Remote access: scripts/wp.sh runs WP-CLI on the server over SSH (key: ~/.ssh/id_ed25519_hostinger). scripts/deploy.sh deploys ONLY child theme + mu-plugins.
 Rules:
 - ALWAYS plan before coding; show me the plan and wait for approval.

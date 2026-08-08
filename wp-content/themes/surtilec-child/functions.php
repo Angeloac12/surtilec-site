@@ -151,7 +151,7 @@ add_action(
 		wp_enqueue_script(
 			'surtilec-forms',
 			get_stylesheet_directory_uri() . '/assets/js/surtilec-forms.js',
-			array(),
+			array( 'surtilec-events' ),
 			wp_get_theme()->get( 'Version' ),
 			true
 		);
@@ -169,9 +169,16 @@ add_action(
 			return;
 		}
 		wp_enqueue_script(
+			'surtilec-events',
+			get_stylesheet_directory_uri() . '/assets/js/surtilec-events.js',
+			array(),
+			wp_get_theme()->get( 'Version' ),
+			true
+		);
+		wp_enqueue_script(
 			'surtilec-search',
 			get_stylesheet_directory_uri() . '/assets/js/surtilec-search.js',
-			array(),
+			array( 'surtilec-events' ),
 			wp_get_theme()->get( 'Version' ),
 			true
 		);
@@ -184,10 +191,13 @@ add_action(
 					'all'  => __( 'Ver todos los resultados para', 'surtilec' ),
 					'cat'  => __( 'Ver categoría', 'surtilec' ),
 					'none' => __( 'Sin coincidencias para', 'surtilec' ),
+					'quote' => __( 'Solicitar cotización', 'surtilec' ),
 				),
+				'quoteUrl' => esc_url_raw( home_url( '/cotizar/solicitud/' ) ),
 			)
 		);
-	}
+	},
+	1
 );
 
 /**

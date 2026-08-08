@@ -3,7 +3,7 @@
  * Surtilec product importer / validator.
  *
  * Run via WP-CLI eval-file with stdin:
- *   wp eval-file - <csv-path> <dry|live>   < scripts/import-products.php
+ *   wp eval-file - <csv-path> <dry|live> [source-register-path] < scripts/import-products.php
  *
  * Reads the master CSV (single source of truth), validates it, and in `live`
  * mode upserts products by SKU. Never sets a price. Idempotent: a re-run with
@@ -16,16 +16,22 @@ if ( ! defined( 'WP_CLI' ) || ! WP_CLI ) {
 	return;
 }
 
-$csv_path = isset( $args[0] ) ? $args[0] : '';
-$mode     = isset( $args[1] ) ? $args[1] : 'dry';
-$live     = ( 'live' === $mode );
-$img_dir  = rtrim( dirname( $csv_path ), '/' ) . '/images';
+$csv_path      = isset( $args[0] ) ? $args[0] : '';
+$mode          = isset( $args[1] ) ? $args[1] : 'dry';
+$register_path = isset( $args[2] ) ? $args[2] : '';
+$live          = ( 'live' === $mode );
+$img_dir       = rtrim( dirname( $csv_path ), '/' ) . '/images';
 
 if ( ! $csv_path || ! file_exists( $csv_path ) ) {
 	WP_CLI::error( "No se encontró el CSV: $csv_path" );
 }
 
-$expected = array( 'sku', 'nombre', 'categoria', 'subcategoria', 'marca', 'calibre_awg', 'num_conductores', 'voltaje', 'apantallado', 'chaqueta', 'norma', 'aplicacion', 'potencia_hp', 'voltaje_entrada', 'serie', 'descripcion_corta', 'imagen' );
+$base_expected = array( 'sku', 'nombre', 'categoria', 'subcategoria', 'marca', 'calibre_awg', 'num_conductores', 'voltaje', 'apantallado', 'chaqueta', 'norma', 'aplicacion', 'potencia_hp', 'voltaje_entrada', 'serie', 'descripcion_corta', 'imagen' );
+$extended_expected = array_merge(
+	$base_expected,
+	array( 'descripcion_larga', 'unidad_venta', 'temperatura_maxima' )
+);
+$register_expected = array( 'sku', 'referencia_fabricante', 'marca', 'proveedor', 'fuente_datos_url', 'ficha_tecnica_url', 'fuente_imagen_url', 'estado_fuente', 'estado_imagen', 'verificado_en', 'notas' );
 
 // Spec column -> global attribute taxonomy.
 $attr_map = array(
@@ -62,8 +68,42 @@ $resolve_cat = function ( $value ) use ( $cat_by_key ) {
 // --- Read CSV. ---
 $fh = fopen( $csv_path, 'r' );
 $header = fgetcsv( $fh );
-if ( $header !== $expected ) {
-	WP_CLI::error( "Encabezado del CSV no coincide con el formato esperado.\nEsperado: " . implode( ',', $expected ) );
+$is_extended = ( $header === $extended_expected );
+if ( ! $is_extended && $header !== $base_expected ) {
+	WP_CLI::error( "Encabezado del CSV no coincide con el formato esperado.\nEsperado base: " . implode( ',', $base_expected ) . "\nEsperado lote verificado: " . implode( ',', $extended_expected ) );
+}
+
+$source_by_sku = array();
+if ( $is_extended ) {
+	if ( ! $register_path || ! file_exists( $register_path ) ) {
+		WP_CLI::error( 'Los lotes verificados requieren un registro de fuentes por SKU.' );
+	}
+
+	$register_fh     = fopen( $register_path, 'r' );
+	$register_header = fgetcsv( $register_fh );
+	if ( $register_header !== $register_expected ) {
+		WP_CLI::error( "Encabezado del registro de fuentes no coincide.\nEsperado: " . implode( ',', $register_expected ) );
+	}
+
+	$register_line = 1;
+	while ( ( $register_data = fgetcsv( $register_fh ) ) !== false ) {
+		++$register_line;
+		if ( 1 === count( $register_data ) && '' === trim( (string) $register_data[0] ) ) {
+			continue;
+		}
+		if ( count( $register_data ) !== count( $register_expected ) ) {
+			WP_CLI::error( "Registro de fuentes fila $register_line: número de columnas incorrecto." );
+		}
+		$source = array_combine( $register_expected, array_map( 'trim', $register_data ) );
+		if ( '' === $source['sku'] ) {
+			WP_CLI::error( "Registro de fuentes fila $register_line: 'sku' es obligatorio." );
+		}
+		if ( isset( $source_by_sku[ $source['sku'] ] ) ) {
+			WP_CLI::error( "Registro de fuentes fila $register_line: SKU duplicado '{$source['sku']}'." );
+		}
+		$source_by_sku[ $source['sku'] ] = $source;
+	}
+	fclose( $register_fh );
 }
 
 $rows   = array();
@@ -77,6 +117,7 @@ while ( ( $data = fgetcsv( $fh ) ) !== false ) {
 	if ( 1 === count( $data ) && '' === trim( (string) $data[0] ) ) {
 		continue; // blank line.
 	}
+	$expected = $is_extended ? $extended_expected : $base_expected;
 	if ( count( $data ) !== count( $expected ) ) {
 		$errors[] = "Fila $line: número de columnas incorrecto (" . count( $data ) . ' de ' . count( $expected ) . ').';
 		continue;
@@ -87,11 +128,79 @@ while ( ( $data = fgetcsv( $fh ) ) !== false ) {
 		$errors[] = "Fila $line: 'sku' y 'nombre' son obligatorios.";
 		continue;
 	}
+	$public_fields = array(
+		'sku',
+		'nombre',
+		'categoria',
+		'subcategoria',
+		'marca',
+		'norma',
+		'aplicacion',
+		'serie',
+		'descripcion_corta',
+		'descripcion_larga',
+	);
+	foreach ( $public_fields as $public_field ) {
+		if ( isset( $row[ $public_field ] ) && surtilec_import_has_reference_brand_marker( $row[ $public_field ] ) ) {
+			$errors[] = "Fila $line: '{$public_field}' contiene una marca, dominio o referencia del sitio de origen no permitida en campos públicos.";
+		}
+	}
 	if ( isset( $seen_sku[ $row['sku'] ] ) ) {
 		$errors[] = "Fila $line: SKU duplicado '{$row['sku']}' (ya en fila {$seen_sku[ $row['sku'] ]}).";
 		continue;
 	}
 	$seen_sku[ $row['sku'] ] = $line;
+
+	$source = null;
+	if ( $is_extended ) {
+		$source = isset( $source_by_sku[ $row['sku'] ] ) ? $source_by_sku[ $row['sku'] ] : null;
+		if ( ! $source ) {
+			$errors[] = "Fila $line: SKU '{$row['sku']}' no existe en el registro de fuentes.";
+		} else {
+			foreach ( array( 'fuente_datos_url', 'ficha_tecnica_url', 'fuente_imagen_url' ) as $source_url_field ) {
+				if ( surtilec_import_is_disallowed_source_url( $source[ $source_url_field ] ) ) {
+					$errors[] = "Fila $line: '{$source_url_field}' no puede apuntar al sitio de otro distribuidor; usa la ficha del fabricante, proveedor o una evidencia local autorizada.";
+				}
+			}
+			if ( 'verificada' !== $source['estado_fuente'] ) {
+				$errors[] = "Fila $line: la fuente técnica de '{$row['sku']}' no está marcada como verificada.";
+			}
+			if ( ! surtilec_import_is_url( $source['fuente_datos_url'] ) && ! surtilec_import_is_url( $source['ficha_tecnica_url'] ) && ( '' === $source['proveedor'] || '' === $source['notas'] ) ) {
+				$errors[] = "Fila $line: '{$row['sku']}' necesita una URL de fuente/ficha o evidencia local en proveedor y notas.";
+			}
+			if ( '' === $source['verificado_en'] ) {
+				$errors[] = "Fila $line: '{$row['sku']}' necesita fecha de verificación.";
+			} elseif ( ! preg_match( '/^\d{4}-\d{2}-\d{2}$/', $source['verificado_en'] ) ) {
+				$errors[] = "Fila $line: '{$row['sku']}' necesita verificado_en con formato AAAA-MM-DD.";
+			}
+			if ( '' !== $row['imagen'] ) {
+				if ( basename( $row['imagen'] ) !== $row['imagen'] || ! preg_match( '/\.(?:jpe?g|webp)$/i', $row['imagen'] ) ) {
+					$errors[] = "Fila $line: la imagen de '{$row['sku']}' debe ser un archivo JPG o WebP dentro del lote.";
+				}
+				if ( ! in_array( $source['estado_imagen'], array( 'autorizada', 'propia' ), true ) ) {
+					$errors[] = "Fila $line: la imagen de '{$row['sku']}' debe ser propia o estar autorizada.";
+				}
+				if ( ! surtilec_import_is_url( $source['fuente_imagen_url'] ) && ( '' === $source['proveedor'] || '' === $source['notas'] ) ) {
+					$errors[] = "Fila $line: '{$row['sku']}' necesita URL de imagen o evidencia local en proveedor y notas.";
+				}
+				if ( ! file_exists( "$img_dir/{$row['imagen']}" ) ) {
+					$errors[] = "Fila $line: imagen '{$row['imagen']}' no encontrada en el lote.";
+				} else {
+					$image_info = @getimagesize( "$img_dir/{$row['imagen']}" );
+					if ( ! is_array( $image_info ) || empty( $image_info['mime'] ) || ! in_array( $image_info['mime'], array( 'image/jpeg', 'image/webp' ), true ) ) {
+						$errors[] = "Fila $line: imagen '{$row['imagen']}' no es un JPG o WebP válido.";
+					} elseif ( max( (int) $image_info[0], (int) $image_info[1] ) > 1200 ) {
+						$errors[] = "Fila $line: imagen '{$row['imagen']}' supera el máximo de 1200 px por lado.";
+					}
+					if ( filesize( "$img_dir/{$row['imagen']}" ) > 150 * 1024 ) {
+						$warns[] = "Fila $line: imagen '{$row['imagen']}' supera el objetivo de 150 KB.";
+					}
+				}
+			} elseif ( 'sin_imagen' !== $source['estado_imagen'] ) {
+				$errors[] = "Fila $line: '{$row['sku']}' sin imagen debe tener estado_imagen=sin_imagen.";
+			}
+		}
+	}
 
 	// Category resolution.
 	$parent = $resolve_cat( $row['categoria'] );
@@ -132,9 +241,18 @@ while ( ( $data = fgetcsv( $fh ) ) !== false ) {
 	$row['_line']   = $line;
 	$row['_parent'] = $parent;
 	$row['_child']  = $child;
+	$row['_source'] = $source;
 	$rows[]         = $row;
 }
 fclose( $fh );
+
+if ( $is_extended ) {
+	foreach ( $source_by_sku as $source_sku => $unused_source ) {
+		if ( ! isset( $seen_sku[ $source_sku ] ) ) {
+			$errors[] = "El registro de fuentes contiene SKU '{$source_sku}' que no existe en el CSV del lote.";
+		}
+	}
+}
 
 // --- Report. ---
 WP_CLI::log( '== Validación ==' );
@@ -191,6 +309,9 @@ foreach ( $rows as $row ) {
 	$product->set_name( $row['nombre'] );
 	$product->set_sku( $row['sku'] );
 	$product->set_short_description( $row['descripcion_corta'] );
+	if ( $is_extended && '' !== trim( $row['descripcion_larga'] ) ) {
+		$product->set_description( wp_kses_post( $row['descripcion_larga'] ) );
+	}
 	$product->set_status( 'publish' );
 	$product->set_catalog_visibility( 'visible' );
 
@@ -247,6 +368,39 @@ foreach ( $rows as $row ) {
 	$product->save();
 	$id = $product->get_id();
 
+	if ( $is_extended && $row['_source'] ) {
+		$source_meta = array(
+			'_surtilec_source_status'          => $row['_source']['estado_fuente'],
+			'_surtilec_manufacturer_reference' => $row['_source']['referencia_fabricante'],
+			'_surtilec_source_brand'           => $row['_source']['marca'],
+			'_surtilec_supplier'               => $row['_source']['proveedor'],
+			'_surtilec_source_url'             => $row['_source']['fuente_datos_url'],
+			'_surtilec_datasheet_url'          => $row['_source']['ficha_tecnica_url'],
+			'_surtilec_image_source_url'       => $row['_source']['fuente_imagen_url'],
+			'_surtilec_image_license_status'   => $row['_source']['estado_imagen'],
+			'_surtilec_source_verified_at'     => $row['_source']['verificado_en'],
+			'_surtilec_source_notes'           => $row['_source']['notas'],
+		);
+		foreach ( $source_meta as $meta_key => $meta_value ) {
+			if ( '' === trim( (string) $meta_value ) ) {
+				delete_post_meta( $id, $meta_key );
+			} else {
+				update_post_meta( $id, $meta_key, sanitize_text_field( $meta_value ) );
+			}
+		}
+		$extra_meta = array(
+			'_surtilec_unidad_venta'       => $row['unidad_venta'],
+			'_surtilec_temperatura_maxima' => $row['temperatura_maxima'],
+		);
+		foreach ( $extra_meta as $meta_key => $meta_value ) {
+			if ( '' === trim( (string) $meta_value ) ) {
+				delete_post_meta( $id, $meta_key );
+			} else {
+				update_post_meta( $id, $meta_key, sanitize_text_field( $meta_value ) );
+			}
+		}
+	}
+
 	// Featured image (idempotent via _surtilec_image_src meta).
 	$img_changed = false;
 	if ( '' !== $row['imagen'] && file_exists( "$img_dir/{$row['imagen']}" ) ) {
@@ -281,3 +435,37 @@ foreach ( $rows as $row ) {
 }
 
 WP_CLI::success( "Importación terminada — creados: $created, actualizados: $updated, sin cambios: $same." );
+
+/**
+ * Validate a source/register URL without accepting local paths or javascript URLs.
+ *
+ * @param string $url Candidate URL.
+ * @return bool
+ */
+function surtilec_import_is_url( $url ) {
+	return (bool) preg_match( '#^https?://[^[:space:]]+$#i', trim( (string) $url ) );
+}
+
+/**
+ * Keep source-site branding and URLs out of public catalog fields.
+ *
+ * @param string $value Candidate public value.
+ * @return bool
+ */
+function surtilec_import_has_reference_brand_marker( $value ) {
+	return (bool) preg_match( '/cables\s*colombia|cablescolombia(?:\.com)?/i', (string) $value );
+}
+
+/**
+ * A competitor page cannot be the technical or image source for an imported
+ * product. The source register is for manufacturer, supplier, or local
+ * evidence so the public catalog remains independently supportable.
+ *
+ * @param string $url Candidate source URL.
+ * @return bool
+ */
+function surtilec_import_is_disallowed_source_url( $url ) {
+	$url  = trim( (string) $url );
+	$host = $url ? wp_parse_url( $url, PHP_URL_HOST ) : '';
+	return $host && ( 'cablescolombia.com' === strtolower( $host ) || preg_match( '/\.cablescolombia\.com$/i', $host ) );
+}

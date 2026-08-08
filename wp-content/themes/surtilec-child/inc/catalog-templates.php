@@ -11,7 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-const SURTILEC_WA_NUMBER = '573204499026';
+const SURTILEC_WA_NUMBER = '573219932050';
 
 /**
  * Build a wa.me link with a prefilled message.
@@ -121,7 +121,7 @@ function surtilec_product_wa_cta() {
 		$product->get_name(),
 		get_permalink( $product->get_id() )
 	);
-	echo '<a class="surtilec-wa-btn" href="' . esc_url( surtilec_wa_link( $message ) ) . '" target="_blank" rel="noopener">'
+	echo '<a class="surtilec-wa-btn" data-surtilec-event="whatsapp_click" data-product-sku="' . esc_attr( $product->get_sku() ) . '" href="' . esc_url( surtilec_wa_link( $message ) ) . '" target="_blank" rel="noopener">'
 		. esc_html__( 'Cotizar por WhatsApp', 'surtilec' ) . '</a>';
 }
 
@@ -369,6 +369,47 @@ function surtilec_category_cta() {
 		return;
 	}
 	surtilec_render_cta_block();
+}
+
+/**
+ * Link high-intent category pages to existing technical resources.
+ * This keeps the content graph on real URLs and avoids creating thin pages.
+ */
+add_action( 'woocommerce_after_main_content', 'surtilec_category_resource_links', 5 );
+function surtilec_category_resource_links() {
+	if ( ! is_product_category() ) {
+		return;
+	}
+	$term = get_queried_object();
+	$map  = array(
+		'cable-thhn-thwn'            => array( 'thhn-vs-thwn2', 'como-elegir-calibre-awg', 'retie-ntc-2050-cableado' ),
+		'cables-para-variadores-vfd' => array( 'cable-vfd-apantallado' ),
+		'cable-bandeja'              => array( 'cable-bandeja-tc-er' ),
+		'cables-de-control'          => array( 'cable-control-vs-instrumentacion' ),
+		'cables-de-instrumentacion'  => array( 'cable-control-vs-instrumentacion' ),
+		'cables-apantallados'        => array( 'cable-vfd-apantallado' ),
+		'cables-de-baja-tension'     => array( 'retie-ntc-2050-cableado', 'como-elegir-calibre-awg' ),
+	);
+	if ( ! $term instanceof WP_Term || empty( $map[ $term->slug ] ) ) {
+		return;
+	}
+	$posts = get_posts(
+		array(
+			'post_type'      => 'post',
+			'post_status'    => 'publish',
+			'post_name__in'  => $map[ $term->slug ],
+			'posts_per_page' => 4,
+			'orderby'        => 'post__in',
+		)
+	);
+	if ( empty( $posts ) ) {
+		return;
+	}
+	echo '<section class="su-category-resources"><h2>' . esc_html__( 'Guías relacionadas', 'surtilec' ) . '</h2><ul>';
+	foreach ( $posts as $post ) {
+		echo '<li><a href="' . esc_url( get_permalink( $post ) ) . '">' . esc_html( get_the_title( $post ) ) . '</a></li>';
+	}
+	echo '</ul></section>';
 }
 
 /**

@@ -58,6 +58,7 @@ while ( have_posts() ) :
 							echo '<figure class="su-article-hero">' . get_the_post_thumbnail( get_the_ID(), 'large', array( 'loading' => 'eager' ) ) . '</figure>';
 						}
 						the_content();
+						surtilec_resource_category_links( get_the_ID() );
 						?>
 					</article>
 

@@ -293,6 +293,8 @@ input[type="submit"]:hover,
   color: var(--gray-500, #6b7280);
   text-align: center;
 }
+.su-suggest-empty { display: flex; flex-direction: column; gap: 0.55rem; align-items: center; }
+.su-suggest-empty-cta { color: var(--color-accent); font-weight: 700; text-decoration: underline; }
 
 /* ============================================================
    Encabezado fijo (sticky) — GP free no lo trae nativo
@@ -508,84 +510,9 @@ input[type="submit"]:hover,
   .su-util-strong::before { content: ""; }
 }
 
-/* ---- Menú principal: tipografía + mega panel ---- */
+/* ---- Menú principal: tipografía ---- */
 .main-navigation .main-nav ul li a { font-weight: 600; }
 .main-navigation { position: relative; }
-
-.surtilec-mega { list-style: none; }
-.surtilec-mega-inner { padding: 0; }
-/* Mobile-first: el mega se muestra apilado dentro del menú móvil */
-.surtilec-mega .surtilec-mega-grid { display: grid; grid-template-columns: 1fr; }
-.surtilec-mega-col { padding: 0.6rem 1rem; }
-.surtilec-mega-head {
-  display: block;
-  font-family: var(--font-display);
-  font-weight: 800;
-  color: #fff;
-  text-decoration: none;
-  padding: 0.3rem 0;
-}
-.surtilec-mega-head:hover { color: var(--color-accent); }
-.surtilec-mega-list { list-style: none; margin: 0.2rem 0 0; padding: 0; }
-.surtilec-mega-list li a {
-  display: block;
-  color: var(--gray-300);
-  text-decoration: none;
-  font-size: 0.92rem;
-  padding: 0.28rem 0;
-}
-.surtilec-mega-list li a:hover { color: #fff; }
-.surtilec-mega-all,
-.surtilec-mega-cta {
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-  color: var(--color-accent);
-  text-decoration: none;
-  letter-spacing: 0.04em;
-}
-.surtilec-mega-cta { display: inline-block; margin: 0.4rem 1rem 0.2rem; }
-
-/* Desktop: panel desplegable oscuro a todo el ancho del nav */
-@media (min-width: 769px) {
-  .surtilec-has-mega { position: static !important; }
-  .surtilec-mega {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 100%;
-    display: block;
-    background: var(--ink-900);
-    border-top: 2px solid var(--color-accent);
-    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.35);
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(6px);
-    transition: opacity 0.16s ease, transform 0.16s ease, visibility 0.16s;
-    z-index: 200;
-  }
-  .surtilec-has-mega:hover > .surtilec-mega,
-  .surtilec-has-mega:focus-within > .surtilec-mega {
-    opacity: 1;
-    visibility: visible;
-    transform: none;
-  }
-  .surtilec-mega-inner {
-    max-width: var(--content-max);
-    margin: 0 auto;
-    padding: 1.8rem clamp(1rem, 4vw, 2.5rem) 1.4rem;
-  }
-  .surtilec-mega .surtilec-mega-grid {
-    grid-template-columns: repeat(5, 1fr);
-    gap: 1.6rem;
-  }
-  .surtilec-mega-col {
-    padding: 0;
-    border-left: 1px solid var(--hairline);
-    padding-left: 1.2rem;
-  }
-  .surtilec-mega-col:first-child { border-left: 0; padding-left: 0; }
-  .surtilec-mega-head { border-bottom: 1px solid var(--hairline); padding-bottom: 0.5rem; margin-bottom: 0.5rem; }
-}
 
 /* ============================================================
    Botones del rediseño — el primario SIEMPRE naranja sólido
@@ -928,19 +855,21 @@ body.home #primary { max-width: 100%; width: 100%; margin: 0; }
 .main-navigation { background: #fff; border-top: 1px solid var(--gray-100); border-bottom: 1px solid var(--gray-100); }
 .main-navigation .main-nav > ul > li > a { font-weight: 600; }
 
-/* Pie del mega con dos CTAs */
-.surtilec-mega-foot { display: flex; gap: 1.6rem; flex-wrap: wrap; }
-
 /* Móvil: header compacto — buscador PRIMERO (acción principal del catálogo),
    Cotizar debajo. El botón verde de WhatsApp se oculta: ya está en la barra
    utilitaria y en el botón flotante (evita 3 WhatsApp y un bloque de más). */
 @media (max-width: 880px) {
-  .inside-header { gap: 0.6rem; }
-  .su-header-tools { width: 100%; flex-wrap: wrap; gap: 0.55rem; }
+  .inside-header { gap: 0.5rem; padding-block: 0.75rem; align-items: center; }
+  .site-branding { min-width: 0; }
+  .main-title { line-height: 1; }
+  .su-header-tools { width: 100%; flex-wrap: wrap; gap: 0.5rem; }
   .su-header-tools .surtilec-nav-search { order: 1; flex: 1 1 100%; }
   .su-header-tools .surtilec-product-search { max-width: none; }
+  .su-header-tools .surtilec-product-search input[type="search"] { min-height: 42px; font-size: 0.95rem; }
+  .su-header-tools .surtilec-product-search button { min-height: 42px; }
   .su-header-wa { display: none; }
-  .su-header-tools .su-header-cta { order: 2; flex: 1 1 100%; justify-content: center; }
+  .su-header-tools .su-header-cta { order: 2; flex: 1 1 100%; justify-content: center; min-height: 42px; padding: 0.7em 1em; }
+  .main-navigation .menu-toggle { width: 100%; font-weight: 700; }
 }
 
 /* ============================================================
@@ -1113,6 +1042,9 @@ body.su-fullbleed #primary { max-width: 100%; width: 100%; margin: 0; }
 .surtilec-page .su-page-hero { padding-block: clamp(3rem, 7vw, 5.5rem); }
 
 /* Texto de presentación */
+.su-section-head { max-width: 760px; }
+.su-section-head h2 { margin-bottom: 0.7rem; }
+.su-section-head p { color: var(--gray-700); font-size: 1.05rem; margin: 0; }
 .su-prose { max-width: 68ch; }
 .su-prose p { color: var(--gray-700); font-size: 1.05rem; }
 .su-entity-line {
@@ -1124,6 +1056,71 @@ body.su-fullbleed #primary { max-width: 100%; width: 100%; margin: 0; }
   color: var(--color-dark);
   font-size: 1.05rem;
   line-height: 1.5;
+}
+
+/* Servicios */
+.su-service-columns {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(1.6rem, 4vw, 3rem);
+  align-items: start;
+}
+.su-service-steps {
+  counter-reset: service-step;
+  list-style: none;
+  margin: 1.2rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.8rem;
+}
+.su-service-steps li {
+  counter-increment: service-step;
+  position: relative;
+  padding: 1rem 1rem 1rem 3.2rem;
+  background: var(--surface);
+  border: 1px solid var(--hairline-dark);
+  border-radius: var(--radius);
+  color: var(--gray-700);
+}
+.su-service-steps li::before {
+  content: counter(service-step);
+  position: absolute;
+  left: 1rem;
+  top: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.55rem;
+  height: 1.55rem;
+  border-radius: 50%;
+  background: var(--color-accent);
+  color: #fff;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+.su-faq-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.9rem;
+  margin-top: 2rem;
+}
+.su-faq-item {
+  background: var(--surface);
+  border: 1px solid var(--hairline-dark);
+  border-radius: var(--radius);
+  padding: clamp(1.1rem, 2.5vw, 1.5rem);
+}
+.su-faq-item h3 {
+  font-family: var(--font-display);
+  font-size: 1.06rem;
+  color: var(--color-dark);
+  margin: 0 0 0.45rem;
+}
+.su-faq-item p { color: var(--gray-700); margin: 0; }
+@media (min-width: 900px) {
+  .su-service-columns { grid-template-columns: 1.05fr 0.95fr; }
+  .su-faq-list { grid-template-columns: repeat(3, 1fr); }
 }
 
 /* ============================================================
@@ -1207,12 +1204,53 @@ body.su-fullbleed #primary { max-width: 100%; width: 100%; margin: 0; }
 .su-toc-cta { margin-top: 1.5rem; padding: 1.2rem; background: var(--surface-alt); border-radius: var(--radius); }
 .su-toc-cta-text { font-weight: 700; color: var(--color-dark); margin: 0 0 0.7rem; }
 
+/* Organic content graph: resources lead into real catalog categories. */
+.su-resource-categories,
+.su-category-resources {
+  margin: 2rem 0 0;
+  padding: 1.1rem 1.25rem;
+  border-left: 3px solid var(--color-accent);
+  background: var(--surface-alt);
+}
+.su-resource-categories h2,
+.su-category-resources h2 { margin: 0 0 0.7rem; font-size: 1.15rem; }
+.su-resource-categories ul,
+.su-category-resources ul { margin: 0; padding-left: 1.2rem; }
+.su-resource-categories li,
+.su-category-resources li { margin: 0.35rem 0; }
+.su-resource-categories a,
+.su-category-resources a { color: var(--color-dark); font-weight: 600; }
+.su-resource-categories a:hover,
+.su-category-resources a:hover { color: var(--color-accent); }
+.su-section-lead { max-width: 60ch; margin: -1.25rem auto 2rem; text-align: center; color: var(--gray-700); }
+.su-home-resources-cta { margin-top: 1.5rem; text-align: center; }
+
+/* Organic content graph: resources lead into real catalog categories. */
+.su-resource-categories,
+.su-category-resources {
+  margin: 2rem 0 0;
+  padding: 1.1rem 1.25rem;
+  border-left: 3px solid var(--color-accent);
+  background: var(--surface-alt);
+}
+.su-resource-categories h2,
+.su-category-resources h2 { margin: 0 0 0.7rem; font-size: 1.15rem; }
+.su-resource-categories ul,
+.su-category-resources ul { margin: 0; padding-left: 1.2rem; }
+.su-resource-categories li,
+.su-category-resources li { margin: 0.35rem 0; }
+.su-resource-categories a,
+.su-category-resources a { color: var(--color-dark); font-weight: 600; }
+.su-resource-categories a:hover,
+.su-category-resources a:hover { color: var(--color-accent); }
+.su-section-lead { max-width: 60ch; margin: -1.25rem auto 2rem; text-align: center; color: var(--gray-700); }
+.su-home-resources-cta { margin-top: 1.5rem; text-align: center; }
+
 /* ============================================================
    DROPDOWNS ESTÁNDAR — "Catálogo" e "Industrias" usan el mismo
    dropdown nativo de GeneratePress (mismo color y organización).
    Aquí sólo añadimos acento de marca: borde superior naranja, sombra,
-   ancho cómodo para nombres largos y hover naranja. El mega custom se
-   retiró; sus reglas `.surtilec-mega` quedan inertes (sin DOM).
+   ancho cómodo para nombres largos y hover naranja.
    ============================================================ */
 .main-navigation .main-nav ul ul { width: 260px; } /* > 200px de GP: cabe "Cables para variadores VFD" */
 .main-navigation .sub-menu {

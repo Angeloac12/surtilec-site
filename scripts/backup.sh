@@ -11,7 +11,7 @@ set -euo pipefail
 SSH_HOST="147.93.37.202"
 SSH_PORT="65002"
 SSH_USER="u528798895"
-REMOTE_WP="domains/ghostwhite-cormorant-218810.hostingersite.com/public_html"
+REMOTE_WP="domains/surtilec.com/public_html"
 
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 LOCAL_DIR="$REPO_ROOT/backups"

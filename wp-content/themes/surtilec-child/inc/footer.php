@@ -22,9 +22,10 @@ add_action( 'generate_before_footer', 'surtilec_footer' );
  * Render the site footer.
  */
 function surtilec_footer() {
-	$phone_tel  = defined( 'SURTILEC_PHONE_TEL' ) ? SURTILEC_PHONE_TEL : '+573204499026';
-	$phone_disp = defined( 'SURTILEC_PHONE_DISPLAY' ) ? SURTILEC_PHONE_DISPLAY : '+57 320 449 9026';
-	$wa         = function_exists( 'surtilec_wa_link' ) ? surtilec_wa_link( 'Hola Surtilec, quiero una cotización.' ) : 'https://wa.me/573204499026';
+	$phone_tel  = defined( 'SURTILEC_PHONE_TEL' ) ? SURTILEC_PHONE_TEL : '+573219932050';
+	$phone_disp = defined( 'SURTILEC_PHONE_DISPLAY' ) ? SURTILEC_PHONE_DISPLAY : '+57 321 993 2050';
+	$email      = 'angelocaro@grupogerson.com';
+	$wa         = function_exists( 'surtilec_wa_link' ) ? surtilec_wa_link( 'Hola Surtilec, quiero una cotización.' ) : 'https://wa.me/573219932050';
 	$name       = get_bloginfo( 'name' );
 
 	$pillars = function_exists( 'surtilec_cached_terms' )
@@ -93,6 +94,7 @@ function surtilec_footer() {
 					<ul>
 						<li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Inicio</a></li>
 						<li><a href="<?php echo esc_url( home_url( '/productos/' ) ); ?>">Catálogo</a></li>
+						<li><a href="<?php echo esc_url( home_url( '/servicios/' ) ); ?>">Servicios</a></li>
 						<li><a href="<?php echo esc_url( home_url( '/cotizar/' ) ); ?>">Cotizar</a></li>
 						<li><a href="<?php echo esc_url( home_url( '/cotizar/subir-listado/' ) ); ?>">Subir listado</a></li>
 						<li><a href="<?php echo esc_url( home_url( '/contacto/' ) ); ?>">Contacto</a></li>
@@ -103,6 +105,7 @@ function surtilec_footer() {
 					<h3 class="su-foot-head">Contacto</h3>
 					<ul>
 						<li><a href="tel:<?php echo esc_attr( $phone_tel ); ?>"><?php echo esc_html( $phone_disp ); ?></a></li>
+						<li><a href="mailto:<?php echo esc_attr( $email ); ?>"><?php echo esc_html( $email ); ?></a></li>
 						<li><a href="<?php echo esc_url( $wa ); ?>" target="_blank" rel="noopener">WhatsApp</a></li>
 						<li>Carrera 12 # 17-99, Bogotá, Colombia</li>
 						<li>Despachos a todo el país</li>

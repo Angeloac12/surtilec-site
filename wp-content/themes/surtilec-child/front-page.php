@@ -23,7 +23,7 @@ $cta2_u   = surtilec_home_field( 'su_cta2_url', '/productos/' );
 $bg_id    = function_exists( 'get_field' ) ? get_field( 'su_hero_bg' ) : 0;
 $bg_url   = $bg_id ? wp_get_attachment_image_url( (int) $bg_id, 'full' ) : '';
 
-$wa_link  = function_exists( 'surtilec_wa_link' ) ? surtilec_wa_link( 'Hola Surtilec, quiero una cotización.' ) : 'https://wa.me/573204499026';
+$wa_link  = function_exists( 'surtilec_wa_link' ) ? surtilec_wa_link( 'Hola Surtilec, quiero una cotización.' ) : 'https://wa.me/573219932050';
 
 /* ---- pillar enrichment: icon + tagline by slug ---- */
 $pillar_meta = array(
@@ -179,16 +179,17 @@ $pillars = function_exists( 'surtilec_cached_terms' )
 	<!-- 5. MARCAS -->
 	<section class="su-section su-band-paper su-brands">
 		<div class="su-inner">
-			<p class="su-eyebrow su-eyebrow-center su-eyebrow-dark">Marcas que distribuimos</p>
-			<ul class="su-brand-row">
-				<?php
-				// Neutral placeholders until real logos are supplied.
-				$brands = array( 'Procables', 'Centelsa', 'Siemens', 'Schneider', 'WEG' );
-				foreach ( $brands as $b ) :
-					?>
-					<li class="su-brand"><span class="su-brand-ph"><?php echo esc_html( $b ); ?></span></li>
-				<?php endforeach; ?>
-			</ul>
+				<p class="su-eyebrow su-eyebrow-center su-eyebrow-dark">Marcas presentes en el catálogo</p>
+				<ul class="su-brand-row">
+					<?php
+					$brands = taxonomy_exists( 'pa_marca' ) ? get_terms( array( 'taxonomy' => 'pa_marca', 'hide_empty' => true, 'number' => 6, 'orderby' => 'count', 'order' => 'DESC' ) ) : array();
+					if ( ! is_wp_error( $brands ) ) :
+					foreach ( $brands as $brand ) :
+						?>
+						<li class="su-brand"><span class="su-brand-ph"><?php echo esc_html( $brand->name ); ?></span></li>
+					<?php endforeach; ?>
+					<?php endif; ?>
+				</ul>
 		</div>
 	</section>
 
@@ -208,25 +209,45 @@ $pillars = function_exists( 'surtilec_cached_terms' )
 		</div>
 	</section>
 
-	<!-- 7. TRUST / ENTITY -->
+	<!-- 7. RECURSOS -->
+	<section class="su-section su-band-light su-home-resources">
+		<div class="su-inner">
+			<p class="su-eyebrow su-eyebrow-center">04 — Decisión técnica</p>
+			<h2 class="su-h2 su-h2-center">Guías para elegir mejor</h2>
+			<p class="su-section-lead">Respuestas claras para especificar cables y preparar una cotización industrial.</p>
+			<div class="su-post-grid">
+				<?php
+				$home_resources = get_posts( array( 'post_type' => 'post', 'post_status' => 'publish', 'posts_per_page' => 3, 'orderby' => 'date', 'order' => 'DESC' ) );
+				foreach ( $home_resources as $resource ) :
+					setup_postdata( $GLOBALS['post'] = $resource ); // phpcs:ignore WordPress.WP.GlobalVariablesOverride
+					get_template_part( 'partials/resource-card' );
+				endforeach;
+				wp_reset_postdata();
+				?>
+			</div>
+			<div class="su-home-resources-cta"><a class="su-btn su-btn-ghost-dark" href="<?php echo esc_url( home_url( '/recursos/' ) ); ?>">Ver todos los recursos</a></div>
+		</div>
+	</section>
+
+	<!-- 8. TRUST / ENTITY -->
 	<section class="su-section su-band-navy su-trust">
 		<div class="su-inner su-trust-inner">
 			<span class="su-trust-keyline" aria-hidden="true"></span>
 			<p class="su-entity"><?php echo esc_html( surtilec_entity_sentence() ); ?></p>
 			<div class="su-trust-cta">
-				<a class="su-btn su-btn-whatsapp" href="<?php echo esc_url( $wa_link ); ?>" target="_blank" rel="noopener">Escríbenos por WhatsApp</a>
+					<a class="su-btn su-btn-whatsapp" data-surtilec-event="whatsapp_click" href="<?php echo esc_url( $wa_link ); ?>" target="_blank" rel="noopener">Escríbenos por WhatsApp</a>
 				<a class="su-btn su-btn-ghost" href="<?php echo esc_url( home_url( '/contacto/' ) ); ?>">Contáctanos</a>
 			</div>
 		</div>
 	</section>
 
-	<!-- 8. FINAL CTA -->
+	<!-- 9. FINAL CTA -->
 	<section class="su-section su-band-accent su-finalcta">
 		<div class="su-inner">
 			<h2 class="su-finalcta-title">¿Listo para cotizar?</h2>
 			<p class="su-finalcta-text">Envíanos tu solicitud y recibe precios y disponibilidad en menos de 1 hora hábil.</p>
 			<div class="su-finalcta-buttons">
-				<a class="su-btn su-btn-dark" href="<?php echo esc_url( home_url( '/cotizar/solicitud/' ) ); ?>">Cotizar ahora</a>
+				<a class="su-btn su-btn-dark" data-surtilec-event="quote_start" href="<?php echo esc_url( home_url( '/cotizar/solicitud/' ) ); ?>">Cotizar ahora</a>
 				<a class="su-btn su-btn-ghost-dark" href="<?php echo esc_url( $wa_link ); ?>" target="_blank" rel="noopener">WhatsApp</a>
 			</div>
 		</div>
