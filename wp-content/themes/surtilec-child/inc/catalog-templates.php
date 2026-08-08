@@ -169,6 +169,28 @@ function surtilec_product_trust() {
 }
 
 /**
+ * Drop GeneratePress's page-header featured image on single products.
+ *
+ * WooCommerce already renders the featured image as the first gallery slide, so
+ * GeneratePress rendering it again above the article meant the same file
+ * appeared twice on every product page. The duplicate was also the real LCP
+ * element, and LiteSpeed lazy-loaded it — a base64 placeholder followed by a
+ * deferred fetch — so the page painted its largest element late while the
+ * gallery copy below it loaded eagerly.
+ *
+ * Removing the duplicate makes the gallery image the LCP element, which
+ * surtilec_lcp_hero_img() below already marks eager and high priority.
+ */
+add_action(
+	'wp',
+	function () {
+		if ( function_exists( 'is_product' ) && is_product() ) {
+			remove_action( 'generate_before_content', 'generate_featured_page_header_inside_single', 10 );
+		}
+	}
+);
+
+/**
  * Make the single-product main image eager + high priority.
  *
  * It is the largest-contentful-paint element, but LiteSpeed lazy-loads it by
