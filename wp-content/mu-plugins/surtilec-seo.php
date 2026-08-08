@@ -137,6 +137,125 @@ function surtilec_aioseo_term_lastmod_from_content( $term_id, $taxonomy ) {
 }
 
 /**
+ * Meta description for product category archives that have no term description.
+ *
+ * 29 of the 43 product categories carry no description, including the largest:
+ * Cable para bandeja (393 products), Cables apantallados (317) and Cable
+ * encauchetado (99). AIOSEO's taxonomy template is `#taxonomy_description`, so
+ * those archives reached Google with nothing under the title.
+ *
+ * Generated at render time rather than written into the terms, so the visible
+ * category intro stays empty and obvious as work still to do, instead of being
+ * quietly filled with copy nobody wrote. Uses only the category name, its
+ * parent and how many products it holds — no technical claim is made that the
+ * catalogue does not record.
+ *
+ * @param string $description Description resolved so far.
+ * @return string
+ */
+function surtilec_product_cat_meta_description( $description ) {
+	if ( ! function_exists( 'is_product_category' ) || ! is_product_category() ) {
+		return $description;
+	}
+
+	$term = get_queried_object();
+	if ( ! $term instanceof WP_Term ) {
+		return $description;
+	}
+
+	$limit = 155;
+
+	// A real term description always wins on substance; it only needs to be cut
+	// to fit the SERP. Prefer a sentence boundary, then a word boundary, never
+	// mid-word. The visible intro on the page keeps its full length.
+	$existing = trim( html_entity_decode( wp_strip_all_tags( (string) $description ), ENT_QUOTES, 'UTF-8' ) );
+	if ( '' !== $existing ) {
+		if ( mb_strlen( $existing ) <= $limit ) {
+			return $existing;
+		}
+
+		$window = mb_substr( $existing, 0, $limit );
+
+		$stop = (int) mb_strrpos( $window, '. ' );
+		if ( $stop > 80 ) {
+			return rtrim( mb_substr( $window, 0, $stop + 1 ) );
+		}
+
+		$space = mb_strrpos( $window, ' ' );
+		if ( false !== $space && $space > 80 ) {
+			return rtrim( mb_substr( $window, 0, $space ), " ,;:-–" ) . '…';
+		}
+
+		return $existing;
+	}
+	$name  = trim( html_entity_decode( wp_strip_all_tags( $term->name ), ENT_QUOTES, 'UTF-8' ) );
+	if ( '' === $name ) {
+		return $description;
+	}
+
+	$parent = '';
+	if ( $term->parent ) {
+		$parent_term = get_term( $term->parent, 'product_cat' );
+		if ( $parent_term instanceof WP_Term ) {
+			$parent = trim( html_entity_decode( wp_strip_all_tags( $parent_term->name ), ENT_QUOTES, 'UTF-8' ) );
+		}
+	}
+
+	// Skip the parent clause when one name contains the other, which reads as
+	// "Cables apantallados en Cables apantallados".
+	$parent_useful = '' !== $parent
+		&& 0 !== strcasecmp( $parent, $name )
+		&& false === mb_stripos( $parent, $name )
+		&& false === mb_stripos( $name, $parent );
+
+	$count = (int) $term->count;
+
+	$candidates = array();
+
+	if ( $parent_useful && $count > 0 ) {
+		$candidates[] = sprintf(
+			'%s para %s: %d referencias en catálogo. Consulta especificaciones y cotiza con despacho a toda Colombia desde Bogotá.',
+			$name,
+			$parent,
+			$count
+		);
+	}
+	if ( $count > 0 ) {
+		$candidates[] = sprintf(
+			'%s: %d referencias en catálogo. Consulta calibres, conductores y especificaciones, y cotiza con despacho a toda Colombia.',
+			$name,
+			$count
+		);
+		$candidates[] = sprintf(
+			'%s: %d referencias. Consulta especificaciones y cotiza con despacho a toda Colombia desde Bogotá.',
+			$name,
+			$count
+		);
+	}
+	if ( $parent_useful ) {
+		$candidates[] = sprintf(
+			'%s para %s. Consulta especificaciones y cotiza con despacho a toda Colombia desde Bogotá.',
+			$name,
+			$parent
+		);
+	}
+	$candidates[] = sprintf(
+		'%s. Consulta especificaciones y cotiza con despacho a toda Colombia desde Bogotá.',
+		$name
+	);
+	$candidates[] = sprintf( '%s. Cotiza con despacho a toda Colombia desde Bogotá.', $name );
+
+	foreach ( $candidates as $candidate ) {
+		if ( mb_strlen( $candidate ) <= $limit ) {
+			return $candidate;
+		}
+	}
+
+	return $description;
+}
+add_filter( 'aioseo_description', 'surtilec_product_cat_meta_description', 20 );
+
+/**
  * Determine whether a product has a real featured image attachment.
  *
  * Still used by the image-readiness reporting script.
