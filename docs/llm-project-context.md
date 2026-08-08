@@ -1,7 +1,7 @@
 # Surtilec: LLM Project Context
 
 > **Canonical handoff.** Read this file first when continuing work on Surtilec.
-> Last verified: **2026-08-05**. Older entries in `docs/changelog.md` and
+> Last verified: **2026-08-08**. Older entries in `docs/changelog.md` and
 > `docs/backlog.md` are historical unless this file says otherwise.
 
 ## Project
@@ -24,6 +24,14 @@ These are the authoritative counts from the latest remote verification:
 | Area | Current state |
 | --- | --- |
 | Published products | `1,385` |
+| Published products indexable | `1,385` — the photo gate was removed, see Indexation below |
+| Published products still without a featured image | `1,068` |
+| Products in the XML sitemap | `1,385` (`product-sitemap.xml` + `product-sitemap2.xml`) |
+| Product SEO titles / descriptions cut mid-word | `0` (was `628` / `1,321`) |
+| Duplicate product title groups | `0` (was `25`) |
+| Product categories | `43`, all with a meta description; `29` still have no visible intro |
+| `llms.txt` | Live, `423 KB`, lists all `1,385` products and `36` categories |
+| Paginated archives | `noindex, follow` (was `noindex, nofollow`) |
 | Target generic staging products | `499`, `draft/hidden` |
 | SEO/AEO description template | Applied to `1,385/1,385` published products and `499/499` target drafts with SKU |
 | Target staging products with exact featured image | `76` (`12` original + `64` newly verified) |
@@ -32,6 +40,40 @@ These are the authoritative counts from the latest remote verification:
 | Draft products with exact status and a thumbnail | `76/76` |
 | Draft products with review status and a thumbnail | `0` |
 | Source-marker leakage in public WP content/meta/AIOSEO | `0` |
+
+## Indexation
+
+The photo gate is gone. `1,068` published products were previously `noindex`,
+excluded from the XML sitemap and excluded from the LLM files for one reason:
+no featured image. A product page carrying an SKU, brand, a full attribute spec
+table and the Q&A copy is worth indexing without a photo, so the gate was
+released and all `1,385` are now indexable and listed.
+
+Do not reintroduce it. `scripts/aioseo-product-image-readiness.php` is now a
+read-only report; `scripts/aioseo-release-image-gated-noindex.php` is what
+cleared the gate and only ever touches rows carrying this project's own
+`_surtilec_aioseo_noindex_reason` marker, so a noindex set by hand in AIOSEO is
+never overwritten.
+
+Product schema omits the `image` key when there is no photo, which stays valid.
+The blocked-image rules below still govern which *drafts* may be published and
+which images may be assigned; they no longer govern indexation.
+
+## AIOSEO gotchas found the hard way
+
+- **Settings are stored twice.** Alongside `aioseo_options` and
+  `aioseo_options_dynamic`, AIOSEO keeps `aioseo_options_dynamic_localized`:
+  a flat array keyed by the same path joined with underscores. Where a key
+  exists in the overlay, the overlay is what renders. Writing only the nested
+  option changes the admin screen while the live page keeps its old value.
+- **`globalRobotsMeta.default` overrides the individual robots checkboxes.**
+  AIOSEO evaluates `if ( default || nofollowPaginated )`, so while `default` is
+  true the paginated settings in the UI do nothing at all.
+- **llms.txt is a generated file, not a route.** Enabling
+  `sitemap.llms.enable` only schedules an Action Scheduler job. Trigger
+  `aioseo()->llms->generateLlmsTxt()` to produce it immediately.
+- **Always verify against rendered output**, not against the option you just
+  wrote. Each of the above passed a database read and still failed on the page.
 
 The `423` blocked target variants intentionally have no featured image. They
 must not receive a family image, a different color, a different calibre, or an
@@ -159,13 +201,34 @@ resolved product by product.
 
 ## Backups and Continuation Notes
 
-- Latest full backup before the final image cleanup:
+- Latest full backup: `backups/surtilec-20260808-124817.sql`, taken before the
+  product SEO copy rebuild.
+- Earlier reference point, before the final image cleanup:
   `backups/surtilec-20260804-110346.sql`.
-- The current worktree is intentionally dirty with prior project changes. Do
-  not revert unrelated files.
+- SEO/AEO work since 2026-08-07 lives on branch `feat/seo-aeo-hardening` and is
+  not merged. `scripts/wp.sh` on this project passes arguments through the
+  shell unquoted, so anything with quotes or parentheses must go through
+  `eval-file` rather than `eval`.
 - `scripts/deploy.sh` deploys only the child theme and mu-plugins.
 - `scripts/wp.sh` runs WP-CLI on Hostinger over SSH.
 - Do not edit WordPress core, third-party plugins or server files directly.
+
+## Next Highest-Value Work
+
+1. Visible category intros. `29` of `43` categories render no on-page copy,
+   including Cable para bandeja (`393` products) and Cables apantallados
+   (`317`). The meta description is generated, but the page itself is thin.
+   This is buyer-facing copy and wants a human.
+2. Real photography for the `1,068` published products without one. They are
+   indexed now, but a product page with an image still converts better.
+3. Products per page is `10`, so large categories span dozens of pages. Raising
+   it shortens the crawl path now that pagination is followed.
+4. `LocalBusiness` still has no `openingHours`, `geo` or `priceRange`. That data
+   is not recorded anywhere in the project; it was deliberately left out rather
+   than invented.
+5. The homepage and regular pages emit no `BreadcrumbList`. The AIOSEO
+   `breadcrumb` reference is stripped so nothing dangles, but a real trail
+   would be better.
 
 ## Files to Read Next
 
