@@ -169,6 +169,28 @@ function surtilec_product_trust() {
 }
 
 /**
+ * Show more products per archive page.
+ *
+ * The loop inherited the blog's `posts_per_page` of 10, which turns a large
+ * category into a very deep stack: "Cable para bandeja" alone is 393 products,
+ * or 40 pages. Every page past the first is noindex, so those pages exist
+ * purely as a crawl path to the products — and a 40-step path is a poor one.
+ *
+ * 24 divides evenly into the 2, 3 and 4 column grids the theme uses at its
+ * breakpoints, so no row is left ragged. Product thumbnails below the fold are
+ * lazy-loaded, so the extra rows cost little.
+ *
+ * @return int
+ */
+add_filter(
+	'loop_shop_per_page',
+	function () {
+		return 24;
+	},
+	20
+);
+
+/**
  * Drop GeneratePress's page-header featured image on single products.
  *
  * WooCommerce already renders the featured image as the first gallery slide, so
