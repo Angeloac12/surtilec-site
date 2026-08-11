@@ -1,39 +1,39 @@
 familia,familia_etiqueta,productos,estado_derechos,titular_imagen,referencia_derechos,fecha_derechos,tipo_asset,nota
-vntc-bandeja,Cable VNTC para bandeja,130,propia,Surtilec,Render propio Surtilec 2026-08-11 (lote familia-imagenes-01),2026-08-11,render_generado,"Imagen de construccion generica, no fotografia de la variante exacta. Se publica con aviso visible de imagen de referencia."
-pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,103,propia,Surtilec,Render propio Surtilec 2026-08-11 (lote familia-imagenes-01),2026-08-11,render_generado,"Imagen de construccion generica, no fotografia de la variante exacta. Se publica con aviso visible de imagen de referencia."
-thhn-thwn-tffn,Alambre THHN/THWN-2,98,propia,Surtilec,Render propio Surtilec 2026-08-11 (lote familia-imagenes-01),2026-08-11,render_generado,"Imagen de construccion generica, no fotografia de la variante exacta. Se publica con aviso visible de imagen de referencia."
-xlpe-xptc,Cable XLPE/XPTC,87,propia,Surtilec,Render propio Surtilec 2026-08-11 (lote familia-imagenes-01),2026-08-11,render_generado,"Imagen de construccion generica, no fotografia de la variante exacta. Se publica con aviso visible de imagen de referencia."
-soow-portatil,Cordón portátil SOOW encauchetado,83,propia,Surtilec,Render propio Surtilec 2026-08-11 (lote familia-imagenes-01),2026-08-11,render_generado,"Imagen de construccion generica, no fotografia de la variante exacta. Se publica con aviso visible de imagen de referencia."
-frep-cpe,Cable FREP/CPE,77,propia,Surtilec,Render propio Surtilec 2026-08-11 (lote familia-imagenes-01),2026-08-11,render_generado,"Imagen de construccion generica, no fotografia de la variante exacta. Se publica con aviso visible de imagen de referencia."
-vntc-apantallado,Cable VNTC apantallado,50,propia,Surtilec,Render propio Surtilec 2026-08-11 (lote familia-imagenes-01),2026-08-11,render_generado,"Imagen de construccion generica, no fotografia de la variante exacta. Se publica con aviso visible de imagen de referencia."
-termoflex-multiproposito,Cable Termoflex multipropósito,39,propia,Surtilec,Render propio Surtilec 2026-08-11 (lote familia-imagenes-01),2026-08-11,render_generado,"Imagen de construccion generica, no fotografia de la variante exacta. Se publica con aviso visible de imagen de referencia."
-alta-temperatura,Cable de alta temperatura,38,propia,Surtilec,Render propio Surtilec 2026-08-11 (lote familia-imagenes-01),2026-08-11,render_generado,"Imagen de construccion generica, no fotografia de la variante exacta. Se publica con aviso visible de imagen de referencia."
-tipo-w-epdm,Cable tipo W EPDM,37,propia,Surtilec,Render propio Surtilec 2026-08-11 (lote familia-imagenes-01),2026-08-11,render_generado,"Imagen de construccion generica, no fotografia de la variante exacta. Se publica con aviso visible de imagen de referencia."
-sdn-neopreno,Multiconductor SDN en neopreno,29,pendiente,"","","","",""
-srml-srg-k,Cable SRML/SRG-K de silicona,29,pendiente,"","","","",""
-termopar,Cable para termopar,26,pendiente,"","","","",""
-red-utp,Cable de red UTP/FTP,23,pendiente,"","","","",""
-acsr-aluminio,Conductor de aluminio ACSR,23,pendiente,"","","","",""
-minero-tipo-g-ggc,Cable minero tipo G/GGC,20,pendiente,"","","","",""
-spt-duplex-triplex,Cable SPT dúplex/tríplex,18,pendiente,"","","","",""
-cobre-desnudo,Conductor de cobre desnudo,18,pendiente,"","","","",""
-dlo,Cable DLO,17,pendiente,"","","","",""
-cobre-estanado-hookup,Alambre de cobre estañado,17,pendiente,"","","","",""
-soldadura,Cable para soldadura,15,pendiente,"","","","",""
-exzhellent,Cable Exzhellent,14,pendiente,"","","","",""
-fibra-optica,Cable de fibra óptica,10,pendiente,"","","","",""
-feston,Cable festón,7,pendiente,"","","","",""
-bus-bajante,Cable bus bajante,7,pendiente,"","","","",""
-superflex-flexible,Cable flexible Superflex,7,pendiente,"","","","",""
-multiconductor-datos-audio,Multiconductor de datos y audio,6,pendiente,"","","","",""
-tfe-mil,Cable TFE-E MIL-16878,6,pendiente,"","","","",""
-fep-tipo-k,Cable FEP tipo K,5,pendiente,"","","","",""
-antifraude,Cable antifraude TSEC,5,pendiente,"","","","",""
-puente-epr,Cable puente EPR,4,pendiente,"","","","",""
-solar-pv,Cable solar fotovoltaico,4,pendiente,"","","","",""
-sumergible-bomba,Cable plano sumergible para bomba,4,pendiente,"","","","",""
-coaxial,Cable coaxial,4,pendiente,"","","","",""
-armado-mc-aia,Cable armado MC/AIA,3,pendiente,"","","","",""
-iluminacion-led,Iluminación LED,2,pendiente,"","","","",""
-lszh-tc-er,Cable LSZH TC-ER,2,pendiente,"","","","",""
-gto-alta-tension,Cable GTO de alta tensión,1,pendiente,"","","","",""
+vntc-bandeja,Cable VNTC para bandeja,130,pendiente,"","","","",Render por nombre descartado 2026-08-11: no reproducia la construccion real. Requiere referencia visual verificada.
+pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,103,autorizada,Fabricante distribuido por Surtilec,Derivado de imagen oficial de fabricante (www.belden.com) - confirmacion escrita pendiente,2026-08-11,render_derivado_de_original_fabricante,Generado image-to-image desde la foto oficial del fabricante. Aviso visible de imagen de referencia en la ficha.
+thhn-thwn-tffn,Alambre THHN/THWN-2,98,autorizada,Fabricante distribuido por Surtilec,Derivado de imagen oficial de fabricante (www.belden.com) - confirmacion escrita pendiente,2026-08-11,render_derivado_de_original_fabricante,Generado image-to-image desde la foto oficial del fabricante. Aviso visible de imagen de referencia en la ficha.
+xlpe-xptc,Cable XLPE/XPTC,87,pendiente,"","","","",Render por nombre descartado 2026-08-11: no reproducia la construccion real. Requiere referencia visual verificada.
+soow-portatil,Cordón portátil SOOW encauchetado,83,autorizada,Fabricante distribuido por Surtilec,Derivado de imagen oficial de fabricante (assets.southwire.com) - confirmacion escrita pendiente,2026-08-11,render_derivado_de_original_fabricante,Generado image-to-image desde la foto oficial del fabricante. Aviso visible de imagen de referencia en la ficha.
+frep-cpe,Cable FREP/CPE,77,autorizada,Fabricante distribuido por Surtilec,Derivado de imagen oficial de fabricante (www.belden.com) - confirmacion escrita pendiente,2026-08-11,render_derivado_de_original_fabricante,Generado image-to-image desde la foto oficial del fabricante. Aviso visible de imagen de referencia en la ficha.
+vntc-apantallado,Cable VNTC apantallado,50,pendiente,"","","","",Render por nombre descartado 2026-08-11: no reproducia la construccion real. Requiere referencia visual verificada.
+termoflex-multiproposito,Cable Termoflex multipropósito,39,pendiente,"","","","",Render por nombre descartado 2026-08-11: no reproducia la construccion real. Requiere referencia visual verificada.
+alta-temperatura,Cable de alta temperatura,38,pendiente,"","","","",Render por nombre descartado 2026-08-11: no reproducia la construccion real. Requiere referencia visual verificada.
+tipo-w-epdm,Cable tipo W EPDM,37,pendiente,"","","","",Render por nombre descartado 2026-08-11: no reproducia la construccion real. Requiere referencia visual verificada.
+sdn-neopreno,Multiconductor SDN en neopreno,29,pendiente,"","","","",Render por nombre descartado 2026-08-11: no reproducia la construccion real. Requiere referencia visual verificada.
+srml-srg-k,Cable SRML/SRG-K de silicona,29,pendiente,"","","","",Render por nombre descartado 2026-08-11: no reproducia la construccion real. Requiere referencia visual verificada.
+termopar,Cable para termopar,26,pendiente,"","","","",Render por nombre descartado 2026-08-11: no reproducia la construccion real. Requiere referencia visual verificada.
+red-utp,Cable de red UTP/FTP,23,autorizada,Fabricante distribuido por Surtilec,Derivado de imagen oficial de fabricante (www.belden.com) - confirmacion escrita pendiente,2026-08-11,render_derivado_de_original_fabricante,Generado image-to-image desde la foto oficial del fabricante. Aviso visible de imagen de referencia en la ficha.
+acsr-aluminio,Conductor de aluminio ACSR,23,pendiente,"","","","",Render por nombre descartado 2026-08-11: no reproducia la construccion real. Requiere referencia visual verificada.
+minero-tipo-g-ggc,Cable minero tipo G/GGC,20,pendiente,"","","","",Render por nombre descartado 2026-08-11: no reproducia la construccion real. Requiere referencia visual verificada.
+spt-duplex-triplex,Cable SPT dúplex/tríplex,18,pendiente,"","","","",Render por nombre descartado 2026-08-11: no reproducia la construccion real. Requiere referencia visual verificada.
+cobre-desnudo,Conductor de cobre desnudo,18,pendiente,"","","","",Render por nombre descartado 2026-08-11: no reproducia la construccion real. Requiere referencia visual verificada.
+dlo,Cable DLO,17,pendiente,"","","","",Render por nombre descartado 2026-08-11: no reproducia la construccion real. Requiere referencia visual verificada.
+cobre-estanado-hookup,Alambre de cobre estañado,17,pendiente,"","","","",Render por nombre descartado 2026-08-11: no reproducia la construccion real. Requiere referencia visual verificada.
+soldadura,Cable para soldadura,15,pendiente,"","","","",Render por nombre descartado 2026-08-11: no reproducia la construccion real. Requiere referencia visual verificada.
+exzhellent,Cable Exzhellent,14,pendiente,"","","","",Render por nombre descartado 2026-08-11: no reproducia la construccion real. Requiere referencia visual verificada.
+fibra-optica,Cable de fibra óptica,10,pendiente,"","","","",Render por nombre descartado 2026-08-11: no reproducia la construccion real. Requiere referencia visual verificada.
+feston,Cable festón,7,pendiente,"","","","",Render por nombre descartado 2026-08-11: no reproducia la construccion real. Requiere referencia visual verificada.
+bus-bajante,Cable bus bajante,7,pendiente,"","","","",Render por nombre descartado 2026-08-11: no reproducia la construccion real. Requiere referencia visual verificada.
+superflex-flexible,Cable flexible Superflex,7,pendiente,"","","","",Render por nombre descartado 2026-08-11: no reproducia la construccion real. Requiere referencia visual verificada.
+multiconductor-datos-audio,Multiconductor de datos y audio,6,pendiente,"","","","",Render por nombre descartado 2026-08-11: no reproducia la construccion real. Requiere referencia visual verificada.
+tfe-mil,Cable TFE-E MIL-16878,6,pendiente,"","","","",Render por nombre descartado 2026-08-11: no reproducia la construccion real. Requiere referencia visual verificada.
+fep-tipo-k,Cable FEP tipo K,5,pendiente,"","","","",Render por nombre descartado 2026-08-11: no reproducia la construccion real. Requiere referencia visual verificada.
+antifraude,Cable antifraude TSEC,5,pendiente,"","","","",Render por nombre descartado 2026-08-11: no reproducia la construccion real. Requiere referencia visual verificada.
+puente-epr,Cable puente EPR,4,pendiente,"","","","",Render por nombre descartado 2026-08-11: no reproducia la construccion real. Requiere referencia visual verificada.
+solar-pv,Cable solar fotovoltaico,4,pendiente,"","","","",Render por nombre descartado 2026-08-11: no reproducia la construccion real. Requiere referencia visual verificada.
+sumergible-bomba,Cable plano sumergible para bomba,4,pendiente,"","","","",Render por nombre descartado 2026-08-11: no reproducia la construccion real. Requiere referencia visual verificada.
+coaxial,Cable coaxial,4,pendiente,"","","","",Render por nombre descartado 2026-08-11: no reproducia la construccion real. Requiere referencia visual verificada.
+armado-mc-aia,Cable armado MC/AIA,3,pendiente,"","","","",Render por nombre descartado 2026-08-11: no reproducia la construccion real. Requiere referencia visual verificada.
+iluminacion-led,Iluminación LED,2,pendiente,"","","","",Render por nombre descartado 2026-08-11: no reproducia la construccion real. Requiere referencia visual verificada.
+lszh-tc-er,Cable LSZH TC-ER,2,pendiente,"","","","",Render por nombre descartado 2026-08-11: no reproducia la construccion real. Requiere referencia visual verificada.
+gto-alta-tension,Cable GTO de alta tensión,1,pendiente,"","","","",Render por nombre descartado 2026-08-11: no reproducia la construccion real. Requiere referencia visual verificada.

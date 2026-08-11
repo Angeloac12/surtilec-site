@@ -72,7 +72,10 @@ CSV.open(File.join(out_dir, 'manifest.csv'), 'w', encoding: 'UTF-8') do |csv|
     sku = row['sku'].to_s.strip
     next if sku.empty?
 
-    image_file = "familia-#{family_slug}-#{sku}#{extension}"
+    # The batch id is part of the filename so a re-shot family lands on new
+    # attachments instead of silently reusing the previous batch's file, which
+    # the importer matches on `_surtilec_batch_image_file`.
+    image_file = "familia-#{family_slug}-#{batch_id}-#{sku}#{extension}"
     FileUtils.cp(source_image, File.join(images_dir, image_file))
 
     # Alt format from docs/image-rights-workflow.md. The brand segment is

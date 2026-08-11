@@ -53,5 +53,5 @@ rsync -az --delete -e "ssh -p $SSH_PORT" "$LOCAL_DIR/" "$SSH_USER@$SSH_HOST:$REM
 
 echo "==> Importando en modo $MODE..."
 ssh -p "$SSH_PORT" "$SSH_USER@$SSH_HOST" \
-  "cd \"$REMOTE_WP\" && wp eval-file - \"\$HOME/$REMOTE_DIR/manifest.csv\" $MODE \"lote=$BATCH\"" \
+  "cd \"$REMOTE_WP\" && wp eval-file - \"\$HOME/$REMOTE_DIR/manifest.csv\" $MODE \"lote=$BATCH\" \"familia=$FAMILY\"" \
   < "$REPO_ROOT/scripts/import-authorized-product-images.php"

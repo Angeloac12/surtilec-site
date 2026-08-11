@@ -35,9 +35,15 @@ $accepted_match_states = array( 'coincidencia_exacta_revisada', 'imagen_de_famil
 
 // Batch handle for the family rows, used to roll a single batch back later.
 $batch_id = '';
+// Family slug. Passed explicitly because a re-shot family reuses its slug with
+// new files, and deriving it from the filename forces the filename to stay
+// unique forever just to keep the slug parseable.
+$family_arg = '';
 foreach ( $args as $arg ) {
 	if ( 0 === strpos( $arg, 'lote=' ) ) {
 		$batch_id = substr( $arg, 5 );
+	} elseif ( 0 === strpos( $arg, 'familia=' ) ) {
+		$family_arg = substr( $arg, 8 );
 	}
 }
 if ( '' === $batch_id && $manifest_path ) {
@@ -234,9 +240,10 @@ foreach ( $rows as $row ) {
 
 	if ( 'imagen_de_familia_referencia' === $row['image_match_status'] ) {
 		// Drives the visible "Imagen de referencia" note and the rollback handle.
-		// The family slug is carried by the filename: familia-<slug>-<sku>.<ext>.
-		$family = '';
-		if ( preg_match( '/^familia-(.+)-' . preg_quote( $row['sku'], '/' ) . '\./', $row['image_file'], $matches ) ) {
+		// Prefer the explicit familia= argument; fall back to the filename
+		// convention familia-<slug>-<sku>.<ext> for older batches.
+		$family = $family_arg;
+		if ( '' === $family && preg_match( '/^familia-(.+)-' . preg_quote( $row['sku'], '/' ) . '\./', $row['image_file'], $matches ) ) {
 			$family = $matches[1];
 		}
 		update_post_meta( $product_id, '_surtilec_imagen_referencia', '1' );
