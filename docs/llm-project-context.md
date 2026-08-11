@@ -80,6 +80,9 @@ must not receive a family image, a different color, a different calibre, or an
 image reused by multiple constructions. They remain drafts and must not be
 published or indexed as complete product pages.
 
+**This ban covers the drafts only.** Published products follow a separate,
+deliberate family-image policy, documented under Family Images below.
+
 ## Image Truth Model
 
 The first authorized batch contained one downloaded image per SKU, but many
@@ -114,6 +117,35 @@ The 423 blocked candidate files were not uploaded to WordPress. Six duplicate
 Media attachments from an interrupted import were marked with
 `_surtilec_image_quarantined=1`; their files were preserved for recovery and
 are not active product thumbnails.
+
+## Family Images
+
+Published products carry a family image where no exact photo exists. The
+catalog's image-less products collapse onto `38` cable constructions, so one
+reviewed image per construction serves the whole group, and the product page
+always says so.
+
+The rules that make this honest rather than a shortcut:
+
+- The family must be registered in `data/product-image-family-rights.csv` as
+  `propia` or `autorizada` with a reference. `scripts/build-family-image-manifest.rb`
+  aborts otherwise, so the register gates the import instead of describing it.
+- The row carries `image_match_status=imagen_de_familia_referencia`. The
+  importer accepts that alongside `coincidencia_exacta_revisada` and still
+  quarantines everything else.
+- The page renders *"Imagen de referencia. El producto puede variar en calibre,
+  color y presentación según la referencia solicitada."* from
+  `_surtilec_imagen_referencia`.
+- Each SKU gets its own copy of the file, `familia-<slug>-<sku>.webp`. One
+  shared attachment would leave a whole family wearing the last product's alt.
+
+The first batch is `lote=20260811`: `10` Surtilec-owned renders covering the
+`10` largest families. Roll a batch or a single family back with
+`scripts/rollback-family-images.php`; it drops the thumbnail and the family
+meta and keeps the media files.
+
+Families still without an image are listed as `pendiente` in the rights CSV.
+They need the same treatment before their products get a photo.
 
 ## Product Content State
 
@@ -162,6 +194,18 @@ file:
 bash scripts/quarantine-nonexact-product-images.sh --dry-run
 bash scripts/quarantine-nonexact-product-images.sh --live
 ```
+
+For a new family image (published products), see Family Images above:
+
+```bash
+node scripts/build-image-family-map.js
+bash scripts/import-family-images.sh --family=<slug> --dry-run
+bash scripts/import-family-images.sh --family=<slug> --live
+```
+
+One family per run. LiteSpeed serves the old page until it is purged, so
+`wp litespeed-purge all` before checking rendered output — the database was
+already correct in testing while the page still showed no image.
 
 After every image batch, verify remotely that:
 

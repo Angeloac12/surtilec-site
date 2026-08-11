@@ -98,6 +98,45 @@ Only the verified manifest is imported. Rows marked
 `fuente_visual_reutilizada_entre_variantes` remain without a featured image;
 they need a supplier-approved asset specific to that variant.
 
+## Imágenes de familia
+
+La regla de coincidencia exacta de arriba gobierna los drafts. Para los
+productos **ya publicados** existe una segunda política, deliberada y
+separada: una imagen por construcción de cable, reutilizada por todos los SKU
+de esa familia, siempre bajo un aviso visible en la ficha.
+
+Es admisible sólo con las tres condiciones juntas:
+
+1. La familia tiene fila en `data/product-image-family-rights.csv` con
+   `estado_derechos` en `propia` o `autorizada` y una referencia registrada.
+   El generador de manifiestos aborta si falta.
+2. La fila del manifiesto lleva `image_match_status=imagen_de_familia_referencia`,
+   que el importador acepta además de `coincidencia_exacta_revisada`.
+3. La ficha renderiza el aviso *"Imagen de referencia…"*, que sale del meta
+   `_surtilec_imagen_referencia` en
+   `wp-content/mu-plugins/surtilec-product-provenance.php`.
+
+Cada SKU recibe su propia copia del archivo (`familia-<slug>-<sku>.webp`). Un
+adjunto compartido dejaría a toda la familia con el alt del último producto
+importado.
+
+```bash
+node scripts/build-image-family-map.js          # mapa; falla si algo queda sin familia
+bash scripts/import-family-images.sh --family=<slug> --dry-run
+bash scripts/import-family-images.sh --family=<slug> --live
+```
+
+Una familia a la vez. Para revertir un lote completo o una sola familia:
+
+```bash
+wp eval-file - <lote> dry  < scripts/rollback-family-images.php
+wp eval-file - <lote> live familia=<slug> < scripts/rollback-family-images.php
+```
+
+El hash SHA-256 cambia de papel aquí. En el flujo exacto, un archivo repetido
+entre variantes es motivo de bloqueo; en el de familia la repetición es el
+objetivo, y es justamente lo que obliga al aviso visible.
+
 ## SEO metadata
 
 Use the generated alt and media title only after the product match and image
