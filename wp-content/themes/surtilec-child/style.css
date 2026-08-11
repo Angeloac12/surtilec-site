@@ -327,6 +327,19 @@ input[type="submit"]:hover,
 }
 
 /* ============================================================
+   Catálogo — ficha de producto: aviso de imagen de referencia
+   ============================================================ */
+.surtilec-imagen-referencia {
+  margin: var(--space-1) 0 var(--space-2);
+  padding: 0.55em 0.8em;
+  border-left: 3px solid var(--hairline-dark);
+  background: var(--surface-alt);
+  color: var(--gray-700);
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+
+/* ============================================================
    Catálogo — ficha de producto: tabla de especificaciones
    ============================================================ */
 .surtilec-specs { margin: var(--space-4) 0; clear: both; width: 100%; }

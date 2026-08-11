@@ -17,10 +17,32 @@ if ( ! defined( 'WP_CLI' ) || ! WP_CLI ) {
 
 $manifest_path = isset( $args[0] ) ? $args[0] : '';
 $mode          = isset( $args[1] ) ? $args[1] : 'dry';
-$create_missing = isset( $args[2] ) && 'create-missing' === $args[2];
+$create_missing = in_array( 'create-missing', $args, true );
 $live          = 'live' === $mode;
 $image_dir     = $manifest_path ? dirname( $manifest_path ) . '/images' : '';
 $expected      = array( 'sku', 'image_file', 'image_title', 'alt_text', 'source_url', 'rights_status', 'rights_reference', 'image_match_status', 'sha256' );
+
+/**
+ * Match states accepted in live mode.
+ *
+ * `coincidencia_exacta_revisada` is one verified photo of that exact variant.
+ * `imagen_de_familia_referencia` is the deliberate family-image policy: one
+ * reviewed image of the construction, reused across every SKU in that family,
+ * and always rendered under a visible "Imagen de referencia" note. Anything
+ * else is still quarantined.
+ */
+$accepted_match_states = array( 'coincidencia_exacta_revisada', 'imagen_de_familia_referencia' );
+
+// Batch handle for the family rows, used to roll a single batch back later.
+$batch_id = '';
+foreach ( $args as $arg ) {
+	if ( 0 === strpos( $arg, 'lote=' ) ) {
+		$batch_id = substr( $arg, 5 );
+	}
+}
+if ( '' === $batch_id && $manifest_path ) {
+	$batch_id = basename( dirname( $manifest_path ) );
+}
 
 if ( ! $manifest_path || ! file_exists( $manifest_path ) ) {
 	WP_CLI::error( "No se encontro el manifiesto: $manifest_path" );
@@ -122,7 +144,7 @@ $blocked_review = 0;
 
 foreach ( $rows as $row ) {
 	$product_id = (int) $row['_product_id'];
-	if ( 'coincidencia_exacta_revisada' !== $row['image_match_status'] ) {
+	if ( ! in_array( $row['image_match_status'], $accepted_match_states, true ) ) {
 		++$blocked_review;
 		if ( $product_id ) {
 			$current_thumbnail = (int) get_post_thumbnail_id( $product_id );
@@ -209,6 +231,23 @@ foreach ( $rows as $row ) {
 	update_post_meta( $product_id, '_surtilec_image_license_status', $row['rights_status'] );
 	update_post_meta( $product_id, '_surtilec_image_license_reference', sanitize_text_field( $row['rights_reference'] ) );
 	update_post_meta( $product_id, '_surtilec_image_match_status', sanitize_text_field( $row['image_match_status'] ) );
+
+	if ( 'imagen_de_familia_referencia' === $row['image_match_status'] ) {
+		// Drives the visible "Imagen de referencia" note and the rollback handle.
+		// The family slug is carried by the filename: familia-<slug>-<sku>.<ext>.
+		$family = '';
+		if ( preg_match( '/^familia-(.+)-' . preg_quote( $row['sku'], '/' ) . '\./', $row['image_file'], $matches ) ) {
+			$family = $matches[1];
+		}
+		update_post_meta( $product_id, '_surtilec_imagen_referencia', '1' );
+		update_post_meta( $product_id, '_surtilec_imagen_familia', $family );
+		update_post_meta( $product_id, '_surtilec_imagen_lote', sanitize_text_field( $batch_id ) );
+	} else {
+		delete_post_meta( $product_id, '_surtilec_imagen_referencia' );
+		delete_post_meta( $product_id, '_surtilec_imagen_familia' );
+		delete_post_meta( $product_id, '_surtilec_imagen_lote' );
+	}
+
 	WP_CLI::log( "  IMAGEN {$row['sku']} (#$product_id)" );
 }
 

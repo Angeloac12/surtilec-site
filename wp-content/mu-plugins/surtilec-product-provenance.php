@@ -14,6 +14,42 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 add_action( 'woocommerce_after_single_product_summary', 'surtilec_product_batch_details', 6 );
+// Priority 25 puts this straight after woocommerce_show_product_images (20), so
+// the note sits under the gallery without being injected inside the flexslider
+// wrapper, which the gallery script owns.
+add_action( 'woocommerce_before_single_product_summary', 'surtilec_reference_image_notice', 25 );
+
+/**
+ * Tell the buyer when the photo shows the construction, not the exact variant.
+ *
+ * 1,068 published products share ~38 cable constructions. One reviewed image
+ * per construction serves them all, which is only honest if the page says so:
+ * gauge, colour and presentation genuinely vary inside a family.
+ *
+ * @return void
+ */
+function surtilec_reference_image_notice() {
+	if ( ! function_exists( 'is_product' ) || ! is_product() ) {
+		return;
+	}
+
+	$product_id = get_queried_object_id();
+	if ( ! $product_id || '1' !== (string) get_post_meta( $product_id, '_surtilec_imagen_referencia', true ) ) {
+		return;
+	}
+
+	if ( ! has_post_thumbnail( $product_id ) ) {
+		return;
+	}
+
+	printf(
+		'<p class="surtilec-imagen-referencia">%s</p>',
+		esc_html__(
+			'Imagen de referencia. El producto puede variar en calibre, color y presentación según la referencia solicitada.',
+			'surtilec'
+		)
+	);
+}
 
 /**
  * Render verified product details captured by the extended batch importer.
