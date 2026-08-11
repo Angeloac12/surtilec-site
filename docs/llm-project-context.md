@@ -1,7 +1,7 @@
 # Surtilec: LLM Project Context
 
 > **Canonical handoff.** Read this file first when continuing work on Surtilec.
-> Last verified: **2026-08-08**. Older entries in `docs/changelog.md` and
+> Last verified: **2026-08-11**. Older entries in `docs/changelog.md` and
 > `docs/backlog.md` are historical unless this file says otherwise.
 
 ## Project
@@ -25,7 +25,11 @@ These are the authoritative counts from the latest remote verification:
 | --- | --- |
 | Published products | `1,385` |
 | Published products indexable | `1,385` — the photo gate was removed, see Indexation below |
-| Published products still without a featured image | `1,068` |
+| Published products with a featured image | `1,059` of `1,385` (`76.5%`), was `317` |
+| Published products still without a featured image | `326`, was `1,068` — see Family Images |
+| Published products carrying a family image | `742`, batch `lote=20260811`, `10` families |
+| Visual cable families the catalog collapses onto | `38`, mapped in `data/product-image-family-map.csv` |
+| Product image attachments missing alt text | `0` of `1,852` |
 | Products in the XML sitemap | `1,385` (`product-sitemap.xml` + `product-sitemap2.xml`) |
 | Product SEO titles / descriptions cut mid-word | `0` (was `628` / `1,321`) |
 | Duplicate product title groups | `0` (was `25`) |
@@ -263,10 +267,14 @@ resolved product by product.
    including Cable para bandeja (`393` products) and Cables apantallados
    (`317`). The meta description is generated, but the page itself is thin.
    This is buyer-facing copy and wants a human.
-2. Real photography for the `1,068` published products without one. They are
-   indexed now, but a product page with an image still converts better.
-3. Products per page is `10`, so large categories span dozens of pages. Raising
-   it shortens the crawl path now that pagination is followed.
+2. The remaining `326` published products without any image, in the `28` smaller
+   families still marked `pendiente` in `data/product-image-family-rights.csv`.
+   The pipeline is built and proven; each one needs an approved image and a
+   rights row, then one `import-family-images.sh` run.
+3. Real photography to replace the family renders. A render labelled *Imagen de
+   referencia* is honest and converts better than nothing, but a real photo of
+   the exact variant converts better still and would let those products move
+   from `imagen_de_familia_referencia` to `coincidencia_exacta_revisada`.
 4. `LocalBusiness` still has no `openingHours`, `geo` or `priceRange`. That data
    is not recorded anywhere in the project; it was deliberately left out rather
    than invented.

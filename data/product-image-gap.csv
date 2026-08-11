@@ -12,85 +12,25 @@ id,sku,titulo,categorias,marca,atributos
 118,31321020000,"Cable Cu (cobre) desnudo blando 6 AWG (B) 7H","Cable desnudo|Conductores desnudos",Procables,pa_marca|pa_calibre-awg|pa_norma|pa_aplicacion
 119,31321018000,"Cable Cu (cobre) desnudo blando 8 AWG (B) 7H","Cable desnudo|Conductores desnudos",Procables,pa_marca|pa_calibre-awg|pa_norma|pa_aplicacion
 120,31321016000,"Cable Cu (cobre) desnudo blando 10 AWG (B)7H","Cable desnudo|Conductores desnudos",Procables,pa_marca|pa_calibre-awg|pa_norma|pa_aplicacion
-121,31353140001,"THHN/THWN-2 8 AWG 600V 90°C","Cable THHN / THWN-2",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-122,31353140002,"THHN/THWN-2 8 AWG Cu (cobre) 600V90°C","Cable THHN / THWN-2",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-123,31353100001,"THHN/THWN-2 10 AWG Cu600V 90°C","Cable THHN / THWN-2",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-124,31353080001,"THHN/THWN-2 12AWG Cu (cobre) 600V90°C","Cable THHN / THWN-2",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-125,31353060001,"THHN/THWN-2 14AWG Cu (cobre) 600V90°C","Cable THHN / THWN-2",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-126,31353040001,"THHN/THWN-2 16 AWG Cu (cobre) 600V90°C","Cable THHN / THWN-2",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-127,31353020001,"THHN/THWN-2 18 AWG Cu (cobre) 600V90°C","Cable THHN / THWN-2",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-128,31353101001,"Cable THHN/THWN-2 2×10 AWG Cu (cobre) 600V 90°C","Cable THHN / THWN-2",Procables,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_norma|pa_aplicacion
-129,31353081001,"Cable THHN/THWN-2 2×12 AWG Cu (cobre) 600V 90°C","Cable THHN / THWN-2",Procables,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_norma|pa_aplicacion
-130,31353061001,"Cable THHN/THWN-2 2×14 AWG Cu (cobre) 600V 90°C","Cable THHN / THWN-2",Procables,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_norma|pa_aplicacion
-131,31353149901,"Cable THHN/THWN-2 8 AWG Cu (cobre) 600V 90°C 7H (XD)","Cable THHN / THWN-2",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-132,31352605601,"THHN/THWN-2 6 AWG Cu (cobre) 600V 90° flexible","Cable THHN / THWN-2",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-133,31352604801,"THHN/THWN-2 4 AWG Cu (cobre) 600V 90° flexible","Cable THHN / THWN-2",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-134,31352603601,"THHN/THWN-2 2 AWG Cu (cobre) 600V 90° flexible","Cable THHN / THWN-2",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-135,31352602801,"THHN/THWN-2 1/0 AWG Cu (cobre) 600V 90° flexible","Cable THHN / THWN-2",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-136,31352602401,"THHN/THWN-2 2/0 AWG Cu (cobre) 600V 90° flexible","Cable THHN / THWN-2",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-137,31352602001,"THHN/THWN-2 3/0 AWG Cu (cobre) 600V 90° flexible","Cable THHN / THWN-2",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-138,31352601601,"THHN/THWN-2 4/0 AWG Cu (cobre) 600V 90° flexible","Cable THHN / THWN-2",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-139,31352610201,"THHN/THWN-2 250 kcmil Cu (cobre) 600V 90° flexible","Cable THHN / THWN-2",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-140,31352610101,"THHN/THWN-2 350 kcmil Cu (cobre) 600V 90° flexible","Cable THHN / THWN-2",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-141,31352610102,"THHN/THWN-2 500 kcmil Cu (cobre) 600V 90° flexible","Cable THHN / THWN-2",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-142,31354002601,"THWN-2 8 AWG Cu (J) PVC/NY 600V 90°C G&OII VW-1","Cable THHN / THWN-2",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-143,31354002605,"THWN-2 8 AWG Cu (J) PVC/NY 600V 105C G&OII VW-1","Cable THHN / THWN-2",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-144,31354001601,"TFFN 18 AWG Cu (J) PVC/NY 600V 90°C G&OII VW-1","Cable THHN / THWN-2",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-145,31354001801,"TFFN 16 AWG Cu (J) PVC/NY 600V 90°C G&OII VW-1","Cable THHN / THWN-2",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-146,31354002101,"THWN-2 10 AWG Cu (J) PVC/NY 600V 90°C G&OII VW-1","Cable THHN / THWN-2",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-147,31354002201,"THWN-2 12 AWG Cu (J) PVC/NY 600V 90°C G&OII VW-1","Cable THHN / THWN-2",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-148,31354002301,"THWN-2 14 AWG Cu (J) PVC/NY 600V 90°C G&OII VW-1","Cable THHN / THWN-2",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-149,31354002401,"THWN-2 16 AWG Cu (J) PVC/NY 600V 90°C G&OII VW-1","Cable THHN / THWN-2",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-150,31354002501,"THWN-2 18 AWG Cu (J) PVC/NY 600V 90°C G&OII VW-1","Cable THHN / THWN-2",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-151,31354003601,"THWN-2 6 AWG Cu (J) PVC/NY 600V 90°C G&OII VW-1","Cable THHN / THWN-2",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-152,31354004801,"THWN-2 4 AWG Cu (J) PVC/NY 600V 90°C G&OII VW-1","Cable THHN / THWN-2",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-153,31354004101,"THWN-2 2 AWG Cu (J) PVC/NY 600V 90°C G&OII VW-1","Cable THHN / THWN-2",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-154,31354003101,"THWN-2 1/0 AWG Cu (J) PVC/NY 600V 90°C G&OII VW-1","Cable THHN / THWN-2",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
 155,31405170001,"TSEC 2×6+6 AWG Cu (cobre)-XLPUV/PE 600V 75°C CDSA","Antifraude TSEC|Cables de acometida",Procables,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_norma|pa_aplicacion
 156,31405170002,"TSEC 2×6+6 AWG Cu (cobre)-XLPUV/PE 600V 90°C CDSA","Antifraude TSEC|Cables de acometida",Procables,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_norma|pa_aplicacion
 157,31404264001,"TSEC 2×6+6 AWG Cu (cobre)-XLPUV/PE 600V 90°C","Antifraude TSEC|Cables de acometida",Procables,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_norma|pa_aplicacion
 158,31404244901,"TSEC 2×8+8 AWG Cu (cobre) CPR XLPE-SR 600V 90°C PE","Antifraude TSEC|Cables de acometida",Procables,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_norma|pa_aplicacion
 159,31404145001,"TSEC 8+8 AWG Cu-PE/PVC 600V 75°C CDSA","Antifraude TSEC|Cables de acometida",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-160,31405820001,"TIPO TREBOL 2×10+10 AWG Cu (cobre) XLPE-SR 600V 75°C PE","Cables de acometida|Tipo Trébol",Procables,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_norma|pa_aplicacion
-161,31405820002,"TIPO TREBOL 2×10+10 AWG Cu (cobre) XLPE-SR 600V 90°C PE","Cables de acometida|Tipo Trébol",Procables,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_norma|pa_aplicacion
-162,31405811001,"TIPO TREBOL 2×8+8 AWG Cu (cobre) XLPE-SR 600V 75°C PE","Cables de acometida|Tipo Trébol",Procables,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_norma|pa_aplicacion
-163,31405811002,"TIPO TREBOL 2×8+8 AWG Cu (cobre) XLPE-SR 600V 90°C PE","Cables de acometida|Tipo Trébol",Procables,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_norma|pa_aplicacion
 164,31352614501,"EXZHELLENT BW 14 AWG (2.5mm2) Cu (cobre) CPR HFFR LS 600V 75°","Cables de baja tensión|Exzhellent BW",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
 165,31352612201,"EXZHELLENT BW 12 AWG (4mm2) Cu (cobre) CPR HFFR LS 600V 75°C","Cables de baja tensión|Exzhellent BW",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
 166,31352610601,"EXZHELLENT BW 10 AWG (6mm2) Cu (cobre) CPR HFFR LS 600V 75°C","Cables de baja tensión|Exzhellent BW",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-167,31352610801,"EXZHELLENT BW 10 AWG (6mm2) Cu (cobre) CPR HFFR LS 600V 75°C XLPE","Cables de baja tensión|Exzhellent BW",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
 168,31352610201-2,"EXZHELLENT BW 8 AWG (10mm2) Cu (cobre) CPR HFFR LS 600V 75°C","Cables de baja tensión|Exzhellent BW",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-169,31352610101-2,"EXZHELLENT BW 8 AWG (10mm2) Cu (cobre) CPR HFFR LS 600V 90°C XLPE","Cables de baja tensión|Exzhellent BW",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-170,31352610102-2,"EXZHELLENT BW 8 AWG Cu (cobre) CPR HFFR LS 600V 90°C XLPE 4H ST","Cables de baja tensión|Exzhellent BW",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
 171,31352608801,"EXZHELLENT BW 6 AWG (16mm2) Cu (cobre) CPR HFFR LS 600V 75°C","Cables de baja tensión|Exzhellent BW",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-172,31352608701,"EXZHELLENT BW 6 AWG (16mm2) Cu (cobre) CPR HFFR LS 600V 90°C XLPE","Cables de baja tensión|Exzhellent BW",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
 173,31352606201,"EXZHELLENT BW 4 AWG (25mm2) Cu (cobre) CPR HFFR LS 600V 75°C","Cables de baja tensión|Exzhellent BW",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-174,31352606101,"EXZHELLENT BW 4 AWG (25mm2) Cu (cobre) CPR HFFR LS 600V 90°C XLPE","Cables de baja tensión|Exzhellent BW",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
 175,31352602401-2,"EXZHELLENT BW 2 AWG (35mm2) Cu (cobre) CPR HFFR LS 600V 75°C","Cables de baja tensión|Exzhellent BW",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-176,31352602301,"EXZHELLENT BW 2 AWG (35mm2) Cu (cobre) CPR HFFR LS 600V 90°C XLPE","Cables de baja tensión|Exzhellent BW",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
 177,31352600401,"EXZHELLENT BW 1/0 AWG (50mm2) Cu (cobre) CPR HFFR LS 600V 75°C","Cables de baja tensión|Exzhellent BW",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-178,31352600301,"EXZHELLENT BW 1/0 AWG (50mm2) Cu (cobre) CPR HFFR LS 600V 90°C XLPE","Cables de baja tensión|Exzhellent BW",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
 179,31352598801,"EXZHELLENT BW 2/0 AWG (70mm2) Cu (cobre) CPR HFFR LS 600V 75°C","Cables de baja tensión|Exzhellent BW",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-180,31352598701,"EXZHELLENT BW 2/0 AWG (70mm2) Cu (cobre) CPR HFFR LS 600V 90°C XLPE","Cables de baja tensión|Exzhellent BW",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
 181,31352596401,"EXZHELLENT BW 3/0 AWG (95mm2) Cu (cobre) CPR HFFR LS 600V 75°C","Cables de baja tensión|Exzhellent BW",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-182,31352596301,"EXZHELLENT BW 3/0 AWG (95mm2) Cu (cobre) CPR HFFR LS 600V 90°C XLPE","Cables de baja tensión|Exzhellent BW",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
 183,31352594201,"EXZHELLENT BW 4/0 AWG (120mm2) Cu (cobre) CPR HFFR LS 600V 75°C","Cables de baja tensión|Exzhellent BW",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-184,31352594101,"EXZHELLENT BW 4/0 AWG (120mm2) Cu (cobre) CPR HFFR LS 600V 90°C XLPE","Cables de baja tensión|Exzhellent BW",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
 185,31352611601,"EXZHELLENT BW 500 kcmil Cu (cobre) CPR HFFR LS 600V 75°","Cables de baja tensión|Exzhellent BW",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
 186,31352611001,"EXZHELLENT BW 350 kcmil Cu (cobre) CPR HFFR LS 600V 75°","Cables de baja tensión|Exzhellent BW",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
 187,31352610401,"EXZHELLENT BW 250 kcmil Cu (cobre) CPR HFFR LS 600V 75°","Cables de baja tensión|Exzhellent BW",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-188,31354002601-2,"THWN-2 8 AWG Cu (J) PVC/NY 600V G&O II VW-1","Cable THHN / THWN-2",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-189,31354002605-2,"THWN-2 8 AWG Cu (J) PVC/NY 600V 105C G&OII VW-1","Cable THHN / THWN-2",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-190,31354001801-2,"THWN-2 10 AWG Cu (J) PVC/NY 600V G&O II VW-1","Cable THHN / THWN-2",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-191,31354001805,"THWN-2 10 AWG Cu (J) PVC/NY 600V 105C G&OII VW-1","Cable THHN / THWN-2",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-192,31354001001,"THWN-2 12 AWG Cu (J) PVC/NY 600V G&O II VW-1","Cable THHN / THWN-2",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-193,31354001005,"THWN-2 12 AWG Cu (J) PVC/NY 600V 105C G&OII VW-1","Cable THHN / THWN-2",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-194,31354000201,"THWN-2 14 AWG Cu (J) PVC/NY 600V G&O II VW-1","Cable THHN / THWN-2",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-195,31354000205,"THWN-2 14 AWG Cu (J) PVC/NY 600V 105C G&OII VW-1","Cable THHN / THWN-2",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-196,31354000401,"THWN-2 16 AWG Cu (J) PVC/NY 600V G&O II VW-1","Cable THHN / THWN-2",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-197,31353999801,"THWN-2 18 AWG Cu (J) PVC/NY 600V G&O II VW-1","Cable THHN / THWN-2",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-198,31354001601-2,"TFFN 18 AWG Cu (flexible) PVC/NY 600V G&O II VW-1","Cable THHN / THWN-2",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-199,31353999701,"THWN-2 18 AWG Cu (J) PVC/NY 600V 105C G&OII VW-1","Cable THHN / THWN-2",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
 200,31353999301,"SUPERFLEX 8 AWG Cu (cobre) (J) PVC/NY 600V 90°C VW-1","Cable flexible|Superflex",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
 201,31353999001,"SUPERFLEX 10 AWG Cu (cobre) (J) PVC/NY 600V 90°C VW-1","Cable flexible|Superflex",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
 202,31353998701,"SUPERFLEX 12 AWG Cu (cobre) (J) PVC/NY 600V 90°C VW-1","Cable flexible|Superflex",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
@@ -98,13 +38,6 @@ id,sku,titulo,categorias,marca,atributos
 204,31353998301,"SUPERFLEX 16 AWG Cu (cobre) (J) PVC/NY 600V 90°C VW-1","Cable flexible|Superflex",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
 205,31353998201,"SUPERFLEX 18 AWG Cu (cobre) (J) PVC/NY 600V 90°C VW-1","Cable flexible|Superflex",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
 206,31354240105,"SUPERFLEX 20 AWG Cu (cobre) (J) PVC/NY 600V 90°C VW-1","Cable flexible|Superflex",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-207,31354220102,"THWN-2 12 AWG Cu (J) PVC/NY 600V105°C G&O II VW-1CT","Cable THHN / THWN-2",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-208,31354002001,"THWN-2 14 AWG Cu (flexible) PVC/NY 600V G&O II VW-1","Cable THHN / THWN-2",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-209,31354002002,"THWN-2 14 AWG Cu (flexible) PVC NY 600V 105C G&O II VW-1","Cable THHN / THWN-2",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-210,31354001801-3,"TFFN 16 AWG Cu (flexible) PVC/NY 600V G&O II VW-1","Cable THHN / THWN-2",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-211,31354001802,"TFFN 16AWG Cu (flexible) PVC /NY 600V 105C G&O II VW-1","Cable THHN / THWN-2",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-212,31354001601-3,"TFFN 18 AWG Cu (flexible) PVC/NY 600V G&O II VW-1","Cable THHN / THWN-2",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
-213,31354001602,"TFFN 18AWG Cu (flexible) PVC/NY 600V 105C G&O II VW-1","Cable THHN / THWN-2",Procables,pa_marca|pa_calibre-awg|pa_voltaje|pa_norma|pa_aplicacion
 214,31369100002,"DUPLEX CPE SPT 2×10 AWG Cu (J) PVC 300V 60°C","Cable flexible|SPT-CPE",Procables,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_norma|pa_aplicacion
 215,31369080001,"DUPLEX CPE SPT 2×12 AWG Cu (J) PVC 300V 60°C","Cable flexible|SPT-CPE",Procables,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_norma|pa_aplicacion
 216,31369060001,"DUPLEX CPE SPT 2×14 AWG Cu (J) PVC 300V 60°C","Cable flexible|SPT-CPE",Procables,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_norma|pa_aplicacion
@@ -115,44 +48,9 @@ id,sku,titulo,categorias,marca,atributos
 221,31369010401,"DUPLEX CPE SPT 3×14 AWG Cu (J) PVC 300V 60°C","Cable flexible|SPT-CPE",Procables,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_norma|pa_aplicacion
 222,31369010201,"DUPLEX CPE SPT 3×16 AWG Cu (J) PVC 300V 60°C","Cable flexible|SPT-CPE",Procables,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_norma|pa_aplicacion
 223,31369010001,"DUPLEX CPE SPT 3×18 AWG Cu (J) PVC 300V 60°C","Cable flexible|SPT-CPE",Procables,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_norma|pa_aplicacion
-224,31368980001,"TERMOFLEX 2×10 AWG Cu (cobre) (J) PVC 300V 60°C","Cable flexible|Termoflex",Procables,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_norma|pa_aplicacion
-225,31368960001,"TERMOFLEX 2×12 AWG Cu (cobre) (J) PVC 300V 60°C","Cable flexible|Termoflex",Procables,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_norma|pa_aplicacion
-226,31368940001,"TERMOFLEX 2×14 AWG Cu (cobre) (J) PVC 300V 60°C","Cable flexible|Termoflex",Procables,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_norma|pa_aplicacion
-227,31368920001,"TERMOFLEX 2×16 AWG Cu (cobre) (J) PVC 300V 60°C","Cable flexible|Termoflex",Procables,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_norma|pa_aplicacion
-228,31368900001,"TERMOFLEX 2×18 AWG Cu (cobre) (J) PVC 300V 60°C","Cable flexible|Termoflex",Procables,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_norma|pa_aplicacion
-229,31368880001,"TERMOFLEX 2×20 AWG Cu (cobre) (J) PVC 300V 60°C","Cable flexible|Termoflex",Procables,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_norma|pa_aplicacion
-230,31368860001,"TERMOFLEX 3×10 AWG Cu (cobre) (J) PVC 300V 60°C","Cable flexible|Termoflex",Procables,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_norma|pa_aplicacion
-231,31368840001,"TERMOFLEX 3×12 AWG Cu (cobre) (J) PVC 300V 60°C","Cable flexible|Termoflex",Procables,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_norma|pa_aplicacion
-232,31368820001,"TERMOFLEX 3×14 AWG Cu (cobre) (J) PVC 300V 60°C","Cable flexible|Termoflex",Procables,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_norma|pa_aplicacion
-233,31368800001,"TERMOFLEX 3×16 AWG Cu (cobre) (J) PVC 300V 60°C","Cable flexible|Termoflex",Procables,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_norma|pa_aplicacion
-234,31368780001,"TERMOFLEX 3×18 AWG Cu (cobre) (J) PVC 300V 60°C","Cable flexible|Termoflex",Procables,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_norma|pa_aplicacion
-235,31368760001,"TERMOFLEX EXZHELLENT 2×10 AWG (6mm2) Cu (cobre) 300V 60°C","Cable flexible|Termoflex Exzhellent",Procables,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_norma|pa_aplicacion
-236,31368740001,"TERMOFLEX EXZHELLENT 2×12 AWG (4mm2) Cu (cobre) 300V 60°C","Cable flexible|Termoflex Exzhellent",Procables,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_norma|pa_aplicacion
-237,31368720001,"TERMOFLEX EXZHELLENT 2×14 AWG (2.5mm2) Cu (cobre) 300V 60°C","Cable flexible|Termoflex Exzhellent",Procables,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_norma|pa_aplicacion
-238,31368700001,"TERMOFLEX EXZHELLENT 3×10 AWG (6mm2) Cu (cobre) 300V 60°C","Cable flexible|Termoflex Exzhellent",Procables,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_norma|pa_aplicacion
-239,31368680001,"TERMOFLEX EXZHELLENT 3×12 AWG (4mm2) Cu (cobre) 300V 60°C","Cable flexible|Termoflex Exzhellent",Procables,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_norma|pa_aplicacion
-240,31368660001,"TERMOFLEX MULTIPROPÓSITO 2×10 AWG Cu (cobre) (J) PVC 300V 60°C","Cable flexible|Termoflex Multipropósito",Procables,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_norma|pa_aplicacion
-241,31368640001,"TERMOFLEX MULTIPROPÓSITO 2×12 AWG Cu (cobre) (J) PVC 300V 60°C","Cable flexible|Termoflex Multipropósito",Procables,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_norma|pa_aplicacion
-242,31368620001,"TERMOFLEX MULTIPROPÓSITO 2×14 AWG Cu (cobre) (J) PVC 300V 60°C","Cable flexible|Termoflex Multipropósito",Procables,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_norma|pa_aplicacion
-243,31368600001,"TERMOFLEX MULTIPROPÓSITO 2×16 AWG Cu (cobre) (J) PVC 300V 60°C","Cable flexible|Termoflex Multipropósito",Procables,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_norma|pa_aplicacion
-244,31368580001,"TERMOFLEX MULTIPROPÓSITO 2×18 AWG Cu (cobre) (J) PVC 300V 60°C","Cable flexible|Termoflex Multipropósito",Procables,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_norma|pa_aplicacion
-245,31368560001,"TERMOFLEX MULTIPROPÓSITO 2×20 AWG Cu (cobre) (J) PVC 300V 60°C","Cable flexible|Termoflex Multipropósito",Procables,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_norma|pa_aplicacion
-246,31368540001,"TERMOFLEX MULTIPROPÓSITO 3×10 AWG Cu (cobre) (J) PVC 300V 60°C","Cable flexible|Termoflex Multipropósito",Procables,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_norma|pa_aplicacion
-247,31368520001,"TERMOFLEX MULTIPROPÓSITO 3×12 AWG Cu (cobre) (J) PVC 300V 60°C","Cable flexible|Termoflex Multipropósito",Procables,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_norma|pa_aplicacion
-248,31368500001,"TERMOFLEX MULTIPROPÓSITO 3×14 AWG Cu (cobre) (J) PVC 300V 60°C","Cable flexible|Termoflex Multipropósito",Procables,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_norma|pa_aplicacion
-249,31368480001,"TERMOFLEX MULTIPROPÓSITO 3×16 AWG Cu (cobre) (J) PVC 300V 60°C","Cable flexible|Termoflex Multipropósito",Procables,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_norma|pa_aplicacion
-250,31368460001,"TERMOFLEX MULTIPROPÓSITO 3×18 AWG Cu (cobre) (J) PVC 300V 60°C","Cable flexible|Termoflex Multipropósito",Procables,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_norma|pa_aplicacion
-251,31368440001,"TERMOFLEX MULTIPROPÓSITO 3×20 AWG Cu (cobre) (J) PVC 300V 60°C","Cable flexible|Termoflex Multipropósito",Procables,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_norma|pa_aplicacion
 252,32352320101,"THHW 2 AWG (33.6 mm2) AA8000","Cables de aluminio|THHW",Procables,pa_marca|pa_calibre-awg|pa_norma|pa_aplicacion
 253,32352320201,"THHW 1 AWG (42.4 mm2) AA8000","Cables de aluminio|THHW",Procables,pa_marca|pa_calibre-awg|pa_norma|pa_aplicacion
 254,32352320301,"THHW 1/0 AWG (53.5 mm2) AA8000","Cables de aluminio|THHW",Procables,pa_marca|pa_calibre-awg|pa_norma|pa_aplicacion
-255,32352340101,"THHW 1/0 AWG (53.5 mm2)","Cables de aluminio|THHW",Procables,pa_marca|pa_calibre-awg|pa_norma|pa_aplicacion
-256,32352350101,"THHW 2/0 AWG (67.4 mm2)","Cables de aluminio|THHW",Procables,pa_marca|pa_calibre-awg|pa_norma|pa_aplicacion
-257,32352360101,"THHW 3/0 AWG (85 mm2)","Cables de aluminio|THHW",Procables,pa_marca|pa_calibre-awg|pa_norma|pa_aplicacion
-258,32352370101,"THHW 4/0 AWG (107 mm2)","Cables de aluminio|THHW",Procables,pa_marca|pa_calibre-awg|pa_norma|pa_aplicacion
-259,32352380101,"THHW 250 kcmil (127 mm2)","Cables de aluminio|THHW",Procables,pa_marca|pa_calibre-awg|pa_norma|pa_aplicacion
-260,32352390101,"THHW 350 kcmil (177 mm2)","Cables de aluminio|THHW",Procables,pa_marca|pa_calibre-awg|pa_norma|pa_aplicacion
-261,32352400101,"THHW 500 kcmil (253 mm2)","Cables de aluminio|THHW",Procables,pa_marca|pa_calibre-awg|pa_norma|pa_aplicacion
 262,32352730101,"EXZHELLENT 2 AWG (35mm2) AA8000","Cables de aluminio|Exzhellent",Procables,pa_marca|pa_calibre-awg|pa_norma|pa_aplicacion
 263,32352740101,"EXZHELLENT 1 AWG (42.4mm2) AA8000","Cables de aluminio|Exzhellent",Procables,pa_marca|pa_calibre-awg|pa_norma|pa_aplicacion
 264,32352750101,"EXZHELLENT 1/0 AWG (53.5mm2) AA8000","Cables de aluminio|Exzhellent",Procables,pa_marca|pa_calibre-awg|pa_norma|pa_aplicacion
@@ -199,21 +97,7 @@ id,sku,titulo,categorias,marca,atributos
 305,88490202601,"FO SM ARMADA 24H CINTA ACERO","Cables de fibra óptica",Procables,pa_marca|pa_aplicacion
 306,88490202701,"FO SM ARMADA 48H CINTA ACERO","Cables de fibra óptica",Procables,pa_marca|pa_aplicacion
 307,88490211001,"MICRO FO SM 24H FRP WB","Cables de fibra óptica",Procables,pa_marca|pa_aplicacion
-308,106565,"16 AWG 4 conductores SJOOW Cordón portátil 300V","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-309,106969,"18/4C VNTC apantallado Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
 313,110902,"18/8C CL3R/CMR Cable multiconductor BC apantallado PVC 300V","Cables de control",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-314,106562,"10 AWG 4 conductores SJOOW Cordón portátil 300V","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-315,106563,"12 AWG 3 conductores SJOOW Cordón portátil 300V","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-316,106564,"12 AWG 4 conductores SJOOW Cordón portátil 300V","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-317,106566,"18 AWG 3 conductores SJOOW Cordón portátil 300V","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-318,106567,"4/4C SOOW Cordón portátil 90C 600V CPE negro Non-UL","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-319,106568,"8/3C SOOW Cordón portátil 90C 600V CPE negro Non-UL","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-320,106569,"8/4C SOOW Cordón portátil 90C 600V CPE negro Non-UL","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-321,106570,"10/2C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-322,106571,"16/2C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-323,106572,"16/3C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-324,106573,"16/4C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-325,106574,"18/5C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_chaqueta
 326,106575,"1 AWG clase K Cable de soldadura 600V 105C EPDM","Cable de soldadura|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
 327,106576,"2 AWG clase K Cable de soldadura 600V 105C EPDM","Cable de soldadura|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
 328,106578-V2,"2 AWG Super Vu-Tron Cable de soldadura 600V 90C","Cable de soldadura|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
@@ -233,23 +117,6 @@ id,sku,titulo,categorias,marca,atributos
 342,106595,"2/0 AWG puente Cable N/S EPR","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
 343,106596,"4/0 AWG puente Cable N/S EPR","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
 344,106597,"500 MCM puente Cable N/S EPR","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-345,106598,"1 AWG 4C tipo W Cable EPDM/CPE 2KV","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-346,106599,"4 AWG 3C tipo W Cable EPDM/CPE 2KV","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-347,106600,"6 AWG 2C tipo W Cable EPDM/CPE 2KV","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-348,106601,"6 AWG 4C tipo W Cable EPDM/CPE 2KV","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-349,106602,"6 AWG 5C tipo W Cable EPDM/CPE 2KV","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-350,106603,"8 AWG 3C tipo W Cable EPDM/CPE 2KV","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-351,106604,"8 AWG 4C tipo W Cable EPDM/CPE 2KV","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-352,106605,"1/0 AWG 1C tipo W Cable EPDM/CPE 2KV","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-353,106606,"1/0 AWG 4C tipo W Cable EPDM/CPE 2KV","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-354,106607,"1/0 AWG 5C tipo W Cable EPDM/CPE 2KV","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-355,106608,"2/0 AWG 3C tipo W Cable EPDM/CPE 2KV","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-356,106609,"2/0 AWG 4C tipo W Cable EPDM/CPE 2KV","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-357,106610,"2/0 AWG 5C tipo W Cable EPDM/CPE 2KV","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-358,106611,"3/0 AWG 4C tipo W Cable EPDM/CPE 2KV","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-359,106612,"3/0 AWG 5C tipo W Cable EPDM/CPE 2KV","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-360,106613,"4/0 AWG 4C tipo W Cable EPDM/CPE 2KV","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-361,106614,"500 MCM 1C tipo W Cable EPDM/CPE 2KV","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
 362,106615,"1/3C tipo GGC 90C 2KV","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
 363,106616,"2/3C tipo GGC 90C 2KV","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
 364,106617,"2/4C tipo G 90C 2KV","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
@@ -287,7 +154,6 @@ id,sku,titulo,categorias,marca,atributos
 396,106649,"535 MCM DLO Cable RHH RHW-2 RW90 90C 2KV CPE","Cable DLO|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
 397,106650,"646 MCM DLO Cable RHH RHW-2 RW90 90C 2KV CPE","Cable DLO|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
 398,106651,"777 MCM DLO Cable RHH RHW-2 RW90 90C 2KV CPE","Cable DLO|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-399,106652,"16 AWG 2 conductores SJOOW Cordón portátil 300V","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
 400,106653,"10/4C plano festón 105C 600V PVC","Cable festón|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
 401,106654,"12/4C plano festón 105C 600V PVC","Cable festón|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
 402,106655,"12/8C plano festón 105C 600V PVC","Cable festón|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
@@ -297,21 +163,9 @@ id,sku,titulo,categorias,marca,atributos
 406,106659,"16/12C plano festón 105C 600V PVC","Cable festón|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
 407,106660,"14/1C FEP tipo K (19 STR) 150C 600V","Cable de alta temperatura|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado
 408,106664,"18/1C FEP tipo K (19 STR) 150C 600V","Cable de alta temperatura|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado
-409,106665,"12 AWG PTFE teflón, negro 2","Cable de alta temperatura|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado
-410,106666,"14 AWG PTFE teflón,","Cable de alta temperatura|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado
-411,106667,"10 AWG PTFE teflón","Cable de alta temperatura|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado
-412,106668,"10 AWG PTFE teflón,","Cable de alta temperatura|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado
-413,106670,"14 AWG PTFE teflón negro 2","Cable de alta temperatura|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado
-414,106671,"14 AWG PTFE teflón","Cable de alta temperatura|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado
-415,106675,"16 AWG PTFE teflón","Cable de alta temperatura|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado
 416,106680,"16(19ST)TFE-E MIL-16878/4 GRY","Cable de alta temperatura|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado
-417,106682,"16 AWG PTFE teflón,","Cable de alta temperatura|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado
 418,106685,"18(19ST)TFE-E MIL-16878/4 BLK","Cable de alta temperatura|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado
-419,106686,"18 AWG PTFE teflón","Cable de alta temperatura|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado
 420,106688,"18(19ST)TFE-E MIL-16878/4 GRN","Cable de alta temperatura|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado
-421,106690,"18 AWG PTFE teflón,","Cable de alta temperatura|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado
-422,106693,"22 AWG PTFE teflón","Cable de alta temperatura|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado
-423,106696,"22 AWG PTFE teflón,","Cable de alta temperatura|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado
 424,106697,"14/1C Gas Tube Only GTO-15 Cable 105C 15KV","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
 425,106698,"2 AWG 133 hilos cobre desnudo PVC","Cable desnudo|Conductores desnudos",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado
 426,106699,"8 AWG 133 hilos cobre desnudo PVC","Cable desnudo|Conductores desnudos",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado
@@ -324,271 +178,6 @@ id,sku,titulo,categorias,marca,atributos
 433,106750,"20 AWG 10 hilos cobre estañado PVC","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado
 434,106760,"22 AWG 7 hilos cobre estañado PVC","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado
 435,106770,"22 AWG máquina herramienta cable UL 1007/1569","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado
-436,106773,"16/1PR PLTC N/S 105C 300V PVC","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-437,106774,"16/1PR PLTC general blindaje PVC 105C 300V","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-438,106776,"18/1PR PLTC general blindaje PVC 105C 300V","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-439,106777,"20/1PR PLTC general blindaje PVC 105C 300V","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-440,106778,"16/1TR PLTC general blindaje PVC 105C 300V","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-441,106779,"18/1TR PLTC general blindaje PVC 105C 300V","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-442,106780,"20/1TR PLTC general blindaje PVC 105C 300V","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-443,106781,"16/1PR PLTC apantallado 105C 300V PVC","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-444,106782,"18/1PR PLTC apantallado 105C 300V PVC","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-445,106783,"20/1PR PLTC apantallado 105C 300V PVC","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-446,106784,"16/4PR PLTC apantallado 105C 300V PVC","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-447,106785,"16/8PR PLTC apantallado 105C 300V PVC","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-448,106786,"16/12PR PLTC apantallado 105C 300V PVC","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-449,106787,"16/16PR PLTC apantallado 105C 300V PVC","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-450,106788,"16/24PR PVC/OS/PVC BLK/WHT","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-451,106789,"16/36PR PLTC apantallado 105C 300V PVC","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-452,106790,"20/12PR PLTC apantallado 105C 300V PVC","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-453,106791,"16/2PR PVC/OS/PVC BLK/WHT 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-454,106792,"16/3PR PVC/OS/PVC BLK/WHT 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-455,106793,"16/4PR PVC/OS/PVC BLK/WHT 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-456,106794,"16/5PR PVC/OS/PVC BLK/WHT 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-457,106795,"16/8PR PVC/OS/PVC BLK/WHT 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-458,106796,"16/12PR PVC/OS/PVC BL/WH 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-459,106797,"16/16PR PVC/OS/PVC BL/WH 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-460,106798,"16/24PR PVC/OS/PVC BL/WH 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-461,106799,"18/2PR PVC/OS/PVC BLK/WHT 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-462,106800,"18/4PR PVC/OS/PVC BLK/WHT 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-463,106801,"18/6PR PVC/OS/PVC BLK/WHT 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-464,106802,"18/8PR PVC/OS/PVC BLK/WHT 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-465,106803,"18/12PR PVC/OS/PVC BLK/WHT","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-466,106804,"18/24PR PVC/OS/PVC BLK/WHT","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-467,106805,"18/36PR PVC/OS/PVC BLK/WHT","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-468,106806,"16/2PR PLTC SPOS 105C 300V PVC","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-469,106807,"16/4PR PLTC SPOS 105C 300V PVC","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-470,106808,"16/8PR PLTC SPOS 105C 300V PVC","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-471,106809,"16/12PR PLTC SPOS 105C 300V PVC","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-472,106810,"16/16PR PLTC SPOS 105C 300V PVC","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-473,106811,"16/24PR PLTC SPOS 105C 300V PVC","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-474,106812,"16/36PR PLTC SPOS 105C 300V PVC","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-475,106813,"18/2PR PLTC SPOS 105C 300V PVC","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-476,106814,"18/4PR PLTC SPOS 105C 300V PVC","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-477,106815,"18/8PR PLTC SPOS 105C 300V PVC","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-478,106816,"18/12PR PLTC SPOS 105C 300V PVC","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-479,106817,"18/16PR PLTC SPOS 105C 300V PVC","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-480,106818,"18/24PR PLTC SPOS 105C 300V PVC","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-481,106819,"18/36PR PLTC SPOS 105C 300V PVC","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-482,106820,"20/2PR PLTC SPOS 105C 300V PVC","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-483,106821,"20/4PR PLTC SPOS 105C 300V PVC","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-484,106822,"20/8PR PLTC SPOS 105C 300V PVC","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-485,106823,"20/12PR PLTC SPOS 105C 300V PVC","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-486,106824,"20/16PR PLTC SPOS 105C 300V PVC","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-487,106825,"20 AWG 20 pr PLTC apantallado pares general apantallado","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-488,106826,"20/24PR PLTC SPOS 105C 300V PVC","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-489,106827,"20/36PR PLTC SPOS 105C 300V PVC","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-490,106828,"20/50PR PLTC SPOS 105C 300V PVC","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-491,106829,"14/2PR TC SPOS PVC 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-492,106830,"14/4PR TC SPOS PVC 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-493,106831,"14/8PR TC SPOS PVC 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-494,106832,"14/12PR TC SPOS PVC 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-495,106833,"14/24PR TC SPOS PVC 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-496,106834,"16/2PR TC SPOS PVC 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-497,106835,"16/3PR TC SPOS PVC 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-498,106836,"16/4PR PVC/SPOS/PVC BLK/WHT","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-499,106837,"16/6PR TC SPOS PVC 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-500,106838,"16/8PR TC SPOS PVC 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-501,106839,"16/12PR TC SPOS PVC 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-502,106840,"16/16PR PVC/SPOS/PVC BLK/WHT","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-503,106841,"16/20PR TC SPOS PVC 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-504,106842,"16/24PR TC SPOS PVC 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-505,106843,"16/36PR TC SPOS PVC 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-506,106844,"16/50PR TC SPOS PVC 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-507,106845,"18/2PR TC SPOS PVC 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-508,106846,"18/3PR TC SPOS PVC 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-509,106847,"18/4PR TC SPOS PVC 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-510,106848,"18/6PR TC SPOS PVC 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-511,106849,"18/8PR TC SPOS PVC 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-512,106850,"18/12PR TC SPOS PVC 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-513,106851,"18/16PR TC SPOS PVC 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-514,106852,"18/24PR PVC/SPOS/PVC BLK/WHT","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-515,106853,"18/36PR TC SPOS PVC 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-516,106854,"18/50PR TC SPOS PVC 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-517,106855,"16/2TR TC STOS PVC 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-518,106856,"16/4TR TC STOS PVC 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-519,106857,"16/8TR TC STOS PVC 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-520,106858,"16/12TR TC STOS PVC 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-521,106859,"16/16TR PVC/STOS/PVC 600V 90C","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-522,106860,"16/24TR TC STOS PVC 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-523,106861,"16/36TR TC STOS PVC 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-524,106862,"18/4TR TC STOS PVC 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-525,106863,"18/8TR TC STOS PVC 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-526,106864,"18/12TR TC STOS PVC 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-527,106865,"18/24TR PVC/STOS/PVC 600V 90C","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-528,106866,"20/4TR PLTC STOS 105C 300V PVC","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-529,106867,"20/8TR PLTC STOS 105C 300V PVC","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-530,106868,"20/12TR PLTC STOS 105C 300V PVC","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-531,106869,"20/36TR PLTC STOS 105C 300V PVC","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-532,106870,"8/3C VNTC N/S Cable para bandeja M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-533,106871,"10/2C VNTC N/S Cable para bandeja E2 600V TC plano","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-534,106872,"10/3C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-535,106873,"10/3C VNTC N/S Cable para bandeja BWG 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-536,106874,"10/4C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-537,106875,"10/5C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-538,106876,"10/7C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-539,106877,"10/9C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-540,106878,"10/12C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-541,106879,"10/19C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-542,106880,"12/2C VNTC N/S Cable para bandeja E2 600V TC plano","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-543,106881,"12/2C VNTC N/S Cable para bandeja E2 600V TC redondo","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-544,106882,"12/3C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-545,106883,"12/3C VNTC N/S Cable para bandeja 600V BWG ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-546,106884,"12/4C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-547,106885,"12/5C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-548,106886,"12/6C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-549,106887,"12/7C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-550,106888,"12/9C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-551,106889,"12/12C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-552,106890,"12/16C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-553,106891,"12/19C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-554,106892,"12/25C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-555,106893,"12/30C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-556,106894,"12/37C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-557,106895,"14/3C VNTC N/S Cable para bandeja BWG 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-558,106896,"16/2C VNTC N/S Cable para bandeja E2 600V TC plano","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-559,106897,"16/2C VNTC N/S Cable para bandeja E2 600V TC redondo","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-560,106898,"16/3C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-561,106899,"16/4C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-562,106900,"16/5C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-563,106901,"16/6C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-564,106902,"16/7C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-565,106903,"16/9C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-566,106904,"16/10C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-567,106905,"16/12C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-568,106906,"16/16C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-569,106907,"16/19C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-570,106908,"16/20C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-571,106909,"16/25C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-572,106910,"16/30C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-573,106911,"16/37C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-574,106912,"16/50C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-575,106913,"18/2C VNTC N/S Cable para bandeja E2 600V TC plano","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-576,106914,"18/2C VNTC N/S Cable para bandeja E2 600V TC redondo","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-577,106915,"18/3C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-578,106916,"18/4C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-579,106917,"18/5C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-580,106918,"18/7C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-581,106919,"18/9C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-582,106920,"18/10C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-583,106921,"18/12C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-584,106922,"18/15C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-585,106923,"18/19C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-586,106924,"18/25C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-587,106925,"18/37C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-588,106926,"12/2C VNTC N/S Cable para bandeja M4 600V TC plano","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-589,106927,"12/3C VNTC N/S Cable para bandeja M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-590,106928,"12/4C VNTC N/S Cable para bandeja M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-591,106929,"12/7C VNTC N/S Cable para bandeja M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-592,106930,"10/3C+14/4C VNTC N/S w/tierra M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-593,106931,"12/4C VNTC N/S Cable para bandeja E1 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-594,106932,"14/4C VNTC N/S Cable para bandeja E1 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-595,106933,"14/7C VNTC N/S Cable para bandeja E1 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-596,106934,"14/2C VNTC apantallado Cable para bandeja E1 600V TC","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-597,106935,"16/2C VNTC apantallado Cable para bandeja E1 600V TC","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-598,106936,"16/3C VNTC apantallado Cable para bandeja E1 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-599,106937,"18/2C VNTC apantallado Cable para bandeja E1 600V TC","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-600,106938,"18/3C VNTC apantallado Cable para bandeja E1 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-601,106939,"10/2C VNTC apantallado Cable para bandeja E2 600V TC","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-602,106940,"10/3C VNTC apantallado Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-603,106941,"10/4C VNTC apantallado Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-604,106942,"12/2C VNTC apantallado Cable para bandeja E2 600V TC","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-605,106943,"12/3C VNTC apantallado Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-606,106944,"12/4C VNTC apantallado Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-607,106945,"12/5C VNTC apantallado Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-608,106946,"12/7C VNTC apantallado Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-609,106947,"12/12C VNTC apantallado Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-610,106948,"14/2C VNTC apantallado Cable para bandeja E2 600V TC","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-611,106949,"14/3C VNTC apantallado Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-612,106950,"14/4C VNTC apantallado Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-613,106951,"14/5C VNTC apantallado Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-614,106952,"14/7C VNTC apantallado Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-615,106953,"14/9C VNTC apantallado Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-616,106954,"14/12C VNTC apantallado Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-617,106955,"14/19C VNTC apantallado Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-618,106956,"14/30C VNTC apantallado Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-619,106957,"16/2C VNTC apantallado Cable para bandeja E2 600V TC","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-620,106958,"16/3C VNTC apantallado Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-621,106959,"16/4C VNTC apantallado Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-622,106960,"16/5C VNTC apantallado Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-623,106961,"16/7C VNTC apantallado Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-624,106962,"16/9C VNTC apantallado Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-625,106963,"16/12C VNTC apantallado Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-626,106964,"16/19C VNTC apantallado Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-627,106965,"16/25C VNTC apantallado Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-628,106966,"16/37C VNTC apantallado Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-629,106967,"18/2C VNTC apantallado Cable para bandeja E2 600V TC","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-630,106968,"18/3C VNTC apantallado Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-631,106970,"18/5C VNTC apantallado Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-632,106971,"18/7C VNTC apantallado Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-633,106972,"18/8C VNTC apantallado Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-634,106973,"18/9C VNTC apantallado Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-635,106974,"18/10C VNTC apantallado Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-636,106975,"18/12C VNTC apantallado Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-637,106976,"18/19C VNTC apantallado Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-638,106977,"18/25C VNTC apantallado Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-639,106978,"18/37C VNTC apantallado Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-640,106979,"1/4C VNTC N/S Cable para bandeja w/tierra M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-641,106980,"2/3C VNTC N/S Cable para bandeja w/tierra M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-642,106981,"4/4C VNTC N/S Cable para bandeja w/tierra M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-643,106982,"6/3C VNTC N/S Cable para bandeja w/tierra M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-644,106983,"8/4C VNTC N/S Cable para bandeja w/tierra M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-645,106984,"1/0-3C VNTC N/S Cable para bandeja w/tierra M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-646,106985,"2/0-3C VNTC N/S Cable para bandeja w/tierra M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-647,106986,"2/0-4C VNTC N/S Cable para bandeja w/tierra M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-648,106987,"3/0-3C VNTC N/S Cable para bandeja w/tierra M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-649,106988,"3/0-4C VNTC N/S Cable para bandeja w/tierra M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-650,106989,"350MCM/3C VNTC N/S Cable para bandeja w/tierra M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-651,106990,"4/0-3C VNTC N/S Cable para bandeja w/tierra M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-652,106991,"500MCM/3C VNTC N/S Cable para bandeja w/tierra M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-653,106992,"2/3C VNTC apantallado Cable para bandeja w/tierra M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-654,106993,"4/3C VNTC apantallado Cable para bandeja w/tierra M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-655,106994,"6/3C VNTC apantallado Cable para bandeja w/tierra M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-656,106995,"8/3C VNTC apantallado Cable para bandeja w/tierra M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-657,106996,"8/4C VNTC apantallado Cable para bandeja w/tierra M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-658,106997,"10/2C XLPE XPTC N/S Cable para bandeja E2 600V TC plano","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-659,106998,"10/3C XLPE XPTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-660,106999,"10/4C XLPE XPTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-661,107000,"10/5C XLPE XPTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-662,107001,"10/7C XLPE XPTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-663,107002,"10/12C XLPE XPTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-664,107003,"12/2C XLPE XPTC N/S Cable para bandeja E2 600V TC plano","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-665,107004,"12/3C XLPE XPTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-666,107005,"12/4C XLPE XPTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-667,107006,"12/5C XLPE XPTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-668,107007,"12/7C XLPE XPTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-669,107008,"12/9C XLPE XPTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-670,107009,"12/12C XLPE XPTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-671,107010,"12 AWG 19 conductores XLPE XPTC Cable para bandeja sin apantallar","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-672,107011,"14/2C XLPE XPTC N/S Cable para bandeja E2 600V TC","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-673,107012,"14/3C XLPE XPTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-674,107013,"14/4C XLPE XPTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-675,107014,"14/5C XLPE XPTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-676,107015,"14/7C XLPE XPTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-677,107016,"14/9C XLPE XPTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-678,107017,"14/12C XLPE XPTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-679,107018,"14/19C XLPE XPTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-680,107019,"14/25 XLPE XPTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-681,107020,"14/37C XLPE XPTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-682,107021,"2/3C XLPE XPTC N/S Cable para bandeja w/G M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-683,107022,"2/4C XLPE XPTC N/S Cable para bandeja w/G M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-684,107023,"4/3C XLPE XPTC N/S Cable para bandeja w/G M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-685,107024,"4 AWG 4 conductores XLPE XPTC Cable para bandeja con tierra","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-686,107025,"6/3C XLPE XPTC N/S Cable para bandeja w/G M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-687,107026,"6 AWG 4 conductores XLPE XPTC Cable para bandeja con tierra","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado
-688,107027,"8/3C XLPE XPTC N/S Cable para bandeja w/G M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-689,107028,"8/4C XLPE XPTC N/S Cable para bandeja w/G M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-690,107029,"1/0-3C XLPE XPTC N/S Cable para bandeja w/G M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-691,107030,"1/0 AWG 4 conductores XLPE XPTC Cable para bandeja con tierra","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-692,107031,"10/3C XLPE XPTC N/S Cable para bandeja w/G E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-693,107032,"12/3C XLPE XPTC N/S Cable para bandeja w/G E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-694,107033,"2/0-3C XLPE XPTC N/S Cable para bandeja w/G M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-695,107034,"2/0 AWG 4 conductores XLPE XPTC Cable para bandeja con tierra","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-696,107035,"250/3C XLPE XPTC N/S Cable para bandeja w/G M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-697,107036,"350/3C XLPE XPTC N/S Cable para bandeja w/G M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-698,107037,"4/0-3C XLPE XPTC N/S Cable para bandeja w/G M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-699,107038,"4/0-4C XLPE XPTC N/S Cable para bandeja w/G M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-700,107039,"500/3C XLPE XPTC N/S Cable para bandeja w/G M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
 701,107040,"2/3C Bus bajante 60C 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
 702,107041,"6/3C Bus bajante 60C 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
 703,107042,"8/3C Bus bajante 60C 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
@@ -596,77 +185,8 @@ id,sku,titulo,categorias,marca,atributos
 705,107044,"12/3C Bus bajante 60C 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
 706,107045,"12/4C Bus bajante 60C 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
 707,107046,"14/3C Bus bajante 60C 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-708,107047,"2/3C+12/4C VNTC N/S w/tierra M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-709,107048,"4/3C+12/4C VNTC N/S w/tierra M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-710,107049,"6/3C+12/4C VNTC N/S w/tierra M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-711,107050,"8/3C+12/4C VNTC N/S w/tierra M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-712,107051,"12/3C+14/4C VNTC N/S w/tierra M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-713,107052,"10/2C FREP/CPE N/S Cable para bandeja E2 600V TC plano","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-714,107053,"10/3C FREP/CPE N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-715,107054,"10/4C FREP/CPE N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-716,107055,"10/5C FREP/CPE N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-717,107056,"10/7C FREP/CPE N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-718,107057,"10/9C FREP/CPE N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-719,107058,"10/12C FREP/CPE N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-720,107059,"12/2C FREP/CPE N/S Cable para bandeja E2 600V TC plano","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-721,107060,"12/3C FREP/CPE N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-722,107061,"12/4C FREP/CPE N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-723,107062,"12/5C FREP/CPE N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-724,107063,"12/7C FREP/CPE N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-725,107064,"12/9C FREP/CPE N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-726,107065,"12/12C FREP/CPE N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-727,107066,"12/15C FREP/CPE N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-728,107067,"12/19C FREP/CPE N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-729,107068,"12/37C FREP/CPE N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-730,107069,"14/2C FREP/CPE N/S Cable para bandeja E2 600V TC plano","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-731,107070,"14/3C FREP/CPE N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-732,107071,"14/4C FREP/CPE N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-733,107072,"14/5C FREP/CPE N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-734,107073,"14/7C FREP/CPE N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-735,107074,"14/9C FREP/CPE N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-736,107075,"14/12C FREP/CPE N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-737,107076,"14/19C FREP/CPE N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-738,107077,"14/25C FREP/CPE N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-739,107078,"14/37C FREP/CPE N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-740,107079,"16/9C FREP/CPE N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-741,107080,"16/12C FREP/CPE N/S 600V M1/E2","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-742,107081,"16/24C FREP/CPE N/S 600V M1/E2","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-743,107082,"16/37C FREP-CPE N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-744,107083,"10/2C FREP/CPE N/S Cable para bandeja E1 600V TC plano","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-745,107084,"10/3C FREP/CPE N/S Cable para bandeja E1 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-746,107085,"10/4C FREP/CPE N/S Cable para bandeja E1 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-747,107086,"12/2C FREP/CPE N/S Cable para bandeja E1 600V TC plano","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-748,107087,"12/3C FREP/CPE N/S Cable para bandeja E1 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-749,107088,"12/4C FREP/CPE N/S Cable para bandeja E1 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-750,107089,"12/5C FREP/CPE N/S 600V M1/E1","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-751,107090,"12/7C FREP/CPE N/S Cable para bandeja E1 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-752,107091,"12/12C FREP/CPE N/S Cable para bandeja E1 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-753,107092,"14/2C FREP/CPE N/S Cable para bandeja E1 600V TC plano","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-754,107093,"14/3C FREP/CPE N/S Cable para bandeja E1 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-755,107094,"14/4C FREP/CPE N/S Cable para bandeja E1 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-756,107095,"14/5C FREP/CPE N/S Cable para bandeja E1 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-757,107096,"14/7C FREP/CPE N/S Cable para bandeja E1 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-758,107097,"14/9C FREP/CPE N/S Cable para bandeja E1 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-759,107098,"14/12C FREP/CPE N/S Cable para bandeja E1 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-760,107099,"16/3C FREP/CPE apantallado Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
 761,107100,"18/2C FREP/CPE SHLD 600V M1/E2","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-762,107101,"2/3C FREP/CPE N/S Cable para bandeja M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-763,107102,"2/4C FREP/CPE N/S Cable para bandeja w/G M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-764,107103,"4/3C FREP/CPE N/S Cable para bandeja w/G M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-765,107104,"4/4C FREP/CPE N/S Cable para bandeja w/G M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-766,107105,"6/3C FREP/CPE N/S Cable para bandeja w/G M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-767,107106,"6/4C FREP/CPE N/S Cable para bandeja w/G M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-768,107107,"8/3C FREP/CPE N/S Cable para bandeja w/G M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-769,107108,"8/4C FREP/CPE N/S Cable para bandeja w/G M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-770,107109,"1/0-3C FREP/CPE N/S Cable para bandeja w/G M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-771,107110,"2/0-3C FREP/CPE N/S Cable para bandeja M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
 772,107111,"350/3C FREP/CPE M4 600V TC-ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-773,107112,"500/3C FREP/CPE N/S Cable para bandeja w/G M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-774,107113,"16/1TR OS W/drenaje FREP/CPE","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-775,107114,"16/3TR STOS W/drenaje FREP/CPE","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-776,107115,"16/4TR STOS W/drenaje FREP/CPE","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-777,107116,"16/6TR STOS W/drenaje FREP/CPE","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-778,107117,"16/8TR STOS W/drenaje FREP/CPE","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
 779,107118,"12/3C 600V SDN M1/E2 90C DRY","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
 780,107119,"12 AWG 4 conductores SDN diámetro pequeño neopreno","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
 781,107120,"12 AWG 6 conductores SDN diámetro pequeño neopreno","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
@@ -709,144 +229,12 @@ id,sku,titulo,categorias,marca,atributos
 818,107161,"10/3C plano sumergible bomba Cable w/G PVC","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_norma
 819,107162,"12/3C plano sumergible bomba Cable w/G PVC","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_norma
 820,107163,"14/3C plano sumergible bomba Cable w/G PVC","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_norma
-821,107164,"6/3C VNTC N/S Cable para bandeja M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-822,107165,"14/2C VNTC N/S Cable para bandeja E2 600V TC plano","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-823,107166,"14/2C VNTC N/S Cable para bandeja E2 600V TC redondo","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-824,107167,"14/3C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-825,107168,"14/4C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-826,107169,"14/5C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-827,107170,"14/6C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-828,107171,"14/7C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-829,107172,"14/9C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-830,107173,"14/10C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-831,107174,"14/12C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-832,107175,"14/15C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-833,107176,"14/16C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-834,107177,"14/19C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-835,107178,"14/20C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-836,107179,"14/25C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-837,107180,"14/30C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-838,107181,"14/37C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-839,107182,"14/50C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-840,107183,"14/60C VNTC N/S Cable para bandeja E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-841,107184,"10/3C VNTC N/S Cable para bandeja M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-842,107185,"10/4C VNTC N/S Cable para bandeja M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-843,107186,"14/2C VNTC N/S Cable para bandeja M4 600V TC plano","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-844,107187,"14/3C VNTC N/S Cable para bandeja M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-845,107188,"14/4C VNTC N/S Cable para bandeja M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-846,107189,"14/5C VNTC N/S Cable para bandeja M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-847,107190,"14/7C VNTC N/S Cable para bandeja M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-848,107191,"14/9C VNTC N/S Cable para bandeja M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-849,107192,"14/12C VNTC N/S Cable para bandeja M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-850,107193,"14/15C VNTC N/S Cable para bandeja M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-851,107194,"14/19C VNTC N/S Cable para bandeja M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-852,107195,"14/37C VNTC N/S Cable para bandeja M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-853,107196,"1/3C VNTC N/S Cable para bandeja w/tierra M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-854,107197,"2/4C VNTC N/S Cable para bandeja w/tierra M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-855,107198,"4/3C VNTC N/S Cable para bandeja w/tierra M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-856,107199,"6/4C VNTC N/S Cable para bandeja w/tierra M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-857,107200,"8/3C VNTC N/S Cable para bandeja w/tierra M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-858,107201,"1/0-4C VNTC N/S Cable para bandeja w/tierra M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-859,107202,"10/3C VNTC N/S Cable para bandeja w/tierra E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-860,107203,"12/3C VNTC N/S Cable para bandeja w/tierra E2 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-861,107204,"250MCM/3C VNTC N/S Cable para bandeja w/tierra M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-862,107205,"250MCM/4C VNTC N/S Cable para bandeja w/tierra M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-863,107206,"350MCM/4C VNTC N/S Cable para bandeja w/tierra M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-864,107207,"4/0-4C VNTC N/S Cable para bandeja w/tierra M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-865,107208,"500MCM/4C VNTC N/S Cable para bandeja w/tierra M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-866,107209,"750MCM/3C VNTC N/S Cable para bandeja w/tierra M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-867,107210,"16/2C FREP/CPE apantallado Cable para bandeja E2 600V TC","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-868,107211,"4/0-3C FREP/CPE N/S Cable para bandeja w/G M4 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-869,107212,"16/2TR STOS W/drenaje FREP/CPE","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-870,107213,"2/3C SOOW Cordón portátil 90C 600V CPE negro Non-UL","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-871,107214,"2/4C SOOW Cordón portátil 90C 600V CPE negro Non-UL","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-872,107215,"2/5C SOOW Cordón portátil 90C 600V CPE negro Non-UL","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-873,107216,"4/3C SOOW Cordón portátil 90C 600V CPE negro Non-UL","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-874,107217,"4/5C SOOW Cordón portátil 90C 600V CPE negro Non-UL","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-875,107218,"6/3C SOOW Cordón portátil 90C 600V CPE negro Non-UL","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-876,107219,"6/4C SOOW Cordón portátil 90C 600V CPE negro Non-UL","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-877,107220,"6/5C SOOW Cordón portátil 90C 600V CPE negro Non-UL","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-878,107221,"8/5C SOOW Cordón portátil 90C 600V CPE negro Non-UL","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-879,107222,"10/3C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-880,107223,"10/4C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-881,107224,"10/5C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_chaqueta
-882,107225,"10/6C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_chaqueta|pa_norma
-883,107226,"10/7C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_chaqueta
-884,107227,"12/2C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-885,107228,"12/3C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-886,107229,"12/4C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-887,107230,"12/5C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-888,107231,"12/6C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-889,107232,"12/7C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-890,107233,"12/8C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-891,107234,"12/9C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-892,107235,"12/10C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-893,107236,"12/12C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-894,107237,"12/14C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-895,107238,"12/16C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-896,107239,"12/20C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-897,107240,"12/24C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-898,107241,"12/30C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-899,107242,"14/2C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-900,107243,"14/3C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-901,107244,"14/4C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-902,107245,"14/5C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-903,107246,"14/6C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-904,107247,"14/7C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-905,107248,"14/8C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-906,107249,"14/10C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-907,107250,"14/12C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-908,107251,"14/14C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-909,107252,"14/16C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-910,107253,"14/20C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-911,107254,"14/24C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-912,107255,"16/5C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-913,107256,"16/6C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-914,107257,"16/7C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado
-915,107258,"16/8C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-916,107259,"16/10C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-917,107260,"16/12C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-918,107261,"16/14C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-919,107262,"16/16C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-920,107263,"16/20C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-921,107264,"16/24C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-922,107265,"16/30C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-923,107266,"16/40C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-924,107267,"18/2C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-925,107268,"18/3C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-926,107269,"18/4C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-927,107270,"18/6C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-928,107271,"18/7C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-929,107272,"18/8C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-930,107273,"18/10C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-931,107274,"18/12C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-932,107275,"18/14C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-933,107276,"18/20C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-934,107277,"18/24C SOOW Cordón portátil 90C 600V CPE","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-935,107278,"1 AWG 3C tipo W Cable EPDM/CPE 2KV","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-936,107279,"2 AWG 1C tipo W Cable EPDM/CPE 2KV","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-937,107280,"2 AWG 3C tipo W Cable EPDM/CPE 2KV","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-938,107281,"2 AWG 4C tipo W Cable EPDM/CPE 2KV","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-939,107282,"4 AWG 4C tipo W Cable EPDM/CPE 2KV","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-940,107283,"4 AWG 5C tipo W Cable EPDM/CPE 2KV","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-941,107284,"8 AWG 5C tipo W Cable EPDM/CPE 2KV","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-942,107285,"2/0 AWG 1C tipo W Cable EPDM/CPE 2KV","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-943,107286,"4/0 AWG 1C tipo W Cable EPDM/CPE 2KV","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-944,107287,"4/0 AWG 1C tipo W Cable X-flexible EPDM/CPE 2KV","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-945,107288,"10 AWG 3 conductores SJOOW Cordón portátil 300V","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-946,107289,"14 AWG 4 conductores SJOOW Cordón portátil 300V","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-947,107290,"16 AWG 3 conductores SJOOW Cordón portátil 300V","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
 948,107291,"10/1C FEP tipo K (37 STR) 200C 600V","Cable de alta temperatura|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado
 949,107295,"12/1C FEP tipo K (19 STR) 200C 600V","Cable de alta temperatura|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado
 950,107299,"16/1C FEP tipo K (19 STR) 150C 600V","Cable de alta temperatura|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado
-951,107301,"12 AWG PTFE teflón","Cable de alta temperatura|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado
-952,107306,"20 AWG PTFE teflón","Cable de alta temperatura|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado
-953,107307,"20 AWG PTFE teflón,","Cable de alta temperatura|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado
 954,107308,"20(19ST)TFE-E MIL-16878/4","Cable de alta temperatura|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado
 955,107309,"20(19ST)TFE-E MIL-16878/4 GRN","Cable de alta temperatura|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado
 956,107310,"20(19ST)TFE-E MIL-16878/4 BLU","Cable de alta temperatura|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado
-957,107315,"24 AWG PTFE teflón,","Cable de alta temperatura|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado
-958,107317,"24 AWG PTFE teflón","Cable de alta temperatura|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado
 959,107319,"16/2P JX termopar SPOS 105C 300V PVC","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
 960,107320,"16/2P KX termopar SPOS 105C 300V PVC","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
 961,107321,"16/4P JX termopar SPOS 105C 300V PVC","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
@@ -864,37 +252,10 @@ id,sku,titulo,categorias,marca,atributos
 973,107333,"20/24P JX termopar SPOS 105C 300V PVC","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
 974,107334,"20/24P KX termopar SPOS 105C 300V PVC","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
 975,107335,"16/1P JX termopar apantallado 200C 300V FEP","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-976,107337,"20/24TR PLTC STOS 105C 300V PVC","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
 977,107338,"4 AWG 133 hilos cobre desnudo PVC","Cable desnudo|Conductores desnudos",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado
 978,107340,"6 AWG 133 hilos cobre desnudo PVC","Cable desnudo|Conductores desnudos",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado
 979,107344,"16 AWG máquina herramienta cable UL 1007/1569","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado
 980,107349,"18 AWG máquina herramienta cable UL 1007/1569","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado
-981,107355,"10/5C VNTC N/S Cable para bandeja E1 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-982,107356,"16/1PR OS W/drenaje FREP/CPE","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-983,107357,"16/2PR SPOS W/drenaje FREP/CPE","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-984,107358,"16/4PR SPOS W/drenaje FREP/CPE","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-985,107359,"16/6PR SPOS W/drenaje FREP/CPE","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-986,107360,"16/8PR SPOS W/drenaje FREP/CPE","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-987,107361,"16/9PR SPOS W/drenaje FREP/CPE","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-988,107362,"16/12PR SPOS W/drenaje FREP/CPE","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-989,107363,"16/16PR SPOS W/drenaje FREP/CPE","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-990,107364,"18/2PR SPOS W/drenaje FREP/CPE","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-991,107365,"18/4PR SPOS W/drenaje FREP/CPE","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-992,107366,"10/4C VNTC N/S Cable para bandeja E1 600V ER","Cable para bandeja / tray cable|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-993,107367,"4 AWG 1 Conductor 133 hilos MG Mica vidrio","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-994,107368,"6 AWG 1 Conductor 133 hilos MG Mica vidrio","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-995,107369,"8 AWG 1 Conductor 133 hilos MG Mica vidrio","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-996,107370,"1/0 AWG 1 Conductor 259 hilos MG Mica vidrio","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-997,107371,"2 AWG 1 Conductor 133 hilos TGGT teflón vidrio","Cable de alta temperatura|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-998,107372,"4 AWG 1 Conductor 133 hilos TGGT teflón vidrio","Cable de alta temperatura|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-999,107373,"6 AWG 1 Conductor 133 hilos TGGT teflón vidrio","Cable de alta temperatura|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-1000,107374,"8 AWG 1 Conductor 133 hilos TGGT teflón vidrio","Cable de alta temperatura|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-1001,107375,"10 AWG 1 Conductor 105 hilos MG Mica vidrio","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-1002,107376,"12 AWG 1 Conductor 65 hilos MG Mica vidrio","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-1003,107377,"14 AWG 1 Conductor 41 hilos MG Mica vidrio","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-1004,107378,"16 AWG 1 Conductor 26 hilos MG Mica vidrio","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-1005,107379,"18 AWG 1 Conductor 16 hilos MG Mica vidrio","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-1006,107380,"4/0 AWG 1 Conductor 259 hilos TGGT teflón vidrio","Cable de alta temperatura|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
 1007,107381,"1/1C SRML cable (259 hilos) 200C 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
 1008,107382,"2/1C SRML cable (133 hilos) 200C 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
 1009,107383,"4/1C SRML cable (133 hilos) 200C 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
@@ -914,11 +275,6 @@ id,sku,titulo,categorias,marca,atributos
 1023,107397,"350/1C SRML cable (427 hilos) 200C 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
 1024,107398,"4/0-1C SRML cable (259 hilos) 200C 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
 1025,107399,"500/1C SRML cable (427 hilos) 200C 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-1026,107400,"10 AWG 1 Conductor 105 hilos TGGT teflón vidrio","Cable de alta temperatura|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-1027,107401,"12 AWG 1 Conductor 65 hilos TGGT teflón vidrio","Cable de alta temperatura|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-1028,107402,"14 AWG 1 Conductor 41 hilos TGGT teflón vidrio","Cable de alta temperatura|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-1029,107403,"16 AWG 1 Conductor 26 hilos TGGT teflón vidrio","Cable de alta temperatura|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-1030,107404,"18 AWG 1 Conductor 16 hilos TGGT teflón vidrio","Cable de alta temperatura|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
 1031,107405,"10/1C SRML cable (SFF-2) 150C 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
 1032,107409,"12/1C SRML cable (SFF-2) 150C 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
 1033,107414,"14/1C SRML cable (SFF-2) 150C 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
@@ -935,72 +291,8 @@ id,sku,titulo,categorias,marca,atributos
 1044,107444,"8 AWG 1 conductor cobre estañado SIS 90C","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado
 1045,107447,"10 AWG 1 conductor cobre estañado SIS 90C","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado
 1046,107454,"12 AWG 1 conductor cobre estañado SIS 90C","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado
-1047,107456,"1 EPDM cobre estañado","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado
-1048,107457,"2 EPDM cobre estañado","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado
-1049,107458,"4 EPDM cobre estañado","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado
-1050,107459,"6 EPDM cobre estañado","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado
-1051,107460,"8 EPDM cobre estañado","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado
-1052,107461,"1/0 EPDM cobre estañado","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado
-1053,107462,"10 EPDM cobre estañado","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado
-1054,107463,"2/0 EPDM cobre estañado","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado
-1055,107464,"3/0 EPDM cobre estañado","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado
-1056,107465,"4/0 EPDM cobre estañado","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado
-1057,107466,"2 AWG 1 Conductor 133 hilos MG Mica vidrio","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-1058,107467,"1/0 AWG 1 Conductor 259 hilos TGGT teflón vidrio","Cable de alta temperatura|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
 1059,107468,"16/1P JX termopar sin apantallar 105C 300V PVC","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
-1060,108435,"2 AWG trenzado THHN THWN-2 cable de edificación","Cable THHN / THWN-2",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-1061,108436,"4 AWG trenzado THHN THWN-2 cable de edificación","Cable THHN / THWN-2",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-1062,108437,"6 AWG trenzado THHN THWN-2 cable de edificación","Cable THHN / THWN-2",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-1063,108439,"8 AWG trenzado THHN THWN-2 cable de edificación","Cable THHN / THWN-2",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-1064,108441,"1/0 AWG trenzado THHN THWN-2 cable de edificación","Cable THHN / THWN-2",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-1065,108443,"10 AWG sólido THHN THWN-2 cable de edificación","Cable THHN / THWN-2",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-1066,108448,"10 AWG sólido THHN THWN-2 cable de edificación verde/amarillo","Cable THHN / THWN-2",,
-1067,108449,"10 AWG trenzado THHN THWN-2 cable de edificación","Cable THHN / THWN-2",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-1068,108459,"10 AWG trenzado THHN THWN-2 cable de edificación verde/amarillo","Cable THHN / THWN-2",,
-1069,108460,"12 AWG sólido THHN THWN-2 cable de edificación","Cable THHN / THWN-2",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-1070,108481,"12 AWG trenzado THHN THWN-2 cable de edificación","Cable THHN / THWN-2",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-1071,108493,"14 AWG sólido THHN THWN-2 cable de edificación","Cable THHN / THWN-2",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-1072,108503,"14 AWG trenzado THHN THWN-2 cable de edificación","Cable THHN / THWN-2",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-1073,108506,"16 AWG sólido TFN","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-1074,108516,"16 AWG trenzado TFFN","Cable THHN / THWN-2",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-1075,108527,"18 AWG sólido TFN","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-1076,108535,"18 AWG trenzado TFFN","Cable THHN / THWN-2",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-1077,108546,"2/0 AWG trenzado THHN THWN-2 cable de edificación","Cable THHN / THWN-2",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-1078,108547,"3/0 AWG trenzado THHN THWN-2","Cable THHN / THWN-2",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-1079,108548,"4/0 AWG trenzado THHN THWN-2","Cable THHN / THWN-2",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-1080,108549,"2 AWG XLP USE-2","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_norma
-1081,108552,"4 AWG XLP USE-2","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_norma
-1082,108556,"6 AWG XLP USE-2","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_norma
-1083,108560,"8 AWG XLP USE-2","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_norma
-1084,108562,"1/0 AWG 19 hilos XLP USE-2","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_norma
-1085,108563,"10 AWG XLP USE-2","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_norma
-1086,108568,"12 AWG XLP USE-2","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_norma
-1087,108572,"14 AWG XLP USE-2","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_norma
-1088,108573,"2/0 AWG 19 hilos XLP USE-2","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_norma
-1089,108575,"3/0 AWG 19 hilos XLP USE-2","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje
-1090,108576,"350 37 hilos XLP USE-2","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_norma
-1091,108577,"4/0 AWG 19 hilos XLP USE-2","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_norma
-1092,108578,"1 AWG XHHW-2","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_norma
-1093,108579,"2 AWG XHHW-2","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_norma
-1094,108581,"3 AWG XHHW-2","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_norma
-1095,108582,"4 AWG XHHW-2","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_norma
-1096,108585,"6 AWG XHHW-2","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_norma
-1097,108589,"8 AWG XHHW-2","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_norma
-1098,108592,"8/1C(7STR) XHHW-2 600V","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_norma
-1099,108593,"1/0 AWG 19 hilos XHHW-2","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_norma
-1100,108595,"10 AWG XHHW-2","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_norma
-1101,108605,"12 AWG XHHW-2","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_norma
-1102,108616,"14 AWG XHHW-2","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_norma
-1103,108626,"2/0 AWG 19 hilos XHHW-2","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_norma
-1104,108628,"250 MCM 37 hilos XHHW-2","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_norma
-1105,108629,"3/0 AWG 19 hilos XHHW-2","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_norma
-1106,108630,"350 MCM 37 hilos XHHW-2","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_norma
-1107,108631,"4/0 AWG 19 hilos XHHW-2","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_norma
-1108,108633,"500 MCM 37 hilos XHHW-2","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_norma
-1109,108634,"600 MCM 61 hilos XHHW-2","Cables apantallados|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_norma
 1110,109001,"24 AWG 7 x 32 trenzado cobre estañado LO-CAP POLYPROPYLENE – INDIVIDUAL blindaje","Cables apantallados|Cables especiales",,
-1111,109011,"22 AWG 7 x 30 trenzado TC – BRAIDED blindaje","Cables apantallados|Cables especiales",,
-1112,109013,"18 AWG 2 conductores SJOOW Cordón portátil 300V","Cable encauchetado|Cable flexible",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta
 1113,9-10-5W-A19,"10.5W/A19/OMNI-LED/3500K/120V -10.5W 120V A19 3500","Cables apantallados|Cables especiales",,
 1114,9-10BR30-LED-270,"10BR30 LED 2700K 750L E26 -10W 120V 2700K BR30 LED","Cables apantallados|Cables especiales",,
 1160,123092A,"Belden RG6/U — cuádruple SHLD coaxial AIA","Cable coaxial|Cables especiales",Belden,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_apantallado|pa_chaqueta|pa_norma
@@ -1027,43 +319,9 @@ id,sku,titulo,categorias,marca,atributos
 1214,183076F,"Belden 183076F — Cable multiconductor – Cont. Armor DataBus ISA/SP-50 FOUNDATION Fieldbus/Profibus 1","Cables de red",Belden,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
 1215,183092A,"Belden 183092A — coaxial – ControlNet cuádruple apantallado coaxial RG6/U cuádruple SHLD coaxial CCW","Cable coaxial|Cables especiales",Belden,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
 1226,27254,"Belden 27254 — Cable multiconductor – 600V tipo MC Metal Clad Cable 12/2C PLUS GRD XLP/PVC AIA","Cables de control",Belden,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_chaqueta
-1282,3105A,"Belden 3105A — 22/1P EIA Industrial RS-485 Cable TC apantallado PLTC/CM PE/PVC 300V","Cables de instrumentación|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-1283,3106A,"Belden 3106A — 22/1P + 22/1C EIA Industrial RS-485 Cable TC apantallado PLTC/CM PE/PVC 300V","Cables de instrumentación|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-1284,3107A,"Belden 3107A — 22/2P EIA Industrial RS-485 Cable TC apantallado PLTC/CM PE/PVC 300V","Cables de instrumentación|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-1285,3108A,"Belden 3108A — 22/3P EIA Industrial RS-485 Cable TC apantallado PLTC/CM PE/PVC 300V","Cables de instrumentación|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-1286,3109A,"Belden 3109A — 22/4P EIA Industrial RS-485 Cable TC apantallado PLTC/CM PE/PVC 300V","Cables de instrumentación|Cables especiales",,pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
 1338,5321UE,"Belden 5321UE — Cable multiconductor – sistemas de audio comercial 18/3C sólido BC PVC/PVC","Cables de control",Belden,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
 1342,5339W5,"Belden 5339W5 — coaxial – vigilancia y CCTV aplicaciones 18 SOL BC RG6 tipo 60%","Cable coaxial|Cables especiales",Belden,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_apantallado|pa_chaqueta|pa_norma
 1347,5400FEU,"Belden 20/2C — BC PVC/PVC SHLD","Cables apantallados|Cables especiales",Belden,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
 1350,5402FEU,"Belden 20/4C — BC PP/PVC SHLD","Cables apantallados|Cables especiales",Belden,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
 1353,5439W5,"Belden 5439W5 — coaxial – CCTV, CATV y MATV aplicaciones 20 SOL BC RG59TYPE 95%BC","Cable coaxial|Cables especiales",Belden,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_apantallado|pa_chaqueta|pa_norma
 1411,6400UE,"Belden 6400UE — Cable multiconductor – sistemas de audio comercial – 2 conductores cableados 20/2C BC FLAMA","Cables de control",Belden,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma
-1940,SRT-ALAMBRE-12-AMARILLO-ROLLO,"Alambre THHN/THWN-2 Centelsa 12 AWG amarillo – rollo 100 m","Cable THHN / THWN-2","Centelsa by Nexans",pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma|pa_aplicacion|pa_serie
-1941,SRT-ALAMBRE-12-AZUL-ROLLO,"Alambre THHN/THWN-2 Centelsa 12 AWG azul – rollo 100 m","Cable THHN / THWN-2","Centelsa by Nexans",pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma|pa_aplicacion|pa_serie
-1942,SRT-ALAMBRE-12-BLANCO-ROLLO,"Alambre THHN/THWN-2 Centelsa 12 AWG blanco – rollo 100 m","Cable THHN / THWN-2","Centelsa by Nexans",pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma|pa_aplicacion|pa_serie
-1943,SRT-ALAMBRE-12-NEGRO-ROLLO,"Alambre THHN/THWN-2 Centelsa 12 AWG negro – rollo 100 m","Cable THHN / THWN-2","Centelsa by Nexans",pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma|pa_aplicacion|pa_serie
-1944,SRT-ALAMBRE-12-ROJO-ROLLO,"Alambre THHN/THWN-2 Centelsa 12 AWG rojo – rollo 100 m","Cable THHN / THWN-2","Centelsa by Nexans",pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma|pa_aplicacion|pa_serie
-1945,SRT-ALAMBRE-12-VERDE-ROLLO,"Alambre THHN/THWN-2 Centelsa 12 AWG verde – rollo 100 m","Cable THHN / THWN-2","Centelsa by Nexans",pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma|pa_aplicacion|pa_serie
-1946,SRT-ALAMBRE-14-AMARILLO-METRO,"Alambre THHN/THWN-2 Centelsa 14 AWG amarillo – por metro","Cable THHN / THWN-2","Centelsa by Nexans",pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma|pa_aplicacion|pa_serie
-1947,SRT-ALAMBRE-14-AZUL-METRO,"Alambre THHN/THWN-2 Centelsa 14 AWG azul – por metro","Cable THHN / THWN-2","Centelsa by Nexans",pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma|pa_aplicacion|pa_serie
-1948,SRT-ALAMBRE-14-BLANCO-METRO,"Alambre THHN/THWN-2 Centelsa 14 AWG blanco – por metro","Cable THHN / THWN-2","Centelsa by Nexans",pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma|pa_aplicacion|pa_serie
-1949,SRT-ALAMBRE-14-NEGRO-METRO,"Alambre THHN/THWN-2 Centelsa 14 AWG negro – por metro","Cable THHN / THWN-2","Centelsa by Nexans",pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma|pa_aplicacion|pa_serie
-1950,SRT-ALAMBRE-14-ROJO-METRO,"Alambre THHN/THWN-2 Centelsa 14 AWG rojo – por metro","Cable THHN / THWN-2","Centelsa by Nexans",pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma|pa_aplicacion|pa_serie
-1951,SRT-ALAMBRE-14-VERDE-METRO,"Alambre THHN/THWN-2 Centelsa 14 AWG verde – por metro","Cable THHN / THWN-2","Centelsa by Nexans",pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma|pa_aplicacion|pa_serie
-1952,SRT-ALAMBRE-12-AMARILLO-METRO,"Alambre THHN/THWN-2 Centelsa 12 AWG amarillo – por metro","Cable THHN / THWN-2","Centelsa by Nexans",pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma|pa_aplicacion|pa_serie
-1953,SRT-ALAMBRE-12-AZUL-METRO,"Alambre THHN/THWN-2 Centelsa 12 AWG azul – por metro","Cable THHN / THWN-2","Centelsa by Nexans",pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma|pa_aplicacion|pa_serie
-1954,SRT-ALAMBRE-12-BLANCO-METRO,"Alambre THHN/THWN-2 Centelsa 12 AWG blanco – por metro","Cable THHN / THWN-2","Centelsa by Nexans",pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma|pa_aplicacion|pa_serie
-1955,SRT-ALAMBRE-12-NEGRO-METRO,"Alambre THHN/THWN-2 Centelsa 12 AWG negro – por metro","Cable THHN / THWN-2","Centelsa by Nexans",pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma|pa_aplicacion|pa_serie
-1956,SRT-ALAMBRE-12-ROJO-METRO,"Alambre THHN/THWN-2 Centelsa 12 AWG rojo – por metro","Cable THHN / THWN-2","Centelsa by Nexans",pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma|pa_aplicacion|pa_serie
-1957,SRT-ALAMBRE-12-VERDE-METRO,"Alambre THHN/THWN-2 Centelsa 12 AWG verde – por metro","Cable THHN / THWN-2","Centelsa by Nexans",pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma|pa_aplicacion|pa_serie
-1958,SRT-ENCAU-5x8AWG-CU,"Cable multipropósito Termoflex MP Procables 5 x 8 AWG","Cable encauchetado|Cable flexible",Procables,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma|pa_aplicacion|pa_serie
-1959,SRT-ENCAU-5x10AWG-CU,"Cable multipropósito Termoflex MP Procables 5 x 10 AWG","Cable encauchetado|Cable flexible",Procables,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma|pa_aplicacion|pa_serie
-1960,SRT-ENCAU-5x12AWG-CU,"Cable multipropósito Termoflex MP Procables 5 x 12 AWG","Cable encauchetado|Cable flexible",Procables,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma|pa_aplicacion|pa_serie
-1961,SRT-ENCAU-5x14AWG-CU,"Cable multipropósito Termoflex MP Procables 5 x 14 AWG","Cable encauchetado|Cable flexible",Procables,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma|pa_aplicacion|pa_serie
-1962,SRT-ENCAU-2x8-CU,"Cable multipropósito Termoflex MP Procables 2 x 8 AWG","Cable encauchetado|Cable flexible",Procables,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma|pa_aplicacion|pa_serie
-1963,SRT-ENCAU-2x10-CU,"Cable multipropósito Termoflex MP Procables 2 x 10 AWG","Cable encauchetado|Cable flexible",Procables,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma|pa_aplicacion|pa_serie
-1964,SRT-ENCAU-2x12-CU,"Cable multipropósito Termoflex MP Procables 2 x 12 AWG","Cable encauchetado|Cable flexible",Procables,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma|pa_aplicacion|pa_serie
-1965,SRT-ENCAU-2x14-CU,"Cable multipropósito Termoflex MP Procables 2 x 14 AWG","Cable encauchetado|Cable flexible",Procables,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma|pa_aplicacion|pa_serie
-1966,SRT-ENCAU-2x16-CU,"Cable multipropósito Termoflex MP Procables 2 x 16 AWG","Cable encauchetado|Cable flexible",Procables,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma|pa_aplicacion|pa_serie
-1967,SRT-ENCAU-2x18-CU,"Cable multipropósito Termoflex MP Procables 2 x 18 AWG","Cable encauchetado|Cable flexible",Procables,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma|pa_aplicacion|pa_serie
-1968,SRT-ENCAU-3x8-CU,"Cable multipropósito Termoflex MP Procables 3 x 8 AWG","Cable encauchetado|Cable flexible",Procables,pa_marca|pa_calibre-awg|pa_numero-conductores|pa_voltaje|pa_apantallado|pa_chaqueta|pa_norma|pa_aplicacion|pa_serie
