@@ -1,0 +1,1069 @@
+id,sku,titulo,familia,familia_etiqueta,confianza,regla,marca,categorias
+107,31303326000,Cu (cobre) desnudo blando 8 AWG,cobre-desnudo,Conductor de cobre desnudo,alta,desnudo,Procables,Alambre desnudo|Conductores desnudos
+108,31303259000,Cu (cobre) desnudo blando 10 AWG,cobre-desnudo,Conductor de cobre desnudo,alta,desnudo,Procables,Alambre desnudo|Conductores desnudos
+109,31303205000,Cu (cobre) desnudo blando 12 AWG,cobre-desnudo,Conductor de cobre desnudo,alta,desnudo,Procables,Alambre desnudo|Conductores desnudos
+110,31303163000,Cu (cobre) desnudo blando 14 AWG,cobre-desnudo,Conductor de cobre desnudo,alta,desnudo,Procables,Alambre desnudo|Conductores desnudos
+111,31321038000,Cable Cu (cobre) desnudo blando 350 kcmil (B) 37H,cobre-desnudo,Conductor de cobre desnudo,alta,desnudo,Procables,Cable desnudo|Conductores desnudos
+112,31321034000,Cable Cu (cobre) desnudo blando 250 kcmil (B) 37H,cobre-desnudo,Conductor de cobre desnudo,alta,desnudo,Procables,Cable desnudo|Conductores desnudos
+113,31319011000,Cable Cu (cobre) desnudo blando 4/0 AWG (B) 19H,cobre-desnudo,Conductor de cobre desnudo,alta,desnudo,Procables,Cable desnudo|Conductores desnudos
+115,31321026000,Cable Cu (cobre) desnudo blando 1/0 AWG (B) 19H,cobre-desnudo,Conductor de cobre desnudo,alta,desnudo,Procables,Cable desnudo|Conductores desnudos
+116,31321024000,Cable Cu (cobre) desnudo blando 2 AWG (B) 7H,cobre-desnudo,Conductor de cobre desnudo,alta,desnudo,Procables,Cable desnudo|Conductores desnudos
+117,31321022000,Cable Cu (cobre) desnudo blando 4 AWG (B) 7H,cobre-desnudo,Conductor de cobre desnudo,alta,desnudo,Procables,Cable desnudo|Conductores desnudos
+118,31321020000,Cable Cu (cobre) desnudo blando 6 AWG (B) 7H,cobre-desnudo,Conductor de cobre desnudo,alta,desnudo,Procables,Cable desnudo|Conductores desnudos
+119,31321018000,Cable Cu (cobre) desnudo blando 8 AWG (B) 7H,cobre-desnudo,Conductor de cobre desnudo,alta,desnudo,Procables,Cable desnudo|Conductores desnudos
+120,31321016000,Cable Cu (cobre) desnudo blando 10 AWG (B)7H,cobre-desnudo,Conductor de cobre desnudo,alta,desnudo,Procables,Cable desnudo|Conductores desnudos
+121,31353140001,THHN/THWN-2 8 AWG 600V 90°C,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cable THHN / THWN-2
+122,31353140002,THHN/THWN-2 8 AWG Cu (cobre) 600V90°C,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cable THHN / THWN-2
+123,31353100001,THHN/THWN-2 10 AWG Cu600V 90°C,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cable THHN / THWN-2
+124,31353080001,THHN/THWN-2 12AWG Cu (cobre) 600V90°C,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cable THHN / THWN-2
+125,31353060001,THHN/THWN-2 14AWG Cu (cobre) 600V90°C,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cable THHN / THWN-2
+126,31353040001,THHN/THWN-2 16 AWG Cu (cobre) 600V90°C,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cable THHN / THWN-2
+127,31353020001,THHN/THWN-2 18 AWG Cu (cobre) 600V90°C,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cable THHN / THWN-2
+128,31353101001,Cable THHN/THWN-2 2×10 AWG Cu (cobre) 600V 90°C,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cable THHN / THWN-2
+129,31353081001,Cable THHN/THWN-2 2×12 AWG Cu (cobre) 600V 90°C,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cable THHN / THWN-2
+130,31353061001,Cable THHN/THWN-2 2×14 AWG Cu (cobre) 600V 90°C,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cable THHN / THWN-2
+131,31353149901,Cable THHN/THWN-2 8 AWG Cu (cobre) 600V 90°C 7H (XD),thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cable THHN / THWN-2
+132,31352605601,THHN/THWN-2 6 AWG Cu (cobre) 600V 90° flexible,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cable THHN / THWN-2
+133,31352604801,THHN/THWN-2 4 AWG Cu (cobre) 600V 90° flexible,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cable THHN / THWN-2
+134,31352603601,THHN/THWN-2 2 AWG Cu (cobre) 600V 90° flexible,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cable THHN / THWN-2
+135,31352602801,THHN/THWN-2 1/0 AWG Cu (cobre) 600V 90° flexible,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cable THHN / THWN-2
+136,31352602401,THHN/THWN-2 2/0 AWG Cu (cobre) 600V 90° flexible,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cable THHN / THWN-2
+137,31352602001,THHN/THWN-2 3/0 AWG Cu (cobre) 600V 90° flexible,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cable THHN / THWN-2
+138,31352601601,THHN/THWN-2 4/0 AWG Cu (cobre) 600V 90° flexible,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cable THHN / THWN-2
+139,31352610201,THHN/THWN-2 250 kcmil Cu (cobre) 600V 90° flexible,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cable THHN / THWN-2
+140,31352610101,THHN/THWN-2 350 kcmil Cu (cobre) 600V 90° flexible,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cable THHN / THWN-2
+141,31352610102,THHN/THWN-2 500 kcmil Cu (cobre) 600V 90° flexible,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cable THHN / THWN-2
+142,31354002601,THWN-2 8 AWG Cu (J) PVC/NY 600V 90°C G&OII VW-1,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cable THHN / THWN-2
+143,31354002605,THWN-2 8 AWG Cu (J) PVC/NY 600V 105C G&OII VW-1,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cable THHN / THWN-2
+144,31354001601,TFFN 18 AWG Cu (J) PVC/NY 600V 90°C G&OII VW-1,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cable THHN / THWN-2
+145,31354001801,TFFN 16 AWG Cu (J) PVC/NY 600V 90°C G&OII VW-1,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cable THHN / THWN-2
+146,31354002101,THWN-2 10 AWG Cu (J) PVC/NY 600V 90°C G&OII VW-1,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cable THHN / THWN-2
+147,31354002201,THWN-2 12 AWG Cu (J) PVC/NY 600V 90°C G&OII VW-1,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cable THHN / THWN-2
+148,31354002301,THWN-2 14 AWG Cu (J) PVC/NY 600V 90°C G&OII VW-1,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cable THHN / THWN-2
+149,31354002401,THWN-2 16 AWG Cu (J) PVC/NY 600V 90°C G&OII VW-1,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cable THHN / THWN-2
+150,31354002501,THWN-2 18 AWG Cu (J) PVC/NY 600V 90°C G&OII VW-1,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cable THHN / THWN-2
+151,31354003601,THWN-2 6 AWG Cu (J) PVC/NY 600V 90°C G&OII VW-1,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cable THHN / THWN-2
+152,31354004801,THWN-2 4 AWG Cu (J) PVC/NY 600V 90°C G&OII VW-1,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cable THHN / THWN-2
+153,31354004101,THWN-2 2 AWG Cu (J) PVC/NY 600V 90°C G&OII VW-1,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cable THHN / THWN-2
+154,31354003101,THWN-2 1/0 AWG Cu (J) PVC/NY 600V 90°C G&OII VW-1,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cable THHN / THWN-2
+155,31405170001,TSEC 2×6+6 AWG Cu (cobre)-XLPUV/PE 600V 75°C CDSA,antifraude,Cable antifraude TSEC,alta,antifraude|\bTSEC\b,Procables,Antifraude TSEC|Cables de acometida
+156,31405170002,TSEC 2×6+6 AWG Cu (cobre)-XLPUV/PE 600V 90°C CDSA,antifraude,Cable antifraude TSEC,alta,antifraude|\bTSEC\b,Procables,Antifraude TSEC|Cables de acometida
+157,31404264001,TSEC 2×6+6 AWG Cu (cobre)-XLPUV/PE 600V 90°C,antifraude,Cable antifraude TSEC,alta,antifraude|\bTSEC\b,Procables,Antifraude TSEC|Cables de acometida
+158,31404244901,TSEC 2×8+8 AWG Cu (cobre) CPR XLPE-SR 600V 90°C PE,antifraude,Cable antifraude TSEC,alta,antifraude|\bTSEC\b,Procables,Antifraude TSEC|Cables de acometida
+159,31404145001,TSEC 8+8 AWG Cu-PE/PVC 600V 75°C CDSA,antifraude,Cable antifraude TSEC,alta,antifraude|\bTSEC\b,Procables,Antifraude TSEC|Cables de acometida
+160,31405820001,TIPO TREBOL 2×10+10 AWG Cu (cobre) XLPE-SR 600V 75°C PE,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,Procables,Cables de acometida|Tipo Trébol
+161,31405820002,TIPO TREBOL 2×10+10 AWG Cu (cobre) XLPE-SR 600V 90°C PE,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,Procables,Cables de acometida|Tipo Trébol
+162,31405811001,TIPO TREBOL 2×8+8 AWG Cu (cobre) XLPE-SR 600V 75°C PE,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,Procables,Cables de acometida|Tipo Trébol
+163,31405811002,TIPO TREBOL 2×8+8 AWG Cu (cobre) XLPE-SR 600V 90°C PE,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,Procables,Cables de acometida|Tipo Trébol
+164,31352614501,EXZHELLENT BW 14 AWG (2.5mm2) Cu (cobre) CPR HFFR LS 600V 75°,exzhellent,Cable Exzhellent,alta,exzhellent,Procables,Cables de baja tensión|Exzhellent BW
+165,31352612201,EXZHELLENT BW 12 AWG (4mm2) Cu (cobre) CPR HFFR LS 600V 75°C,exzhellent,Cable Exzhellent,alta,exzhellent,Procables,Cables de baja tensión|Exzhellent BW
+166,31352610601,EXZHELLENT BW 10 AWG (6mm2) Cu (cobre) CPR HFFR LS 600V 75°C,exzhellent,Cable Exzhellent,alta,exzhellent,Procables,Cables de baja tensión|Exzhellent BW
+167,31352610801,EXZHELLENT BW 10 AWG (6mm2) Cu (cobre) CPR HFFR LS 600V 75°C XLPE,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,Procables,Cables de baja tensión|Exzhellent BW
+168,31352610201-2,EXZHELLENT BW 8 AWG (10mm2) Cu (cobre) CPR HFFR LS 600V 75°C,exzhellent,Cable Exzhellent,alta,exzhellent,Procables,Cables de baja tensión|Exzhellent BW
+169,31352610101-2,EXZHELLENT BW 8 AWG (10mm2) Cu (cobre) CPR HFFR LS 600V 90°C XLPE,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,Procables,Cables de baja tensión|Exzhellent BW
+170,31352610102-2,EXZHELLENT BW 8 AWG Cu (cobre) CPR HFFR LS 600V 90°C XLPE 4H ST,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,Procables,Cables de baja tensión|Exzhellent BW
+171,31352608801,EXZHELLENT BW 6 AWG (16mm2) Cu (cobre) CPR HFFR LS 600V 75°C,exzhellent,Cable Exzhellent,alta,exzhellent,Procables,Cables de baja tensión|Exzhellent BW
+172,31352608701,EXZHELLENT BW 6 AWG (16mm2) Cu (cobre) CPR HFFR LS 600V 90°C XLPE,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,Procables,Cables de baja tensión|Exzhellent BW
+173,31352606201,EXZHELLENT BW 4 AWG (25mm2) Cu (cobre) CPR HFFR LS 600V 75°C,exzhellent,Cable Exzhellent,alta,exzhellent,Procables,Cables de baja tensión|Exzhellent BW
+174,31352606101,EXZHELLENT BW 4 AWG (25mm2) Cu (cobre) CPR HFFR LS 600V 90°C XLPE,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,Procables,Cables de baja tensión|Exzhellent BW
+175,31352602401-2,EXZHELLENT BW 2 AWG (35mm2) Cu (cobre) CPR HFFR LS 600V 75°C,exzhellent,Cable Exzhellent,alta,exzhellent,Procables,Cables de baja tensión|Exzhellent BW
+176,31352602301,EXZHELLENT BW 2 AWG (35mm2) Cu (cobre) CPR HFFR LS 600V 90°C XLPE,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,Procables,Cables de baja tensión|Exzhellent BW
+177,31352600401,EXZHELLENT BW 1/0 AWG (50mm2) Cu (cobre) CPR HFFR LS 600V 75°C,exzhellent,Cable Exzhellent,alta,exzhellent,Procables,Cables de baja tensión|Exzhellent BW
+178,31352600301,EXZHELLENT BW 1/0 AWG (50mm2) Cu (cobre) CPR HFFR LS 600V 90°C XLPE,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,Procables,Cables de baja tensión|Exzhellent BW
+179,31352598801,EXZHELLENT BW 2/0 AWG (70mm2) Cu (cobre) CPR HFFR LS 600V 75°C,exzhellent,Cable Exzhellent,alta,exzhellent,Procables,Cables de baja tensión|Exzhellent BW
+180,31352598701,EXZHELLENT BW 2/0 AWG (70mm2) Cu (cobre) CPR HFFR LS 600V 90°C XLPE,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,Procables,Cables de baja tensión|Exzhellent BW
+181,31352596401,EXZHELLENT BW 3/0 AWG (95mm2) Cu (cobre) CPR HFFR LS 600V 75°C,exzhellent,Cable Exzhellent,alta,exzhellent,Procables,Cables de baja tensión|Exzhellent BW
+182,31352596301,EXZHELLENT BW 3/0 AWG (95mm2) Cu (cobre) CPR HFFR LS 600V 90°C XLPE,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,Procables,Cables de baja tensión|Exzhellent BW
+183,31352594201,EXZHELLENT BW 4/0 AWG (120mm2) Cu (cobre) CPR HFFR LS 600V 75°C,exzhellent,Cable Exzhellent,alta,exzhellent,Procables,Cables de baja tensión|Exzhellent BW
+184,31352594101,EXZHELLENT BW 4/0 AWG (120mm2) Cu (cobre) CPR HFFR LS 600V 90°C XLPE,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,Procables,Cables de baja tensión|Exzhellent BW
+185,31352611601,EXZHELLENT BW 500 kcmil Cu (cobre) CPR HFFR LS 600V 75°,exzhellent,Cable Exzhellent,alta,exzhellent,Procables,Cables de baja tensión|Exzhellent BW
+186,31352611001,EXZHELLENT BW 350 kcmil Cu (cobre) CPR HFFR LS 600V 75°,exzhellent,Cable Exzhellent,alta,exzhellent,Procables,Cables de baja tensión|Exzhellent BW
+187,31352610401,EXZHELLENT BW 250 kcmil Cu (cobre) CPR HFFR LS 600V 75°,exzhellent,Cable Exzhellent,alta,exzhellent,Procables,Cables de baja tensión|Exzhellent BW
+188,31354002601-2,THWN-2 8 AWG Cu (J) PVC/NY 600V G&O II VW-1,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cable THHN / THWN-2
+189,31354002605-2,THWN-2 8 AWG Cu (J) PVC/NY 600V 105C G&OII VW-1,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cable THHN / THWN-2
+190,31354001801-2,THWN-2 10 AWG Cu (J) PVC/NY 600V G&O II VW-1,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cable THHN / THWN-2
+191,31354001805,THWN-2 10 AWG Cu (J) PVC/NY 600V 105C G&OII VW-1,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cable THHN / THWN-2
+192,31354001001,THWN-2 12 AWG Cu (J) PVC/NY 600V G&O II VW-1,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cable THHN / THWN-2
+193,31354001005,THWN-2 12 AWG Cu (J) PVC/NY 600V 105C G&OII VW-1,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cable THHN / THWN-2
+194,31354000201,THWN-2 14 AWG Cu (J) PVC/NY 600V G&O II VW-1,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cable THHN / THWN-2
+195,31354000205,THWN-2 14 AWG Cu (J) PVC/NY 600V 105C G&OII VW-1,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cable THHN / THWN-2
+196,31354000401,THWN-2 16 AWG Cu (J) PVC/NY 600V G&O II VW-1,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cable THHN / THWN-2
+197,31353999801,THWN-2 18 AWG Cu (J) PVC/NY 600V G&O II VW-1,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cable THHN / THWN-2
+198,31354001601-2,TFFN 18 AWG Cu (flexible) PVC/NY 600V G&O II VW-1,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cable THHN / THWN-2
+199,31353999701,THWN-2 18 AWG Cu (J) PVC/NY 600V 105C G&OII VW-1,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cable THHN / THWN-2
+200,31353999301,SUPERFLEX 8 AWG Cu (cobre) (J) PVC/NY 600V 90°C VW-1,superflex-flexible,Cable flexible Superflex,media,superflex|flexible,Procables,Cable flexible|Superflex
+201,31353999001,SUPERFLEX 10 AWG Cu (cobre) (J) PVC/NY 600V 90°C VW-1,superflex-flexible,Cable flexible Superflex,media,superflex|flexible,Procables,Cable flexible|Superflex
+202,31353998701,SUPERFLEX 12 AWG Cu (cobre) (J) PVC/NY 600V 90°C VW-1,superflex-flexible,Cable flexible Superflex,media,superflex|flexible,Procables,Cable flexible|Superflex
+203,31353998401,SUPERFLEX 14 AWG Cu (cobre) (J) PVC/NY 600V 90°C VW-1,superflex-flexible,Cable flexible Superflex,media,superflex|flexible,Procables,Cable flexible|Superflex
+204,31353998301,SUPERFLEX 16 AWG Cu (cobre) (J) PVC/NY 600V 90°C VW-1,superflex-flexible,Cable flexible Superflex,media,superflex|flexible,Procables,Cable flexible|Superflex
+205,31353998201,SUPERFLEX 18 AWG Cu (cobre) (J) PVC/NY 600V 90°C VW-1,superflex-flexible,Cable flexible Superflex,media,superflex|flexible,Procables,Cable flexible|Superflex
+206,31354240105,SUPERFLEX 20 AWG Cu (cobre) (J) PVC/NY 600V 90°C VW-1,superflex-flexible,Cable flexible Superflex,media,superflex|flexible,Procables,Cable flexible|Superflex
+207,31354220102,THWN-2 12 AWG Cu (J) PVC/NY 600V105°C G&O II VW-1CT,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cable THHN / THWN-2
+208,31354002001,THWN-2 14 AWG Cu (flexible) PVC/NY 600V G&O II VW-1,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cable THHN / THWN-2
+209,31354002002,THWN-2 14 AWG Cu (flexible) PVC NY 600V 105C G&O II VW-1,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cable THHN / THWN-2
+210,31354001801-3,TFFN 16 AWG Cu (flexible) PVC/NY 600V G&O II VW-1,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cable THHN / THWN-2
+211,31354001802,TFFN 16AWG Cu (flexible) PVC /NY 600V 105C G&O II VW-1,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cable THHN / THWN-2
+212,31354001601-3,TFFN 18 AWG Cu (flexible) PVC/NY 600V G&O II VW-1,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cable THHN / THWN-2
+213,31354001602,TFFN 18AWG Cu (flexible) PVC/NY 600V 105C G&O II VW-1,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cable THHN / THWN-2
+214,31369100002,DUPLEX CPE SPT 2×10 AWG Cu (J) PVC 300V 60°C,spt-duplex-triplex,Cable SPT dúplex/tríplex,alta,\bSPT\b|d[uú]plex|tr[ií]plex|cu[aá]druplex,Procables,Cable flexible|SPT-CPE
+215,31369080001,DUPLEX CPE SPT 2×12 AWG Cu (J) PVC 300V 60°C,spt-duplex-triplex,Cable SPT dúplex/tríplex,alta,\bSPT\b|d[uú]plex|tr[ií]plex|cu[aá]druplex,Procables,Cable flexible|SPT-CPE
+216,31369060001,DUPLEX CPE SPT 2×14 AWG Cu (J) PVC 300V 60°C,spt-duplex-triplex,Cable SPT dúplex/tríplex,alta,\bSPT\b|d[uú]plex|tr[ií]plex|cu[aá]druplex,Procables,Cable flexible|SPT-CPE
+217,31369041001,DUPLEX CPE SPT 2×16 AWG Cu (J) PVC 300V 60°C,spt-duplex-triplex,Cable SPT dúplex/tríplex,alta,\bSPT\b|d[uú]plex|tr[ií]plex|cu[aá]druplex,Procables,Cable flexible|SPT-CPE
+218,31369021001,DUPLEX CPE SPT 2×18 AWG Cu (J) PVC 300V 60°C,spt-duplex-triplex,Cable SPT dúplex/tríplex,alta,\bSPT\b|d[uú]plex|tr[ií]plex|cu[aá]druplex,Procables,Cable flexible|SPT-CPE
+219,31369011001,DUPLEX CPE SPT 2×20 AWG Cu (J) PVC 300V 60°C,spt-duplex-triplex,Cable SPT dúplex/tríplex,alta,\bSPT\b|d[uú]plex|tr[ií]plex|cu[aá]druplex,Procables,Cable flexible|SPT-CPE
+220,31369010601,DUPLEX CPE SPT 3×12 AWG Cu (J) PVC 300V 60°C,spt-duplex-triplex,Cable SPT dúplex/tríplex,alta,\bSPT\b|d[uú]plex|tr[ií]plex|cu[aá]druplex,Procables,Cable flexible|SPT-CPE
+221,31369010401,DUPLEX CPE SPT 3×14 AWG Cu (J) PVC 300V 60°C,spt-duplex-triplex,Cable SPT dúplex/tríplex,alta,\bSPT\b|d[uú]plex|tr[ií]plex|cu[aá]druplex,Procables,Cable flexible|SPT-CPE
+222,31369010201,DUPLEX CPE SPT 3×16 AWG Cu (J) PVC 300V 60°C,spt-duplex-triplex,Cable SPT dúplex/tríplex,alta,\bSPT\b|d[uú]plex|tr[ií]plex|cu[aá]druplex,Procables,Cable flexible|SPT-CPE
+223,31369010001,DUPLEX CPE SPT 3×18 AWG Cu (J) PVC 300V 60°C,spt-duplex-triplex,Cable SPT dúplex/tríplex,alta,\bSPT\b|d[uú]plex|tr[ií]plex|cu[aá]druplex,Procables,Cable flexible|SPT-CPE
+224,31368980001,TERMOFLEX 2×10 AWG Cu (cobre) (J) PVC 300V 60°C,termoflex-multiproposito,Cable Termoflex multipropósito,alta,termoflex|multiprop[oó]sito,Procables,Cable flexible|Termoflex
+225,31368960001,TERMOFLEX 2×12 AWG Cu (cobre) (J) PVC 300V 60°C,termoflex-multiproposito,Cable Termoflex multipropósito,alta,termoflex|multiprop[oó]sito,Procables,Cable flexible|Termoflex
+226,31368940001,TERMOFLEX 2×14 AWG Cu (cobre) (J) PVC 300V 60°C,termoflex-multiproposito,Cable Termoflex multipropósito,alta,termoflex|multiprop[oó]sito,Procables,Cable flexible|Termoflex
+227,31368920001,TERMOFLEX 2×16 AWG Cu (cobre) (J) PVC 300V 60°C,termoflex-multiproposito,Cable Termoflex multipropósito,alta,termoflex|multiprop[oó]sito,Procables,Cable flexible|Termoflex
+228,31368900001,TERMOFLEX 2×18 AWG Cu (cobre) (J) PVC 300V 60°C,termoflex-multiproposito,Cable Termoflex multipropósito,alta,termoflex|multiprop[oó]sito,Procables,Cable flexible|Termoflex
+229,31368880001,TERMOFLEX 2×20 AWG Cu (cobre) (J) PVC 300V 60°C,termoflex-multiproposito,Cable Termoflex multipropósito,alta,termoflex|multiprop[oó]sito,Procables,Cable flexible|Termoflex
+230,31368860001,TERMOFLEX 3×10 AWG Cu (cobre) (J) PVC 300V 60°C,termoflex-multiproposito,Cable Termoflex multipropósito,alta,termoflex|multiprop[oó]sito,Procables,Cable flexible|Termoflex
+231,31368840001,TERMOFLEX 3×12 AWG Cu (cobre) (J) PVC 300V 60°C,termoflex-multiproposito,Cable Termoflex multipropósito,alta,termoflex|multiprop[oó]sito,Procables,Cable flexible|Termoflex
+232,31368820001,TERMOFLEX 3×14 AWG Cu (cobre) (J) PVC 300V 60°C,termoflex-multiproposito,Cable Termoflex multipropósito,alta,termoflex|multiprop[oó]sito,Procables,Cable flexible|Termoflex
+233,31368800001,TERMOFLEX 3×16 AWG Cu (cobre) (J) PVC 300V 60°C,termoflex-multiproposito,Cable Termoflex multipropósito,alta,termoflex|multiprop[oó]sito,Procables,Cable flexible|Termoflex
+234,31368780001,TERMOFLEX 3×18 AWG Cu (cobre) (J) PVC 300V 60°C,termoflex-multiproposito,Cable Termoflex multipropósito,alta,termoflex|multiprop[oó]sito,Procables,Cable flexible|Termoflex
+235,31368760001,TERMOFLEX EXZHELLENT 2×10 AWG (6mm2) Cu (cobre) 300V 60°C,termoflex-multiproposito,Cable Termoflex multipropósito,alta,termoflex|multiprop[oó]sito,Procables,Cable flexible|Termoflex Exzhellent
+236,31368740001,TERMOFLEX EXZHELLENT 2×12 AWG (4mm2) Cu (cobre) 300V 60°C,termoflex-multiproposito,Cable Termoflex multipropósito,alta,termoflex|multiprop[oó]sito,Procables,Cable flexible|Termoflex Exzhellent
+237,31368720001,TERMOFLEX EXZHELLENT 2×14 AWG (2.5mm2) Cu (cobre) 300V 60°C,termoflex-multiproposito,Cable Termoflex multipropósito,alta,termoflex|multiprop[oó]sito,Procables,Cable flexible|Termoflex Exzhellent
+238,31368700001,TERMOFLEX EXZHELLENT 3×10 AWG (6mm2) Cu (cobre) 300V 60°C,termoflex-multiproposito,Cable Termoflex multipropósito,alta,termoflex|multiprop[oó]sito,Procables,Cable flexible|Termoflex Exzhellent
+239,31368680001,TERMOFLEX EXZHELLENT 3×12 AWG (4mm2) Cu (cobre) 300V 60°C,termoflex-multiproposito,Cable Termoflex multipropósito,alta,termoflex|multiprop[oó]sito,Procables,Cable flexible|Termoflex Exzhellent
+240,31368660001,TERMOFLEX MULTIPROPÓSITO 2×10 AWG Cu (cobre) (J) PVC 300V 60°C,termoflex-multiproposito,Cable Termoflex multipropósito,alta,termoflex|multiprop[oó]sito,Procables,Cable flexible|Termoflex Multipropósito
+241,31368640001,TERMOFLEX MULTIPROPÓSITO 2×12 AWG Cu (cobre) (J) PVC 300V 60°C,termoflex-multiproposito,Cable Termoflex multipropósito,alta,termoflex|multiprop[oó]sito,Procables,Cable flexible|Termoflex Multipropósito
+242,31368620001,TERMOFLEX MULTIPROPÓSITO 2×14 AWG Cu (cobre) (J) PVC 300V 60°C,termoflex-multiproposito,Cable Termoflex multipropósito,alta,termoflex|multiprop[oó]sito,Procables,Cable flexible|Termoflex Multipropósito
+243,31368600001,TERMOFLEX MULTIPROPÓSITO 2×16 AWG Cu (cobre) (J) PVC 300V 60°C,termoflex-multiproposito,Cable Termoflex multipropósito,alta,termoflex|multiprop[oó]sito,Procables,Cable flexible|Termoflex Multipropósito
+244,31368580001,TERMOFLEX MULTIPROPÓSITO 2×18 AWG Cu (cobre) (J) PVC 300V 60°C,termoflex-multiproposito,Cable Termoflex multipropósito,alta,termoflex|multiprop[oó]sito,Procables,Cable flexible|Termoflex Multipropósito
+245,31368560001,TERMOFLEX MULTIPROPÓSITO 2×20 AWG Cu (cobre) (J) PVC 300V 60°C,termoflex-multiproposito,Cable Termoflex multipropósito,alta,termoflex|multiprop[oó]sito,Procables,Cable flexible|Termoflex Multipropósito
+246,31368540001,TERMOFLEX MULTIPROPÓSITO 3×10 AWG Cu (cobre) (J) PVC 300V 60°C,termoflex-multiproposito,Cable Termoflex multipropósito,alta,termoflex|multiprop[oó]sito,Procables,Cable flexible|Termoflex Multipropósito
+247,31368520001,TERMOFLEX MULTIPROPÓSITO 3×12 AWG Cu (cobre) (J) PVC 300V 60°C,termoflex-multiproposito,Cable Termoflex multipropósito,alta,termoflex|multiprop[oó]sito,Procables,Cable flexible|Termoflex Multipropósito
+248,31368500001,TERMOFLEX MULTIPROPÓSITO 3×14 AWG Cu (cobre) (J) PVC 300V 60°C,termoflex-multiproposito,Cable Termoflex multipropósito,alta,termoflex|multiprop[oó]sito,Procables,Cable flexible|Termoflex Multipropósito
+249,31368480001,TERMOFLEX MULTIPROPÓSITO 3×16 AWG Cu (cobre) (J) PVC 300V 60°C,termoflex-multiproposito,Cable Termoflex multipropósito,alta,termoflex|multiprop[oó]sito,Procables,Cable flexible|Termoflex Multipropósito
+250,31368460001,TERMOFLEX MULTIPROPÓSITO 3×18 AWG Cu (cobre) (J) PVC 300V 60°C,termoflex-multiproposito,Cable Termoflex multipropósito,alta,termoflex|multiprop[oó]sito,Procables,Cable flexible|Termoflex Multipropósito
+251,31368440001,TERMOFLEX MULTIPROPÓSITO 3×20 AWG Cu (cobre) (J) PVC 300V 60°C,termoflex-multiproposito,Cable Termoflex multipropósito,alta,termoflex|multiprop[oó]sito,Procables,Cable flexible|Termoflex Multipropósito
+252,32352320101,THHW 2 AWG (33.6 mm2) AA8000,acsr-aluminio,Conductor de aluminio ACSR,alta,\bACSR\b|aa8000|aluminio,Procables,Cables de aluminio|THHW
+253,32352320201,THHW 1 AWG (42.4 mm2) AA8000,acsr-aluminio,Conductor de aluminio ACSR,alta,\bACSR\b|aa8000|aluminio,Procables,Cables de aluminio|THHW
+254,32352320301,THHW 1/0 AWG (53.5 mm2) AA8000,acsr-aluminio,Conductor de aluminio ACSR,alta,\bACSR\b|aa8000|aluminio,Procables,Cables de aluminio|THHW
+255,32352340101,THHW 1/0 AWG (53.5 mm2),thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cables de aluminio|THHW
+256,32352350101,THHW 2/0 AWG (67.4 mm2),thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cables de aluminio|THHW
+257,32352360101,THHW 3/0 AWG (85 mm2),thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cables de aluminio|THHW
+258,32352370101,THHW 4/0 AWG (107 mm2),thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cables de aluminio|THHW
+259,32352380101,THHW 250 kcmil (127 mm2),thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cables de aluminio|THHW
+260,32352390101,THHW 350 kcmil (177 mm2),thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cables de aluminio|THHW
+261,32352400101,THHW 500 kcmil (253 mm2),thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Procables,Cables de aluminio|THHW
+262,32352730101,EXZHELLENT 2 AWG (35mm2) AA8000,acsr-aluminio,Conductor de aluminio ACSR,alta,\bACSR\b|aa8000|aluminio,Procables,Cables de aluminio|Exzhellent
+263,32352740101,EXZHELLENT 1 AWG (42.4mm2) AA8000,acsr-aluminio,Conductor de aluminio ACSR,alta,\bACSR\b|aa8000|aluminio,Procables,Cables de aluminio|Exzhellent
+264,32352750101,EXZHELLENT 1/0 AWG (53.5mm2) AA8000,acsr-aluminio,Conductor de aluminio ACSR,alta,\bACSR\b|aa8000|aluminio,Procables,Cables de aluminio|Exzhellent
+265,32352760101,EXZHELLENT 2/0 AWG (67.4mm2) AA8000,acsr-aluminio,Conductor de aluminio ACSR,alta,\bACSR\b|aa8000|aluminio,Procables,Cables de aluminio|Exzhellent
+266,32352770101,EXZHELLENT 3/0 AWG (85mm2) AA8000,acsr-aluminio,Conductor de aluminio ACSR,alta,\bACSR\b|aa8000|aluminio,Procables,Cables de aluminio|Exzhellent
+267,32352780101,EXZHELLENT 4/0 AWG (107mm2) AA8000,acsr-aluminio,Conductor de aluminio ACSR,alta,\bACSR\b|aa8000|aluminio,Procables,Cables de aluminio|Exzhellent
+268,32352790101,EXZHELLENT 250 kcmil (127mm2) AA8000,acsr-aluminio,Conductor de aluminio ACSR,alta,\bACSR\b|aa8000|aluminio,Procables,Cables de aluminio|Exzhellent
+269,32352800101,EXZHELLENT 350 kcmil (177mm2) AA8000,acsr-aluminio,Conductor de aluminio ACSR,alta,\bACSR\b|aa8000|aluminio,Procables,Cables de aluminio|Exzhellent
+270,32352810101,EXZHELLENT 500 kcmil (253mm2) AA8000,acsr-aluminio,Conductor de aluminio ACSR,alta,\bACSR\b|aa8000|aluminio,Procables,Cables de aluminio|Exzhellent
+271,32480055000,ACSR 4/0 AWG PENGUIN,acsr-aluminio,Conductor de aluminio ACSR,alta,\bACSR\b|aa8000|aluminio,Procables,ACSR|Cables de distribución
+272,32480050000,ACSR 2/0 AWG PARTRIDGE,acsr-aluminio,Conductor de aluminio ACSR,alta,\bACSR\b|aa8000|aluminio,Procables,ACSR|Cables de distribución
+273,32480045000,ACSR 1/0 AWG RAVEN,acsr-aluminio,Conductor de aluminio ACSR,alta,\bACSR\b|aa8000|aluminio,Procables,ACSR|Cables de distribución
+274,32480040000,ACSR 2 AWG SPARATE,acsr-aluminio,Conductor de aluminio ACSR,alta,\bACSR\b|aa8000|aluminio,Procables,ACSR|Cables de distribución
+275,32480035000,ACSR 4 AWG PENGUIN,acsr-aluminio,Conductor de aluminio ACSR,alta,\bACSR\b|aa8000|aluminio,Procables,ACSR|Cables de distribución
+276,32481200001,ACSR 2/0 SWANATE,acsr-aluminio,Conductor de aluminio ACSR,alta,\bACSR\b|aa8000|aluminio,Procables,ACSR|Cables de distribución
+277,32481210001,ACSR 4/0 PARTRIDGE,acsr-aluminio,Conductor de aluminio ACSR,alta,\bACSR\b|aa8000|aluminio,Procables,ACSR|Cables de distribución
+278,32481220001,ACSR 336 kcmil MERLIN,acsr-aluminio,Conductor de aluminio ACSR,alta,\bACSR\b|aa8000|aluminio,Procables,ACSR|Cables de distribución
+279,32481230001,ACSR 477 kcmil HAWK,acsr-aluminio,Conductor de aluminio ACSR,alta,\bACSR\b|aa8000|aluminio,Procables,ACSR|Cables de distribución
+280,32481240001,ACSR 556 kcmil FLICKER,acsr-aluminio,Conductor de aluminio ACSR,alta,\bACSR\b|aa8000|aluminio,Procables,ACSR|Cables de distribución
+281,32481250001,ACSR 715 kcmil DRAKE,acsr-aluminio,Conductor de aluminio ACSR,alta,\bACSR\b|aa8000|aluminio,Procables,ACSR|Cables de distribución
+282,32482100001,TRIPLEX 2×1/0+1/0 AWG XLPE/XLPE,spt-duplex-triplex,Cable SPT dúplex/tríplex,alta,\bSPT\b|d[uú]plex|tr[ií]plex|cu[aá]druplex,Procables,Cables de distribución|Triplex/Cuadruplex
+283,32482120001,TRIPLEX 2×2/0+2/0 AWG XLPE/XLPE,spt-duplex-triplex,Cable SPT dúplex/tríplex,alta,\bSPT\b|d[uú]plex|tr[ií]plex|cu[aá]druplex,Procables,Cables de distribución|Triplex/Cuadruplex
+284,32482130001,TRIPLEX 2×4/0+4/0 AWG XLPE/XLPE,spt-duplex-triplex,Cable SPT dúplex/tríplex,alta,\bSPT\b|d[uú]plex|tr[ií]plex|cu[aá]druplex,Procables,Cables de distribución|Triplex/Cuadruplex
+285,32482140001,TRIPLEX 2×250+250 kcmil XLPE/XLPE,spt-duplex-triplex,Cable SPT dúplex/tríplex,alta,\bSPT\b|d[uú]plex|tr[ií]plex|cu[aá]druplex,Procables,Cables de distribución|Triplex/Cuadruplex
+286,32482150001,CUADRUPLEX 3×1/0+1/0 AWG XLPE,spt-duplex-triplex,Cable SPT dúplex/tríplex,alta,\bSPT\b|d[uú]plex|tr[ií]plex|cu[aá]druplex,Procables,Cables de distribución|Triplex/Cuadruplex
+287,32482160001,CUADRUPLEX 3×2/0+2/0 AWG XLPE,spt-duplex-triplex,Cable SPT dúplex/tríplex,alta,\bSPT\b|d[uú]plex|tr[ií]plex|cu[aá]druplex,Procables,Cables de distribución|Triplex/Cuadruplex
+288,32482170001,CUADRUPLEX 3×4/0+4/0 AWG XLPE,spt-duplex-triplex,Cable SPT dúplex/tríplex,alta,\bSPT\b|d[uú]plex|tr[ií]plex|cu[aá]druplex,Procables,Cables de distribución|Triplex/Cuadruplex
+289,32482180001,CUADRUPLEX 3×250+250 kcmil XLPE,spt-duplex-triplex,Cable SPT dúplex/tríplex,alta,\bSPT\b|d[uú]plex|tr[ií]plex|cu[aá]druplex,Procables,Cables de distribución|Triplex/Cuadruplex
+290,31399000693,PV 4mm2 Cu (flexible) XLPE SR 2000V G&O 90°C PVC,solar-pv,Cable solar fotovoltaico,alta,solar|\bPV\b,Procables,Cables solares
+291,31399000894,PV 6mm2 Cu (flexible) XLPE SR 1500V G&O 90°C PVC,solar-pv,Cable solar fotovoltaico,alta,solar|\bPV\b,Procables,Cables solares
+292,31399000895,PV 6mm2 Cu (flexible) XLPE SR 1000V G&O 90°C PVC,solar-pv,Cable solar fotovoltaico,alta,solar|\bPV\b,Procables,Cables solares
+293,31399001094,PV 10mm2 Cu (flexible) XLPE SR 1500V G&O 90°C PVC,solar-pv,Cable solar fotovoltaico,alta,solar|\bPV\b,Procables,Cables solares
+294,81471200002,Cable LAN CAT5E 4PX26AWG,red-utp,Cable de red UTP/FTP,alta,\bUTP\b|\bFTP\b|\bLAN\b|\bcat\s?-?[56][ae]?\b,Procables,Cables de red
+295,81471200003,Cable LAN CAT6 4PX23AWG,red-utp,Cable de red UTP/FTP,alta,\bUTP\b|\bFTP\b|\bLAN\b|\bcat\s?-?[56][ae]?\b,Procables,Cables de red
+296,81471200004,Cable LAN CAT6A 4PX23AWG,red-utp,Cable de red UTP/FTP,alta,\bUTP\b|\bFTP\b|\bLAN\b|\bcat\s?-?[56][ae]?\b,Procables,Cables de red
+297,81471200005,Cable LAN CAT5E APANT 4PX24AWG,red-utp,Cable de red UTP/FTP,alta,\bUTP\b|\bFTP\b|\bLAN\b|\bcat\s?-?[56][ae]?\b,Procables,Cables de red
+298,88490018501,FO SM ARMADA 96H CINTA ACERO,fibra-optica,Cable de fibra óptica,alta,\bFO\b|fibra [oó]ptica|\bOM[1-5]\b|\bSM\b,Procables,Cables de fibra óptica
+299,88490037001,FO SM ADSS 12H VANO 120,fibra-optica,Cable de fibra óptica,alta,\bFO\b|fibra [oó]ptica|\bOM[1-5]\b|\bSM\b,Procables,Cables de fibra óptica
+300,88490037101,FO SM ADSS 24H VANO 120,fibra-optica,Cable de fibra óptica,alta,\bFO\b|fibra [oó]ptica|\bOM[1-5]\b|\bSM\b,Procables,Cables de fibra óptica
+301,88490037201,FO SM ADSS 48H VANO 120,fibra-optica,Cable de fibra óptica,alta,\bFO\b|fibra [oó]ptica|\bOM[1-5]\b|\bSM\b,Procables,Cables de fibra óptica
+302,88490038501,FO SM ADSS 12H VANO 200,fibra-optica,Cable de fibra óptica,alta,\bFO\b|fibra [oó]ptica|\bOM[1-5]\b|\bSM\b,Procables,Cables de fibra óptica
+303,88490038601,FO SM ADSS 24H VANO 200,fibra-optica,Cable de fibra óptica,alta,\bFO\b|fibra [oó]ptica|\bOM[1-5]\b|\bSM\b,Procables,Cables de fibra óptica
+304,88490038701,FO SM ADSS 48H VANO 200,fibra-optica,Cable de fibra óptica,alta,\bFO\b|fibra [oó]ptica|\bOM[1-5]\b|\bSM\b,Procables,Cables de fibra óptica
+305,88490202601,FO SM ARMADA 24H CINTA ACERO,fibra-optica,Cable de fibra óptica,alta,\bFO\b|fibra [oó]ptica|\bOM[1-5]\b|\bSM\b,Procables,Cables de fibra óptica
+306,88490202701,FO SM ARMADA 48H CINTA ACERO,fibra-optica,Cable de fibra óptica,alta,\bFO\b|fibra [oó]ptica|\bOM[1-5]\b|\bSM\b,Procables,Cables de fibra óptica
+307,88490211001,MICRO FO SM 24H FRP WB,fibra-optica,Cable de fibra óptica,alta,\bFO\b|fibra [oó]ptica|\bOM[1-5]\b|\bSM\b,Procables,Cables de fibra óptica
+308,106565,16 AWG 4 conductores SJOOW Cordón portátil 300V,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+309,106969,18/4C VNTC apantallado Cable para bandeja E2 600V ER,vntc-apantallado,Cable VNTC apantallado,alta,vntc.*apantall|apantall.*vntc,,Cable para bandeja / tray cable|Cables especiales
+313,110902,18/8C CL3R/CMR Cable multiconductor BC apantallado PVC 300V,multiconductor-datos-audio,Multiconductor de datos y audio,alta,multiconductor|databus|fieldbus|profibus|audio comercial|datalene|\bSHLD\b,,Cables de control
+314,106562,10 AWG 4 conductores SJOOW Cordón portátil 300V,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+315,106563,12 AWG 3 conductores SJOOW Cordón portátil 300V,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+316,106564,12 AWG 4 conductores SJOOW Cordón portátil 300V,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+317,106566,18 AWG 3 conductores SJOOW Cordón portátil 300V,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+318,106567,4/4C SOOW Cordón portátil 90C 600V CPE negro Non-UL,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+319,106568,8/3C SOOW Cordón portátil 90C 600V CPE negro Non-UL,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+320,106569,8/4C SOOW Cordón portátil 90C 600V CPE negro Non-UL,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+321,106570,10/2C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+322,106571,16/2C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+323,106572,16/3C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+324,106573,16/4C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+325,106574,18/5C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+326,106575,1 AWG clase K Cable de soldadura 600V 105C EPDM,soldadura,Cable para soldadura,alta,soldadura|clase k,,Cable de soldadura|Cables especiales
+327,106576,2 AWG clase K Cable de soldadura 600V 105C EPDM,soldadura,Cable para soldadura,alta,soldadura|clase k,,Cable de soldadura|Cables especiales
+328,106578-V2,2 AWG Super Vu-Tron Cable de soldadura 600V 90C,soldadura,Cable para soldadura,alta,soldadura|clase k,,Cable de soldadura|Cables especiales
+329,106579,4 AWG clase K Cable de soldadura 600V 105C EPDM,soldadura,Cable para soldadura,alta,soldadura|clase k,,Cable de soldadura|Cables especiales
+330,106581,6 AWG clase K Cable de soldadura 600V 105C EPDM,soldadura,Cable para soldadura,alta,soldadura|clase k,,Cable de soldadura|Cables especiales
+331,106582,1/0 AWG clase K Cable de soldadura 600V 105C EPDM,soldadura,Cable para soldadura,alta,soldadura|clase k,,Cable de soldadura|Cables especiales
+332,106584,1/0 AWG Super Vu-Tron Cable de soldadura 600V 90C,soldadura,Cable para soldadura,alta,soldadura|clase k,,Cable de soldadura|Cables especiales
+333,106585,2/0 AWG clase K Cable de soldadura 600V 105C EPDM,soldadura,Cable para soldadura,alta,soldadura|clase k,,Cable de soldadura|Cables especiales
+334,106587-V20,2/0 AWG Super Vu-Tron Cable de soldadura 600V 90C,soldadura,Cable para soldadura,alta,soldadura|clase k,,Cable de soldadura|Cables especiales
+335,106588,250 KCMIL clase K Cable de soldadura 600V 105C EPDM,soldadura,Cable para soldadura,alta,soldadura|clase k,,Cable de soldadura|Cables especiales
+336,106589,3/0 AWG clase K Cable de soldadura 600V 105C EPDM,soldadura,Cable para soldadura,alta,soldadura|clase k,,Cable de soldadura|Cables especiales
+337,106590,350 KCMIL clase K Cable de soldadura 600V 105C EPDM,soldadura,Cable para soldadura,alta,soldadura|clase k,,Cable de soldadura|Cables especiales
+338,106591,4/0 AWG clase K Cable de soldadura 600V 105C EPDM,soldadura,Cable para soldadura,alta,soldadura|clase k,,Cable de soldadura|Cables especiales
+339,106592,4/0 AWG Super Vu-Tron clase M Cable de soldadura 600V 90C,soldadura,Cable para soldadura,alta,soldadura|clase k,,Cable de soldadura|Cables especiales
+340,106593,500 KCMIL clase K Cable de soldadura 600V 105C EPDM,soldadura,Cable para soldadura,alta,soldadura|clase k,,Cable de soldadura|Cables especiales
+341,106594,2 AWG puente Cable N/S EPR,puente-epr,Cable puente EPR,media,puente|\bEPR\b,,Cables apantallados|Cables especiales
+342,106595,2/0 AWG puente Cable N/S EPR,puente-epr,Cable puente EPR,media,puente|\bEPR\b,,Cables apantallados|Cables especiales
+343,106596,4/0 AWG puente Cable N/S EPR,puente-epr,Cable puente EPR,media,puente|\bEPR\b,,Cables apantallados|Cables especiales
+344,106597,500 MCM puente Cable N/S EPR,puente-epr,Cable puente EPR,media,puente|\bEPR\b,,Cables apantallados|Cables especiales
+345,106598,1 AWG 4C tipo W Cable EPDM/CPE 2KV,tipo-w-epdm,Cable tipo W EPDM,alta,tipo w\b|\bEPDM\b,,Cables apantallados|Cables especiales
+346,106599,4 AWG 3C tipo W Cable EPDM/CPE 2KV,tipo-w-epdm,Cable tipo W EPDM,alta,tipo w\b|\bEPDM\b,,Cables apantallados|Cables especiales
+347,106600,6 AWG 2C tipo W Cable EPDM/CPE 2KV,tipo-w-epdm,Cable tipo W EPDM,alta,tipo w\b|\bEPDM\b,,Cables apantallados|Cables especiales
+348,106601,6 AWG 4C tipo W Cable EPDM/CPE 2KV,tipo-w-epdm,Cable tipo W EPDM,alta,tipo w\b|\bEPDM\b,,Cables apantallados|Cables especiales
+349,106602,6 AWG 5C tipo W Cable EPDM/CPE 2KV,tipo-w-epdm,Cable tipo W EPDM,alta,tipo w\b|\bEPDM\b,,Cables apantallados|Cables especiales
+350,106603,8 AWG 3C tipo W Cable EPDM/CPE 2KV,tipo-w-epdm,Cable tipo W EPDM,alta,tipo w\b|\bEPDM\b,,Cables apantallados|Cables especiales
+351,106604,8 AWG 4C tipo W Cable EPDM/CPE 2KV,tipo-w-epdm,Cable tipo W EPDM,alta,tipo w\b|\bEPDM\b,,Cables apantallados|Cables especiales
+352,106605,1/0 AWG 1C tipo W Cable EPDM/CPE 2KV,tipo-w-epdm,Cable tipo W EPDM,alta,tipo w\b|\bEPDM\b,,Cables apantallados|Cables especiales
+353,106606,1/0 AWG 4C tipo W Cable EPDM/CPE 2KV,tipo-w-epdm,Cable tipo W EPDM,alta,tipo w\b|\bEPDM\b,,Cables apantallados|Cables especiales
+354,106607,1/0 AWG 5C tipo W Cable EPDM/CPE 2KV,tipo-w-epdm,Cable tipo W EPDM,alta,tipo w\b|\bEPDM\b,,Cables apantallados|Cables especiales
+355,106608,2/0 AWG 3C tipo W Cable EPDM/CPE 2KV,tipo-w-epdm,Cable tipo W EPDM,alta,tipo w\b|\bEPDM\b,,Cables apantallados|Cables especiales
+356,106609,2/0 AWG 4C tipo W Cable EPDM/CPE 2KV,tipo-w-epdm,Cable tipo W EPDM,alta,tipo w\b|\bEPDM\b,,Cables apantallados|Cables especiales
+357,106610,2/0 AWG 5C tipo W Cable EPDM/CPE 2KV,tipo-w-epdm,Cable tipo W EPDM,alta,tipo w\b|\bEPDM\b,,Cables apantallados|Cables especiales
+358,106611,3/0 AWG 4C tipo W Cable EPDM/CPE 2KV,tipo-w-epdm,Cable tipo W EPDM,alta,tipo w\b|\bEPDM\b,,Cables apantallados|Cables especiales
+359,106612,3/0 AWG 5C tipo W Cable EPDM/CPE 2KV,tipo-w-epdm,Cable tipo W EPDM,alta,tipo w\b|\bEPDM\b,,Cables apantallados|Cables especiales
+360,106613,4/0 AWG 4C tipo W Cable EPDM/CPE 2KV,tipo-w-epdm,Cable tipo W EPDM,alta,tipo w\b|\bEPDM\b,,Cables apantallados|Cables especiales
+361,106614,500 MCM 1C tipo W Cable EPDM/CPE 2KV,tipo-w-epdm,Cable tipo W EPDM,alta,tipo w\b|\bEPDM\b,,Cables apantallados|Cables especiales
+362,106615,1/3C tipo GGC 90C 2KV,minero-tipo-g-ggc,Cable minero tipo G/GGC,alta,"tipo g{1,2}c?\b|\bGGC\b",,Cables apantallados|Cables especiales
+363,106616,2/3C tipo GGC 90C 2KV,minero-tipo-g-ggc,Cable minero tipo G/GGC,alta,"tipo g{1,2}c?\b|\bGGC\b",,Cables apantallados|Cables especiales
+364,106617,2/4C tipo G 90C 2KV,minero-tipo-g-ggc,Cable minero tipo G/GGC,alta,"tipo g{1,2}c?\b|\bGGC\b",,Cables apantallados|Cables especiales
+365,106618,4/3C tipo GGC 90C 2KV,minero-tipo-g-ggc,Cable minero tipo G/GGC,alta,"tipo g{1,2}c?\b|\bGGC\b",,Cables apantallados|Cables especiales
+366,106619,4/4C tipo G 90C 2KV,minero-tipo-g-ggc,Cable minero tipo G/GGC,alta,"tipo g{1,2}c?\b|\bGGC\b",,Cables apantallados|Cables especiales
+367,106620,6/3C tipo GGC 90C 2KV,minero-tipo-g-ggc,Cable minero tipo G/GGC,alta,"tipo g{1,2}c?\b|\bGGC\b",,Cables apantallados|Cables especiales
+368,106621,6/4C tipo G 90C 2KV,minero-tipo-g-ggc,Cable minero tipo G/GGC,alta,"tipo g{1,2}c?\b|\bGGC\b",,Cables apantallados|Cables especiales
+369,106622,8/3C tipo GGC 90C 2KV,minero-tipo-g-ggc,Cable minero tipo G/GGC,alta,"tipo g{1,2}c?\b|\bGGC\b",,Cables apantallados|Cables especiales
+370,106623,8/4C tipo G 90C 2KV,minero-tipo-g-ggc,Cable minero tipo G/GGC,alta,"tipo g{1,2}c?\b|\bGGC\b",,Cables apantallados|Cables especiales
+371,106624,1/0-3C tipo GGC 90C 2KV,minero-tipo-g-ggc,Cable minero tipo G/GGC,alta,"tipo g{1,2}c?\b|\bGGC\b",,Cables apantallados|Cables especiales
+372,106625,1/0-4C tipo G 90C 2KV,minero-tipo-g-ggc,Cable minero tipo G/GGC,alta,"tipo g{1,2}c?\b|\bGGC\b",,Cables apantallados|Cables especiales
+373,106626,2/0-3C tipo GGC 90C 2KV,minero-tipo-g-ggc,Cable minero tipo G/GGC,alta,"tipo g{1,2}c?\b|\bGGC\b",,Cables apantallados|Cables especiales
+374,106627,2/0-4C tipo G 90C 2KV,minero-tipo-g-ggc,Cable minero tipo G/GGC,alta,"tipo g{1,2}c?\b|\bGGC\b",,Cables apantallados|Cables especiales
+375,106628,250/3C tipo GGC 90C 2KV,minero-tipo-g-ggc,Cable minero tipo G/GGC,alta,"tipo g{1,2}c?\b|\bGGC\b",,Cables apantallados|Cables especiales
+376,106629,3/0-3C tipo GGC 90C 2KV,minero-tipo-g-ggc,Cable minero tipo G/GGC,alta,"tipo g{1,2}c?\b|\bGGC\b",,Cables apantallados|Cables especiales
+377,106630,3/0-4C tipo G 90C 2KV,minero-tipo-g-ggc,Cable minero tipo G/GGC,alta,"tipo g{1,2}c?\b|\bGGC\b",,Cables apantallados|Cables especiales
+378,106631,350/3C tipo GGC 90C 2KV,minero-tipo-g-ggc,Cable minero tipo G/GGC,alta,"tipo g{1,2}c?\b|\bGGC\b",,Cables apantallados|Cables especiales
+379,106632,4/0-3C tipo GGC 90C 2KV,minero-tipo-g-ggc,Cable minero tipo G/GGC,alta,"tipo g{1,2}c?\b|\bGGC\b",,Cables apantallados|Cables especiales
+380,106633,4/0-4C tipo G 90C 2KV,minero-tipo-g-ggc,Cable minero tipo G/GGC,alta,"tipo g{1,2}c?\b|\bGGC\b",,Cables apantallados|Cables especiales
+381,106634,500/3C tipo GGC 90C 2KV,minero-tipo-g-ggc,Cable minero tipo G/GGC,alta,"tipo g{1,2}c?\b|\bGGC\b",,Cables apantallados|Cables especiales
+382,106635,1 AWG DLO Cable RHH RHW-2 RW90 90C 2KV CPE,dlo,Cable DLO,alta,\bDLO\b,,Cable DLO|Cables especiales
+383,106636,2 AWG DLO Cable RHH RHW-2 RW90 90C 2KV CPE,dlo,Cable DLO,alta,\bDLO\b,,Cable DLO|Cables especiales
+384,106637,4 AWG DLO Cable RHH RHW-2 RW90 90C 2KV CPE,dlo,Cable DLO,alta,\bDLO\b,,Cable DLO|Cables especiales
+385,106638,6 AWG DLO Cable RHH RHW-2 RW90 90C 2KV CPE,dlo,Cable DLO,alta,\bDLO\b,,Cable DLO|Cables especiales
+386,106639,8 AWG DLO Cable RHH RHW-2 RW90 90C 2KV CPE,dlo,Cable DLO,alta,\bDLO\b,,Cable DLO|Cables especiales
+387,106640,1/0 AWG DLO Cable RHH RHW-2 RW90 90C 2KV CPE,dlo,Cable DLO,alta,\bDLO\b,,Cable DLO|Cables especiales
+388,106641,12 AWG DLO Cable RHH RHW-2 RW90 90C 2KV CPE,dlo,Cable DLO,alta,\bDLO\b,,Cable DLO|Cables especiales
+389,106642,2/0 AWG DLO Cable RHH RHW-2 RW90 90C 2KV CPE,dlo,Cable DLO,alta,\bDLO\b,,Cable DLO|Cables especiales
+390,106643,262 MCM DLO Cable RHH RHW-2 RW90 90C 2KV CPE,dlo,Cable DLO,alta,\bDLO\b,,Cable DLO|Cables especiales
+391,106644,3/0 AWG DLO Cable RHH RHW-2 RW90 90C 2KV CPE,dlo,Cable DLO,alta,\bDLO\b,,Cable DLO|Cables especiales
+392,106645,313 MCM DLO Cable RHH RHW-2 RW90 90C 2KV CPE,dlo,Cable DLO,alta,\bDLO\b,,Cable DLO|Cables especiales
+393,106646,373 MCM DLO Cable RHH RHW-2 RW90 90C 2KV CPE,dlo,Cable DLO,alta,\bDLO\b,,Cable DLO|Cables especiales
+394,106647,4/0 AWG DLO Cable RHH RHW-2 RW90 90C 2KV CPE,dlo,Cable DLO,alta,\bDLO\b,,Cable DLO|Cables especiales
+395,106648,444 MCM DLO Cable RHH RHW-2 RW90 90C 2KV CPE,dlo,Cable DLO,alta,\bDLO\b,,Cable DLO|Cables especiales
+396,106649,535 MCM DLO Cable RHH RHW-2 RW90 90C 2KV CPE,dlo,Cable DLO,alta,\bDLO\b,,Cable DLO|Cables especiales
+397,106650,646 MCM DLO Cable RHH RHW-2 RW90 90C 2KV CPE,dlo,Cable DLO,alta,\bDLO\b,,Cable DLO|Cables especiales
+398,106651,777 MCM DLO Cable RHH RHW-2 RW90 90C 2KV CPE,dlo,Cable DLO,alta,\bDLO\b,,Cable DLO|Cables especiales
+399,106652,16 AWG 2 conductores SJOOW Cordón portátil 300V,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+400,106653,10/4C plano festón 105C 600V PVC,feston,Cable festón,alta,fest[oó]n,,Cable festón|Cables especiales
+401,106654,12/4C plano festón 105C 600V PVC,feston,Cable festón,alta,fest[oó]n,,Cable festón|Cables especiales
+402,106655,12/8C plano festón 105C 600V PVC,feston,Cable festón,alta,fest[oó]n,,Cable festón|Cables especiales
+403,106656,14/4C plano festón 105C 600V PVC,feston,Cable festón,alta,fest[oó]n,,Cable festón|Cables especiales
+404,106657,14/8C plano festón 105C 600V PVC,feston,Cable festón,alta,fest[oó]n,,Cable festón|Cables especiales
+405,106658,16/8C plano festón 105C 600V PVC,feston,Cable festón,alta,fest[oó]n,,Cable festón|Cables especiales
+406,106659,16/12C plano festón 105C 600V PVC,feston,Cable festón,alta,fest[oó]n,,Cable festón|Cables especiales
+407,106660,14/1C FEP tipo K (19 STR) 150C 600V,fep-tipo-k,Cable FEP tipo K,alta,FEP tipo K|\bFEP\b,,Cable de alta temperatura|Cables especiales
+408,106664,18/1C FEP tipo K (19 STR) 150C 600V,fep-tipo-k,Cable FEP tipo K,alta,FEP tipo K|\bFEP\b,,Cable de alta temperatura|Cables especiales
+409,106665,"12 AWG PTFE teflón, negro 2",alta-temperatura,Cable de alta temperatura,alta,\bPTFE\b|tefl[oó]n|alta temperatura|silicona|fibra de vidrio|mica,,Cable de alta temperatura|Cables especiales
+410,106666,"14 AWG PTFE teflón,",alta-temperatura,Cable de alta temperatura,alta,\bPTFE\b|tefl[oó]n|alta temperatura|silicona|fibra de vidrio|mica,,Cable de alta temperatura|Cables especiales
+411,106667,10 AWG PTFE teflón,alta-temperatura,Cable de alta temperatura,alta,\bPTFE\b|tefl[oó]n|alta temperatura|silicona|fibra de vidrio|mica,,Cable de alta temperatura|Cables especiales
+412,106668,"10 AWG PTFE teflón,",alta-temperatura,Cable de alta temperatura,alta,\bPTFE\b|tefl[oó]n|alta temperatura|silicona|fibra de vidrio|mica,,Cable de alta temperatura|Cables especiales
+413,106670,14 AWG PTFE teflón negro 2,alta-temperatura,Cable de alta temperatura,alta,\bPTFE\b|tefl[oó]n|alta temperatura|silicona|fibra de vidrio|mica,,Cable de alta temperatura|Cables especiales
+414,106671,14 AWG PTFE teflón,alta-temperatura,Cable de alta temperatura,alta,\bPTFE\b|tefl[oó]n|alta temperatura|silicona|fibra de vidrio|mica,,Cable de alta temperatura|Cables especiales
+415,106675,16 AWG PTFE teflón,alta-temperatura,Cable de alta temperatura,alta,\bPTFE\b|tefl[oó]n|alta temperatura|silicona|fibra de vidrio|mica,,Cable de alta temperatura|Cables especiales
+416,106680,16(19ST)TFE-E MIL-16878/4 GRY,tfe-mil,Cable TFE-E MIL-16878,alta,\bTFE-?E\b|MIL-?16878,,Cable de alta temperatura|Cables especiales
+417,106682,"16 AWG PTFE teflón,",alta-temperatura,Cable de alta temperatura,alta,\bPTFE\b|tefl[oó]n|alta temperatura|silicona|fibra de vidrio|mica,,Cable de alta temperatura|Cables especiales
+418,106685,18(19ST)TFE-E MIL-16878/4 BLK,tfe-mil,Cable TFE-E MIL-16878,alta,\bTFE-?E\b|MIL-?16878,,Cable de alta temperatura|Cables especiales
+419,106686,18 AWG PTFE teflón,alta-temperatura,Cable de alta temperatura,alta,\bPTFE\b|tefl[oó]n|alta temperatura|silicona|fibra de vidrio|mica,,Cable de alta temperatura|Cables especiales
+420,106688,18(19ST)TFE-E MIL-16878/4 GRN,tfe-mil,Cable TFE-E MIL-16878,alta,\bTFE-?E\b|MIL-?16878,,Cable de alta temperatura|Cables especiales
+421,106690,"18 AWG PTFE teflón,",alta-temperatura,Cable de alta temperatura,alta,\bPTFE\b|tefl[oó]n|alta temperatura|silicona|fibra de vidrio|mica,,Cable de alta temperatura|Cables especiales
+422,106693,22 AWG PTFE teflón,alta-temperatura,Cable de alta temperatura,alta,\bPTFE\b|tefl[oó]n|alta temperatura|silicona|fibra de vidrio|mica,,Cable de alta temperatura|Cables especiales
+423,106696,"22 AWG PTFE teflón,",alta-temperatura,Cable de alta temperatura,alta,\bPTFE\b|tefl[oó]n|alta temperatura|silicona|fibra de vidrio|mica,,Cable de alta temperatura|Cables especiales
+424,106697,14/1C Gas Tube Only GTO-15 Cable 105C 15KV,gto-alta-tension,Cable GTO de alta tensión,alta,\bGTO\b,,Cables apantallados|Cables especiales
+425,106698,2 AWG 133 hilos cobre desnudo PVC,cobre-desnudo,Conductor de cobre desnudo,alta,desnudo,,Cable desnudo|Conductores desnudos
+426,106699,8 AWG 133 hilos cobre desnudo PVC,cobre-desnudo,Conductor de cobre desnudo,alta,desnudo,,Cable desnudo|Conductores desnudos
+427,106701,10 AWG 105 hilos cobre estañado PVC,cobre-estanado-hookup,Alambre de cobre estañado,alta,cobre estañado|UL 1007|m[aá]quina herramienta|\bSIS\b,,Cables apantallados|Cables especiales
+428,106707,12 AWG 65 hilos cobre estañado PVC,cobre-estanado-hookup,Alambre de cobre estañado,alta,cobre estañado|UL 1007|m[aá]quina herramienta|\bSIS\b,,Cables apantallados|Cables especiales
+429,106716,14 AWG 41 hilos cobre estañado PVC,cobre-estanado-hookup,Alambre de cobre estañado,alta,cobre estañado|UL 1007|m[aá]quina herramienta|\bSIS\b,,Cables apantallados|Cables especiales
+430,106726,16 AWG 26 hilos cobre estañado PVC,cobre-estanado-hookup,Alambre de cobre estañado,alta,cobre estañado|UL 1007|m[aá]quina herramienta|\bSIS\b,,Cables apantallados|Cables especiales
+431,106737,18 AWG cobre desnudo sólido PVC,cobre-desnudo,Conductor de cobre desnudo,alta,desnudo,,Cable desnudo|Conductores desnudos
+432,106738,18 AWG 16 hilos cobre estañado PVC,cobre-estanado-hookup,Alambre de cobre estañado,alta,cobre estañado|UL 1007|m[aá]quina herramienta|\bSIS\b,,Cables apantallados|Cables especiales
+433,106750,20 AWG 10 hilos cobre estañado PVC,cobre-estanado-hookup,Alambre de cobre estañado,alta,cobre estañado|UL 1007|m[aá]quina herramienta|\bSIS\b,,Cables apantallados|Cables especiales
+434,106760,22 AWG 7 hilos cobre estañado PVC,cobre-estanado-hookup,Alambre de cobre estañado,alta,cobre estañado|UL 1007|m[aá]quina herramienta|\bSIS\b,,Cables apantallados|Cables especiales
+435,106770,22 AWG máquina herramienta cable UL 1007/1569,cobre-estanado-hookup,Alambre de cobre estañado,alta,cobre estañado|UL 1007|m[aá]quina herramienta|\bSIS\b,,Cables apantallados|Cables especiales
+436,106773,16/1PR PLTC N/S 105C 300V PVC,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cable para bandeja / tray cable|Cables especiales
+437,106774,16/1PR PLTC general blindaje PVC 105C 300V,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cable para bandeja / tray cable|Cables especiales
+438,106776,18/1PR PLTC general blindaje PVC 105C 300V,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cable para bandeja / tray cable|Cables especiales
+439,106777,20/1PR PLTC general blindaje PVC 105C 300V,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cable para bandeja / tray cable|Cables especiales
+440,106778,16/1TR PLTC general blindaje PVC 105C 300V,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cable para bandeja / tray cable|Cables especiales
+441,106779,18/1TR PLTC general blindaje PVC 105C 300V,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cable para bandeja / tray cable|Cables especiales
+442,106780,20/1TR PLTC general blindaje PVC 105C 300V,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cable para bandeja / tray cable|Cables especiales
+443,106781,16/1PR PLTC apantallado 105C 300V PVC,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cable para bandeja / tray cable|Cables especiales
+444,106782,18/1PR PLTC apantallado 105C 300V PVC,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cable para bandeja / tray cable|Cables especiales
+445,106783,20/1PR PLTC apantallado 105C 300V PVC,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cable para bandeja / tray cable|Cables especiales
+446,106784,16/4PR PLTC apantallado 105C 300V PVC,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cable para bandeja / tray cable|Cables especiales
+447,106785,16/8PR PLTC apantallado 105C 300V PVC,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cable para bandeja / tray cable|Cables especiales
+448,106786,16/12PR PLTC apantallado 105C 300V PVC,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cable para bandeja / tray cable|Cables especiales
+449,106787,16/16PR PLTC apantallado 105C 300V PVC,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cable para bandeja / tray cable|Cables especiales
+450,106788,16/24PR PVC/OS/PVC BLK/WHT,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables apantallados|Cables especiales
+451,106789,16/36PR PLTC apantallado 105C 300V PVC,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cable para bandeja / tray cable|Cables especiales
+452,106790,20/12PR PLTC apantallado 105C 300V PVC,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cable para bandeja / tray cable|Cables especiales
+453,106791,16/2PR PVC/OS/PVC BLK/WHT 600V,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables apantallados|Cables especiales
+454,106792,16/3PR PVC/OS/PVC BLK/WHT 600V,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables apantallados|Cables especiales
+455,106793,16/4PR PVC/OS/PVC BLK/WHT 600V,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables apantallados|Cables especiales
+456,106794,16/5PR PVC/OS/PVC BLK/WHT 600V,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables apantallados|Cables especiales
+457,106795,16/8PR PVC/OS/PVC BLK/WHT 600V,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables apantallados|Cables especiales
+458,106796,16/12PR PVC/OS/PVC BL/WH 600V,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables apantallados|Cables especiales
+459,106797,16/16PR PVC/OS/PVC BL/WH 600V,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables apantallados|Cables especiales
+460,106798,16/24PR PVC/OS/PVC BL/WH 600V,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables apantallados|Cables especiales
+461,106799,18/2PR PVC/OS/PVC BLK/WHT 600V,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables apantallados|Cables especiales
+462,106800,18/4PR PVC/OS/PVC BLK/WHT 600V,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables apantallados|Cables especiales
+463,106801,18/6PR PVC/OS/PVC BLK/WHT 600V,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables apantallados|Cables especiales
+464,106802,18/8PR PVC/OS/PVC BLK/WHT 600V,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables apantallados|Cables especiales
+465,106803,18/12PR PVC/OS/PVC BLK/WHT,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables apantallados|Cables especiales
+466,106804,18/24PR PVC/OS/PVC BLK/WHT,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables apantallados|Cables especiales
+467,106805,18/36PR PVC/OS/PVC BLK/WHT,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables apantallados|Cables especiales
+468,106806,16/2PR PLTC SPOS 105C 300V PVC,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cable para bandeja / tray cable|Cables especiales
+469,106807,16/4PR PLTC SPOS 105C 300V PVC,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cable para bandeja / tray cable|Cables especiales
+470,106808,16/8PR PLTC SPOS 105C 300V PVC,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cable para bandeja / tray cable|Cables especiales
+471,106809,16/12PR PLTC SPOS 105C 300V PVC,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cable para bandeja / tray cable|Cables especiales
+472,106810,16/16PR PLTC SPOS 105C 300V PVC,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cable para bandeja / tray cable|Cables especiales
+473,106811,16/24PR PLTC SPOS 105C 300V PVC,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cable para bandeja / tray cable|Cables especiales
+474,106812,16/36PR PLTC SPOS 105C 300V PVC,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cable para bandeja / tray cable|Cables especiales
+475,106813,18/2PR PLTC SPOS 105C 300V PVC,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cable para bandeja / tray cable|Cables especiales
+476,106814,18/4PR PLTC SPOS 105C 300V PVC,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cable para bandeja / tray cable|Cables especiales
+477,106815,18/8PR PLTC SPOS 105C 300V PVC,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cable para bandeja / tray cable|Cables especiales
+478,106816,18/12PR PLTC SPOS 105C 300V PVC,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cable para bandeja / tray cable|Cables especiales
+479,106817,18/16PR PLTC SPOS 105C 300V PVC,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cable para bandeja / tray cable|Cables especiales
+480,106818,18/24PR PLTC SPOS 105C 300V PVC,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cable para bandeja / tray cable|Cables especiales
+481,106819,18/36PR PLTC SPOS 105C 300V PVC,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cable para bandeja / tray cable|Cables especiales
+482,106820,20/2PR PLTC SPOS 105C 300V PVC,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cable para bandeja / tray cable|Cables especiales
+483,106821,20/4PR PLTC SPOS 105C 300V PVC,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cable para bandeja / tray cable|Cables especiales
+484,106822,20/8PR PLTC SPOS 105C 300V PVC,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cable para bandeja / tray cable|Cables especiales
+485,106823,20/12PR PLTC SPOS 105C 300V PVC,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cable para bandeja / tray cable|Cables especiales
+486,106824,20/16PR PLTC SPOS 105C 300V PVC,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cable para bandeja / tray cable|Cables especiales
+487,106825,20 AWG 20 pr PLTC apantallado pares general apantallado,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cable para bandeja / tray cable|Cables especiales
+488,106826,20/24PR PLTC SPOS 105C 300V PVC,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cable para bandeja / tray cable|Cables especiales
+489,106827,20/36PR PLTC SPOS 105C 300V PVC,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cable para bandeja / tray cable|Cables especiales
+490,106828,20/50PR PLTC SPOS 105C 300V PVC,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cable para bandeja / tray cable|Cables especiales
+491,106829,14/2PR TC SPOS PVC 600V,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables apantallados|Cables especiales
+492,106830,14/4PR TC SPOS PVC 600V,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables apantallados|Cables especiales
+493,106831,14/8PR TC SPOS PVC 600V,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables apantallados|Cables especiales
+494,106832,14/12PR TC SPOS PVC 600V,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables apantallados|Cables especiales
+495,106833,14/24PR TC SPOS PVC 600V,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables apantallados|Cables especiales
+496,106834,16/2PR TC SPOS PVC 600V,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables apantallados|Cables especiales
+497,106835,16/3PR TC SPOS PVC 600V,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables apantallados|Cables especiales
+498,106836,16/4PR PVC/SPOS/PVC BLK/WHT,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables apantallados|Cables especiales
+499,106837,16/6PR TC SPOS PVC 600V,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables apantallados|Cables especiales
+500,106838,16/8PR TC SPOS PVC 600V,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables apantallados|Cables especiales
+501,106839,16/12PR TC SPOS PVC 600V,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables apantallados|Cables especiales
+502,106840,16/16PR PVC/SPOS/PVC BLK/WHT,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables apantallados|Cables especiales
+503,106841,16/20PR TC SPOS PVC 600V,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables apantallados|Cables especiales
+504,106842,16/24PR TC SPOS PVC 600V,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables apantallados|Cables especiales
+505,106843,16/36PR TC SPOS PVC 600V,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables apantallados|Cables especiales
+506,106844,16/50PR TC SPOS PVC 600V,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables apantallados|Cables especiales
+507,106845,18/2PR TC SPOS PVC 600V,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables apantallados|Cables especiales
+508,106846,18/3PR TC SPOS PVC 600V,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables apantallados|Cables especiales
+509,106847,18/4PR TC SPOS PVC 600V,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables apantallados|Cables especiales
+510,106848,18/6PR TC SPOS PVC 600V,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables apantallados|Cables especiales
+511,106849,18/8PR TC SPOS PVC 600V,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables apantallados|Cables especiales
+512,106850,18/12PR TC SPOS PVC 600V,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables apantallados|Cables especiales
+513,106851,18/16PR TC SPOS PVC 600V,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables apantallados|Cables especiales
+514,106852,18/24PR PVC/SPOS/PVC BLK/WHT,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables apantallados|Cables especiales
+515,106853,18/36PR TC SPOS PVC 600V,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables apantallados|Cables especiales
+516,106854,18/50PR TC SPOS PVC 600V,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables apantallados|Cables especiales
+517,106855,16/2TR TC STOS PVC 600V,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables apantallados|Cables especiales
+518,106856,16/4TR TC STOS PVC 600V,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables apantallados|Cables especiales
+519,106857,16/8TR TC STOS PVC 600V,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables apantallados|Cables especiales
+520,106858,16/12TR TC STOS PVC 600V,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables apantallados|Cables especiales
+521,106859,16/16TR PVC/STOS/PVC 600V 90C,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables apantallados|Cables especiales
+522,106860,16/24TR TC STOS PVC 600V,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables apantallados|Cables especiales
+523,106861,16/36TR TC STOS PVC 600V,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables apantallados|Cables especiales
+524,106862,18/4TR TC STOS PVC 600V,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables apantallados|Cables especiales
+525,106863,18/8TR TC STOS PVC 600V,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables apantallados|Cables especiales
+526,106864,18/12TR TC STOS PVC 600V,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables apantallados|Cables especiales
+527,106865,18/24TR PVC/STOS/PVC 600V 90C,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables apantallados|Cables especiales
+528,106866,20/4TR PLTC STOS 105C 300V PVC,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cable para bandeja / tray cable|Cables especiales
+529,106867,20/8TR PLTC STOS 105C 300V PVC,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cable para bandeja / tray cable|Cables especiales
+530,106868,20/12TR PLTC STOS 105C 300V PVC,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cable para bandeja / tray cable|Cables especiales
+531,106869,20/36TR PLTC STOS 105C 300V PVC,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cable para bandeja / tray cable|Cables especiales
+532,106870,8/3C VNTC N/S Cable para bandeja M4 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+533,106871,10/2C VNTC N/S Cable para bandeja E2 600V TC plano,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+534,106872,10/3C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+535,106873,10/3C VNTC N/S Cable para bandeja BWG 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+536,106874,10/4C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+537,106875,10/5C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+538,106876,10/7C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+539,106877,10/9C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+540,106878,10/12C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+541,106879,10/19C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+542,106880,12/2C VNTC N/S Cable para bandeja E2 600V TC plano,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+543,106881,12/2C VNTC N/S Cable para bandeja E2 600V TC redondo,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+544,106882,12/3C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+545,106883,12/3C VNTC N/S Cable para bandeja 600V BWG ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+546,106884,12/4C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+547,106885,12/5C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+548,106886,12/6C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+549,106887,12/7C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+550,106888,12/9C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+551,106889,12/12C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+552,106890,12/16C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+553,106891,12/19C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+554,106892,12/25C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+555,106893,12/30C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+556,106894,12/37C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+557,106895,14/3C VNTC N/S Cable para bandeja BWG 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+558,106896,16/2C VNTC N/S Cable para bandeja E2 600V TC plano,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+559,106897,16/2C VNTC N/S Cable para bandeja E2 600V TC redondo,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+560,106898,16/3C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+561,106899,16/4C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+562,106900,16/5C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+563,106901,16/6C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+564,106902,16/7C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+565,106903,16/9C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+566,106904,16/10C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+567,106905,16/12C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+568,106906,16/16C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+569,106907,16/19C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+570,106908,16/20C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+571,106909,16/25C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+572,106910,16/30C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+573,106911,16/37C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+574,106912,16/50C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+575,106913,18/2C VNTC N/S Cable para bandeja E2 600V TC plano,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+576,106914,18/2C VNTC N/S Cable para bandeja E2 600V TC redondo,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+577,106915,18/3C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+578,106916,18/4C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+579,106917,18/5C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+580,106918,18/7C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+581,106919,18/9C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+582,106920,18/10C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+583,106921,18/12C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+584,106922,18/15C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+585,106923,18/19C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+586,106924,18/25C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+587,106925,18/37C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+588,106926,12/2C VNTC N/S Cable para bandeja M4 600V TC plano,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+589,106927,12/3C VNTC N/S Cable para bandeja M4 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+590,106928,12/4C VNTC N/S Cable para bandeja M4 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+591,106929,12/7C VNTC N/S Cable para bandeja M4 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+592,106930,10/3C+14/4C VNTC N/S w/tierra M4 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+593,106931,12/4C VNTC N/S Cable para bandeja E1 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+594,106932,14/4C VNTC N/S Cable para bandeja E1 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+595,106933,14/7C VNTC N/S Cable para bandeja E1 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+596,106934,14/2C VNTC apantallado Cable para bandeja E1 600V TC,vntc-apantallado,Cable VNTC apantallado,alta,vntc.*apantall|apantall.*vntc,,Cable para bandeja / tray cable|Cables especiales
+597,106935,16/2C VNTC apantallado Cable para bandeja E1 600V TC,vntc-apantallado,Cable VNTC apantallado,alta,vntc.*apantall|apantall.*vntc,,Cable para bandeja / tray cable|Cables especiales
+598,106936,16/3C VNTC apantallado Cable para bandeja E1 600V ER,vntc-apantallado,Cable VNTC apantallado,alta,vntc.*apantall|apantall.*vntc,,Cable para bandeja / tray cable|Cables especiales
+599,106937,18/2C VNTC apantallado Cable para bandeja E1 600V TC,vntc-apantallado,Cable VNTC apantallado,alta,vntc.*apantall|apantall.*vntc,,Cable para bandeja / tray cable|Cables especiales
+600,106938,18/3C VNTC apantallado Cable para bandeja E1 600V ER,vntc-apantallado,Cable VNTC apantallado,alta,vntc.*apantall|apantall.*vntc,,Cable para bandeja / tray cable|Cables especiales
+601,106939,10/2C VNTC apantallado Cable para bandeja E2 600V TC,vntc-apantallado,Cable VNTC apantallado,alta,vntc.*apantall|apantall.*vntc,,Cable para bandeja / tray cable|Cables especiales
+602,106940,10/3C VNTC apantallado Cable para bandeja E2 600V ER,vntc-apantallado,Cable VNTC apantallado,alta,vntc.*apantall|apantall.*vntc,,Cable para bandeja / tray cable|Cables especiales
+603,106941,10/4C VNTC apantallado Cable para bandeja E2 600V ER,vntc-apantallado,Cable VNTC apantallado,alta,vntc.*apantall|apantall.*vntc,,Cable para bandeja / tray cable|Cables especiales
+604,106942,12/2C VNTC apantallado Cable para bandeja E2 600V TC,vntc-apantallado,Cable VNTC apantallado,alta,vntc.*apantall|apantall.*vntc,,Cable para bandeja / tray cable|Cables especiales
+605,106943,12/3C VNTC apantallado Cable para bandeja E2 600V ER,vntc-apantallado,Cable VNTC apantallado,alta,vntc.*apantall|apantall.*vntc,,Cable para bandeja / tray cable|Cables especiales
+606,106944,12/4C VNTC apantallado Cable para bandeja E2 600V ER,vntc-apantallado,Cable VNTC apantallado,alta,vntc.*apantall|apantall.*vntc,,Cable para bandeja / tray cable|Cables especiales
+607,106945,12/5C VNTC apantallado Cable para bandeja E2 600V ER,vntc-apantallado,Cable VNTC apantallado,alta,vntc.*apantall|apantall.*vntc,,Cable para bandeja / tray cable|Cables especiales
+608,106946,12/7C VNTC apantallado Cable para bandeja E2 600V ER,vntc-apantallado,Cable VNTC apantallado,alta,vntc.*apantall|apantall.*vntc,,Cable para bandeja / tray cable|Cables especiales
+609,106947,12/12C VNTC apantallado Cable para bandeja E2 600V ER,vntc-apantallado,Cable VNTC apantallado,alta,vntc.*apantall|apantall.*vntc,,Cable para bandeja / tray cable|Cables especiales
+610,106948,14/2C VNTC apantallado Cable para bandeja E2 600V TC,vntc-apantallado,Cable VNTC apantallado,alta,vntc.*apantall|apantall.*vntc,,Cable para bandeja / tray cable|Cables especiales
+611,106949,14/3C VNTC apantallado Cable para bandeja E2 600V ER,vntc-apantallado,Cable VNTC apantallado,alta,vntc.*apantall|apantall.*vntc,,Cable para bandeja / tray cable|Cables especiales
+612,106950,14/4C VNTC apantallado Cable para bandeja E2 600V ER,vntc-apantallado,Cable VNTC apantallado,alta,vntc.*apantall|apantall.*vntc,,Cable para bandeja / tray cable|Cables especiales
+613,106951,14/5C VNTC apantallado Cable para bandeja E2 600V ER,vntc-apantallado,Cable VNTC apantallado,alta,vntc.*apantall|apantall.*vntc,,Cable para bandeja / tray cable|Cables especiales
+614,106952,14/7C VNTC apantallado Cable para bandeja E2 600V ER,vntc-apantallado,Cable VNTC apantallado,alta,vntc.*apantall|apantall.*vntc,,Cable para bandeja / tray cable|Cables especiales
+615,106953,14/9C VNTC apantallado Cable para bandeja E2 600V ER,vntc-apantallado,Cable VNTC apantallado,alta,vntc.*apantall|apantall.*vntc,,Cable para bandeja / tray cable|Cables especiales
+616,106954,14/12C VNTC apantallado Cable para bandeja E2 600V ER,vntc-apantallado,Cable VNTC apantallado,alta,vntc.*apantall|apantall.*vntc,,Cable para bandeja / tray cable|Cables especiales
+617,106955,14/19C VNTC apantallado Cable para bandeja E2 600V ER,vntc-apantallado,Cable VNTC apantallado,alta,vntc.*apantall|apantall.*vntc,,Cable para bandeja / tray cable|Cables especiales
+618,106956,14/30C VNTC apantallado Cable para bandeja E2 600V ER,vntc-apantallado,Cable VNTC apantallado,alta,vntc.*apantall|apantall.*vntc,,Cable para bandeja / tray cable|Cables especiales
+619,106957,16/2C VNTC apantallado Cable para bandeja E2 600V TC,vntc-apantallado,Cable VNTC apantallado,alta,vntc.*apantall|apantall.*vntc,,Cable para bandeja / tray cable|Cables especiales
+620,106958,16/3C VNTC apantallado Cable para bandeja E2 600V ER,vntc-apantallado,Cable VNTC apantallado,alta,vntc.*apantall|apantall.*vntc,,Cable para bandeja / tray cable|Cables especiales
+621,106959,16/4C VNTC apantallado Cable para bandeja E2 600V ER,vntc-apantallado,Cable VNTC apantallado,alta,vntc.*apantall|apantall.*vntc,,Cable para bandeja / tray cable|Cables especiales
+622,106960,16/5C VNTC apantallado Cable para bandeja E2 600V ER,vntc-apantallado,Cable VNTC apantallado,alta,vntc.*apantall|apantall.*vntc,,Cable para bandeja / tray cable|Cables especiales
+623,106961,16/7C VNTC apantallado Cable para bandeja E2 600V ER,vntc-apantallado,Cable VNTC apantallado,alta,vntc.*apantall|apantall.*vntc,,Cable para bandeja / tray cable|Cables especiales
+624,106962,16/9C VNTC apantallado Cable para bandeja E2 600V ER,vntc-apantallado,Cable VNTC apantallado,alta,vntc.*apantall|apantall.*vntc,,Cable para bandeja / tray cable|Cables especiales
+625,106963,16/12C VNTC apantallado Cable para bandeja E2 600V ER,vntc-apantallado,Cable VNTC apantallado,alta,vntc.*apantall|apantall.*vntc,,Cable para bandeja / tray cable|Cables especiales
+626,106964,16/19C VNTC apantallado Cable para bandeja E2 600V ER,vntc-apantallado,Cable VNTC apantallado,alta,vntc.*apantall|apantall.*vntc,,Cable para bandeja / tray cable|Cables especiales
+627,106965,16/25C VNTC apantallado Cable para bandeja E2 600V ER,vntc-apantallado,Cable VNTC apantallado,alta,vntc.*apantall|apantall.*vntc,,Cable para bandeja / tray cable|Cables especiales
+628,106966,16/37C VNTC apantallado Cable para bandeja E2 600V ER,vntc-apantallado,Cable VNTC apantallado,alta,vntc.*apantall|apantall.*vntc,,Cable para bandeja / tray cable|Cables especiales
+629,106967,18/2C VNTC apantallado Cable para bandeja E2 600V TC,vntc-apantallado,Cable VNTC apantallado,alta,vntc.*apantall|apantall.*vntc,,Cable para bandeja / tray cable|Cables especiales
+630,106968,18/3C VNTC apantallado Cable para bandeja E2 600V ER,vntc-apantallado,Cable VNTC apantallado,alta,vntc.*apantall|apantall.*vntc,,Cable para bandeja / tray cable|Cables especiales
+631,106970,18/5C VNTC apantallado Cable para bandeja E2 600V ER,vntc-apantallado,Cable VNTC apantallado,alta,vntc.*apantall|apantall.*vntc,,Cable para bandeja / tray cable|Cables especiales
+632,106971,18/7C VNTC apantallado Cable para bandeja E2 600V ER,vntc-apantallado,Cable VNTC apantallado,alta,vntc.*apantall|apantall.*vntc,,Cable para bandeja / tray cable|Cables especiales
+633,106972,18/8C VNTC apantallado Cable para bandeja E2 600V ER,vntc-apantallado,Cable VNTC apantallado,alta,vntc.*apantall|apantall.*vntc,,Cable para bandeja / tray cable|Cables especiales
+634,106973,18/9C VNTC apantallado Cable para bandeja E2 600V ER,vntc-apantallado,Cable VNTC apantallado,alta,vntc.*apantall|apantall.*vntc,,Cable para bandeja / tray cable|Cables especiales
+635,106974,18/10C VNTC apantallado Cable para bandeja E2 600V ER,vntc-apantallado,Cable VNTC apantallado,alta,vntc.*apantall|apantall.*vntc,,Cable para bandeja / tray cable|Cables especiales
+636,106975,18/12C VNTC apantallado Cable para bandeja E2 600V ER,vntc-apantallado,Cable VNTC apantallado,alta,vntc.*apantall|apantall.*vntc,,Cable para bandeja / tray cable|Cables especiales
+637,106976,18/19C VNTC apantallado Cable para bandeja E2 600V ER,vntc-apantallado,Cable VNTC apantallado,alta,vntc.*apantall|apantall.*vntc,,Cable para bandeja / tray cable|Cables especiales
+638,106977,18/25C VNTC apantallado Cable para bandeja E2 600V ER,vntc-apantallado,Cable VNTC apantallado,alta,vntc.*apantall|apantall.*vntc,,Cable para bandeja / tray cable|Cables especiales
+639,106978,18/37C VNTC apantallado Cable para bandeja E2 600V ER,vntc-apantallado,Cable VNTC apantallado,alta,vntc.*apantall|apantall.*vntc,,Cable para bandeja / tray cable|Cables especiales
+640,106979,1/4C VNTC N/S Cable para bandeja w/tierra M4 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+641,106980,2/3C VNTC N/S Cable para bandeja w/tierra M4 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+642,106981,4/4C VNTC N/S Cable para bandeja w/tierra M4 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+643,106982,6/3C VNTC N/S Cable para bandeja w/tierra M4 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+644,106983,8/4C VNTC N/S Cable para bandeja w/tierra M4 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+645,106984,1/0-3C VNTC N/S Cable para bandeja w/tierra M4 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+646,106985,2/0-3C VNTC N/S Cable para bandeja w/tierra M4 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+647,106986,2/0-4C VNTC N/S Cable para bandeja w/tierra M4 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+648,106987,3/0-3C VNTC N/S Cable para bandeja w/tierra M4 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+649,106988,3/0-4C VNTC N/S Cable para bandeja w/tierra M4 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+650,106989,350MCM/3C VNTC N/S Cable para bandeja w/tierra M4 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+651,106990,4/0-3C VNTC N/S Cable para bandeja w/tierra M4 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+652,106991,500MCM/3C VNTC N/S Cable para bandeja w/tierra M4 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+653,106992,2/3C VNTC apantallado Cable para bandeja w/tierra M4 600V ER,vntc-apantallado,Cable VNTC apantallado,alta,vntc.*apantall|apantall.*vntc,,Cable para bandeja / tray cable|Cables especiales
+654,106993,4/3C VNTC apantallado Cable para bandeja w/tierra M4 600V ER,vntc-apantallado,Cable VNTC apantallado,alta,vntc.*apantall|apantall.*vntc,,Cable para bandeja / tray cable|Cables especiales
+655,106994,6/3C VNTC apantallado Cable para bandeja w/tierra M4 600V ER,vntc-apantallado,Cable VNTC apantallado,alta,vntc.*apantall|apantall.*vntc,,Cable para bandeja / tray cable|Cables especiales
+656,106995,8/3C VNTC apantallado Cable para bandeja w/tierra M4 600V ER,vntc-apantallado,Cable VNTC apantallado,alta,vntc.*apantall|apantall.*vntc,,Cable para bandeja / tray cable|Cables especiales
+657,106996,8/4C VNTC apantallado Cable para bandeja w/tierra M4 600V ER,vntc-apantallado,Cable VNTC apantallado,alta,vntc.*apantall|apantall.*vntc,,Cable para bandeja / tray cable|Cables especiales
+658,106997,10/2C XLPE XPTC N/S Cable para bandeja E2 600V TC plano,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cable para bandeja / tray cable|Cables especiales
+659,106998,10/3C XLPE XPTC N/S Cable para bandeja E2 600V ER,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cable para bandeja / tray cable|Cables especiales
+660,106999,10/4C XLPE XPTC N/S Cable para bandeja E2 600V ER,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cable para bandeja / tray cable|Cables especiales
+661,107000,10/5C XLPE XPTC N/S Cable para bandeja E2 600V ER,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cable para bandeja / tray cable|Cables especiales
+662,107001,10/7C XLPE XPTC N/S Cable para bandeja E2 600V ER,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cable para bandeja / tray cable|Cables especiales
+663,107002,10/12C XLPE XPTC N/S Cable para bandeja E2 600V ER,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cable para bandeja / tray cable|Cables especiales
+664,107003,12/2C XLPE XPTC N/S Cable para bandeja E2 600V TC plano,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cable para bandeja / tray cable|Cables especiales
+665,107004,12/3C XLPE XPTC N/S Cable para bandeja E2 600V ER,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cable para bandeja / tray cable|Cables especiales
+666,107005,12/4C XLPE XPTC N/S Cable para bandeja E2 600V ER,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cable para bandeja / tray cable|Cables especiales
+667,107006,12/5C XLPE XPTC N/S Cable para bandeja E2 600V ER,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cable para bandeja / tray cable|Cables especiales
+668,107007,12/7C XLPE XPTC N/S Cable para bandeja E2 600V ER,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cable para bandeja / tray cable|Cables especiales
+669,107008,12/9C XLPE XPTC N/S Cable para bandeja E2 600V ER,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cable para bandeja / tray cable|Cables especiales
+670,107009,12/12C XLPE XPTC N/S Cable para bandeja E2 600V ER,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cable para bandeja / tray cable|Cables especiales
+671,107010,12 AWG 19 conductores XLPE XPTC Cable para bandeja sin apantallar,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cable para bandeja / tray cable|Cables especiales
+672,107011,14/2C XLPE XPTC N/S Cable para bandeja E2 600V TC,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cable para bandeja / tray cable|Cables especiales
+673,107012,14/3C XLPE XPTC N/S Cable para bandeja E2 600V ER,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cable para bandeja / tray cable|Cables especiales
+674,107013,14/4C XLPE XPTC N/S Cable para bandeja E2 600V ER,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cable para bandeja / tray cable|Cables especiales
+675,107014,14/5C XLPE XPTC N/S Cable para bandeja E2 600V ER,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cable para bandeja / tray cable|Cables especiales
+676,107015,14/7C XLPE XPTC N/S Cable para bandeja E2 600V ER,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cable para bandeja / tray cable|Cables especiales
+677,107016,14/9C XLPE XPTC N/S Cable para bandeja E2 600V ER,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cable para bandeja / tray cable|Cables especiales
+678,107017,14/12C XLPE XPTC N/S Cable para bandeja E2 600V ER,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cable para bandeja / tray cable|Cables especiales
+679,107018,14/19C XLPE XPTC N/S Cable para bandeja E2 600V ER,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cable para bandeja / tray cable|Cables especiales
+680,107019,14/25 XLPE XPTC N/S Cable para bandeja E2 600V ER,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cable para bandeja / tray cable|Cables especiales
+681,107020,14/37C XLPE XPTC N/S Cable para bandeja E2 600V ER,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cable para bandeja / tray cable|Cables especiales
+682,107021,2/3C XLPE XPTC N/S Cable para bandeja w/G M4 600V ER,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cable para bandeja / tray cable|Cables especiales
+683,107022,2/4C XLPE XPTC N/S Cable para bandeja w/G M4 600V ER,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cable para bandeja / tray cable|Cables especiales
+684,107023,4/3C XLPE XPTC N/S Cable para bandeja w/G M4 600V ER,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cable para bandeja / tray cable|Cables especiales
+685,107024,4 AWG 4 conductores XLPE XPTC Cable para bandeja con tierra,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cable para bandeja / tray cable|Cables especiales
+686,107025,6/3C XLPE XPTC N/S Cable para bandeja w/G M4 600V ER,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cable para bandeja / tray cable|Cables especiales
+687,107026,6 AWG 4 conductores XLPE XPTC Cable para bandeja con tierra,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cable para bandeja / tray cable|Cables especiales
+688,107027,8/3C XLPE XPTC N/S Cable para bandeja w/G M4 600V ER,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cable para bandeja / tray cable|Cables especiales
+689,107028,8/4C XLPE XPTC N/S Cable para bandeja w/G M4 600V ER,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cable para bandeja / tray cable|Cables especiales
+690,107029,1/0-3C XLPE XPTC N/S Cable para bandeja w/G M4 600V ER,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cable para bandeja / tray cable|Cables especiales
+691,107030,1/0 AWG 4 conductores XLPE XPTC Cable para bandeja con tierra,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cable para bandeja / tray cable|Cables especiales
+692,107031,10/3C XLPE XPTC N/S Cable para bandeja w/G E2 600V ER,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cable para bandeja / tray cable|Cables especiales
+693,107032,12/3C XLPE XPTC N/S Cable para bandeja w/G E2 600V ER,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cable para bandeja / tray cable|Cables especiales
+694,107033,2/0-3C XLPE XPTC N/S Cable para bandeja w/G M4 600V ER,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cable para bandeja / tray cable|Cables especiales
+695,107034,2/0 AWG 4 conductores XLPE XPTC Cable para bandeja con tierra,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cable para bandeja / tray cable|Cables especiales
+696,107035,250/3C XLPE XPTC N/S Cable para bandeja w/G M4 600V ER,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cable para bandeja / tray cable|Cables especiales
+697,107036,350/3C XLPE XPTC N/S Cable para bandeja w/G M4 600V ER,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cable para bandeja / tray cable|Cables especiales
+698,107037,4/0-3C XLPE XPTC N/S Cable para bandeja w/G M4 600V ER,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cable para bandeja / tray cable|Cables especiales
+699,107038,4/0-4C XLPE XPTC N/S Cable para bandeja w/G M4 600V ER,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cable para bandeja / tray cable|Cables especiales
+700,107039,500/3C XLPE XPTC N/S Cable para bandeja w/G M4 600V ER,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cable para bandeja / tray cable|Cables especiales
+701,107040,2/3C Bus bajante 60C 600V,bus-bajante,Cable bus bajante,alta,bus bajante,,Cables apantallados|Cables especiales
+702,107041,6/3C Bus bajante 60C 600V,bus-bajante,Cable bus bajante,alta,bus bajante,,Cables apantallados|Cables especiales
+703,107042,8/3C Bus bajante 60C 600V,bus-bajante,Cable bus bajante,alta,bus bajante,,Cables apantallados|Cables especiales
+704,107043,10/3C Bus bajante 60C 600V,bus-bajante,Cable bus bajante,alta,bus bajante,,Cables apantallados|Cables especiales
+705,107044,12/3C Bus bajante 60C 600V,bus-bajante,Cable bus bajante,alta,bus bajante,,Cables apantallados|Cables especiales
+706,107045,12/4C Bus bajante 60C 600V,bus-bajante,Cable bus bajante,alta,bus bajante,,Cables apantallados|Cables especiales
+707,107046,14/3C Bus bajante 60C 600V,bus-bajante,Cable bus bajante,alta,bus bajante,,Cables apantallados|Cables especiales
+708,107047,2/3C+12/4C VNTC N/S w/tierra M4 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+709,107048,4/3C+12/4C VNTC N/S w/tierra M4 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+710,107049,6/3C+12/4C VNTC N/S w/tierra M4 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+711,107050,8/3C+12/4C VNTC N/S w/tierra M4 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+712,107051,12/3C+14/4C VNTC N/S w/tierra M4 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+713,107052,10/2C FREP/CPE N/S Cable para bandeja E2 600V TC plano,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cable para bandeja / tray cable|Cables especiales
+714,107053,10/3C FREP/CPE N/S Cable para bandeja E2 600V ER,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cable para bandeja / tray cable|Cables especiales
+715,107054,10/4C FREP/CPE N/S Cable para bandeja E2 600V ER,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cable para bandeja / tray cable|Cables especiales
+716,107055,10/5C FREP/CPE N/S Cable para bandeja E2 600V ER,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cable para bandeja / tray cable|Cables especiales
+717,107056,10/7C FREP/CPE N/S Cable para bandeja E2 600V ER,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cable para bandeja / tray cable|Cables especiales
+718,107057,10/9C FREP/CPE N/S Cable para bandeja E2 600V ER,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cable para bandeja / tray cable|Cables especiales
+719,107058,10/12C FREP/CPE N/S Cable para bandeja E2 600V ER,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cable para bandeja / tray cable|Cables especiales
+720,107059,12/2C FREP/CPE N/S Cable para bandeja E2 600V TC plano,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cable para bandeja / tray cable|Cables especiales
+721,107060,12/3C FREP/CPE N/S Cable para bandeja E2 600V ER,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cable para bandeja / tray cable|Cables especiales
+722,107061,12/4C FREP/CPE N/S Cable para bandeja E2 600V ER,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cable para bandeja / tray cable|Cables especiales
+723,107062,12/5C FREP/CPE N/S Cable para bandeja E2 600V ER,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cable para bandeja / tray cable|Cables especiales
+724,107063,12/7C FREP/CPE N/S Cable para bandeja E2 600V ER,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cable para bandeja / tray cable|Cables especiales
+725,107064,12/9C FREP/CPE N/S Cable para bandeja E2 600V ER,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cable para bandeja / tray cable|Cables especiales
+726,107065,12/12C FREP/CPE N/S Cable para bandeja E2 600V ER,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cable para bandeja / tray cable|Cables especiales
+727,107066,12/15C FREP/CPE N/S Cable para bandeja E2 600V ER,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cable para bandeja / tray cable|Cables especiales
+728,107067,12/19C FREP/CPE N/S Cable para bandeja E2 600V ER,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cable para bandeja / tray cable|Cables especiales
+729,107068,12/37C FREP/CPE N/S Cable para bandeja E2 600V ER,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cable para bandeja / tray cable|Cables especiales
+730,107069,14/2C FREP/CPE N/S Cable para bandeja E2 600V TC plano,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cable para bandeja / tray cable|Cables especiales
+731,107070,14/3C FREP/CPE N/S Cable para bandeja E2 600V ER,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cable para bandeja / tray cable|Cables especiales
+732,107071,14/4C FREP/CPE N/S Cable para bandeja E2 600V ER,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cable para bandeja / tray cable|Cables especiales
+733,107072,14/5C FREP/CPE N/S Cable para bandeja E2 600V ER,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cable para bandeja / tray cable|Cables especiales
+734,107073,14/7C FREP/CPE N/S Cable para bandeja E2 600V ER,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cable para bandeja / tray cable|Cables especiales
+735,107074,14/9C FREP/CPE N/S Cable para bandeja E2 600V ER,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cable para bandeja / tray cable|Cables especiales
+736,107075,14/12C FREP/CPE N/S Cable para bandeja E2 600V ER,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cable para bandeja / tray cable|Cables especiales
+737,107076,14/19C FREP/CPE N/S Cable para bandeja E2 600V ER,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cable para bandeja / tray cable|Cables especiales
+738,107077,14/25C FREP/CPE N/S Cable para bandeja E2 600V ER,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cable para bandeja / tray cable|Cables especiales
+739,107078,14/37C FREP/CPE N/S Cable para bandeja E2 600V ER,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cable para bandeja / tray cable|Cables especiales
+740,107079,16/9C FREP/CPE N/S Cable para bandeja E2 600V ER,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cable para bandeja / tray cable|Cables especiales
+741,107080,16/12C FREP/CPE N/S 600V M1/E2,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cables apantallados|Cables especiales
+742,107081,16/24C FREP/CPE N/S 600V M1/E2,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cables apantallados|Cables especiales
+743,107082,16/37C FREP-CPE N/S Cable para bandeja E2 600V ER,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cable para bandeja / tray cable|Cables especiales
+744,107083,10/2C FREP/CPE N/S Cable para bandeja E1 600V TC plano,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cable para bandeja / tray cable|Cables especiales
+745,107084,10/3C FREP/CPE N/S Cable para bandeja E1 600V ER,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cable para bandeja / tray cable|Cables especiales
+746,107085,10/4C FREP/CPE N/S Cable para bandeja E1 600V ER,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cable para bandeja / tray cable|Cables especiales
+747,107086,12/2C FREP/CPE N/S Cable para bandeja E1 600V TC plano,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cable para bandeja / tray cable|Cables especiales
+748,107087,12/3C FREP/CPE N/S Cable para bandeja E1 600V ER,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cable para bandeja / tray cable|Cables especiales
+749,107088,12/4C FREP/CPE N/S Cable para bandeja E1 600V ER,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cable para bandeja / tray cable|Cables especiales
+750,107089,12/5C FREP/CPE N/S 600V M1/E1,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cables apantallados|Cables especiales
+751,107090,12/7C FREP/CPE N/S Cable para bandeja E1 600V ER,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cable para bandeja / tray cable|Cables especiales
+752,107091,12/12C FREP/CPE N/S Cable para bandeja E1 600V ER,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cable para bandeja / tray cable|Cables especiales
+753,107092,14/2C FREP/CPE N/S Cable para bandeja E1 600V TC plano,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cable para bandeja / tray cable|Cables especiales
+754,107093,14/3C FREP/CPE N/S Cable para bandeja E1 600V ER,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cable para bandeja / tray cable|Cables especiales
+755,107094,14/4C FREP/CPE N/S Cable para bandeja E1 600V ER,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cable para bandeja / tray cable|Cables especiales
+756,107095,14/5C FREP/CPE N/S Cable para bandeja E1 600V ER,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cable para bandeja / tray cable|Cables especiales
+757,107096,14/7C FREP/CPE N/S Cable para bandeja E1 600V ER,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cable para bandeja / tray cable|Cables especiales
+758,107097,14/9C FREP/CPE N/S Cable para bandeja E1 600V ER,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cable para bandeja / tray cable|Cables especiales
+759,107098,14/12C FREP/CPE N/S Cable para bandeja E1 600V ER,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cable para bandeja / tray cable|Cables especiales
+760,107099,16/3C FREP/CPE apantallado Cable para bandeja E2 600V ER,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cable para bandeja / tray cable|Cables especiales
+761,107100,18/2C FREP/CPE SHLD 600V M1/E2,multiconductor-datos-audio,Multiconductor de datos y audio,alta,multiconductor|databus|fieldbus|profibus|audio comercial|datalene|\bSHLD\b,,Cables apantallados|Cables especiales
+762,107101,2/3C FREP/CPE N/S Cable para bandeja M4 600V ER,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cable para bandeja / tray cable|Cables especiales
+763,107102,2/4C FREP/CPE N/S Cable para bandeja w/G M4 600V ER,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cable para bandeja / tray cable|Cables especiales
+764,107103,4/3C FREP/CPE N/S Cable para bandeja w/G M4 600V ER,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cable para bandeja / tray cable|Cables especiales
+765,107104,4/4C FREP/CPE N/S Cable para bandeja w/G M4 600V ER,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cable para bandeja / tray cable|Cables especiales
+766,107105,6/3C FREP/CPE N/S Cable para bandeja w/G M4 600V ER,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cable para bandeja / tray cable|Cables especiales
+767,107106,6/4C FREP/CPE N/S Cable para bandeja w/G M4 600V ER,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cable para bandeja / tray cable|Cables especiales
+768,107107,8/3C FREP/CPE N/S Cable para bandeja w/G M4 600V ER,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cable para bandeja / tray cable|Cables especiales
+769,107108,8/4C FREP/CPE N/S Cable para bandeja w/G M4 600V ER,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cable para bandeja / tray cable|Cables especiales
+770,107109,1/0-3C FREP/CPE N/S Cable para bandeja w/G M4 600V ER,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cable para bandeja / tray cable|Cables especiales
+771,107110,2/0-3C FREP/CPE N/S Cable para bandeja M4 600V ER,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cable para bandeja / tray cable|Cables especiales
+772,107111,350/3C FREP/CPE M4 600V TC-ER,lszh-tc-er,Cable LSZH TC-ER,alta,smoke zero halogen|\bLSZH\b|\bTC-ER\b,,Cable para bandeja / tray cable|Cables especiales
+773,107112,500/3C FREP/CPE N/S Cable para bandeja w/G M4 600V ER,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cable para bandeja / tray cable|Cables especiales
+774,107113,16/1TR OS W/drenaje FREP/CPE,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cables apantallados|Cables especiales
+775,107114,16/3TR STOS W/drenaje FREP/CPE,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cables apantallados|Cables especiales
+776,107115,16/4TR STOS W/drenaje FREP/CPE,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cables apantallados|Cables especiales
+777,107116,16/6TR STOS W/drenaje FREP/CPE,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cables apantallados|Cables especiales
+778,107117,16/8TR STOS W/drenaje FREP/CPE,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cables apantallados|Cables especiales
+779,107118,12/3C 600V SDN M1/E2 90C DRY,sdn-neopreno,Multiconductor SDN en neopreno,alta,\bSDN\b,,Cables apantallados|Cables especiales
+780,107119,12 AWG 4 conductores SDN diámetro pequeño neopreno,sdn-neopreno,Multiconductor SDN en neopreno,alta,\bSDN\b,,Cables apantallados|Cables especiales
+781,107120,12 AWG 6 conductores SDN diámetro pequeño neopreno,sdn-neopreno,Multiconductor SDN en neopreno,alta,\bSDN\b,,Cables apantallados|Cables especiales
+782,107121,14 AWG 3 conductores SDN diámetro pequeño neopreno,sdn-neopreno,Multiconductor SDN en neopreno,alta,\bSDN\b,,Cables apantallados|Cables especiales
+783,107122,14/4C 600V SDN M1/E2 90C DRY,sdn-neopreno,Multiconductor SDN en neopreno,alta,\bSDN\b,,Cables apantallados|Cables especiales
+784,107123,14 AWG 6 conductores SDN diámetro pequeño neopreno,sdn-neopreno,Multiconductor SDN en neopreno,alta,\bSDN\b,,Cables apantallados|Cables especiales
+785,107124,14 AWG 8 conductores SDN diámetro pequeño neopreno,sdn-neopreno,Multiconductor SDN en neopreno,alta,\bSDN\b,,Cables apantallados|Cables especiales
+786,107125,14 AWG 10 conductores SDN diámetro pequeño neopreno,sdn-neopreno,Multiconductor SDN en neopreno,alta,\bSDN\b,,Cables apantallados|Cables especiales
+787,107126,14/12C 600V SDN M1/E2 90C DRY,sdn-neopreno,Multiconductor SDN en neopreno,alta,\bSDN\b,,Cables apantallados|Cables especiales
+788,107127,14 AWG 16 conductores SDN diámetro pequeño neopreno,sdn-neopreno,Multiconductor SDN en neopreno,alta,\bSDN\b,,Cables apantallados|Cables especiales
+789,107128,14 AWG 24 conductores SDN diámetro pequeño neopreno,sdn-neopreno,Multiconductor SDN en neopreno,alta,\bSDN\b,,Cables apantallados|Cables especiales
+790,107129,14/37C 600V SDN M1/E2 90C DRY,sdn-neopreno,Multiconductor SDN en neopreno,alta,\bSDN\b,,Cables apantallados|Cables especiales
+791,107130,16 AWG 4 conductores SDN diámetro pequeño neopreno,sdn-neopreno,Multiconductor SDN en neopreno,alta,\bSDN\b,,Cables apantallados|Cables especiales
+792,107131,16/5C 600V SDN M1/E2 90C DRY,sdn-neopreno,Multiconductor SDN en neopreno,alta,\bSDN\b,,Cables apantallados|Cables especiales
+793,107132,16 AWG 6 conductores SDN diámetro pequeño neopreno,sdn-neopreno,Multiconductor SDN en neopreno,alta,\bSDN\b,,Cables apantallados|Cables especiales
+794,107133,16 AWG 8 conductores SDN diámetro pequeño neopreno,sdn-neopreno,Multiconductor SDN en neopreno,alta,\bSDN\b,,Cables apantallados|Cables especiales
+795,107134,16 AWG 10 conductores SDN diámetro pequeño neopreno,sdn-neopreno,Multiconductor SDN en neopreno,alta,\bSDN\b,,Cables apantallados|Cables especiales
+796,107135,16 AWG 14 conductores SDN diámetro pequeño neopreno,sdn-neopreno,Multiconductor SDN en neopreno,alta,\bSDN\b,,Cables apantallados|Cables especiales
+797,107136,16 AWG 16 conductores SDN diámetro pequeño neopreno,sdn-neopreno,Multiconductor SDN en neopreno,alta,\bSDN\b,,Cables apantallados|Cables especiales
+798,107137,16 AWG 24 conductores SDN diámetro pequeño neopreno,sdn-neopreno,Multiconductor SDN en neopreno,alta,\bSDN\b,,Cables apantallados|Cables especiales
+799,107138,16 AWG 30 conductores SDN diámetro pequeño neopreno,sdn-neopreno,Multiconductor SDN en neopreno,alta,\bSDN\b,,Cables apantallados|Cables especiales
+800,107139,16 AWG 37 conductores SDN diámetro pequeño neopreno,sdn-neopreno,Multiconductor SDN en neopreno,alta,\bSDN\b,,Cables apantallados|Cables especiales
+801,107140,18 AWG 5 conductores SDN diámetro pequeño neopreno,sdn-neopreno,Multiconductor SDN en neopreno,alta,\bSDN\b,,Cables apantallados|Cables especiales
+802,107141,18 AWG 6 conductores SDN diámetro pequeño neopreno,sdn-neopreno,Multiconductor SDN en neopreno,alta,\bSDN\b,,Cables apantallados|Cables especiales
+803,107142,18 AWG 8 conductores SDN diámetro pequeño neopreno,sdn-neopreno,Multiconductor SDN en neopreno,alta,\bSDN\b,,Cables apantallados|Cables especiales
+804,107143,18 AWG 12 conductores SDN diámetro pequeño neopreno,sdn-neopreno,Multiconductor SDN en neopreno,alta,\bSDN\b,,Cables apantallados|Cables especiales
+805,107144,18 AWG 14 conductores SDN diámetro pequeño neopreno,sdn-neopreno,Multiconductor SDN en neopreno,alta,\bSDN\b,,Cables apantallados|Cables especiales
+806,107145,18 AWG 16 conductores SDN diámetro pequeño neopreno,sdn-neopreno,Multiconductor SDN en neopreno,alta,\bSDN\b,,Cables apantallados|Cables especiales
+807,107146,18/19C 600V SDN M1/E2 90C DRY,sdn-neopreno,Multiconductor SDN en neopreno,alta,\bSDN\b,,Cables apantallados|Cables especiales
+808,107147,12/3C bajo Smoke Zero Halogen TC-ER 90C 600V,lszh-tc-er,Cable LSZH TC-ER,alta,smoke zero halogen|\bLSZH\b|\bTC-ER\b,,Cable para bandeja / tray cable|Cables especiales
+809,107148,20/1P JX termopar sin apantallar 200C 300V FEP,termopar,Cable para termopar,alta,termopar|\bJX\b|\bKX\b|\bTX\b|\bEX\b,,Cables apantallados|Cables especiales
+810,107149,16/1P EX termopar apantallado 105C 300V PVC Purple,termopar,Cable para termopar,alta,termopar|\bJX\b|\bKX\b|\bTX\b|\bEX\b,,Cables apantallados|Cables especiales
+811,107150,16/1P JX termopar apantallado 105C 300V PVC,termopar,Cable para termopar,alta,termopar|\bJX\b|\bKX\b|\bTX\b|\bEX\b,,Cables apantallados|Cables especiales
+812,107152,16/1P TX termopar apantallado 105C 300V PVC,termopar,Cable para termopar,alta,termopar|\bJX\b|\bKX\b|\bTX\b|\bEX\b,,Cables apantallados|Cables especiales
+813,107153,20/1P JX termopar apantallado 105C 300V PVC,termopar,Cable para termopar,alta,termopar|\bJX\b|\bKX\b|\bTX\b|\bEX\b,,Cables apantallados|Cables especiales
+814,107156,20/1P JX termopar sin apantallar 105C 300V PVC,termopar,Cable para termopar,alta,termopar|\bJX\b|\bKX\b|\bTX\b|\bEX\b,,Cables apantallados|Cables especiales
+815,107158,20/1P TX termopar sin apantallar 105C 300V PVC,termopar,Cable para termopar,alta,termopar|\bJX\b|\bKX\b|\bTX\b|\bEX\b,,Cables apantallados|Cables especiales
+816,107159,20/2C J termopar sin apantallar 510C 600V Fiberglass,termopar,Cable para termopar,alta,termopar|\bJX\b|\bKX\b|\bTX\b|\bEX\b,,Cables de fibra óptica
+817,107160,8/3C plano sumergible bomba Cable w/G PVC,sumergible-bomba,Cable plano sumergible para bomba,alta,sumergible|bomba,,Cables apantallados|Cables especiales
+818,107161,10/3C plano sumergible bomba Cable w/G PVC,sumergible-bomba,Cable plano sumergible para bomba,alta,sumergible|bomba,,Cables apantallados|Cables especiales
+819,107162,12/3C plano sumergible bomba Cable w/G PVC,sumergible-bomba,Cable plano sumergible para bomba,alta,sumergible|bomba,,Cables apantallados|Cables especiales
+820,107163,14/3C plano sumergible bomba Cable w/G PVC,sumergible-bomba,Cable plano sumergible para bomba,alta,sumergible|bomba,,Cables apantallados|Cables especiales
+821,107164,6/3C VNTC N/S Cable para bandeja M4 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+822,107165,14/2C VNTC N/S Cable para bandeja E2 600V TC plano,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+823,107166,14/2C VNTC N/S Cable para bandeja E2 600V TC redondo,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+824,107167,14/3C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+825,107168,14/4C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+826,107169,14/5C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+827,107170,14/6C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+828,107171,14/7C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+829,107172,14/9C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+830,107173,14/10C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+831,107174,14/12C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+832,107175,14/15C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+833,107176,14/16C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+834,107177,14/19C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+835,107178,14/20C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+836,107179,14/25C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+837,107180,14/30C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+838,107181,14/37C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+839,107182,14/50C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+840,107183,14/60C VNTC N/S Cable para bandeja E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+841,107184,10/3C VNTC N/S Cable para bandeja M4 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+842,107185,10/4C VNTC N/S Cable para bandeja M4 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+843,107186,14/2C VNTC N/S Cable para bandeja M4 600V TC plano,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+844,107187,14/3C VNTC N/S Cable para bandeja M4 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+845,107188,14/4C VNTC N/S Cable para bandeja M4 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+846,107189,14/5C VNTC N/S Cable para bandeja M4 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+847,107190,14/7C VNTC N/S Cable para bandeja M4 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+848,107191,14/9C VNTC N/S Cable para bandeja M4 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+849,107192,14/12C VNTC N/S Cable para bandeja M4 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+850,107193,14/15C VNTC N/S Cable para bandeja M4 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+851,107194,14/19C VNTC N/S Cable para bandeja M4 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+852,107195,14/37C VNTC N/S Cable para bandeja M4 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+853,107196,1/3C VNTC N/S Cable para bandeja w/tierra M4 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+854,107197,2/4C VNTC N/S Cable para bandeja w/tierra M4 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+855,107198,4/3C VNTC N/S Cable para bandeja w/tierra M4 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+856,107199,6/4C VNTC N/S Cable para bandeja w/tierra M4 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+857,107200,8/3C VNTC N/S Cable para bandeja w/tierra M4 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+858,107201,1/0-4C VNTC N/S Cable para bandeja w/tierra M4 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+859,107202,10/3C VNTC N/S Cable para bandeja w/tierra E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+860,107203,12/3C VNTC N/S Cable para bandeja w/tierra E2 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+861,107204,250MCM/3C VNTC N/S Cable para bandeja w/tierra M4 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+862,107205,250MCM/4C VNTC N/S Cable para bandeja w/tierra M4 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+863,107206,350MCM/4C VNTC N/S Cable para bandeja w/tierra M4 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+864,107207,4/0-4C VNTC N/S Cable para bandeja w/tierra M4 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+865,107208,500MCM/4C VNTC N/S Cable para bandeja w/tierra M4 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+866,107209,750MCM/3C VNTC N/S Cable para bandeja w/tierra M4 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+867,107210,16/2C FREP/CPE apantallado Cable para bandeja E2 600V TC,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cable para bandeja / tray cable|Cables especiales
+868,107211,4/0-3C FREP/CPE N/S Cable para bandeja w/G M4 600V ER,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cable para bandeja / tray cable|Cables especiales
+869,107212,16/2TR STOS W/drenaje FREP/CPE,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cables apantallados|Cables especiales
+870,107213,2/3C SOOW Cordón portátil 90C 600V CPE negro Non-UL,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+871,107214,2/4C SOOW Cordón portátil 90C 600V CPE negro Non-UL,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+872,107215,2/5C SOOW Cordón portátil 90C 600V CPE negro Non-UL,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+873,107216,4/3C SOOW Cordón portátil 90C 600V CPE negro Non-UL,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+874,107217,4/5C SOOW Cordón portátil 90C 600V CPE negro Non-UL,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+875,107218,6/3C SOOW Cordón portátil 90C 600V CPE negro Non-UL,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+876,107219,6/4C SOOW Cordón portátil 90C 600V CPE negro Non-UL,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+877,107220,6/5C SOOW Cordón portátil 90C 600V CPE negro Non-UL,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+878,107221,8/5C SOOW Cordón portátil 90C 600V CPE negro Non-UL,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+879,107222,10/3C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+880,107223,10/4C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+881,107224,10/5C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+882,107225,10/6C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+883,107226,10/7C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+884,107227,12/2C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+885,107228,12/3C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+886,107229,12/4C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+887,107230,12/5C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+888,107231,12/6C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+889,107232,12/7C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+890,107233,12/8C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+891,107234,12/9C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+892,107235,12/10C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+893,107236,12/12C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+894,107237,12/14C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+895,107238,12/16C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+896,107239,12/20C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+897,107240,12/24C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+898,107241,12/30C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+899,107242,14/2C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+900,107243,14/3C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+901,107244,14/4C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+902,107245,14/5C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+903,107246,14/6C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+904,107247,14/7C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+905,107248,14/8C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+906,107249,14/10C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+907,107250,14/12C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+908,107251,14/14C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+909,107252,14/16C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+910,107253,14/20C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+911,107254,14/24C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+912,107255,16/5C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+913,107256,16/6C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+914,107257,16/7C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+915,107258,16/8C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+916,107259,16/10C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+917,107260,16/12C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+918,107261,16/14C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+919,107262,16/16C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+920,107263,16/20C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+921,107264,16/24C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+922,107265,16/30C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+923,107266,16/40C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+924,107267,18/2C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+925,107268,18/3C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+926,107269,18/4C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+927,107270,18/6C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+928,107271,18/7C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+929,107272,18/8C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+930,107273,18/10C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+931,107274,18/12C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+932,107275,18/14C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+933,107276,18/20C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+934,107277,18/24C SOOW Cordón portátil 90C 600V CPE,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+935,107278,1 AWG 3C tipo W Cable EPDM/CPE 2KV,tipo-w-epdm,Cable tipo W EPDM,alta,tipo w\b|\bEPDM\b,,Cables apantallados|Cables especiales
+936,107279,2 AWG 1C tipo W Cable EPDM/CPE 2KV,tipo-w-epdm,Cable tipo W EPDM,alta,tipo w\b|\bEPDM\b,,Cables apantallados|Cables especiales
+937,107280,2 AWG 3C tipo W Cable EPDM/CPE 2KV,tipo-w-epdm,Cable tipo W EPDM,alta,tipo w\b|\bEPDM\b,,Cables apantallados|Cables especiales
+938,107281,2 AWG 4C tipo W Cable EPDM/CPE 2KV,tipo-w-epdm,Cable tipo W EPDM,alta,tipo w\b|\bEPDM\b,,Cables apantallados|Cables especiales
+939,107282,4 AWG 4C tipo W Cable EPDM/CPE 2KV,tipo-w-epdm,Cable tipo W EPDM,alta,tipo w\b|\bEPDM\b,,Cables apantallados|Cables especiales
+940,107283,4 AWG 5C tipo W Cable EPDM/CPE 2KV,tipo-w-epdm,Cable tipo W EPDM,alta,tipo w\b|\bEPDM\b,,Cables apantallados|Cables especiales
+941,107284,8 AWG 5C tipo W Cable EPDM/CPE 2KV,tipo-w-epdm,Cable tipo W EPDM,alta,tipo w\b|\bEPDM\b,,Cables apantallados|Cables especiales
+942,107285,2/0 AWG 1C tipo W Cable EPDM/CPE 2KV,tipo-w-epdm,Cable tipo W EPDM,alta,tipo w\b|\bEPDM\b,,Cables apantallados|Cables especiales
+943,107286,4/0 AWG 1C tipo W Cable EPDM/CPE 2KV,tipo-w-epdm,Cable tipo W EPDM,alta,tipo w\b|\bEPDM\b,,Cables apantallados|Cables especiales
+944,107287,4/0 AWG 1C tipo W Cable X-flexible EPDM/CPE 2KV,tipo-w-epdm,Cable tipo W EPDM,alta,tipo w\b|\bEPDM\b,,Cables apantallados|Cables especiales
+945,107288,10 AWG 3 conductores SJOOW Cordón portátil 300V,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+946,107289,14 AWG 4 conductores SJOOW Cordón portátil 300V,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+947,107290,16 AWG 3 conductores SJOOW Cordón portátil 300V,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+948,107291,10/1C FEP tipo K (37 STR) 200C 600V,fep-tipo-k,Cable FEP tipo K,alta,FEP tipo K|\bFEP\b,,Cable de alta temperatura|Cables especiales
+949,107295,12/1C FEP tipo K (19 STR) 200C 600V,fep-tipo-k,Cable FEP tipo K,alta,FEP tipo K|\bFEP\b,,Cable de alta temperatura|Cables especiales
+950,107299,16/1C FEP tipo K (19 STR) 150C 600V,fep-tipo-k,Cable FEP tipo K,alta,FEP tipo K|\bFEP\b,,Cable de alta temperatura|Cables especiales
+951,107301,12 AWG PTFE teflón,alta-temperatura,Cable de alta temperatura,alta,\bPTFE\b|tefl[oó]n|alta temperatura|silicona|fibra de vidrio|mica,,Cable de alta temperatura|Cables especiales
+952,107306,20 AWG PTFE teflón,alta-temperatura,Cable de alta temperatura,alta,\bPTFE\b|tefl[oó]n|alta temperatura|silicona|fibra de vidrio|mica,,Cable de alta temperatura|Cables especiales
+953,107307,"20 AWG PTFE teflón,",alta-temperatura,Cable de alta temperatura,alta,\bPTFE\b|tefl[oó]n|alta temperatura|silicona|fibra de vidrio|mica,,Cable de alta temperatura|Cables especiales
+954,107308,20(19ST)TFE-E MIL-16878/4,tfe-mil,Cable TFE-E MIL-16878,alta,\bTFE-?E\b|MIL-?16878,,Cable de alta temperatura|Cables especiales
+955,107309,20(19ST)TFE-E MIL-16878/4 GRN,tfe-mil,Cable TFE-E MIL-16878,alta,\bTFE-?E\b|MIL-?16878,,Cable de alta temperatura|Cables especiales
+956,107310,20(19ST)TFE-E MIL-16878/4 BLU,tfe-mil,Cable TFE-E MIL-16878,alta,\bTFE-?E\b|MIL-?16878,,Cable de alta temperatura|Cables especiales
+957,107315,"24 AWG PTFE teflón,",alta-temperatura,Cable de alta temperatura,alta,\bPTFE\b|tefl[oó]n|alta temperatura|silicona|fibra de vidrio|mica,,Cable de alta temperatura|Cables especiales
+958,107317,24 AWG PTFE teflón,alta-temperatura,Cable de alta temperatura,alta,\bPTFE\b|tefl[oó]n|alta temperatura|silicona|fibra de vidrio|mica,,Cable de alta temperatura|Cables especiales
+959,107319,16/2P JX termopar SPOS 105C 300V PVC,termopar,Cable para termopar,alta,termopar|\bJX\b|\bKX\b|\bTX\b|\bEX\b,,Cables apantallados|Cables especiales
+960,107320,16/2P KX termopar SPOS 105C 300V PVC,termopar,Cable para termopar,alta,termopar|\bJX\b|\bKX\b|\bTX\b|\bEX\b,,Cables apantallados|Cables especiales
+961,107321,16/4P JX termopar SPOS 105C 300V PVC,termopar,Cable para termopar,alta,termopar|\bJX\b|\bKX\b|\bTX\b|\bEX\b,,Cables apantallados|Cables especiales
+962,107322,16/8P JX termopar SPOS 105C 300V PVC,termopar,Cable para termopar,alta,termopar|\bJX\b|\bKX\b|\bTX\b|\bEX\b,,Cables apantallados|Cables especiales
+963,107323,16/8P KX termopar SPOS 105C 300V PVC,termopar,Cable para termopar,alta,termopar|\bJX\b|\bKX\b|\bTX\b|\bEX\b,,Cables apantallados|Cables especiales
+964,107324,16/12P JX termopar SPOS 105C 300V PVC,termopar,Cable para termopar,alta,termopar|\bJX\b|\bKX\b|\bTX\b|\bEX\b,,Cables apantallados|Cables especiales
+965,107325,16/24P JX termopar SPOS 105C 300V PVC,termopar,Cable para termopar,alta,termopar|\bJX\b|\bKX\b|\bTX\b|\bEX\b,,Cables apantallados|Cables especiales
+966,107326,16/24P KX termopar SPOS 105C 300V PVC,termopar,Cable para termopar,alta,termopar|\bJX\b|\bKX\b|\bTX\b|\bEX\b,,Cables apantallados|Cables especiales
+967,107327,20/4P JX termopar SPOS 105C 300V PVC,termopar,Cable para termopar,alta,termopar|\bJX\b|\bKX\b|\bTX\b|\bEX\b,,Cables apantallados|Cables especiales
+968,107328,20/4P KX termopar SPOS 105C 300V PVC,termopar,Cable para termopar,alta,termopar|\bJX\b|\bKX\b|\bTX\b|\bEX\b,,Cables apantallados|Cables especiales
+969,107329,20/8P JX termopar SPOS 105C 300V PVC,termopar,Cable para termopar,alta,termopar|\bJX\b|\bKX\b|\bTX\b|\bEX\b,,Cables apantallados|Cables especiales
+970,107330,20/8P KX termopar SPOS 105C 300V PVC,termopar,Cable para termopar,alta,termopar|\bJX\b|\bKX\b|\bTX\b|\bEX\b,,Cables apantallados|Cables especiales
+971,107331,20/12P JX termopar SPOS 105C 300V PVC,termopar,Cable para termopar,alta,termopar|\bJX\b|\bKX\b|\bTX\b|\bEX\b,,Cables apantallados|Cables especiales
+972,107332,20/12P KX termopar SPOS 105C 300V PVC,termopar,Cable para termopar,alta,termopar|\bJX\b|\bKX\b|\bTX\b|\bEX\b,,Cables apantallados|Cables especiales
+973,107333,20/24P JX termopar SPOS 105C 300V PVC,termopar,Cable para termopar,alta,termopar|\bJX\b|\bKX\b|\bTX\b|\bEX\b,,Cables apantallados|Cables especiales
+974,107334,20/24P KX termopar SPOS 105C 300V PVC,termopar,Cable para termopar,alta,termopar|\bJX\b|\bKX\b|\bTX\b|\bEX\b,,Cables apantallados|Cables especiales
+975,107335,16/1P JX termopar apantallado 200C 300V FEP,termopar,Cable para termopar,alta,termopar|\bJX\b|\bKX\b|\bTX\b|\bEX\b,,Cables apantallados|Cables especiales
+976,107337,20/24TR PLTC STOS 105C 300V PVC,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cable para bandeja / tray cable|Cables especiales
+977,107338,4 AWG 133 hilos cobre desnudo PVC,cobre-desnudo,Conductor de cobre desnudo,alta,desnudo,,Cable desnudo|Conductores desnudos
+978,107340,6 AWG 133 hilos cobre desnudo PVC,cobre-desnudo,Conductor de cobre desnudo,alta,desnudo,,Cable desnudo|Conductores desnudos
+979,107344,16 AWG máquina herramienta cable UL 1007/1569,cobre-estanado-hookup,Alambre de cobre estañado,alta,cobre estañado|UL 1007|m[aá]quina herramienta|\bSIS\b,,Cables apantallados|Cables especiales
+980,107349,18 AWG máquina herramienta cable UL 1007/1569,cobre-estanado-hookup,Alambre de cobre estañado,alta,cobre estañado|UL 1007|m[aá]quina herramienta|\bSIS\b,,Cables apantallados|Cables especiales
+981,107355,10/5C VNTC N/S Cable para bandeja E1 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+982,107356,16/1PR OS W/drenaje FREP/CPE,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cables apantallados|Cables especiales
+983,107357,16/2PR SPOS W/drenaje FREP/CPE,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cables apantallados|Cables especiales
+984,107358,16/4PR SPOS W/drenaje FREP/CPE,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cables apantallados|Cables especiales
+985,107359,16/6PR SPOS W/drenaje FREP/CPE,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cables apantallados|Cables especiales
+986,107360,16/8PR SPOS W/drenaje FREP/CPE,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cables apantallados|Cables especiales
+987,107361,16/9PR SPOS W/drenaje FREP/CPE,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cables apantallados|Cables especiales
+988,107362,16/12PR SPOS W/drenaje FREP/CPE,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cables apantallados|Cables especiales
+989,107363,16/16PR SPOS W/drenaje FREP/CPE,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cables apantallados|Cables especiales
+990,107364,18/2PR SPOS W/drenaje FREP/CPE,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cables apantallados|Cables especiales
+991,107365,18/4PR SPOS W/drenaje FREP/CPE,frep-cpe,Cable FREP/CPE,alta,\bFREP\b|\bCPE\b,,Cables apantallados|Cables especiales
+992,107366,10/4C VNTC N/S Cable para bandeja E1 600V ER,vntc-bandeja,Cable VNTC para bandeja,alta,\bVNTC\b,,Cable para bandeja / tray cable|Cables especiales
+993,107367,4 AWG 1 Conductor 133 hilos MG Mica vidrio,alta-temperatura,Cable de alta temperatura,alta,\bPTFE\b|tefl[oó]n|alta temperatura|silicona|fibra de vidrio|mica,,Cables apantallados|Cables especiales
+994,107368,6 AWG 1 Conductor 133 hilos MG Mica vidrio,alta-temperatura,Cable de alta temperatura,alta,\bPTFE\b|tefl[oó]n|alta temperatura|silicona|fibra de vidrio|mica,,Cables apantallados|Cables especiales
+995,107369,8 AWG 1 Conductor 133 hilos MG Mica vidrio,alta-temperatura,Cable de alta temperatura,alta,\bPTFE\b|tefl[oó]n|alta temperatura|silicona|fibra de vidrio|mica,,Cables apantallados|Cables especiales
+996,107370,1/0 AWG 1 Conductor 259 hilos MG Mica vidrio,alta-temperatura,Cable de alta temperatura,alta,\bPTFE\b|tefl[oó]n|alta temperatura|silicona|fibra de vidrio|mica,,Cables apantallados|Cables especiales
+997,107371,2 AWG 1 Conductor 133 hilos TGGT teflón vidrio,alta-temperatura,Cable de alta temperatura,alta,\bPTFE\b|tefl[oó]n|alta temperatura|silicona|fibra de vidrio|mica,,Cable de alta temperatura|Cables especiales
+998,107372,4 AWG 1 Conductor 133 hilos TGGT teflón vidrio,alta-temperatura,Cable de alta temperatura,alta,\bPTFE\b|tefl[oó]n|alta temperatura|silicona|fibra de vidrio|mica,,Cable de alta temperatura|Cables especiales
+999,107373,6 AWG 1 Conductor 133 hilos TGGT teflón vidrio,alta-temperatura,Cable de alta temperatura,alta,\bPTFE\b|tefl[oó]n|alta temperatura|silicona|fibra de vidrio|mica,,Cable de alta temperatura|Cables especiales
+1000,107374,8 AWG 1 Conductor 133 hilos TGGT teflón vidrio,alta-temperatura,Cable de alta temperatura,alta,\bPTFE\b|tefl[oó]n|alta temperatura|silicona|fibra de vidrio|mica,,Cable de alta temperatura|Cables especiales
+1001,107375,10 AWG 1 Conductor 105 hilos MG Mica vidrio,alta-temperatura,Cable de alta temperatura,alta,\bPTFE\b|tefl[oó]n|alta temperatura|silicona|fibra de vidrio|mica,,Cables apantallados|Cables especiales
+1002,107376,12 AWG 1 Conductor 65 hilos MG Mica vidrio,alta-temperatura,Cable de alta temperatura,alta,\bPTFE\b|tefl[oó]n|alta temperatura|silicona|fibra de vidrio|mica,,Cables apantallados|Cables especiales
+1003,107377,14 AWG 1 Conductor 41 hilos MG Mica vidrio,alta-temperatura,Cable de alta temperatura,alta,\bPTFE\b|tefl[oó]n|alta temperatura|silicona|fibra de vidrio|mica,,Cables apantallados|Cables especiales
+1004,107378,16 AWG 1 Conductor 26 hilos MG Mica vidrio,alta-temperatura,Cable de alta temperatura,alta,\bPTFE\b|tefl[oó]n|alta temperatura|silicona|fibra de vidrio|mica,,Cables apantallados|Cables especiales
+1005,107379,18 AWG 1 Conductor 16 hilos MG Mica vidrio,alta-temperatura,Cable de alta temperatura,alta,\bPTFE\b|tefl[oó]n|alta temperatura|silicona|fibra de vidrio|mica,,Cables apantallados|Cables especiales
+1006,107380,4/0 AWG 1 Conductor 259 hilos TGGT teflón vidrio,alta-temperatura,Cable de alta temperatura,alta,\bPTFE\b|tefl[oó]n|alta temperatura|silicona|fibra de vidrio|mica,,Cable de alta temperatura|Cables especiales
+1007,107381,1/1C SRML cable (259 hilos) 200C 600V,srml-srg-k,Cable SRML/SRG-K de silicona,alta,\bSRML\b|\bSRG-?K\b|\bSF-?2\b|\bSFF-?2\b,,Cables apantallados|Cables especiales
+1008,107382,2/1C SRML cable (133 hilos) 200C 600V,srml-srg-k,Cable SRML/SRG-K de silicona,alta,\bSRML\b|\bSRG-?K\b|\bSF-?2\b|\bSFF-?2\b,,Cables apantallados|Cables especiales
+1009,107383,4/1C SRML cable (133 hilos) 200C 600V,srml-srg-k,Cable SRML/SRG-K de silicona,alta,\bSRML\b|\bSRG-?K\b|\bSF-?2\b|\bSFF-?2\b,,Cables apantallados|Cables especiales
+1010,107384,6/1C SRML cable (133 hilos) 150C 600V,srml-srg-k,Cable SRML/SRG-K de silicona,alta,\bSRML\b|\bSRG-?K\b|\bSF-?2\b|\bSFF-?2\b,,Cables apantallados|Cables especiales
+1011,107385,8/1C SRML cable (133 hilos) 150C 600V,srml-srg-k,Cable SRML/SRG-K de silicona,alta,\bSRML\b|\bSRG-?K\b|\bSF-?2\b|\bSFF-?2\b,,Cables apantallados|Cables especiales
+1012,107386,1/0-1C SRML cable (259 hilos) 200C 600V,srml-srg-k,Cable SRML/SRG-K de silicona,alta,\bSRML\b|\bSRG-?K\b|\bSF-?2\b|\bSFF-?2\b,,Cables apantallados|Cables especiales
+1013,107387,12 AWG 3 conductores 19 hilos silicona caucho Motor conexión SRG-K,srml-srg-k,Cable SRML/SRG-K de silicona,alta,\bSRML\b|\bSRG-?K\b|\bSF-?2\b|\bSFF-?2\b,,Cable coaxial|Cables especiales
+1014,107388,12 AWG 4 conductores 19 hilos silicona caucho Motor conexión SRG-K,srml-srg-k,Cable SRML/SRG-K de silicona,alta,\bSRML\b|\bSRG-?K\b|\bSF-?2\b|\bSFF-?2\b,,Cable coaxial|Cables especiales
+1015,107389,12/5C(19STR) SRG-K CABLE 200C,srml-srg-k,Cable SRML/SRG-K de silicona,alta,\bSRML\b|\bSRG-?K\b|\bSF-?2\b|\bSFF-?2\b,,Cable coaxial|Cables especiales
+1016,107390,14 AWG 3 conductores 7 hilos silicona caucho Motor conexión SRG-K,srml-srg-k,Cable SRML/SRG-K de silicona,alta,\bSRML\b|\bSRG-?K\b|\bSF-?2\b|\bSFF-?2\b,,Cable coaxial|Cables especiales
+1017,107391,14 AWG 4 conductores 7 hilos silicona caucho Motor conexión SRG-K,srml-srg-k,Cable SRML/SRG-K de silicona,alta,\bSRML\b|\bSRG-?K\b|\bSF-?2\b|\bSFF-?2\b,,Cable coaxial|Cables especiales
+1018,107392,14 AWG 5 conductores 7 hilos silicona caucho Motor conexión SRG-K,srml-srg-k,Cable SRML/SRG-K de silicona,alta,\bSRML\b|\bSRG-?K\b|\bSF-?2\b|\bSFF-?2\b,,Cable coaxial|Cables especiales
+1019,107393,14 AWG 7 conductores 7 hilos silicona caucho Motor conexión SRG-K,srml-srg-k,Cable SRML/SRG-K de silicona,alta,\bSRML\b|\bSRG-?K\b|\bSF-?2\b|\bSFF-?2\b,,Cable coaxial|Cables especiales
+1020,107394,2/0-1C SRML cable (259 hilos) 200C 600V,srml-srg-k,Cable SRML/SRG-K de silicona,alta,\bSRML\b|\bSRG-?K\b|\bSF-?2\b|\bSFF-?2\b,,Cables apantallados|Cables especiales
+1021,107395,250/1C SRML cable (427 hilos) 200C 600V,srml-srg-k,Cable SRML/SRG-K de silicona,alta,\bSRML\b|\bSRG-?K\b|\bSF-?2\b|\bSFF-?2\b,,Cables apantallados|Cables especiales
+1022,107396,3/0-1C SRML cable (259 hilos) 200C 600V,srml-srg-k,Cable SRML/SRG-K de silicona,alta,\bSRML\b|\bSRG-?K\b|\bSF-?2\b|\bSFF-?2\b,,Cables apantallados|Cables especiales
+1023,107397,350/1C SRML cable (427 hilos) 200C 600V,srml-srg-k,Cable SRML/SRG-K de silicona,alta,\bSRML\b|\bSRG-?K\b|\bSF-?2\b|\bSFF-?2\b,,Cables apantallados|Cables especiales
+1024,107398,4/0-1C SRML cable (259 hilos) 200C 600V,srml-srg-k,Cable SRML/SRG-K de silicona,alta,\bSRML\b|\bSRG-?K\b|\bSF-?2\b|\bSFF-?2\b,,Cables apantallados|Cables especiales
+1025,107399,500/1C SRML cable (427 hilos) 200C 600V,srml-srg-k,Cable SRML/SRG-K de silicona,alta,\bSRML\b|\bSRG-?K\b|\bSF-?2\b|\bSFF-?2\b,,Cables apantallados|Cables especiales
+1026,107400,10 AWG 1 Conductor 105 hilos TGGT teflón vidrio,alta-temperatura,Cable de alta temperatura,alta,\bPTFE\b|tefl[oó]n|alta temperatura|silicona|fibra de vidrio|mica,,Cable de alta temperatura|Cables especiales
+1027,107401,12 AWG 1 Conductor 65 hilos TGGT teflón vidrio,alta-temperatura,Cable de alta temperatura,alta,\bPTFE\b|tefl[oó]n|alta temperatura|silicona|fibra de vidrio|mica,,Cable de alta temperatura|Cables especiales
+1028,107402,14 AWG 1 Conductor 41 hilos TGGT teflón vidrio,alta-temperatura,Cable de alta temperatura,alta,\bPTFE\b|tefl[oó]n|alta temperatura|silicona|fibra de vidrio|mica,,Cable de alta temperatura|Cables especiales
+1029,107403,16 AWG 1 Conductor 26 hilos TGGT teflón vidrio,alta-temperatura,Cable de alta temperatura,alta,\bPTFE\b|tefl[oó]n|alta temperatura|silicona|fibra de vidrio|mica,,Cable de alta temperatura|Cables especiales
+1030,107404,18 AWG 1 Conductor 16 hilos TGGT teflón vidrio,alta-temperatura,Cable de alta temperatura,alta,\bPTFE\b|tefl[oó]n|alta temperatura|silicona|fibra de vidrio|mica,,Cable de alta temperatura|Cables especiales
+1031,107405,10/1C SRML cable (SFF-2) 150C 600V,srml-srg-k,Cable SRML/SRG-K de silicona,alta,\bSRML\b|\bSRG-?K\b|\bSF-?2\b|\bSFF-?2\b,,Cables apantallados|Cables especiales
+1032,107409,12/1C SRML cable (SFF-2) 150C 600V,srml-srg-k,Cable SRML/SRG-K de silicona,alta,\bSRML\b|\bSRG-?K\b|\bSF-?2\b|\bSFF-?2\b,,Cables apantallados|Cables especiales
+1033,107414,14/1C SRML cable (SFF-2) 150C 600V,srml-srg-k,Cable SRML/SRG-K de silicona,alta,\bSRML\b|\bSRG-?K\b|\bSF-?2\b|\bSFF-?2\b,,Cables apantallados|Cables especiales
+1034,107419,16/1C SRML cable (SFF-2) 150C 600V,srml-srg-k,Cable SRML/SRG-K de silicona,alta,\bSRML\b|\bSRG-?K\b|\bSF-?2\b|\bSFF-?2\b,,Cables apantallados|Cables especiales
+1035,107424,18/1C SRML cable (SFF-2) 150C 600V,srml-srg-k,Cable SRML/SRG-K de silicona,alta,\bSRML\b|\bSRG-?K\b|\bSF-?2\b|\bSFF-?2\b,,Cables apantallados|Cables especiales
+1036,107427,10/1C SRML cable (SF-2) 200C 600V,srml-srg-k,Cable SRML/SRG-K de silicona,alta,\bSRML\b|\bSRG-?K\b|\bSF-?2\b|\bSFF-?2\b,,Cables apantallados|Cables especiales
+1037,107429,12/1C SRML cable (SF-2) 200C 600V,srml-srg-k,Cable SRML/SRG-K de silicona,alta,\bSRML\b|\bSRG-?K\b|\bSF-?2\b|\bSFF-?2\b,,Cables apantallados|Cables especiales
+1038,107431,14/1C SRML cable (SF-2) 200C 600V,srml-srg-k,Cable SRML/SRG-K de silicona,alta,\bSRML\b|\bSRG-?K\b|\bSF-?2\b|\bSFF-?2\b,,Cables apantallados|Cables especiales
+1039,107434,16/1C SRML cable (SF-2) 200C 600V,srml-srg-k,Cable SRML/SRG-K de silicona,alta,\bSRML\b|\bSRG-?K\b|\bSF-?2\b|\bSFF-?2\b,,Cables apantallados|Cables especiales
+1040,107438,18/1C SRML cable (SF-2) 200C 600V,srml-srg-k,Cable SRML/SRG-K de silicona,alta,\bSRML\b|\bSRG-?K\b|\bSF-?2\b|\bSFF-?2\b,,Cables apantallados|Cables especiales
+1041,107440,6 AWG 1 conductor cobre estañado SIS 90C,cobre-estanado-hookup,Alambre de cobre estañado,alta,cobre estañado|UL 1007|m[aá]quina herramienta|\bSIS\b,,Cables apantallados|Cables especiales
+1042,107442,8 AWG 1 conductor cobre estañado SIS 90C BLK,cobre-estanado-hookup,Alambre de cobre estañado,alta,cobre estañado|UL 1007|m[aá]quina herramienta|\bSIS\b,,Cables apantallados|Cables especiales
+1043,107443,8 AWG 1 conductor cobre estañado SIS 90C WHT,cobre-estanado-hookup,Alambre de cobre estañado,alta,cobre estañado|UL 1007|m[aá]quina herramienta|\bSIS\b,,Cables apantallados|Cables especiales
+1044,107444,8 AWG 1 conductor cobre estañado SIS 90C,cobre-estanado-hookup,Alambre de cobre estañado,alta,cobre estañado|UL 1007|m[aá]quina herramienta|\bSIS\b,,Cables apantallados|Cables especiales
+1045,107447,10 AWG 1 conductor cobre estañado SIS 90C,cobre-estanado-hookup,Alambre de cobre estañado,alta,cobre estañado|UL 1007|m[aá]quina herramienta|\bSIS\b,,Cables apantallados|Cables especiales
+1046,107454,12 AWG 1 conductor cobre estañado SIS 90C,cobre-estanado-hookup,Alambre de cobre estañado,alta,cobre estañado|UL 1007|m[aá]quina herramienta|\bSIS\b,,Cables apantallados|Cables especiales
+1047,107456,1 EPDM cobre estañado,tipo-w-epdm,Cable tipo W EPDM,alta,tipo w\b|\bEPDM\b,,Cables apantallados|Cables especiales
+1048,107457,2 EPDM cobre estañado,tipo-w-epdm,Cable tipo W EPDM,alta,tipo w\b|\bEPDM\b,,Cables apantallados|Cables especiales
+1049,107458,4 EPDM cobre estañado,tipo-w-epdm,Cable tipo W EPDM,alta,tipo w\b|\bEPDM\b,,Cables apantallados|Cables especiales
+1050,107459,6 EPDM cobre estañado,tipo-w-epdm,Cable tipo W EPDM,alta,tipo w\b|\bEPDM\b,,Cables apantallados|Cables especiales
+1051,107460,8 EPDM cobre estañado,tipo-w-epdm,Cable tipo W EPDM,alta,tipo w\b|\bEPDM\b,,Cables apantallados|Cables especiales
+1052,107461,1/0 EPDM cobre estañado,tipo-w-epdm,Cable tipo W EPDM,alta,tipo w\b|\bEPDM\b,,Cables apantallados|Cables especiales
+1053,107462,10 EPDM cobre estañado,tipo-w-epdm,Cable tipo W EPDM,alta,tipo w\b|\bEPDM\b,,Cables apantallados|Cables especiales
+1054,107463,2/0 EPDM cobre estañado,tipo-w-epdm,Cable tipo W EPDM,alta,tipo w\b|\bEPDM\b,,Cables apantallados|Cables especiales
+1055,107464,3/0 EPDM cobre estañado,tipo-w-epdm,Cable tipo W EPDM,alta,tipo w\b|\bEPDM\b,,Cables apantallados|Cables especiales
+1056,107465,4/0 EPDM cobre estañado,tipo-w-epdm,Cable tipo W EPDM,alta,tipo w\b|\bEPDM\b,,Cables apantallados|Cables especiales
+1057,107466,2 AWG 1 Conductor 133 hilos MG Mica vidrio,alta-temperatura,Cable de alta temperatura,alta,\bPTFE\b|tefl[oó]n|alta temperatura|silicona|fibra de vidrio|mica,,Cables apantallados|Cables especiales
+1058,107467,1/0 AWG 1 Conductor 259 hilos TGGT teflón vidrio,alta-temperatura,Cable de alta temperatura,alta,\bPTFE\b|tefl[oó]n|alta temperatura|silicona|fibra de vidrio|mica,,Cable de alta temperatura|Cables especiales
+1059,107468,16/1P JX termopar sin apantallar 105C 300V PVC,termopar,Cable para termopar,alta,termopar|\bJX\b|\bKX\b|\bTX\b|\bEX\b,,Cables apantallados|Cables especiales
+1060,108435,2 AWG trenzado THHN THWN-2 cable de edificación,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,,Cable THHN / THWN-2
+1061,108436,4 AWG trenzado THHN THWN-2 cable de edificación,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,,Cable THHN / THWN-2
+1062,108437,6 AWG trenzado THHN THWN-2 cable de edificación,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,,Cable THHN / THWN-2
+1063,108439,8 AWG trenzado THHN THWN-2 cable de edificación,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,,Cable THHN / THWN-2
+1064,108441,1/0 AWG trenzado THHN THWN-2 cable de edificación,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,,Cable THHN / THWN-2
+1065,108443,10 AWG sólido THHN THWN-2 cable de edificación,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,,Cable THHN / THWN-2
+1066,108448,10 AWG sólido THHN THWN-2 cable de edificación verde/amarillo,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,,Cable THHN / THWN-2
+1067,108449,10 AWG trenzado THHN THWN-2 cable de edificación,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,,Cable THHN / THWN-2
+1068,108459,10 AWG trenzado THHN THWN-2 cable de edificación verde/amarillo,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,,Cable THHN / THWN-2
+1069,108460,12 AWG sólido THHN THWN-2 cable de edificación,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,,Cable THHN / THWN-2
+1070,108481,12 AWG trenzado THHN THWN-2 cable de edificación,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,,Cable THHN / THWN-2
+1071,108493,14 AWG sólido THHN THWN-2 cable de edificación,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,,Cable THHN / THWN-2
+1072,108503,14 AWG trenzado THHN THWN-2 cable de edificación,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,,Cable THHN / THWN-2
+1073,108506,16 AWG sólido TFN,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,,Cables apantallados|Cables especiales
+1074,108516,16 AWG trenzado TFFN,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,,Cable THHN / THWN-2
+1075,108527,18 AWG sólido TFN,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,,Cables apantallados|Cables especiales
+1076,108535,18 AWG trenzado TFFN,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,,Cable THHN / THWN-2
+1077,108546,2/0 AWG trenzado THHN THWN-2 cable de edificación,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,,Cable THHN / THWN-2
+1078,108547,3/0 AWG trenzado THHN THWN-2,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,,Cable THHN / THWN-2
+1079,108548,4/0 AWG trenzado THHN THWN-2,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,,Cable THHN / THWN-2
+1080,108549,2 AWG XLP USE-2,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cables apantallados|Cables especiales
+1081,108552,4 AWG XLP USE-2,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cables apantallados|Cables especiales
+1082,108556,6 AWG XLP USE-2,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cables apantallados|Cables especiales
+1083,108560,8 AWG XLP USE-2,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cables apantallados|Cables especiales
+1084,108562,1/0 AWG 19 hilos XLP USE-2,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cables apantallados|Cables especiales
+1085,108563,10 AWG XLP USE-2,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cables apantallados|Cables especiales
+1086,108568,12 AWG XLP USE-2,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cables apantallados|Cables especiales
+1087,108572,14 AWG XLP USE-2,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cables apantallados|Cables especiales
+1088,108573,2/0 AWG 19 hilos XLP USE-2,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cables apantallados|Cables especiales
+1089,108575,3/0 AWG 19 hilos XLP USE-2,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cables apantallados|Cables especiales
+1090,108576,350 37 hilos XLP USE-2,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cables apantallados|Cables especiales
+1091,108577,4/0 AWG 19 hilos XLP USE-2,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cables apantallados|Cables especiales
+1092,108578,1 AWG XHHW-2,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cables apantallados|Cables especiales
+1093,108579,2 AWG XHHW-2,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cables apantallados|Cables especiales
+1094,108581,3 AWG XHHW-2,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cables apantallados|Cables especiales
+1095,108582,4 AWG XHHW-2,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cables apantallados|Cables especiales
+1096,108585,6 AWG XHHW-2,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cables apantallados|Cables especiales
+1097,108589,8 AWG XHHW-2,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cables apantallados|Cables especiales
+1098,108592,8/1C(7STR) XHHW-2 600V,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cables apantallados|Cables especiales
+1099,108593,1/0 AWG 19 hilos XHHW-2,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cables apantallados|Cables especiales
+1100,108595,10 AWG XHHW-2,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cables apantallados|Cables especiales
+1101,108605,12 AWG XHHW-2,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cables apantallados|Cables especiales
+1102,108616,14 AWG XHHW-2,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cables apantallados|Cables especiales
+1103,108626,2/0 AWG 19 hilos XHHW-2,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cables apantallados|Cables especiales
+1104,108628,250 MCM 37 hilos XHHW-2,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cables apantallados|Cables especiales
+1105,108629,3/0 AWG 19 hilos XHHW-2,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cables apantallados|Cables especiales
+1106,108630,350 MCM 37 hilos XHHW-2,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cables apantallados|Cables especiales
+1107,108631,4/0 AWG 19 hilos XHHW-2,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cables apantallados|Cables especiales
+1108,108633,500 MCM 37 hilos XHHW-2,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cables apantallados|Cables especiales
+1109,108634,600 MCM 61 hilos XHHW-2,xlpe-xptc,Cable XLPE/XPTC,alta,\bXLPE\b|\bXPTC\b|\bXHHW\b|\bUSE-?2\b,,Cables apantallados|Cables especiales
+1110,109001,24 AWG 7 x 32 trenzado cobre estañado LO-CAP POLYPROPYLENE – INDIVIDUAL blindaje,cobre-estanado-hookup,Alambre de cobre estañado,alta,cobre estañado|UL 1007|m[aá]quina herramienta|\bSIS\b,,Cables apantallados|Cables especiales
+1111,109011,22 AWG 7 x 30 trenzado TC – BRAIDED blindaje,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables apantallados|Cables especiales
+1112,109013,18 AWG 2 conductores SJOOW Cordón portátil 300V,soow-portatil,Cordón portátil SOOW encauchetado,alta,\bS[JO]?OOW\b|cord[oó]n port[aá]til|encauchetado,,Cable encauchetado|Cable flexible
+1113,9-10-5W-A19,10.5W/A19/OMNI-LED/3500K/120V -10.5W 120V A19 3500,iluminacion-led,Iluminación LED,alta,\bLED\b|\bA19\b|\bBR30\b|\bE26\b,,Cables apantallados|Cables especiales
+1114,9-10BR30-LED-270,10BR30 LED 2700K 750L E26 -10W 120V 2700K BR30 LED,iluminacion-led,Iluminación LED,alta,\bLED\b|\bA19\b|\bBR30\b|\bE26\b,,Cables apantallados|Cables especiales
+1160,123092A,Belden RG6/U — cuádruple SHLD coaxial AIA,coaxial,Cable coaxial,alta,coaxial|\bRG-?\d,Belden,Cable coaxial|Cables especiales
+1163,129730,Belden 129730 — 24/3P DATALENE/PVC ISHLD AIA,armado-mc-aia,Cable armado MC/AIA,alta,\bAIA\b|metal clad|\barmor\b,Belden,Cables apantallados|Cables especiales
+1187,1583AU,Belden 1583AU — 24/4P Cat5e Cable U/UTP CMR PVC negro 1000 ft (carrete),red-utp,Cable de red UTP/FTP,alta,\bUTP\b|\bFTP\b|\bLAN\b|\bcat\s?-?[56][ae]?\b,Belden,Cables de red
+1188,1583AU2,Belden 1583AU2 — 24/4P Cat5e Cable U/UTP CMR PVC blanco 1000 ft (carrete),red-utp,Cable de red UTP/FTP,alta,\bUTP\b|\bFTP\b|\bLAN\b|\bcat\s?-?[56][ae]?\b,Belden,Cables de red
+1189,1583AU3,Belden 1583AU3 — 24/4P Cat5e Cable U/UTP CMR PVC Red 1000 ft (carrete),red-utp,Cable de red UTP/FTP,alta,\bUTP\b|\bFTP\b|\bLAN\b|\bcat\s?-?[56][ae]?\b,Belden,Cables de red
+1190,1583AU4,Belden 1583AU4 — 24/4P Cat5e Cable U/UTP CMR PVC verde 1000 ft (carrete),red-utp,Cable de red UTP/FTP,alta,\bUTP\b|\bFTP\b|\bLAN\b|\bcat\s?-?[56][ae]?\b,Belden,Cables de red
+1191,1583AU5,Belden 1583AU5 — 24/4P Cat5e Cable U/UTP CMR PVC azul 1000 ft (carrete),red-utp,Cable de red UTP/FTP,alta,\bUTP\b|\bFTP\b|\bLAN\b|\bcat\s?-?[56][ae]?\b,Belden,Cables de red
+1192,1583AU6,Belden 1583AU6 — 24/4P Cat5e Cable U/UTP CMR PVC gris 1000 ft (carrete),red-utp,Cable de red UTP/FTP,alta,\bUTP\b|\bFTP\b|\bLAN\b|\bcat\s?-?[56][ae]?\b,Belden,Cables de red
+1193,1583AU7,Belden 1583AU7 — 24/4P Cat5e Cable U/UTP CMR PVC naranja 1000 ft (carrete),red-utp,Cable de red UTP/FTP,alta,\bUTP\b|\bFTP\b|\bLAN\b|\bcat\s?-?[56][ae]?\b,Belden,Cables de red
+1194,1583AU8,Belden 1583AU8 — 24/4P Cat5e Cable U/UTP CMR PVC amarillo 1000 ft (carrete),red-utp,Cable de red UTP/FTP,alta,\bUTP\b|\bFTP\b|\bLAN\b|\bcat\s?-?[56][ae]?\b,Belden,Cables de red
+1195,1583B,Belden 1583B — 24/4P Cat5e Cable U/UTP CMR PVC rosa 1000 ft (carrete),red-utp,Cable de red UTP/FTP,alta,\bUTP\b|\bFTP\b|\bLAN\b|\bcat\s?-?[56][ae]?\b,Belden,Cables de red
+1197,1585AU,Belden 1585AU — 24/4P Cat5e Cable U/UTP CMP PVC negro 1000 ft (carrete),red-utp,Cable de red UTP/FTP,alta,\bUTP\b|\bFTP\b|\bLAN\b|\bcat\s?-?[56][ae]?\b,Belden,Cables de red
+1198,1585AU2,Belden 1585AU2 — 24/4P Cat5e Cable U/UTP CMP PVC blanco 1000 ft (carrete),red-utp,Cable de red UTP/FTP,alta,\bUTP\b|\bFTP\b|\bLAN\b|\bcat\s?-?[56][ae]?\b,Belden,Cables de red
+1199,1585AU3,Belden 1585AU3 — 24/4P Cat5e Cable U/UTP CMP PVC Red 1000 ft (carrete),red-utp,Cable de red UTP/FTP,alta,\bUTP\b|\bFTP\b|\bLAN\b|\bcat\s?-?[56][ae]?\b,Belden,Cables de red
+1200,1585AU4,Belden 1585AU4 — 24/4P Cat5e Cable U/UTP CMP PVC verde 1000 ft (carrete),red-utp,Cable de red UTP/FTP,alta,\bUTP\b|\bFTP\b|\bLAN\b|\bcat\s?-?[56][ae]?\b,Belden,Cables de red
+1201,1585AU5,Belden 1585AU5 — 24/4P Cat5e Cable U/UTP CMP PVC azul 1000 ft (carrete),red-utp,Cable de red UTP/FTP,alta,\bUTP\b|\bFTP\b|\bLAN\b|\bcat\s?-?[56][ae]?\b,Belden,Cables de red
+1202,1585AU6,Belden 1585AU6 — 24/4P Cat5e Cable U/UTP CMP PVC gris 1000 ft (carrete),red-utp,Cable de red UTP/FTP,alta,\bUTP\b|\bFTP\b|\bLAN\b|\bcat\s?-?[56][ae]?\b,Belden,Cables de red
+1203,1585AU7,Belden 1585AU7 — 24/4P Cat5e Cable U/UTP CMP PVC naranja 1000 ft (carrete),red-utp,Cable de red UTP/FTP,alta,\bUTP\b|\bFTP\b|\bLAN\b|\bcat\s?-?[56][ae]?\b,Belden,Cables de red
+1204,1585B,Belden 1585B — 24/4P Cat5e Cable U/UTP CMP PVC rosa 1000 ft (carrete),red-utp,Cable de red UTP/FTP,alta,\bUTP\b|\bFTP\b|\bLAN\b|\bcat\s?-?[56][ae]?\b,Belden,Cables de red
+1211,1700AU5,Belden 1700AU5 — 24/4P Cat5e+ Cable U/UTP CMR PVC azul 1000 ft (carrete),red-utp,Cable de red UTP/FTP,alta,\bUTP\b|\bFTP\b|\bLAN\b|\bcat\s?-?[56][ae]?\b,Belden,Cables de red
+1212,1700AU8,Belden 1700AU8 — 24/4P Cat5e+ Cable U/UTP CMR PVC amarillo 1000 ft (carrete),red-utp,Cable de red UTP/FTP,alta,\bUTP\b|\bFTP\b|\bLAN\b|\bcat\s?-?[56][ae]?\b,Belden,Cables de red
+1214,183076F,Belden 183076F — Cable multiconductor – Cont. Armor DataBus ISA/SP-50 FOUNDATION Fieldbus/Profibus 1,armado-mc-aia,Cable armado MC/AIA,alta,\bAIA\b|metal clad|\barmor\b,Belden,Cables de red
+1215,183092A,Belden 183092A — coaxial – ControlNet cuádruple apantallado coaxial RG6/U cuádruple SHLD coaxial CCW,coaxial,Cable coaxial,alta,coaxial|\bRG-?\d,Belden,Cable coaxial|Cables especiales
+1226,27254,Belden 27254 — Cable multiconductor – 600V tipo MC Metal Clad Cable 12/2C PLUS GRD XLP/PVC AIA,armado-mc-aia,Cable armado MC/AIA,alta,\bAIA\b|metal clad|\barmor\b,Belden,Cables de control
+1282,3105A,Belden 3105A — 22/1P EIA Industrial RS-485 Cable TC apantallado PLTC/CM PE/PVC 300V,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables de instrumentación|Cables especiales
+1283,3106A,Belden 3106A — 22/1P + 22/1C EIA Industrial RS-485 Cable TC apantallado PLTC/CM PE/PVC 300V,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables de instrumentación|Cables especiales
+1284,3107A,Belden 3107A — 22/2P EIA Industrial RS-485 Cable TC apantallado PLTC/CM PE/PVC 300V,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables de instrumentación|Cables especiales
+1285,3108A,Belden 3108A — 22/3P EIA Industrial RS-485 Cable TC apantallado PLTC/CM PE/PVC 300V,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables de instrumentación|Cables especiales
+1286,3109A,Belden 3109A — 22/4P EIA Industrial RS-485 Cable TC apantallado PLTC/CM PE/PVC 300V,pltc-tc-instrumentacion,Cable PLTC/TC de instrumentación,media,\bPLTC\b|\bTC\b|\bSPOS\b|\bSTOS\b|\bOS\b|\d+\s?PR\b|\d+\s?TR\b,,Cables de instrumentación|Cables especiales
+1338,5321UE,Belden 5321UE — Cable multiconductor – sistemas de audio comercial 18/3C sólido BC PVC/PVC,multiconductor-datos-audio,Multiconductor de datos y audio,alta,multiconductor|databus|fieldbus|profibus|audio comercial|datalene|\bSHLD\b,Belden,Cables de control
+1342,5339W5,Belden 5339W5 — coaxial – vigilancia y CCTV aplicaciones 18 SOL BC RG6 tipo 60%,coaxial,Cable coaxial,alta,coaxial|\bRG-?\d,Belden,Cable coaxial|Cables especiales
+1347,5400FEU,Belden 20/2C — BC PVC/PVC SHLD,multiconductor-datos-audio,Multiconductor de datos y audio,alta,multiconductor|databus|fieldbus|profibus|audio comercial|datalene|\bSHLD\b,Belden,Cables apantallados|Cables especiales
+1350,5402FEU,Belden 20/4C — BC PP/PVC SHLD,multiconductor-datos-audio,Multiconductor de datos y audio,alta,multiconductor|databus|fieldbus|profibus|audio comercial|datalene|\bSHLD\b,Belden,Cables apantallados|Cables especiales
+1353,5439W5,"Belden 5439W5 — coaxial – CCTV, CATV y MATV aplicaciones 20 SOL BC RG59TYPE 95%BC",coaxial,Cable coaxial,alta,coaxial|\bRG-?\d,Belden,Cable coaxial|Cables especiales
+1411,6400UE,Belden 6400UE — Cable multiconductor – sistemas de audio comercial – 2 conductores cableados 20/2C BC FLAMA,multiconductor-datos-audio,Multiconductor de datos y audio,alta,multiconductor|databus|fieldbus|profibus|audio comercial|datalene|\bSHLD\b,Belden,Cables de control
+1940,SRT-ALAMBRE-12-AMARILLO-ROLLO,Alambre THHN/THWN-2 Centelsa 12 AWG amarillo – rollo 100 m,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Centelsa by Nexans,Cable THHN / THWN-2
+1941,SRT-ALAMBRE-12-AZUL-ROLLO,Alambre THHN/THWN-2 Centelsa 12 AWG azul – rollo 100 m,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Centelsa by Nexans,Cable THHN / THWN-2
+1942,SRT-ALAMBRE-12-BLANCO-ROLLO,Alambre THHN/THWN-2 Centelsa 12 AWG blanco – rollo 100 m,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Centelsa by Nexans,Cable THHN / THWN-2
+1943,SRT-ALAMBRE-12-NEGRO-ROLLO,Alambre THHN/THWN-2 Centelsa 12 AWG negro – rollo 100 m,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Centelsa by Nexans,Cable THHN / THWN-2
+1944,SRT-ALAMBRE-12-ROJO-ROLLO,Alambre THHN/THWN-2 Centelsa 12 AWG rojo – rollo 100 m,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Centelsa by Nexans,Cable THHN / THWN-2
+1945,SRT-ALAMBRE-12-VERDE-ROLLO,Alambre THHN/THWN-2 Centelsa 12 AWG verde – rollo 100 m,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Centelsa by Nexans,Cable THHN / THWN-2
+1946,SRT-ALAMBRE-14-AMARILLO-METRO,Alambre THHN/THWN-2 Centelsa 14 AWG amarillo – por metro,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Centelsa by Nexans,Cable THHN / THWN-2
+1947,SRT-ALAMBRE-14-AZUL-METRO,Alambre THHN/THWN-2 Centelsa 14 AWG azul – por metro,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Centelsa by Nexans,Cable THHN / THWN-2
+1948,SRT-ALAMBRE-14-BLANCO-METRO,Alambre THHN/THWN-2 Centelsa 14 AWG blanco – por metro,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Centelsa by Nexans,Cable THHN / THWN-2
+1949,SRT-ALAMBRE-14-NEGRO-METRO,Alambre THHN/THWN-2 Centelsa 14 AWG negro – por metro,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Centelsa by Nexans,Cable THHN / THWN-2
+1950,SRT-ALAMBRE-14-ROJO-METRO,Alambre THHN/THWN-2 Centelsa 14 AWG rojo – por metro,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Centelsa by Nexans,Cable THHN / THWN-2
+1951,SRT-ALAMBRE-14-VERDE-METRO,Alambre THHN/THWN-2 Centelsa 14 AWG verde – por metro,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Centelsa by Nexans,Cable THHN / THWN-2
+1952,SRT-ALAMBRE-12-AMARILLO-METRO,Alambre THHN/THWN-2 Centelsa 12 AWG amarillo – por metro,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Centelsa by Nexans,Cable THHN / THWN-2
+1953,SRT-ALAMBRE-12-AZUL-METRO,Alambre THHN/THWN-2 Centelsa 12 AWG azul – por metro,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Centelsa by Nexans,Cable THHN / THWN-2
+1954,SRT-ALAMBRE-12-BLANCO-METRO,Alambre THHN/THWN-2 Centelsa 12 AWG blanco – por metro,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Centelsa by Nexans,Cable THHN / THWN-2
+1955,SRT-ALAMBRE-12-NEGRO-METRO,Alambre THHN/THWN-2 Centelsa 12 AWG negro – por metro,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Centelsa by Nexans,Cable THHN / THWN-2
+1956,SRT-ALAMBRE-12-ROJO-METRO,Alambre THHN/THWN-2 Centelsa 12 AWG rojo – por metro,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Centelsa by Nexans,Cable THHN / THWN-2
+1957,SRT-ALAMBRE-12-VERDE-METRO,Alambre THHN/THWN-2 Centelsa 12 AWG verde – por metro,thhn-thwn-tffn,Alambre THHN/THWN-2,alta,\bTHHN\b|\bTHWN\b|\bTHHW\b|\bTFFN\b|\bTFN\b,Centelsa by Nexans,Cable THHN / THWN-2
+1958,SRT-ENCAU-5x8AWG-CU,Cable multipropósito Termoflex MP Procables 5 x 8 AWG,termoflex-multiproposito,Cable Termoflex multipropósito,alta,termoflex|multiprop[oó]sito,Procables,Cable encauchetado|Cable flexible
+1959,SRT-ENCAU-5x10AWG-CU,Cable multipropósito Termoflex MP Procables 5 x 10 AWG,termoflex-multiproposito,Cable Termoflex multipropósito,alta,termoflex|multiprop[oó]sito,Procables,Cable encauchetado|Cable flexible
+1960,SRT-ENCAU-5x12AWG-CU,Cable multipropósito Termoflex MP Procables 5 x 12 AWG,termoflex-multiproposito,Cable Termoflex multipropósito,alta,termoflex|multiprop[oó]sito,Procables,Cable encauchetado|Cable flexible
+1961,SRT-ENCAU-5x14AWG-CU,Cable multipropósito Termoflex MP Procables 5 x 14 AWG,termoflex-multiproposito,Cable Termoflex multipropósito,alta,termoflex|multiprop[oó]sito,Procables,Cable encauchetado|Cable flexible
+1962,SRT-ENCAU-2x8-CU,Cable multipropósito Termoflex MP Procables 2 x 8 AWG,termoflex-multiproposito,Cable Termoflex multipropósito,alta,termoflex|multiprop[oó]sito,Procables,Cable encauchetado|Cable flexible
+1963,SRT-ENCAU-2x10-CU,Cable multipropósito Termoflex MP Procables 2 x 10 AWG,termoflex-multiproposito,Cable Termoflex multipropósito,alta,termoflex|multiprop[oó]sito,Procables,Cable encauchetado|Cable flexible
+1964,SRT-ENCAU-2x12-CU,Cable multipropósito Termoflex MP Procables 2 x 12 AWG,termoflex-multiproposito,Cable Termoflex multipropósito,alta,termoflex|multiprop[oó]sito,Procables,Cable encauchetado|Cable flexible
+1965,SRT-ENCAU-2x14-CU,Cable multipropósito Termoflex MP Procables 2 x 14 AWG,termoflex-multiproposito,Cable Termoflex multipropósito,alta,termoflex|multiprop[oó]sito,Procables,Cable encauchetado|Cable flexible
+1966,SRT-ENCAU-2x16-CU,Cable multipropósito Termoflex MP Procables 2 x 16 AWG,termoflex-multiproposito,Cable Termoflex multipropósito,alta,termoflex|multiprop[oó]sito,Procables,Cable encauchetado|Cable flexible
+1967,SRT-ENCAU-2x18-CU,Cable multipropósito Termoflex MP Procables 2 x 18 AWG,termoflex-multiproposito,Cable Termoflex multipropósito,alta,termoflex|multiprop[oó]sito,Procables,Cable encauchetado|Cable flexible
+1968,SRT-ENCAU-3x8-CU,Cable multipropósito Termoflex MP Procables 3 x 8 AWG,termoflex-multiproposito,Cable Termoflex multipropósito,alta,termoflex|multiprop[oó]sito,Procables,Cable encauchetado|Cable flexible
