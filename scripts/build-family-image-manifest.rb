@@ -52,6 +52,30 @@ source_image = Dir[File.join(repo_root, "data/images/familia-#{family_slug}.{web
 abort "No existe la imagen de familia data/images/familia-#{family_slug}.(webp|jpg)" if source_image.nil?
 
 extension = File.extname(source_image).downcase
+
+# Colour variants, when they exist, beat the base family image. A title that
+# promises "naranja" and a photo showing blue is the one case the "imagen de
+# referencia" note does not excuse, so those products get their own file.
+COLOURS = {
+  'negro'    => /\bnegro\b|\bblack\b|\bBLK\b/i,
+  'blanco'   => /\bblanco\b|\bwhite\b|\bWHT\b/i,
+  'rojo'     => /\brojo\b|\bred\b/i,
+  'azul'     => /\bazul\b|\bblue\b/i,
+  'verde'    => /\bverde\b|\bgreen\b|\bGRN\b/i,
+  'amarillo' => /\bamarillo\b|\byellow\b/i,
+  'gris'     => /\bgris\b|\bgray\b|\bgrey\b|\bGRY\b/i,
+  'naranja'  => /\bnaranja\b|\borange\b/i,
+  'cafe'     => /\bcaf[eé]\b|\bbrown\b/i,
+  'violeta'  => /\bvioleta\b|\bpurple\b/i,
+}.freeze
+
+def colour_image(repo_root, family_slug, title)
+  hit = COLOURS.find { |_, pattern| title =~ pattern }
+  return [nil, nil] if hit.nil?
+
+  path = Dir[File.join(repo_root, "data/images/familia-#{family_slug}--#{hit[0]}.{webp,jpg,jpeg}")].first
+  path ? [path, hit[0]] : [nil, nil]
+end
 rows = CSV.read(map_path, headers: true, encoding: 'UTF-8').select { |row| row['familia'] == family_slug }
 abort "El mapa no tiene productos para la familia '#{family_slug}'." if rows.empty?
 
@@ -59,9 +83,10 @@ out_dir = File.join('/private/tmp', "surtilec-family-image-batch-#{batch_id}", f
 images_dir = File.join(out_dir, 'images')
 FileUtils.mkdir_p(images_dir)
 
-digest = Digest::SHA256.file(source_image).hexdigest
 family_label = rows.first['familia_etiqueta'].to_s.strip
 family_label = family_slug if family_label.empty?
+colour_used = Hash.new(0)
+digests = {}
 
 header = %w[sku image_file image_title alt_text source_url rights_status rights_reference image_match_status sha256]
 
@@ -72,11 +97,15 @@ CSV.open(File.join(out_dir, 'manifest.csv'), 'w', encoding: 'UTF-8') do |csv|
     sku = row['sku'].to_s.strip
     next if sku.empty?
 
+    variant_path, variant_colour = colour_image(repo_root, family_slug, row['titulo'].to_s)
+    chosen = variant_path || source_image
+
     # The batch id is part of the filename so a re-shot family lands on new
     # attachments instead of silently reusing the previous batch's file, which
     # the importer matches on `_surtilec_batch_image_file`.
-    image_file = "familia-#{family_slug}-#{batch_id}-#{sku}#{extension}"
-    FileUtils.cp(source_image, File.join(images_dir, image_file))
+    image_file = "familia-#{family_slug}-#{batch_id}-#{sku}#{File.extname(chosen).downcase}"
+    FileUtils.cp(chosen, File.join(images_dir, image_file))
+    colour_used[variant_colour] += 1 if variant_colour
 
     # Alt format from docs/image-rights-workflow.md. The brand segment is
     # dropped rather than faked when the product carries no brand term.
@@ -96,11 +125,15 @@ CSV.open(File.join(out_dir, 'manifest.csv'), 'w', encoding: 'UTF-8') do |csv|
       rights['estado_derechos'],
       rights['referencia_derechos'],
       MATCH_STATUS,
-      digest,
+      digests[chosen] ||= Digest::SHA256.file(chosen).hexdigest,
     ]
   end
 end
 
 puts "Familia #{family_slug}: #{rows.size} productos"
-puts "Imagen origen: #{source_image} (sha256 #{digest[0, 16]}…)"
+puts "Imagen base: #{File.basename(source_image)}"
+unless colour_used.empty?
+  puts "Variantes de color: " + colour_used.sort_by { |_, n| -n }
+                                           .map { |c, n| "#{c}=#{n}" }.join(', ')
+end
 puts "Lote: #{out_dir}"
